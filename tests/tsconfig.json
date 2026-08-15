@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["vitest/globals"]
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "../client/src/**/*.ts",
+    "../client/src/**/*.tsx"
+  ]
+}

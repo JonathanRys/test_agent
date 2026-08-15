@@ -1,18 +1,46 @@
 {
   "name": "test_agent",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
+  "description": "OpenRouter-powered agent foundation with Express backend and React frontend",
+  "license": "MIT",
   "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "vitest"
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "tsx watch server/index.ts",
+    "dev:client": "vite --config client/vite.config.ts",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "tsc -p server/tsconfig.json",
+    "build:client": "vite build --config client/vite.config.ts",
+    "start": "node dist/server/index.js",
+    "test": "vitest run --config vitest.config.ts",
+    "test:watch": "vitest --config vitest.config.ts",
+    "typecheck:tests": "tsc -p tests/tsconfig.json"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.4.2",
-    "typescript": "^7.0.2",
-    "vite": "^8.2.1",
-    "vitest": "^4.1.10"
+    "express": "^5.1.1",
+    "openai": "^4.98.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/cors": "^2.8.5",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "jsdom": "^26.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.1.0",
+    "vitest": "^3.1.5"
   }
 }
