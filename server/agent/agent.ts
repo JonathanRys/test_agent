@@ -1,5 +1,3 @@
-export const DEFAULT_MODEL = "poolside/laguna-s-2.1:free";
-
 export function buildAgentSystemPrompt() {
   return [
     "You are a 12-factor agent operating in a local development environment.",

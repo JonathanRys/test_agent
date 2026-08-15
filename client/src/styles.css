@@ -103,6 +103,26 @@ h1 {
   font-size: 0.75rem;
 }
 
+.meta-pill.memory-toggle {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 6px 14px;
+  font-weight: 500;
+}
+
+.meta-pill.memory-toggle:hover:not(:disabled) {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.6);
+  color: #bae6fd;
+}
+
+.meta-pill.memory-toggle:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
 .chat-window {
   display: flex;
   flex-direction: column;

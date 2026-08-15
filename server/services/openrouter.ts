@@ -1,6 +1,5 @@
 import OpenAI from "openai";
 import {
-  DEFAULT_MODEL,
   buildAgentSystemPrompt,
   createAgentContext,
 } from "../agent/agent.js";
@@ -21,12 +20,12 @@ export async function generateAgentReply(prompt: string) {
   if (!env.OPENROUTER_API_KEY) {
     return {
       role: "assistant",
-      content: `OpenRouter is not configured yet. Demo response for: ${prompt} | Active model: ${DEFAULT_MODEL} | Tools: ${context.tools.join(", ")}`,
+      content: `OpenRouter is not configured yet. Demo response for: ${prompt} | Active model: ${env.OPENROUTER_MODEL} | Tools: ${context.tools.join(", ")}`,
     };
   }
 
   const response = await openrouter.chat.completions.create({
-    model: env.OPENROUTER_MODEL || DEFAULT_MODEL,
+    model: env.OPENROUTER_MODEL,
     messages: [
       {
         role: "system",
