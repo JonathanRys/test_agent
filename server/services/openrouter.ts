@@ -1,6 +1,7 @@
 import OpenAI from "openai";
 import {
   buildAgentSystemPrompt,
+  buildAgentSummaryPrompt,
   createAgentContext,
 } from "../agent/agent.js";
 import { env } from "../config/env.js";
@@ -40,4 +41,29 @@ export async function generateAgentReply(prompt: string) {
     role: "assistant",
     content: response.choices[0]?.message?.content ?? "No response returned.",
   };
+}
+
+export async function generateMessageSummary(
+  userMessage: string,
+  assistantMessage: string,
+) {
+  if (!env.OPENROUTER_API_KEY) {
+    return {
+      role: "assistant",
+      content: `OpenRouter is not configured yet. Demo response for: ${prompt} | Active model: ${env.OPENROUTER_CONTEXT_SUMMARY_MODEL}}`,
+    };
+  }
+
+  const response = await openrouter.chat.completions.create({
+    model: env.OPENROUTER_CONTEXT_SUMMARY_MODEL,
+    messages: [
+      {
+        role: "system",
+        content: buildAgentSummaryPrompt(userMessage, assistantMessage),
+      },
+    ],
+    temperature: 0.7,
+  });
+
+  return response.choices[0]?.message?.content ?? null;
 }

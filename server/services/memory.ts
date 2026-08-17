@@ -1,7 +1,14 @@
 import { Sequelize } from "sequelize";
 import path from "path";
 import { fileURLToPath } from "url";
-import { Session, Message, initializeModels } from "../models/index.js";
+import {
+  Session,
+  Message,
+  Summary,
+  initializeModels,
+} from "../models/index.js";
+import { buildAgentSummaryPrompt } from "../agent/agent.js";
+import { generateMessageSummary } from "./openrouter.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dbPath = path.join(__dirname, "../../data/memory.db");
@@ -124,6 +131,33 @@ export async function getSessionMessages(
   }
 }
 
+async function summarizeMessage(
+  sessionId: string,
+  messageId: number,
+  message: string,
+) {
+  try {
+    const userMessage = await Message.findOne({
+      where: { sessionId, role: "user" },
+      order: [["createdAt", "DESC"]],
+    });
+    if (userMessage) {
+      const messageSummary = await generateMessageSummary(
+        userMessage.message,
+        message,
+      );
+      const summary = {
+        assistantMessageId: messageId,
+        userMessageId: userMessage.id,
+        summary: messageSummary,
+      };
+      await Summary.create(summary);
+    }
+  } catch (error) {
+    console.error(`Unable to create summary ${error}`);
+  }
+}
+
 export async function addMessageToSession(
   sessionId: string,
   message: string,
@@ -142,7 +176,12 @@ export async function addMessageToSession(
   } else {
     // Long-term: save to database
     try {
-      await Message.create({ sessionId, message, role });
+      const messageId = (await Message.create({ sessionId, message, role }))[
+        "id"
+      ];
+      if (role === "assistant") {
+        summarizeMessage(sessionId, messageId, message);
+      }
     } catch (error) {
       console.error("Error adding message to database:", error);
     }
