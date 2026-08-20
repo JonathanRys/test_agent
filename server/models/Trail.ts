@@ -1,0 +1,84 @@
+import { DataTypes, Model, Sequelize } from "sequelize";
+import type { LineString } from "geojson";
+
+export class Trail extends Model {
+  declare id: number;
+  declare name: string;
+  declare description: string;
+  declare state: string;
+  declare distance: number;
+  declare elevationGain: number;
+  declare elevationLoss: number;
+  declare startLat: number;
+  declare startLon: number;
+  declare endLat: number;
+  declare endLon: number;
+  declare gpx: LineString;
+  declare embeddedGpx: string;
+}
+
+export function initTrail(sequelize: Sequelize): void {
+  Trail.init(
+    {
+      id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+      },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      description: {
+        type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      state: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      distance: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      elevationGain: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      elevationLoss: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      startLat: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      startLon: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+      },
+      endLat: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      endLon: {
+        type: DataTypes.FLOAT,
+        allowNull: true,
+      },
+      gpx: {
+        type: DataTypes.GEOMETRY("LINESTRING"),
+        allowNull: true,
+      },
+      embeddedGpx: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+    },
+    {
+      sequelize,
+      modelName: "Trail",
+      tableName: "trails",
+      timestamps: false,
+    },
+  );
+}

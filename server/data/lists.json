@@ -1,0 +1,137 @@
+[
+  {
+    "name": "New Hampshire 4000-footers",
+    "type": "peakbagging",
+    "description": "The 48 peaks in New Hampshire with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
+    "abbreviation": "NH48",
+    "patchAvailable": true,
+    "website": "https://www.amc4000footer.org/the-lists-we-recognize.html",
+    "emailAddress": "savage@amc4000footer.org",
+    "mailingAddress": "AMC Four Thousand Footer Committee\nP.O. Box 444\nExeter, NH 03833-0444"
+  },
+  {
+    "name": "New Hampshire Hundred Highest",
+    "type": "peakbagging",
+    "description": "The 100 tallest mountains in NH",
+    "abbreviation": "NHHH",
+    "patchAvailable": false,
+    "website": "https://trailsnh.com/tag/NH-100-Highest"
+  },
+  {
+    "name": "New England 4000-footers",
+    "type": "peakbagging",
+    "description": "The 67 peaks in New England with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
+    "abbreviation": "NE67",
+    "patchAvailable": true,
+    "website": "https://www.amc4000footer.org/the-lists-we-recognize.html",
+    "emailAddress": "savage@amc4000footer.org",
+    "mailingAddress": "AMC Four Thousand Footer Committee\nP.O. Box 444\nExeter, NH 03833-0444"
+  },
+  {
+    "name": "New England Hundred Highest",
+    "type": "peakbagging",
+    "description": "The 100 tallest mountains in New England",
+    "abbreviation": "NEHH",
+    "patchAvailable": true,
+    "website": "https://www.amc4000footer.org/the-lists-we-recognize.html",
+    "emailAddress": "savage@amc4000footer.org",
+    "mailingAddress": "AMC Four Thousand Footer Committee\nP.O. Box 444\nExeter, NH 03833-0444"
+  },
+  {
+    "name": "Northeast 111",
+    "type": "peakbagging",
+    "description": "The 111 peaks in the Northeast with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
+    "abbreviation": "NE111",
+    "patchAvailable": true,
+    "website": "https://www.amc4000footer.org/the-lists-we-recognize.html",
+    "emailAddress": "savage@amc4000footer.org",
+    "mailingAddress": "AMC Four Thousand Footer Committee\nP.O. Box 444\nExeter, NH 03833-0444"
+  },
+  {
+    "name": "Adirondack 46ers",
+    "type": "peakbagging",
+    "description": "The 46 peaks in the Adirondacks with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
+    "abbreviation": "ADK46",
+    "patchAvailable": true,
+    "website": "https://adk46er.org/",
+    "emailAddress": "membership@adk46er.org",
+    "mailingAddress": "Adirondack 46ers\n29 Maine Rd\nPlattsburgh, NY 12903"
+  },
+  {
+    "name": "52 with a View",
+    "type": "peakbagging",
+    "description": "Combined with the 48 4000-footers, these are the 100 \"best\" hikes in New Hampshire",
+    "abbreviation": "52WAV",
+    "patchAvailable": true,
+    "website": "https://overthehillhikers.blogspot.com/p/official-52-with-view-list.html",
+    "emailAddress": "OTHHweb@gmail.com",
+    "mailingAddress": "Cathy Crooker\n277 Elm Hill Rd\nCenter Sandwich, NH 03227"
+  },
+  {
+    "name": "Terrifying 25",
+    "type": "trace",
+    "description": "The 25 most terrifying trails in New Hampshire",
+    "abbreviation": "T25",
+    "patchAvailable": true,
+    "website": "https://www.theterrifying25.com/",
+    "emailAddress": "trishellis100@gmail.com"
+  },
+  {
+    "name": "Trailwrights 72",
+    "type": "peakbagging",
+    "description": "Hike to and from the 72 peaks on the official list, and complete 72 hours of documented trail work. Only one peak per hike counts.",
+    "abbreviation": "TRW72",
+    "patchAvailable": true,
+    "website": "https://trailwrights.org/hiking-72-summits-club/",
+    "emailAddress": "bruce4trails@gmail.com",
+    "mailingAddress": "Hiking Chairman of Trailwrights\n125 Ray St\nManchester, NH 03104"
+  },
+  {
+    "name": "Belknap Range Hiker",
+    "type": "peakbagging",
+    "description": "Hikle to the summit of all 12 mountains in the Belknap range",
+    "abbreviation": "Belknap Range Hiker",
+    "patchAvailable": true,
+    "website": "https://www.bcsanh.com/events/programs-we-offer/belknap-range-hiking-program/",
+    "emailAddress": "dwatsonmusic@hotmail.com",
+    "mailingAddress": "Don Watson\nBCSA Hike Program\n12 Foxglove Road\nGilford, NH 03249"
+  },
+  {
+    "name": "Catskill 35",
+    "type": "peakbagging",
+    "description": "The 35 peaks in the Catskills over 3500 feet in elevation.",
+    "abbreviation": "Catskill 35",
+    "patchAvailable": true,
+    "website": "https://www.catskill3500club.org/patches",
+    "emailAddress": "membership@catskill3500club.org",
+    "mailingAddress": "CATSKILL 3500 CLUB\nP.O. Box 294\nWest Hurley, NY 12491"
+  },
+  {
+    "name": "Acadia 26",
+    "type": "peakbagging",
+    "description": "The 26 most prominent peaks in Acadia National Park",
+    "abbreviation": "Acadia 26",
+    "patchAvailable": false,
+    "website": "https://acadiaonmymind.com/the-26-peaks-of-acadia-national-park/"
+  },
+  {
+    "name": "Castle in the Clouds",
+    "type": "trace",
+    "description": "Hike every inch of trails in the Castle in the Clouds Conservation Area",
+    "abbreviation": "Castle in the Clouds",
+    "patchAvailable": true,
+    "website": "https://lrct.org/explore/hiker-achievement-patch-program",
+    "phoneNumber": "(603) 253-3301",
+    "emailAddress": "lrct@lrct.org",
+    "mailingAddress": "Lakes Region Conservation Trust\nPO Box 766, 156 Dane Road\nCenter Harbor, NH 03226"
+  },
+  {
+    "name": "RMC 100 Challenge",
+    "type": "peakbagging",
+    "description": "The 26 most prominent peaks in Acadia National Park",
+    "abbreviation": "RMC100",
+    "patchAvailable": false,
+    "website": "https://randolphmountainclub.org/trails/rmc-100-challenge/",
+    "mailingAddress": "Randolph Mountain Club\nP.O. Box 279\nGorham, NH 03581"
+  }
+]

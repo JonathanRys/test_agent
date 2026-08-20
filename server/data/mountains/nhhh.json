@@ -1,0 +1,470 @@
+[
+  {
+    "name": "Sandwich Dome",
+    "height": 3993,
+    "prominence": 2553,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "",
+    "notes": "Near Waterville Valley, NH. Various trails."
+  },
+  {
+    "name": "Bulge (Cabot)",
+    "height": 3950,
+    "prominence": 150,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Nancy",
+    "height": 3926,
+    "prominence": 1006,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "",
+    "notes": "Follow the herd path from the Nancy Pond Trail."
+  },
+  {
+    "name": "Horn (Cabot)",
+    "height": 3905,
+    "prominence": 253,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Weeks, North",
+    "height": 3901,
+    "prominence": 390,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Weeks, South",
+    "height": 3885,
+    "prominence": 115,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Sleeper, West",
+    "height": 3881,
+    "prominence": 115,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "",
+    "notes": "On the Kate Sleeper Trail."
+  },
+  {
+    "name": "Vose Spur",
+    "height": 3862,
+    "prominence": 230,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Carrigain Notch Trail."
+  },
+  {
+    "name": "Sleeper, East",
+    "height": 3840,
+    "prominence": 220,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "",
+    "notes": "On the Kate Sleeper Trail."
+  },
+  {
+    "name": "Nubble, Peak Above",
+    "height": 3813,
+    "prominence": 255,
+    "state": "NH",
+    "range": "Twin",
+    "bushwhack": "Yes",
+    "notes": "Near North Twin. Bushwhack from forest roads."
+  },
+  {
+    "name": "Scar Ridge, West",
+    "height": 3774,
+    "prominence": 654,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "Yes",
+    "notes": "Near Loon. Bushwhack from the Kancamagus Highway."
+  },
+  {
+    "name": "Cannonball, NE",
+    "height": 3769,
+    "prominence": 195,
+    "state": "NH",
+    "range": "Franconia",
+    "bushwhack": "",
+    "notes": "On the Kinsman Ridge Trail."
+  },
+  {
+    "name": "Kancamagus",
+    "height": 3763,
+    "prominence": 330,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Kancamagus Highway."
+  },
+  {
+    "name": "Anderson",
+    "height": 3740,
+    "prominence": 210,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Carrigain Notch Trail."
+  },
+  {
+    "name": "Lowell",
+    "height": 3740,
+    "prominence": 310,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Carrigain Notch Trail."
+  },
+  {
+    "name": "Shelburne Moriah",
+    "height": 3735,
+    "prominence": 1035,
+    "state": "NH",
+    "range": "Mahoosuc",
+    "bushwhack": "",
+    "notes": "On the Kenduskeag Trail."
+  },
+  {
+    "name": "Blue (Stratford)",
+    "height": 3730,
+    "prominence": 1802,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Follow logging roads."
+  },
+  {
+    "name": "Hutchins (Pilot)",
+    "height": 3730,
+    "prominence": 508,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack across the ridge from Pilot Range, Middle."
+  },
+  {
+    "name": "Dartmouth",
+    "height": 3727,
+    "prominence": 713,
+    "state": "NH",
+    "range": "Dartmouth",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from Caps Ridge Trail parking lot."
+  },
+  {
+    "name": "Bemis",
+    "height": 3725,
+    "prominence": 260,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Follow the abandoned trail off the Nancy Pond Trail."
+  },
+  {
+    "name": "Sugarloaf (Groveton)",
+    "height": 3710,
+    "prominence": 1290,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "",
+    "notes": "On the Sugarloaf Mountain Trail."
+  },
+  {
+    "name": "Hale, South",
+    "height": 3700,
+    "prominence": 140,
+    "state": "NH",
+    "range": "Twin",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Lend-A-Hand Trail."
+  },
+  {
+    "name": "Huntington",
+    "height": 3700,
+    "prominence": 680,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from Hancock Notch on the Hancock Notch Trail."
+  },
+  {
+    "name": "Huntington, South",
+    "height": 3700,
+    "prominence": 110,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from Hancock Notch on the Hancock Notch Trail."
+  },
+  {
+    "name": "Field, West",
+    "height": 3691,
+    "prominence": 115,
+    "state": "NH",
+    "range": "Twin",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the A-Z Trail or the Willey Range Trail."
+  },
+  {
+    "name": "Weeks, Middle",
+    "height": 3684,
+    "prominence": 110,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Deception, East",
+    "height": 3671,
+    "prominence": 120,
+    "state": "NH",
+    "range": "Dartmouth",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from Cherry Mountain Road."
+  },
+  {
+    "name": "Garfield Ridge, West",
+    "height": 3667,
+    "prominence": 130,
+    "state": "NH",
+    "range": "Franconia",
+    "bushwhack": "Yes",
+    "notes": "Just off the Garfield Ridge Trail, east of Garfield."
+  },
+  {
+    "name": "Long, Middle",
+    "height": 3661,
+    "prominence": 1711,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from old logging roads."
+  },
+  {
+    "name": "Long, West",
+    "height": 3661,
+    "prominence": 135,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from old logging roads."
+  },
+  {
+    "name": "Terrace, East",
+    "height": 3655,
+    "prominence": 145,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "On the Kilkenny Ridge Trail."
+  },
+  {
+    "name": "Stub Hill",
+    "height": 3627,
+    "prominence": 1207,
+    "state": "NH",
+    "range": "Connecticut Lakes",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack and take herd paths from logging roads."
+  },
+  {
+    "name": "Hitchcock, Middle",
+    "height": 3620,
+    "prominence": 210,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from loggings roads off the Forest Discovery Trail."
+  },
+  {
+    "name": "Scar Ridge, East",
+    "height": 3620,
+    "prominence": 130,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack across the ridge from Loon, or from the East Pond Trail."
+  },
+  {
+    "name": "Muise (Whitcomb, N)",
+    "height": 3615,
+    "prominence": 1280,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Gadwah Notch Trail."
+  },
+  {
+    "name": "Pilot Ridge Middle",
+    "height": 3615,
+    "prominence": 105,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "Yes",
+    "notes": "Follow herd paths from Mary (Pilot, East)."
+  },
+  {
+    "name": "Baldface, North",
+    "height": 3610,
+    "prominence": 1260,
+    "state": "NH",
+    "range": "Royce-Baldface",
+    "bushwhack": "",
+    "notes": "On the Baldface Circle Trail."
+  },
+  {
+    "name": "Gore",
+    "height": 3610,
+    "prominence": 830,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from logging roads."
+  },
+  {
+    "name": "Pliny",
+    "height": 3606,
+    "prominence": 416,
+    "state": "NH",
+    "range": "Pliny",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from abandoned Priscilla Brook Trail."
+  },
+  {
+    "name": "Scaur",
+    "height": 3605,
+    "prominence": 130,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "Yes",
+    "notes": "Follow a herd path from the Pine Bend Trail."
+  },
+  {
+    "name": "Castle West Peak",
+    "height": 3590,
+    "prominence": 110,
+    "state": "NH",
+    "range": "Presidential",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from logging roads."
+  },
+  {
+    "name": "Garfield Ridge, East",
+    "height": 3590,
+    "prominence": 95,
+    "state": "NH",
+    "range": "Franconia",
+    "bushwhack": "Yes",
+    "notes": "Just off the Garfield Ridge Trail, east of Garfield."
+  },
+  {
+    "name": "Baldface, South",
+    "height": 3570,
+    "prominence": 304,
+    "state": "NH",
+    "range": "Royce-Baldface",
+    "bushwhack": "",
+    "notes": "On the Baldface Circle Trail."
+  },
+  {
+    "name": "Mary (Pilot E)",
+    "height": 3570,
+    "prominence": 125,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "Yes",
+    "notes": "Follow old logging roads to a herd path."
+  },
+  {
+    "name": "Success",
+    "height": 3565,
+    "prominence": 1225,
+    "state": "NH",
+    "range": "Mahoosuc",
+    "bushwhack": "",
+    "notes": "On the AT, near Mahoosuc Notch."
+  },
+  {
+    "name": "Cherry (Owl's Head)",
+    "height": 3563,
+    "prominence": 150,
+    "state": "NH",
+    "range": "Pliny",
+    "bushwhack": "",
+    "notes": "On the Cherry Mountain Trail."
+  },
+  {
+    "name": "Clough",
+    "height": 3561,
+    "prominence": 1261,
+    "state": "NH",
+    "range": "Moosilauke Area",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from Long Pond Road."
+  },
+  {
+    "name": "Fool Killer",
+    "height": 3548,
+    "prominence": 188,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Sabbaday Brook Trail."
+  },
+  {
+    "name": "Captain (Carrigain Pd)",
+    "height": 3540,
+    "prominence": 160,
+    "state": "NH",
+    "range": "Pemigewasset",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from logging roads off Sawyer River Road."
+  },
+  {
+    "name": "Sable",
+    "height": 3519,
+    "prominence": 1229,
+    "state": "NH",
+    "range": "Royce-Baldface",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from the Slippery Brook Trail."
+  },
+  {
+    "name": "Savage",
+    "height": 3510,
+    "prominence": 400,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": "Yes",
+    "notes": "Bushwhack from loggings roads off the Lamms Trail."
+  },
+  {
+    "name": "Unknown Pond",
+    "height": 3510,
+    "prominence": 140,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": "",
+    "notes": "Bushwhack from the Kilkenny Ridge Trail near Unknown Pond."
+  }
+]

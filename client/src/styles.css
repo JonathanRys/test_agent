@@ -41,6 +41,18 @@ textarea {
   font: inherit;
 }
 
+a:link {
+  color: rgb(56, 182, 255);
+}
+
+a:link:hover {
+  color: rgb(0, 212, 255);
+}
+
+a:visited {
+  color: rgb(187, 134, 252);
+}
+
 .app-shell {
   display: grid;
   place-items: center;
@@ -191,4 +203,15 @@ button {
 button:disabled {
   opacity: 0.7;
   cursor: wait;
+}
+
+.split-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mailing-address {
+  margin: 3px 10px;
+  white-space: pre-wrap;
 }

@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Katahdin, Baxter Peak",
+    "height": 5268,
+    "prominence": 4292,
+    "state": "ME",
+    "range": "Appalachian Mountains",
+    "bushwhack": false,
+    "notes": "The northern terminus of the Appalachian Trail"
+  },
+  {
+    "name": "Katahdin, Hamlin Peak",
+    "height": 4756,
+    "prominence": 4756,
+    "state": "ME",
+    "range": "Appalachian Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Mansfield",
+    "height": 4393,
+    "prominence": 3633,
+    "state": "VT",
+    "range": "Green Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Sugarloaf",
+    "height": 4250,
+    "prominence": 3180,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Killington Peak",
+    "height": 4235,
+    "prominence": 3315,
+    "state": "VT",
+    "range": "Green Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Crocker Mountain",
+    "height": 4228,
+    "prominence": 1214,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Old Speck",
+    "height": 4170,
+    "prominence": 2730,
+    "state": "ME",
+    "range": "White Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "North Brother",
+    "height": 4151,
+    "prominence": 1243,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Bigelow, West Peak",
+    "height": 4145,
+    "prominence": 2845,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Saddleback Mountain",
+    "height": 4120,
+    "prominence": 2448,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Bigelow, Avery Peak",
+    "height": 4090,
+    "prominence": 2845,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Ellen",
+    "height": 4083,
+    "prominence": 2132,
+    "state": "VT",
+    "range": "Green Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Camel's Hump",
+    "height": 4083,
+    "prominence": 1860,
+    "state": "VT",
+    "range": "Green Mountains",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Abraham",
+    "height": 4050,
+    "prominence": 900,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "South Crocker Mountain",
+    "height": 4050,
+    "prominence": 361,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Saddleback Horn",
+    "height": 4023,
+    "prominence": 470,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Redington",
+    "height": 4010,
+    "prominence": 450,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Spaulding Mountain",
+    "height": 4010,
+    "prominence": 591,
+    "state": "ME",
+    "range": "Longfellow",
+    "bushwhack": false,
+    "notes": ""
+  },
+  {
+    "name": "Abraham",
+    "height": 4006,
+    "prominence": 286,
+    "state": "VT",
+    "range": "Green Mountains",
+    "bushwhack": false,
+    "notes": ""
+  }
+]

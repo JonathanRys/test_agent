@@ -7,7 +7,6 @@ import {
   Summary,
   initializeModels,
 } from "../models/index.js";
-import { buildAgentSummaryPrompt } from "../agent/agent.js";
 import { generateMessageSummary } from "./openrouter.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

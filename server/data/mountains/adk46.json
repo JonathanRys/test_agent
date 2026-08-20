@@ -1,0 +1,324 @@
+[
+  {
+    "name": "Marcy",
+    "height": 5344,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Algonquin Peak",
+    "height": 5115,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Haystack",
+    "height": 4961,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Skylight",
+    "height": 4925,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Whiteface Mountain",
+    "height": 4865,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Iriquois Peak",
+    "height": 4843,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Basin Mountain",
+    "height": 4826,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Gray Peak",
+    "height": 4826,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Dix Mountain",
+    "height": 4823,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Gothics",
+    "height": 4734,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Colden",
+    "height": 4715,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Giant Mountain",
+    "height": 4626,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Santanoni Peak",
+    "height": 4606,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Redfield",
+    "height": 4606,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Nippletop",
+    "height": 4593,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Wright Peak",
+    "height": 4587,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Saddleback Mountain",
+    "height": 4528,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Panther Peak",
+    "height": 4442,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Armstrong Mountain",
+    "height": 4429,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Table Top Mountain",
+    "height": 4413,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Hough Peak",
+    "height": 4409,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Rocky Peak Ridge",
+    "height": 4390,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Macomb Mountain",
+    "height": 4370,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Marshall",
+    "height": 4364,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Allen Mountain",
+    "height": 4347,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Seward Mountain",
+    "height": 4331,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Esther Mountain",
+    "height": 4239,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Upper Wolfjaw Mountain",
+    "height": 4203,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Big Slide Mountain",
+    "height": 4199,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Lower Wolfjaw Mountain",
+    "height": 4173,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Phelps Mountian",
+    "height": 4160,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Street Mountain",
+    "height": 4134,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Sawteeth",
+    "height": 4134,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Donaldson Mountain",
+    "height": 4108,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Cascade Mountain",
+    "height": 4098,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Seymore Mountain",
+    "height": 4091,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Porter Mountain",
+    "height": 4068,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "South Dix",
+    "height": 4068,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Emmons",
+    "height": 4039,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Colvin",
+    "height": 4035,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "East Dix Mountain",
+    "height": 4026,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Dial Mountain",
+    "height": 4003,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Blake Peak",
+    "height": 3970,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Cliff Mountain",
+    "height": 3944,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Nye Mountain",
+    "height": 3839,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  },
+  {
+    "name": "Couchsachraga Peak",
+    "height": 3793,
+    "state": "NY",
+    "range": "Adirondack",
+    "bushwhack": false
+  }
+]

@@ -1,4 +1,7 @@
-import { SubmitEvent, useEffect, useState } from "react";
+import { SubmitEvent, useEffect, useLayoutEffect, useState } from "react";
+import List from "./components/List";
+import Mountain from "./components/Mountain";
+import Trail from "./components/Trail";
 
 type Message = {
   role: "user" | "assistant";
@@ -33,6 +36,16 @@ function setSessionIdInUrl(id: string): void {
   const params = new URLSearchParams(window.location.search);
   params.set("session", id);
   window.history.replaceState({}, "", `?${params.toString()}`);
+}
+
+function scrollToBottom() {
+  const element = document.querySelector(".chat-window");
+  if (element) {
+    element.scroll({
+      top: element.scrollHeight,
+      behavior: "smooth",
+    });
+  }
 }
 
 export function App() {
@@ -84,12 +97,15 @@ export function App() {
           },
         ]);
       } finally {
+        scrollToBottom();
         setIsLoadingSession(false);
       }
     }
 
     loadSession();
   }, [sessionId]);
+
+  useLayoutEffect(scrollToBottom, [messages]);
 
   async function handleToggleMemory() {
     setTogglingMemory(true);
@@ -165,6 +181,52 @@ export function App() {
     }
   }
 
+  const nh48 = {
+    id: 1,
+    name: "New Hampshire 4000-footers",
+    type: "peakbagging" as "peakbagging" | "trace",
+    state: "NH",
+    description:
+      "The 48 peaks in New Hampshire with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
+    abbreviation: "NH48",
+    patchAvailable: true,
+    website: "https://www.amc4000footer.org/the-lists-we-recognize.html",
+    emailAddress: "savage@amc4000footer.org",
+    mailingAddress:
+      "AMC Four Thousand Footer Committee\nP.O. Box 444\nExeter, NH 03833-0444",
+  };
+
+  const mtWashington = {
+    id: 191,
+    name: "Washington",
+    height: 6288,
+    prominence: 6138,
+    state: "NH",
+    range: "Presidential",
+    bushwhack: false,
+    notes:
+      "The tallest peak in the north-eastern United States.  This peak has some of the most extreeme weather in the world.",
+    lat: 44.2692,
+    lon: -71.3021,
+  };
+
+  const r2r = {
+    id: 1,
+    name: "Rim-to-rim",
+    description:
+      "The Rim-to-Rim hike is a challenging and rewarding trek that takes you across the Grand Canyon from the North Rim to the South Rim. This iconic route offers breathtaking views, diverse landscapes, and a true sense of adventure.",
+    state: "AZ",
+    distance: 20.9,
+    elevationGain: 5938,
+    elevationLoss: 6933,
+    startLat: 36.21734150069331,
+    startLon: -112.0565711335385,
+    endLat: 36.05312649056598,
+    endLon: -112.08392973760422,
+    embeddedGpx:
+      "https://www.google.com/maps/d/embed?mid=10HkYaSCnyvhLHflJXjrmZxp-y-9qbHc&ehbc=2E312F&noprof=1",
+  };
+
   if (isLoadingSession) {
     return (
       <main className="app-shell">
@@ -182,8 +244,8 @@ export function App() {
       <section className="panel">
         <header className="header">
           <div>
-            <p className="eyebrow">12-Factor Agent</p>
-            <h1>Test Agent</h1>
+            <p className="eyebrow">Hiking Agent</p>
+            <h1>Hiking Agent</h1>
           </div>
           <span className="status">Model: {model}</span>
         </header>
@@ -226,6 +288,15 @@ export function App() {
             {loading ? "Thinking..." : "Send"}
           </button>
         </form>
+      </section>
+      <section className="panel">
+        <List {...nh48} />
+      </section>
+      <section className="panel">
+        <Mountain {...mtWashington} />
+      </section>
+      <section className="panel">
+        <Trail {...r2r} />
       </section>
     </main>
   );

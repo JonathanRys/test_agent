@@ -7,6 +7,10 @@
   "author": "",
   "type": "module",
   "scripts": {
+    "db:migrate": "cd server && npx sequelize-cli db:migrate",
+    "db:migrate:undo": "cd server && npx sequelize-cli db:migrate:undo",
+    "db:seed": "cd server && npx sequelize-cli db:seed:all",
+    "db:seed:undo": "cd server && npx sequelize-cli db:seed:undo:all",
     "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
     "dev:server": "tsx watch server/index.ts",
     "dev:client": "vite --config client/vite.config.ts",
@@ -19,6 +23,7 @@
     "typecheck:tests": "tsc -p tests/tsconfig.json"
   },
   "dependencies": {
+    "@state-icons/react": "^0.1.1",
     "cors": "^2.8.5",
     "dotenv": "^17.4.2",
     "express": "^5.1.1",
@@ -26,6 +31,7 @@
     "openai": "^4.98.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.7.0",
     "sequelize": "^6.37.8",
     "sqlite3": "^6.0.1",
     "uuid": "^14.0.1",
@@ -36,6 +42,7 @@
     "@testing-library/react": "^16.3.0",
     "@types/cors": "^2.8.5",
     "@types/express": "^5.0.0",
+    "@types/geojson": "^7946.0.16",
     "@types/node": "^22.15.30",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
