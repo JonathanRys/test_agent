@@ -1,5 +1,5 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
-import type { LineString } from "geojson";
+import type { FeatureCollection } from "geojson";
 
 export class Trail extends Model {
   declare id: number;
@@ -13,7 +13,7 @@ export class Trail extends Model {
   declare startLon: number;
   declare endLat: number;
   declare endLon: number;
-  declare gpx: LineString;
+  declare gpx: FeatureCollection;
   declare embeddedGpx: string;
 }
 
@@ -66,7 +66,7 @@ export function initTrail(sequelize: Sequelize): void {
         allowNull: true,
       },
       gpx: {
-        type: DataTypes.GEOMETRY("LINESTRING"),
+        type: DataTypes.JSON,
         allowNull: true,
       },
       embeddedGpx: {

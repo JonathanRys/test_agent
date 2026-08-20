@@ -116,7 +116,7 @@ listViewRouter.get("/lists", (req: Request, res: Response) => {
   return res;
 });
 
-listViewRouter.get("/mountainlist/:listId", (req: Request, res: Response) => {
+listViewRouter.get("/mountainList/:listId", (req: Request, res: Response) => {
   const { listId } = req.params;
 
   if (typeof listId !== "string") {
@@ -129,7 +129,7 @@ listViewRouter.get("/mountainlist/:listId", (req: Request, res: Response) => {
   return res;
 });
 
-listViewRouter.get("/traillist/:listId", (req: Request, res: Response) => {
+listViewRouter.get("/trailList/:listId", (req: Request, res: Response) => {
   const { listId } = req.params;
 
   if (typeof listId !== "string") {

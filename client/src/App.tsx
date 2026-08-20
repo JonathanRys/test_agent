@@ -184,8 +184,8 @@ export function App() {
   const nh48 = {
     id: 1,
     name: "New Hampshire 4000-footers",
-    type: "peakbagging" as "peakbagging" | "trace",
     state: "NH",
+    type: "peakbagging" as "peakbagging" | "trace",
     description:
       "The 48 peaks in New Hampshire with at least 200 ft. of prominence and an elevation of at least 4000 ft.",
     abbreviation: "NH48",
@@ -205,7 +205,7 @@ export function App() {
     range: "Presidential",
     bushwhack: false,
     notes:
-      "The tallest peak in the north-eastern United States.  This peak has some of the most extreeme weather in the world.",
+      "The tallest peak in the north-eastern United States.  This peak has some of the most extreme weather in the world.",
     lat: 44.2692,
     lon: -71.3021,
   };

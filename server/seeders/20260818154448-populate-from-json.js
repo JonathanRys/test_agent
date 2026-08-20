@@ -11,7 +11,7 @@ import nh48 from "../data/mountains/nh48.json" with { type: "json" };
 import nhhh from "../data/mountains/nhhh.json" with { type: "json" };
 
 // Trails
-import r2r from "../data/mountains/r2r.json" with { type: "json" };
+import r2r from "../data/trails/r2r.json" with { type: "json" };
 
 // Lists
 import lists from "../data/lists.json" with { type: "json" };
@@ -40,7 +40,12 @@ export default {
     await queryInterface.bulkInsert("mountains", nhhh, {});
 
     // Trails
-    await queryInterface.bulkInsert("trails", r2r, {});
+    const processedR2rData = r2r.map((row) => ({
+      ...row,
+      gpx: JSON.stringify(row.gpx),
+    }));
+
+    await queryInterface.bulkInsert("trails", processedR2rData, {});
 
     // Lists
     await queryInterface.bulkInsert("lists", lists, {});
