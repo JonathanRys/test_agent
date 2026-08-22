@@ -44,9 +44,31 @@ export function initializeModels(sequelize: Sequelize): void {
   Mountain.belongsToMany(List, {
     through: MountainList,
     foreignKey: "mountainId",
+    otherKey: "listId",
   });
-  List.belongsToMany(Mountain, { through: MountainList, foreignKey: "listId" });
 
-  Trail.belongsToMany(List, { through: TrailList, foreignKey: "trailId" });
-  List.belongsToMany(Trail, { through: TrailList, foreignKey: "listId" });
+  // Mountain.belongsToMany(List, {
+  //   as: "FilterList",
+  //   through: MountainList,
+  //   foreignKey: "mountainId",
+  //   otherKey: "listId",
+  // });
+
+  List.belongsToMany(Mountain, {
+    through: MountainList,
+    foreignKey: "listId",
+    otherKey: "mountainId",
+  });
+
+  Trail.belongsToMany(List, {
+    through: TrailList,
+    foreignKey: "trailId",
+    otherKey: "listId",
+  });
+
+  List.belongsToMany(Trail, {
+    through: TrailList,
+    foreignKey: "listId",
+    otherKey: "trailId",
+  });
 }

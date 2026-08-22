@@ -59,22 +59,24 @@ export async function getMountain(id: number): Promise<Mountain | null> {
 }
 
 type MountainFilters = {
-  state: Mountain["state"];
-  range: Mountain["range"];
-  ascending: boolean;
+  state?: Mountain["state"];
+  range?: Mountain["range"];
 };
 
 export async function getMountains(
   filters: MountainFilters,
 ): Promise<Mountain[]> {
   try {
-    const { state, range, ascending } = filters;
+    const { state, range } = filters;
+
+    const whereQuery: Record<string, string> = {};
+
+    if (state !== undefined) whereQuery.state = state;
+    if (range !== undefined) whereQuery.range = range;
+
     const mountains = await Mountain.findAll({
-      where: {
-        state,
-        range,
-      },
-      order: [["height", ascending ? "ASC" : "DESC"]],
+      where: whereQuery,
+      order: [["height", "ASC"]],
     });
 
     return mountains;
@@ -108,18 +110,19 @@ export async function getTrail(id: number): Promise<Trail | null> {
 }
 
 type TrailFilters = {
-  state: Trail["state"];
-  ascending: boolean;
+  state?: Trail["state"];
 };
 
 export async function getTrails(filters: TrailFilters): Promise<Trail[]> {
   try {
-    const { state, ascending } = filters;
+    const { state } = filters;
+    const whereQuery: Record<string, string> = {};
+
+    if (state !== undefined) whereQuery.state = state;
+
     const trails = await Trail.findAll({
-      where: {
-        state,
-      },
-      order: [["state", ascending ? "ASC" : "DESC"]],
+      where: whereQuery,
+      order: [["state", "ASC"]],
     });
 
     return trails;
@@ -153,20 +156,22 @@ export async function getList(id: number): Promise<List | null> {
 }
 
 type ListFilters = {
-  type: List["type"];
-  state: List["state"];
-  ascending: boolean;
+  type?: List["type"];
+  state?: List["state"];
 };
 
 export async function getLists(filters: ListFilters): Promise<List[]> {
   try {
-    const { state, type, ascending } = filters;
+    const { state, type } = filters;
+
+    const whereQuery: Record<string, string> = {};
+
+    if (state !== undefined) whereQuery.state = state;
+    if (type !== undefined) whereQuery.type = type;
+
     const lists = await List.findAll({
-      where: {
-        state,
-        type,
-      },
-      order: [["type", ascending ? "ASC" : "DESC"]],
+      where: whereQuery,
+      order: [["type", "ASC"]],
     });
 
     return lists;
@@ -183,12 +188,22 @@ export async function getLists(filters: ListFilters): Promise<List[]> {
 export async function getMountainsOnList(listId: number): Promise<Mountain[]> {
   try {
     const mountains = await Mountain.findAll({
+      order: [["height", "DESC"]],
+
+      where: Sequelize.literal(`
+    "Mountain"."id" IN (
+      SELECT "mountainId" 
+      FROM "MountainLists" 
+      WHERE "listId" = ${Number(listId)}
+    )
+  `),
       include: [
         {
-          model: List,
-          where: { id: listId },
-          through: { attributes: [] },
-          required: true,
+          model: List, // Pluralizes to 'Lists' automatically
+          attributes: ["id", "name", "abbreviation"], // Only grab what you need
+          through: {
+            attributes: [], // Keeps the join table columns out of the payload
+          },
         },
       ],
     });

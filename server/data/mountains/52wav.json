@@ -1,8 +1,12 @@
 [
   {
     "name": "Sandwich Dome",
-    "height": "3992",
-    "state": "NH"
+    "height": 3993,
+    "prominence": 2553,
+    "state": "NH",
+    "range": "Sandwich",
+    "bushwhack": false,
+    "notes": "Near Waterville Valley, NH. Various trails."
   },
   {
     "name": "Mt. Starr King",
@@ -15,24 +19,40 @@
     "state": "NH"
   },
   {
-    "name": "The Horn",
-    "height": "3900",
-    "state": "NH"
+    "name": "Horn (Cabot)",
+    "height": 3905,
+    "prominence": 253,
+    "state": "NH",
+    "range": "Pilot",
+    "bushwhack": false,
+    "notes": "On the Kilkenny Ridge Trail."
   },
   {
     "name": "Shelburne Moriah Mountain",
-    "height": "3743",
-    "state": "NH"
+    "height": 3735,
+    "prominence": 1035,
+    "state": "NH",
+    "range": "Mahoosuc",
+    "bushwhack": false,
+    "notes": "On the Kenduskeag Trail."
   },
   {
-    "name": "Sugarloaf Mountain",
-    "height": "3703",
-    "state": "NH"
+    "name": "Sugarloaf (Groveton)",
+    "height": 3710,
+    "prominence": 1290,
+    "state": "NH",
+    "range": "North Country",
+    "bushwhack": false,
+    "notes": "On the Sugarloaf Mountain Trail."
   },
   {
     "name": "North Baldface",
-    "height": "3597",
-    "state": "NH"
+    "height": 3610,
+    "prominence": 1260,
+    "state": "NH",
+    "range": "Royce-Baldface",
+    "bushwhack": false,
+    "notes": "On the Baldface Circle Trail."
   },
   {
     "name": "Mt. Success",
@@ -41,13 +61,21 @@
   },
   {
     "name": "South Baldface",
-    "height": "3576",
-    "state": "NH"
+    "height": 3570,
+    "prominence": 304,
+    "state": "NH",
+    "range": "Royce-Baldface",
+    "bushwhack": false,
+    "notes": "On the Baldface Circle Trail."
   },
   {
-    "name": "Martha (Cherry Mtn / Owl's Head)",
-    "height": "3557",
-    "state": "NH"
+    "name": "Cherry (Owl's Head)",
+    "height": 3563,
+    "prominence": 150,
+    "state": "NH",
+    "range": "Pliny",
+    "bushwhack": false,
+    "notes": "On the Cherry Mountain Trail."
   },
   {
     "name": "Jennings Peak",
@@ -135,8 +163,13 @@
     "state": "NH"
   },
   {
-    "name": "North Doublehead / South Doublehead",
-    "height": "3051 / 2939",
+    "name": "North Doublehead",
+    "height": "3051",
+    "state": "NH"
+  },
+  {
+    "name": "South Doublehead",
+    "height": "2939",
     "state": "NH"
   },
   {
@@ -215,8 +248,13 @@
     "state": "NH"
   },
   {
-    "name": "Welch Mountain / Dickey Mountain",
-    "height": "2598 / 2722",
+    "name": "Welch Mountain",
+    "height": "2598",
+    "state": "NH"
+  },
+  {
+    "name": "Dickey Mountain",
+    "height": "2722",
     "state": "NH"
   },
   {

@@ -17,7 +17,14 @@ const ContactForm = (props: ContactFormProps) => {
         {props.website && (
           <li>
             Website:{" "}
-            <a href={props.website} target="_blank" rel="noopener noreferrer">
+            <a
+              href={props.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => {
+                event.stopPropagation();
+              }}
+            >
               {props.website}
             </a>
           </li>
@@ -25,7 +32,14 @@ const ContactForm = (props: ContactFormProps) => {
         {props.emailAddress && (
           <li>
             Email:{" "}
-            <a href={`mailto:${props.emailAddress}`}>{props.emailAddress}</a>
+            <a
+              href={`mailto:${props.emailAddress}`}
+              onClick={(event) => {
+                event.stopPropagation();
+              }}
+            >
+              {props.emailAddress}
+            </a>
           </li>
         )}
         {props.phoneNumber && <li>Phone: {props.phoneNumber}</li>}
@@ -36,18 +50,32 @@ const ContactForm = (props: ContactFormProps) => {
           </li>
         )}
         {props.facebook && (
-          <li>
-            <a href={props.facebook} target="_blank" rel="noopener noreferrer">
+          <span className="media">
+            <a
+              href={props.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => {
+                event.stopPropagation();
+              }}
+            >
               <FaFacebook />
             </a>
-          </li>
+          </span>
         )}
         {props.instagram && (
-          <li>
-            <a href={props.instagram} target="_blank" rel="noopener noreferrer">
+          <span className="media">
+            <a
+              href={props.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(event) => {
+                event.stopPropagation();
+              }}
+            >
               <FaInstagram />
             </a>
-          </li>
+          </span>
         )}
       </ul>
     </div>

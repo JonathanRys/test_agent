@@ -1,1 +1,110 @@
-[{}]
+[
+  {
+    "name": "Mount Whitney",
+    "height": 14505,
+    "prominence": 10080,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.5786,
+    "lon": -118.292
+  },
+  {
+    "name": "Mount Williamson",
+    "height": 14379,
+    "prominence": 1676,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.6559,
+    "lon": -118.3111
+  },
+  {
+    "name": "White Mountain Peak",
+    "height": 14252,
+    "prominence": 7196,
+    "state": "CA",
+    "range": "White Mountains",
+    "lat": 37.6341,
+    "lon": -118.2557
+  },
+  {
+    "name": "North Palisade",
+    "height": 14248,
+    "prominence": 2894,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 37.0943,
+    "lon": -118.5145
+  },
+  {
+    "name": "Mount Shasta",
+    "height": 14179,
+    "prominence": 9772,
+    "state": "CA",
+    "range": "Cascade Range",
+    "lat": 41.4092,
+    "lon": -122.1949
+  },
+  {
+    "name": "Mount Sill",
+    "height": 14159,
+    "prominence": 373,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 37.096,
+    "lon": -118.5032
+  },
+  {
+    "name": "Mount Russell",
+    "height": 14094,
+    "prominence": 1129,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.5901,
+    "lon": -118.2908
+  },
+  {
+    "name": "Split Mountain",
+    "height": 14064,
+    "prominence": 1380,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 37.0209,
+    "lon": -118.4224
+  },
+  {
+    "name": "Mount Langley",
+    "height": 14032,
+    "prominence": 1198,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.5234,
+    "lon": -118.2395
+  },
+  {
+    "name": "Mount Tyndall",
+    "height": 14025,
+    "prominence": 1125,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.6556,
+    "lon": -118.337
+  },
+  {
+    "name": "Mount Muir",
+    "height": 14018,
+    "prominence": 331,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 36.5647,
+    "lon": -118.2913
+  },
+  {
+    "name": "Middle Palisade",
+    "height": 14018,
+    "prominence": 1119,
+    "state": "CA",
+    "range": "Sierra Nevada",
+    "lat": 37.0702,
+    "lon": -118.4691
+  }
+]

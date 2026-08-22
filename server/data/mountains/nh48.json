@@ -3,6 +3,7 @@
     "name": "Washington",
     "height": 6288,
     "prominence": 6138,
+    "distance": 10.4,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
@@ -14,6 +15,7 @@
     "name": "Adams",
     "height": 5774,
     "prominence": 804,
+    "distance": 10.3,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
@@ -25,6 +27,7 @@
     "name": "Jefferson",
     "height": 5712,
     "prominence": 742,
+    "distance": 5.6,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
@@ -36,6 +39,7 @@
     "name": "Monroe",
     "height": 5384,
     "prominence": 254,
+    "distance": 10.4,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
@@ -47,6 +51,7 @@
     "name": "Madison",
     "height": 5367,
     "prominence": 466,
+    "distance": 10.3,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
@@ -58,6 +63,7 @@
     "name": "Lafayette",
     "height": 5260,
     "prominence": 3320,
+    "distance": 9.1,
     "state": "NH",
     "range": "Franconia",
     "bushwhack": false,
@@ -69,6 +75,7 @@
     "name": "Lincoln",
     "height": 5089,
     "prominence": 180,
+    "distance": 9.1,
     "state": "NH",
     "range": "Franconia",
     "bushwhack": false,
@@ -80,6 +87,7 @@
     "name": "Twin, South Peak",
     "height": 4902,
     "prominence": 1522,
+    "distance": 11.5,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
@@ -91,6 +99,7 @@
     "name": "Carter Dome",
     "height": 4832,
     "prominence": 2830,
+    "distance": 11.8,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
@@ -102,6 +111,7 @@
     "name": "Moosilauke",
     "height": 4802,
     "prominence": 2933,
+    "distance": 7.9,
     "state": "NH",
     "range": "Kinsmen",
     "bushwhack": false,
@@ -113,145 +123,193 @@
     "name": "Eisenhower",
     "height": 4780,
     "prominence": 350,
+    "distance": 6.6,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.24,
+    "lon": -71.35
   },
   {
     "name": "Twin, North Peak",
     "height": 4761,
     "prominence": 299,
+    "distance": 11.5,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.2,
+    "lon": -71.56
   },
   {
     "name": "Carrigain",
     "height": 4700,
     "prominence": 2240,
+    "distance": 10.6,
     "state": "NH",
     "range": "Pemigewasset",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.09,
+    "lon": -71.45
   },
   {
     "name": "Bond",
     "height": 4698,
     "prominence": 299,
+    "distance": 17.6,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.15,
+    "lon": -71.53
   },
   {
     "name": "Carter, Middle",
     "height": 4610,
     "prominence": 720,
+    "distance": 10.2,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.3,
+    "lon": -71.17
   },
   {
     "name": "Bond, West Peak",
     "height": 4540,
     "prominence": 299,
+    "distance": 17.6,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.15,
+    "lon": -71.54
   },
   {
     "name": "Garfield",
     "height": 4500,
     "prominence": 820,
+    "distance": 10,
     "state": "NH",
     "range": "Franconia",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.19,
+    "lon": -71.61
   },
   {
     "name": "Liberty",
     "height": 4459,
     "prominence": 379,
+    "distance": 9.9,
     "state": "NH",
     "range": "Franconia",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.12,
+    "lon": -71.64
   },
   {
     "name": "Carter, South",
     "height": 4430,
     "prominence": 230,
+    "distance": 11.8,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "Lat": 44.29,
+    "lon": -71.18
   },
   {
     "name": "Wildcat, A Peak",
     "height": 4422,
     "prominence": 1034,
+    "distance": 10,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.26,
+    "lon": -71.2
   },
   {
     "name": "Hancock",
     "height": 4420,
     "prominence": 1247,
+    "distance": 9.8,
     "state": "NH",
     "range": "Pemigewasset",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.08,
+    "lon": -71.49
   },
   {
     "name": "Kinsman, South Peak",
     "height": 4358,
     "prominence": 2240,
+    "distance": 10.2,
     "state": "NH",
     "range": "Kinsmen",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.12,
+    "lon": -71.74
   },
   {
     "name": "Field",
     "height": 4340,
     "prominence": 1706,
+    "distance": 7.4,
     "state": "NH",
     "range": "Willey",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.2,
+    "lon": -71.43
   },
   {
     "name": "Osceola",
     "height": 4340,
     "prominence": 200,
+    "distance": 8.4,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44,
+    "lon": -71.54
   },
   {
     "name": "Flume",
     "height": 4328,
     "prominence": 408,
+    "distance": 9.9,
     "state": "NH",
     "range": "Franconia",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.11,
+    "lon": -71.63
   },
   {
     "name": "Hancock, South Peak",
     "height": 4319,
     "prominence": 1247,
+    "distance": 9.8,
     "state": "NH",
     "range": "Pemigewasset",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.07,
+    "lon": -71.49
   },
   {
     "name": "Pierce",
@@ -260,195 +318,260 @@
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.23,
+    "lon": -71.37
   },
   {
     "name": "Kinsman, North Peak",
     "height": 4293,
     "prominence": 2240,
+    "distance": 10.2,
     "state": "NH",
     "range": "Kinsmen",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.12,
+    "lon": -71.74
   },
   {
     "name": "Willey",
     "height": 4285,
     "prominence": 256,
+    "distance": 5.5,
     "state": "NH",
     "range": "Willey",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.18,
+    "lon": -71.42
   },
   {
     "name": "Bondcliff",
     "height": 4265,
     "prominence": 299,
+    "distance": 18.4,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.14,
+    "lon": -71.54
   },
   {
     "name": "Zealand Mountain",
     "height": 4260,
     "prominence": 246,
+    "distance": 17.6,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.18,
+    "lon": -71.52
   },
   {
     "name": "Tripyramid, North Peak",
     "height": 4180,
     "prominence": 1320,
+    "distance": 11.2,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 43.97,
+    "lon": -71.44
   },
   {
     "name": "Cabot",
     "height": 4170,
     "prominence": 2674,
+    "distance": 10.6,
     "state": "NH",
     "range": "Pilot",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.51,
+    "lon": -71.41
   },
   {
     "name": "Osceola, East Peak",
     "height": 4156,
     "prominence": 316,
+    "distance": 8.4,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.01,
+    "lon": -71.52
   },
   {
     "name": "Tripyramid, Middle Peak",
     "height": 4140,
     "prominence": 1320,
+    "distance": 11.2,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 43.97,
+    "lon": -71.44
   },
   {
     "name": "Cannon Mountain",
     "height": 4100,
     "prominence": 740,
+    "distance": 4.6,
     "state": "NH",
     "range": "Kinsmen",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.16,
+    "lon": -71.44
   },
   {
     "name": "Hale",
     "height": 4054,
     "prominence": 614,
+    "distance": 4.4,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.22,
+    "lon": -71.51
   },
   {
     "name": "Jackson",
     "height": 4052,
     "prominence": 331,
+    "distance": 6.5,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.2,
+    "lon": -71.38
   },
   {
     "name": "Tom",
     "height": 4051,
     "prominence": 331,
+    "distance": 7.4,
     "state": "NH",
     "range": "Willey",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.21,
+    "lon": -71.45
   },
   {
     "name": "Wildcat, D Peak",
     "height": 4050,
     "prominence": 1034,
+    "distance": 10,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.26,
+    "lon": -71.2
   },
   {
     "name": "Moriah",
     "height": 4049,
     "prominence": 922,
+    "distance": 9,
     "state": "NH",
     "range": "Carter-Moriah",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.34,
+    "lon": -71.13
   },
   {
     "name": "Passaconaway",
     "height": 4043,
     "prominence": 803,
+    "distance": 9.3,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 43.95,
+    "lon": -71.38
   },
   {
     "name": "Owl's Head",
     "height": 4025,
     "prominence": 825,
+    "distance": 18.4,
     "state": "NH",
     "range": "Pemigewasset",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.14,
+    "lon": -71.61
   },
   {
     "name": "Galehead",
     "height": 4024,
     "prominence": 264,
+    "distance": 10.4,
     "state": "NH",
     "range": "Twin",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.19,
+    "lon": -71.57
   },
   {
     "name": "Whiteface",
     "height": 4020,
     "prominence": 591,
+    "distance": 8.4,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 43.93,
+    "lon": -71.41
   },
   {
     "name": "Waumbek",
     "height": 4006,
     "prominence": 1289,
+    "distance": 7.2,
     "state": "NH",
     "range": "Pliny",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.43,
+    "lon": -71.42
   },
   {
     "name": "Isolation",
     "height": 4004,
     "prominence": 203,
+    "distance": 14.4,
     "state": "NH",
     "range": "Presidential",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 44.21,
+    "lon": -71.31
   },
   {
     "name": "Tecumseh",
     "height": 4003,
     "prominence": 1739,
+    "distance": 6,
     "state": "NH",
     "range": "Sandwich",
     "bushwhack": false,
-    "notes": ""
+    "notes": "",
+    "lat": 43.97,
+    "lon": -71.56
   }
 ]

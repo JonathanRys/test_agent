@@ -9,6 +9,10 @@ import catskill35 from "../data/mountains/catskill35.json" with { type: "json" }
 import ne67 from "../data/mountains/ne67.json" with { type: "json" };
 import nh48 from "../data/mountains/nh48.json" with { type: "json" };
 import nhhh from "../data/mountains/nhhh.json" with { type: "json" };
+import nehh from "../data/mountains/nehh.json" with { type: "json" };
+import trw72 from "../data/mountains/trw72.json" with { type: "json" };
+import ca14ers from "../data/mountains/ca14ers.json" with { type: "json" };
+import co14ers from "../data/mountains/co14ers.json" with { type: "json" };
 
 // Trails
 import r2r from "../data/trails/r2r.json" with { type: "json" };
@@ -16,19 +20,13 @@ import r2r from "../data/trails/r2r.json" with { type: "json" };
 // Lists
 import lists from "../data/lists.json" with { type: "json" };
 
+// Connections
+import mountainLists from "../data/mountainLists.json" with { type: "json" };
+import trailLists from "../data/trailLists.json" with { type: "json" };
+
 /** @type {import('sequelize-cli').Migration} */
 export default {
   async up(queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-     */
-
     // Mountains
     await queryInterface.bulkInsert("mountains", fiftyTwoWav, {});
     await queryInterface.bulkInsert("mountains", acadia26, {});
@@ -38,6 +36,10 @@ export default {
     await queryInterface.bulkInsert("mountains", ne67, {});
     await queryInterface.bulkInsert("mountains", nh48, {});
     await queryInterface.bulkInsert("mountains", nhhh, {});
+    await queryInterface.bulkInsert("mountains", nehh, {});
+    await queryInterface.bulkInsert("mountains", trw72, {});
+    await queryInterface.bulkInsert("mountains", ca14ers, {});
+    await queryInterface.bulkInsert("mountains", co14ers, {});
 
     // Trails
     const processedR2rData = r2r.map((row) => ({
@@ -49,18 +51,17 @@ export default {
 
     // Lists
     await queryInterface.bulkInsert("lists", lists, {});
+
+    // Connections
+    await queryInterface.bulkInsert("mountainLists", mountainLists, {});
+    await queryInterface.bulkInsert("trailLists", trailLists, {});
   },
 
   async down(queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
-
     await queryInterface.bulkDelete("mountains", null, {});
     await queryInterface.bulkDelete("trails", null, {});
     await queryInterface.bulkDelete("lists", null, {});
+    await queryInterface.bulkDelete("mountainLists", null, {});
+    await queryInterface.bulkDelete("trailLists", null, {});
   },
 };

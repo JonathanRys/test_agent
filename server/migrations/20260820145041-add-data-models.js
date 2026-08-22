@@ -13,26 +13,15 @@ const initTable = async () => {
 };
 
 const createTableFromModel = async (queryInterface, model, initMethod) => {
-  // 1. Access the raw table name from the model configuration
   const tableName = model.tableName;
-
-  // 2. Extract the attribute definitions you defined in your model's init method
   const attributes = model.getAttributes();
 
-  // 3. Pass those attributes directly to createTable
   await queryInterface.createTable(tableName, attributes);
 };
 
 /** @type {import('sequelize-cli').Migration} */
 export default {
   async up(queryInterface, Sequelize) {
-    /**
-     * Add altering commands here.
-     *
-     * Example:
-     * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
-     */
-
     [
       initMountain,
       initTrail,
@@ -46,15 +35,40 @@ export default {
     [Mountain, Trail, List, MountainList, TrailList].forEach(async (model) => {
       await createTableFromModel(queryInterface, model);
     });
+
+    Mountain.belongsToMany(List, {
+      through: MountainList,
+      foreignKey: "mountainId",
+      otherKey: "listId",
+    });
+
+    // Mountain.belongsToMany(List, {
+    //   as: "FilterList",
+    //   through: MountainList,
+    //   foreignKey: "mountainId",
+    //   otherKey: "listId",
+    // });
+
+    List.belongsToMany(Mountain, {
+      through: MountainList,
+      foreignKey: "listId",
+      otherKey: "mountainId",
+    });
+
+    Trail.belongsToMany(List, {
+      through: TrailList,
+      foreignKey: "trailId",
+      otherKey: "listId",
+    });
+
+    List.belongsToMany(Trail, {
+      through: TrailList,
+      foreignKey: "listId",
+      otherKey: "trailId",
+    });
   },
 
   async down(queryInterface, Sequelize) {
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
     [
       initMountain,
       initTrail,
@@ -65,8 +79,16 @@ export default {
       initMethod(queryInterface.sequelize);
     });
 
-    [Mountain, Trail, List, MountainList, TrailList].forEach(async (model) => {
-      await queryInterface.dropTable(model.tableName);
-    });
+    try {
+      await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
+
+      [Mountain, Trail, List, MountainList, TrailList].forEach(
+        async (model) => {
+          await queryInterface.dropTable(model.tableName);
+        },
+      );
+    } finally {
+      await queryInterface.sequelize.query("PRAGMA foreign_keys = ON;");
+    }
   },
 };

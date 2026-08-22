@@ -84,7 +84,8 @@
     "patchAvailable": true,
     "website": "https://trailwrights.org/hiking-72-summits-club/",
     "emailAddress": "bruce4trails@gmail.com",
-    "mailingAddress": "Hiking Chairman of Trailwrights\n125 Ray St\nManchester, NH 03104"
+    "mailingAddress": "Hiking Chairman of Trailwrights\n125 Ray St\nManchester, NH 03104",
+    "facebook": "https://www.facebook.com/Trailwrights/"
   },
   {
     "name": "Belknap Range Hiker",
@@ -104,7 +105,9 @@
     "patchAvailable": true,
     "website": "https://www.catskill3500club.org/patches",
     "emailAddress": "membership@catskill3500club.org",
-    "mailingAddress": "CATSKILL 3500 CLUB\nP.O. Box 294\nWest Hurley, NY 12491"
+    "mailingAddress": "CATSKILL 3500 CLUB\nP.O. Box 294\nWest Hurley, NY 12491",
+    "facebook": "https://www.facebook.com/Catskill3500Club/",
+    "instagram": "https://www.instagram.com/catskill3500club/"
   },
   {
     "name": "Acadia 26",
@@ -127,11 +130,49 @@
   },
   {
     "name": "RMC 100 Challenge",
-    "type": "peakbagging",
+    "type": "trace",
     "description": "The 26 most prominent peaks in Acadia National Park",
     "abbreviation": "RMC100",
     "patchAvailable": false,
     "website": "https://randolphmountainclub.org/trails/rmc-100-challenge/",
     "mailingAddress": "Randolph Mountain Club\nP.O. Box 279\nGorham, NH 03581"
+  },
+  {
+    "name": "California 14ers",
+    "type": "peakbagging",
+    "description": "The 15 peaks in California with an elevation of at least 14,000 ft. and 300 ft. of prominence.",
+    "abbreviation": "CA14",
+    "patchAvailable": false,
+    "website": "https://www.shedreamsofalpine.com/blog/california-14ers"
+  },
+  {
+    "name": "Colorado 14ers",
+    "type": "peakbagging",
+    "description": "The 58 peaks in Colorado with an elevation of at least 14,000 ft. and 300 ft. of prominence.",
+    "abbreviation": "CO14",
+    "patchAvailable": true,
+    "website": "https://www.expeditionsouvenirs.com/collections/colorado-14er-patches",
+    "facebook": "https://www.facebook.com/groups/82338447841/",
+    "instagram": "https://www.instagram.com/14erscom/"
+  },
+  {
+    "name": "High Pointers",
+    "type": "peakbagging",
+    "description": "The highest point in each of the 50 states",
+    "abbreviation": "HP50",
+    "patchAvailable": true,
+    "website": "https://highpointers.org/",
+    "emailAddress": "membership@Highpointers.org",
+    "mailingAddress": "Highpointers Club\nPO Box 1496\nGolden, CO 80402",
+    "facebook": "https://www.facebook.com/Highpointers/",
+    "instagram": "https://www.instagram.com/highpointersclub/"
+  },
+  {
+    "name": "Rim-to-rim",
+    "type": "trace",
+    "description": "Traverse the Grand Canyon from the North Rim to the South Rim, or vice versa, in a single trip.",
+    "abbreviation": "R2R",
+    "patchAvailable": false,
+    "website": "https://www.nationalparks.org/connect/blog/grand-canyon-rim-rim-hike"
   }
 ]

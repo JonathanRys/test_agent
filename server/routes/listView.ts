@@ -19,125 +19,123 @@ const payloadSchema = z.object({
 
 export const listViewRouter = Router();
 
-listViewRouter.get("/mountain/:id", (req: Request, res: Response) => {
+listViewRouter.get("/mountain/:id", async (req: Request, res: Response) => {
   const { id } = req.params;
 
   if (typeof id !== "string") {
     return res.status(400).json({ error: "Invalid ID format" });
   }
 
-  const mountain = getMountain(parseInt(id));
+  const mountain = await getMountain(parseInt(id));
 
   res.status(200).json(mountain);
   return res;
 });
 
-listViewRouter.get("/mountains", (req: Request, res: Response) => {
-  const { state, range, ascending } = req.query;
+listViewRouter.get("/mountains", async (req: Request, res: Response) => {
+  const { state, range } = req.query;
 
-  if (
-    typeof state !== "string" ||
-    typeof range !== "string" ||
-    typeof ascending !== "boolean"
-  ) {
+  if (typeof state !== "string" || typeof range !== "string") {
     return res.status(400).json({ error: "Invalid query parameter format" });
   }
 
-  const mountains = getMountains({
+  const mountains = await getMountains({
     state: state,
     range: range,
-    ascending: ascending,
   });
 
   res.status(200).json(mountains);
   return res;
 });
 
-listViewRouter.get("/trail/:id", (req: Request, res: Response) => {
+listViewRouter.get("/trail/:id", async (req: Request, res: Response) => {
   const { id } = req.params;
 
   if (typeof id !== "string") {
     return res.status(400).json({ error: "Invalid ID format" });
   }
 
-  const trail = getTrail(parseInt(id));
+  const trail = await getTrail(parseInt(id));
 
   res.status(200).json(trail);
   return res;
 });
 
-listViewRouter.get("/trails", (req: Request, res: Response) => {
-  const { state, ascending } = req.query;
+listViewRouter.get("/trails", async (req: Request, res: Response) => {
+  const { state } = req.query;
 
-  if (typeof state !== "string" || typeof ascending !== "boolean") {
+  if (typeof state !== "string") {
     return res.status(400).json({ error: "Invalid query parameter format" });
   }
 
-  const trails = getTrails({
+  const trails = await getTrails({
     state: state,
-    ascending: ascending,
   });
 
   res.status(200).json(trails);
   return res;
 });
 
-listViewRouter.get("/list/:id", (req: Request, res: Response) => {
+listViewRouter.get("/list/:id", async (req: Request, res: Response) => {
   const { id } = req.params;
 
   if (typeof id !== "string") {
     return res.status(400).json({ error: "Invalid ID format" });
   }
 
-  const list = getList(parseInt(id));
+  const list = await getList(parseInt(id));
 
   res.status(200).json(list);
   return res;
 });
 
-listViewRouter.get("/lists", (req: Request, res: Response) => {
-  const { state, type, ascending } = req.query;
+listViewRouter.get("/lists", async (req: Request, res: Response) => {
+  const { state, type } = req.query;
 
   if (
-    typeof state !== "string" ||
-    typeof type !== "string" ||
-    !["peakbagging", "trace"].includes(type) ||
-    typeof ascending !== "boolean"
+    (state && typeof state !== "string") ||
+    (type && typeof type !== "string") ||
+    (type && !["peakbagging", "trace"].includes(type))
   ) {
     return res.status(400).json({ error: "Invalid query parameter format" });
   }
-  const lists = getLists({
+  const lists = await getLists({
     state: state,
     type: type as "peakbagging" | "trace",
-    ascending: ascending,
   });
 
   res.status(200).json(lists);
   return res;
 });
 
-listViewRouter.get("/mountainList/:listId", (req: Request, res: Response) => {
-  const { listId } = req.params;
+listViewRouter.get(
+  "/mountainList/:listId",
+  async (req: Request, res: Response) => {
+    const { listId } = req.params;
 
-  if (typeof listId !== "string") {
-    return res.status(400).json({ error: "Invalid query parameter format" });
-  }
+    if (typeof listId !== "string") {
+      return res.status(400).json({ error: "Invalid query parameter format" });
+    }
 
-  const mountains = getMountainsOnList(parseInt(listId));
+    const mountains = await getMountainsOnList(parseInt(listId));
 
-  res.status(200).json(mountains);
-  return res;
-});
+    res.status(200).json(mountains);
+    return res;
+  },
+);
 
-listViewRouter.get("/trailList/:listId", (req: Request, res: Response) => {
-  const { listId } = req.params;
+listViewRouter.get(
+  "/trailList/:listId",
+  async (req: Request, res: Response) => {
+    const { listId } = req.params;
 
-  if (typeof listId !== "string") {
-    return res.status(400).json({ error: "Invalid query parameter format" });
-  }
+    if (typeof listId !== "string") {
+      return res.status(400).json({ error: "Invalid query parameter format" });
+    }
 
-  const trails = getTrailsOnList(parseInt(listId));
+    const trails = await getTrailsOnList(parseInt(listId));
 
-  res.status(200).json(trails);
-  return res;
-});
+    res.status(200).json(trails);
+    return res;
+  },
+);

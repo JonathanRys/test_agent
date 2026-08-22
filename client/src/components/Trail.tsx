@@ -3,6 +3,7 @@ import { GiTrail, GiHiking } from "react-icons/gi";
 
 export interface TrailProps {
   id: number;
+  index: number;
   name: string;
   description?: string;
   state?: string;
@@ -28,9 +29,11 @@ const Trail = (props: TrailProps) => {
         {trailIcon} {name}
       </h2>
       <p>{description}</p>
-      {embeddedGpx && (
-        <iframe src={embeddedGpx} width="640" height="480"></iframe>
-      )}
+      <div className="centered">
+        {embeddedGpx && (
+          <iframe src={embeddedGpx} width="640" height="480"></iframe>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,1 +1,112 @@
-[{}]
+[
+  {
+    "name": "South Brother",
+    "height": 3970,
+    "state": "ME"
+  },
+  {
+    "name": "Snow Mountain - Franklin County",
+    "height": 3960,
+    "state": "ME"
+  },
+  {
+    "name": "Pico Peak",
+    "height": 3957,
+    "state": "VT"
+  },
+  {
+    "name": "Stratton Mountain",
+    "height": 3940,
+    "state": "VT"
+  },
+  {
+    "name": "Goose Eye Mountain",
+    "height": 3870,
+    "state": "ME"
+  },
+  {
+    "name": "Fort Mountain",
+    "height": 3861,
+    "state": "ME"
+  },
+  {
+    "name": "Jay Peak",
+    "height": 3858,
+    "state": "VT"
+  },
+  {
+    "name": "White Cap Mountain",
+    "height": 3856,
+    "state": "ME"
+  },
+  {
+    "name": "Boundary Peak",
+    "height": 3855,
+    "state": "ME"
+  },
+  {
+    "name": "Equinox Mountain",
+    "height": 3850,
+    "state": "VT"
+  },
+  {
+    "name": "Mendon Peak",
+    "height": 3850,
+    "state": "VT"
+  },
+  {
+    "name": "Bread Loaf Mountain",
+    "height": 3835,
+    "state": "VT"
+  },
+  {
+    "name": "Mount Bigelow, South Horn",
+    "height": 3805,
+    "state": "ME"
+  },
+  {
+    "name": "Mount Coe",
+    "height": 3795,
+    "state": "ME"
+  },
+  {
+    "name": "East Kennebago Mountain",
+    "height": 3791,
+    "state": "ME"
+  },
+  {
+    "name": "Mount Wilson",
+    "height": 3790,
+    "state": "VT"
+  },
+  {
+    "name": "Big Jay",
+    "height": 3786,
+    "state": "VT"
+  },
+  {
+    "name": "Snow Mountain - Oxford County",
+    "height": 3784,
+    "state": "ME"
+  },
+  {
+    "name": "Baldpate Mountain",
+    "height": 3780,
+    "state": "ME"
+  },
+  {
+    "name": "Kennebago Divide",
+    "height": 3775,
+    "state": "ME"
+  },
+  {
+    "name": "Elephant Mountain",
+    "height": 3772,
+    "state": "ME"
+  },
+  {
+    "name": "Dorset Mountain",
+    "height": 3770,
+    "state": "VT"
+  }
+]
