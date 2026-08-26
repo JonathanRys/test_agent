@@ -1,11 +1,9 @@
-// "hiking" | "biking" | "off-roading" | "snow sports" | "boating"
-
 import { DataTypes, Model, Sequelize } from "sequelize";
 
 export class Activity extends Model {
   declare id: number;
   declare name: string;
-  declare parentActivity: number;
+  declare parentActivity: number | null;
 }
 
 export function initActivity(sequelize: Sequelize): void {
@@ -29,6 +27,7 @@ export function initActivity(sequelize: Sequelize): void {
       sequelize,
       modelName: "Activity",
       tableName: "activities",
+      timestamps: false,
     },
   );
 }

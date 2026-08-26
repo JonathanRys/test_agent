@@ -3,11 +3,12 @@ import { DataTypes, Model, Sequelize } from "sequelize";
 export class Adventure extends Model {
   declare id: number;
   declare name: string;
-  declare activityType: number;
+  declare activityId: number | null;
   declare activityDate: Date;
+  declare activityTrack: unknown | null;
   declare createdAt: Date;
   declare updatedAt: Date;
-  declare deletedAt: Date;
+  declare deletedAt: Date | null;
 }
 
 export function initAdventure(sequelize: Sequelize): void {
@@ -23,8 +24,6 @@ export function initAdventure(sequelize: Sequelize): void {
         allowNull: false,
       },
       activityId: {
-        // Maybe make a summits table and a trails table to track list progress
-        // This is the activity type, possibly belongs in a different table with activityTrack
         type: DataTypes.INTEGER,
         allowNull: true,
       },
@@ -33,7 +32,6 @@ export function initAdventure(sequelize: Sequelize): void {
         allowNull: false,
       },
       activityTrack: {
-        // maybe make this it's own table
         type: DataTypes.JSON,
         allowNull: true,
       },

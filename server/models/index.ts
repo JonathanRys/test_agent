@@ -9,6 +9,10 @@ import { Trail, initTrail } from "./Trail.js";
 import { List, initList } from "./List.js";
 import { MountainList, initMountainList } from "./MountainList.js";
 import { TrailList, initTrailList } from "./TrailList.js";
+import { Activity, initActivity } from "./Activity.js";
+import { Adventure, initAdventure } from "./Adventure.js";
+import { Summit, initSummit } from "./Summit.js";
+import { TrailCompletion, initTrailCompletion } from "./TrailCompletion.js";
 
 export {
   State,
@@ -20,6 +24,10 @@ export {
   List,
   MountainList,
   TrailList,
+  Activity,
+  Adventure,
+  Summit,
+  TrailCompletion,
 };
 
 export function initializeModels(sequelize: Sequelize): void {
@@ -33,6 +41,10 @@ export function initializeModels(sequelize: Sequelize): void {
   initList(sequelize);
   initMountainList(sequelize);
   initTrailList(sequelize);
+  initActivity(sequelize);
+  initAdventure(sequelize);
+  initSummit(sequelize);
+  initTrailCompletion(sequelize);
 
   // Define associations
   Session.hasMany(Message, { foreignKey: "sessionId" });
@@ -73,4 +85,28 @@ export function initializeModels(sequelize: Sequelize): void {
     foreignKey: "listId",
     otherKey: "trailId",
   });
+
+  Activity.hasMany(Activity, {
+    foreignKey: "parentActivity",
+    as: "children",
+  });
+  Activity.belongsTo(Activity, {
+    foreignKey: "parentActivity",
+    as: "parent",
+  });
+
+  Activity.hasMany(Adventure, { foreignKey: "activityId" });
+  Adventure.belongsTo(Activity, { foreignKey: "activityId" });
+
+  Adventure.hasMany(Summit, { foreignKey: "adventureId" });
+  Summit.belongsTo(Adventure, { foreignKey: "adventureId" });
+
+  Adventure.hasMany(TrailCompletion, { foreignKey: "adventureId" });
+  TrailCompletion.belongsTo(Adventure, { foreignKey: "adventureId" });
+
+  Mountain.hasMany(Summit, { foreignKey: "mountainId" });
+  Summit.belongsTo(Mountain, { foreignKey: "mountainId" });
+
+  Trail.hasMany(TrailCompletion, { foreignKey: "trailId" });
+  TrailCompletion.belongsTo(Trail, { foreignKey: "trailId" });
 }

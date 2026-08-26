@@ -9,13 +9,27 @@ import {
   getLists,
   getMountainsOnList,
   getTrailsOnList,
+  createAdventure,
 } from "../services/listView.js";
-import { env } from "../config/env.js";
 
 const payloadSchema = z.object({
   prompt: z.string().min(1).max(4000),
   sessionId: z.string().optional(),
 });
+
+const createAdventureSchema = z
+  .object({
+    name: z.string().min(1).max(255),
+    activityId: z.number().int().positive(),
+    activityDate: z.string().min(1),
+    mountainIds: z.array(z.number().int().positive()).optional(),
+    trailIds: z.array(z.number().int().positive()).optional(),
+  })
+  .refine(
+    (value) =>
+      (value.mountainIds?.length ?? 0) > 0 || (value.trailIds?.length ?? 0) > 0,
+    { message: "Provide at least one mountainId or trailId" },
+  );
 
 export const listViewRouter = Router();
 
@@ -137,3 +151,11 @@ listViewRouter.get(
     return res;
   },
 );
+
+listViewRouter.post("/adventures", async (req: Request, res: Response) => {
+  const payload = createAdventureSchema.parse(req.body);
+  const adventure = await createAdventure(payload);
+
+  res.status(201).json(adventure);
+  return res;
+});

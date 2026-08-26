@@ -18,6 +18,8 @@ export interface ListProps {
   mailingAddress?: string;
   facebook?: string;
   instagram?: string;
+  totalCount?: number;
+  completedCount?: number;
 }
 
 const List = (props: ListProps) => {
@@ -30,6 +32,8 @@ const List = (props: ListProps) => {
     mailingAddress,
     facebook,
     instagram,
+    totalCount,
+    completedCount,
   } = props;
 
   const typeIcon =
@@ -49,6 +53,11 @@ const List = (props: ListProps) => {
         <span>{patchIcon}</span>
       </h2>
       <p>{props.description}</p>
+      {typeof totalCount === "number" && typeof completedCount === "number" && (
+        <p className="list-progress">
+          {completedCount} / {totalCount} complete
+        </p>
+      )}
       <ContactForm
         website={website}
         phoneNumber={phoneNumber}

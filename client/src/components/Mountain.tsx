@@ -5,6 +5,10 @@ import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
 import StateIcon from "./State";
 import Map from "./Map";
+import MarkComplete, {
+  earliestCompletedAt,
+  formatCompletedDate,
+} from "./MarkComplete";
 
 type List = {
   id: number;
@@ -27,6 +31,8 @@ export interface MountainProps {
   lat?: number;
   lon?: number;
   expanded: boolean;
+  Summits?: Array<{ completedAt: string }>;
+  onComplete?: () => void;
 }
 
 const ListBubble = (props: List) => {
@@ -54,6 +60,9 @@ const Mountain = (props: MountainProps) => {
     lat,
     lon,
     expanded,
+    Summits,
+    onComplete,
+    id,
   } = props;
 
   const [showMap, setShowMap] = useState<boolean>(false);
@@ -66,10 +75,11 @@ const Mountain = (props: MountainProps) => {
   );
 
   const mountainIcon = <FaMountain title="Mountain" />;
+  const completedAt = earliestCompletedAt(Summits);
 
   return (
     <div
-      className={`${mountainExpanded ? "" : "clickable align-center"}`}
+      className={`${mountainExpanded ? "" : "clickable align-center"}${completedAt ? " item-completed" : ""}`}
       onClick={() => {
         setShowMap(mountainExpanded ? false : showMap);
         setMountainExpanded(!mountainExpanded);
@@ -105,6 +115,15 @@ const Mountain = (props: MountainProps) => {
           {distance && <p>Distance: {distance} mi</p>}
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
+          {completedAt ? (
+            <p className="completion-date">
+              Hiked {formatCompletedDate(completedAt)}
+            </p>
+          ) : (
+            onComplete && (
+              <MarkComplete name={name} mountainId={id} onComplete={onComplete} />
+            )
+          )}
           {lat && lon && showMap ? (
             <Map lat={lat} lon={lon} />
           ) : (

@@ -32,6 +32,10 @@ export default function Lists() {
   }, []);
 
   useEffect(() => {
+    if (selectedList !== null) {
+      return;
+    }
+
     const loadLists = async () => {
       try {
         const response = await fetch("/api/lists", {
@@ -48,7 +52,7 @@ export default function Lists() {
       }
     };
     loadLists();
-  }, []);
+  }, [selectedList]);
 
   const selectList = (listIndex: number) => {
     setSelectedList(listIndex);
