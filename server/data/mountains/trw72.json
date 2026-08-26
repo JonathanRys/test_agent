@@ -2,145 +2,145 @@
   {
     "name": "Sam Adams",
     "height": 5551,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Clay",
     "height": 5531,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Boot Spur",
     "height": 5492,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "John Quincy Adams",
     "height": 5394,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Abigail Adams (Adams 4)",
     "height": 5348,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Adams 5",
     "height": 5266,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "North Lincoln",
     "height": 5000,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Franklin",
     "height": 4904,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Gulf (Slide) Peak",
     "height": 4760,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Little Haystack",
     "height": 4760,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Hight",
     "height": 4675,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Lethe",
     "height": 4584,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Guyot",
     "height": 4580,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "Blue",
     "height": 4529,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Moosiluake S. Peak",
     "height": 4523,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "North Carter",
     "height": 4520,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "South West Twin",
     "height": 4357,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Wildcat C",
     "height": 4298,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "North Isolation",
     "height": 4293,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Middle Osceola",
     "height": 4200,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "Jim",
     "height": 4172,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "West Osceola",
     "height": 4114,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   },
   {
     "name": "South Tripyramid",
     "height": 4080,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": false
   },
   {
     "name": "North West Hancock",
     "height": 4020,
-    "state": "NH",
+    "stateId": 30,
     "bushwhack": true
   }
 ]

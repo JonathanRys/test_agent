@@ -3,11 +3,11 @@ import { FaAward, FaTrophy, FaMedal } from "react-icons/fa";
 import { FaMountain, FaPersonHiking } from "react-icons/fa6";
 
 import ContactForm from "./ContactForm";
+import { State } from "../types/State";
 
 export interface ListProps {
   id: number;
   name: string;
-  state?: string;
   type: "peakbagging" | "trace";
   description: string;
   abbreviation: string;
@@ -46,7 +46,7 @@ const List = (props: ListProps) => {
         <span>
           {typeIcon} {props.name}
         </span>{" "}
-        {patchIcon}
+        <span>{patchIcon}</span>
       </h2>
       <p>{props.description}</p>
       <ContactForm

@@ -3,6 +3,7 @@ import { Session, initSession } from "./Session.js";
 import { Message, initMessage } from "./Message.js";
 import { Summary, initSummary } from "./Summary.js";
 
+import { State, initState } from "./State.js";
 import { Mountain, initMountain } from "./Mountain.js";
 import { Trail, initTrail } from "./Trail.js";
 import { List, initList } from "./List.js";
@@ -10,6 +11,7 @@ import { MountainList, initMountainList } from "./MountainList.js";
 import { TrailList, initTrailList } from "./TrailList.js";
 
 export {
+  State,
   Session,
   Message,
   Summary,
@@ -25,6 +27,7 @@ export function initializeModels(sequelize: Sequelize): void {
   initMessage(sequelize);
   initSummary(sequelize);
 
+  initState(sequelize);
   initMountain(sequelize);
   initTrail(sequelize);
   initList(sequelize);
@@ -41,18 +44,17 @@ export function initializeModels(sequelize: Sequelize): void {
   Message.hasMany(Summary, { foreignKey: "assistantMessageId" });
   Summary.belongsTo(Message, { foreignKey: "assistantMessageId" });
 
+  State.hasMany(Mountain, { foreignKey: "stateId" });
+  Mountain.belongsTo(State, { foreignKey: "stateId", as: "state" });
+
+  State.hasMany(Trail, { foreignKey: "stateId" });
+  Trail.belongsTo(State, { foreignKey: "stateId", as: "state" });
+
   Mountain.belongsToMany(List, {
     through: MountainList,
     foreignKey: "mountainId",
     otherKey: "listId",
   });
-
-  // Mountain.belongsToMany(List, {
-  //   as: "FilterList",
-  //   through: MountainList,
-  //   foreignKey: "mountainId",
-  //   otherKey: "listId",
-  // });
 
   List.belongsToMany(Mountain, {
     through: MountainList,

@@ -1,5 +1,8 @@
 "use strict";
 
+// States
+import states from "../data/states.json" with { type: "json" };
+
 // Mountains
 import fiftyTwoWav from "../data/mountains/52wav.json" with { type: "json" };
 import acadia26 from "../data/mountains/acadia26.json" with { type: "json" };
@@ -13,6 +16,7 @@ import nehh from "../data/mountains/nehh.json" with { type: "json" };
 import trw72 from "../data/mountains/trw72.json" with { type: "json" };
 import ca14ers from "../data/mountains/ca14ers.json" with { type: "json" };
 import co14ers from "../data/mountains/co14ers.json" with { type: "json" };
+import fireTowers from "../data/mountains/fireTowers.json" with { type: "json" };
 
 // Trails
 import r2r from "../data/trails/r2r.json" with { type: "json" };
@@ -27,6 +31,9 @@ import trailLists from "../data/trailLists.json" with { type: "json" };
 /** @type {import('sequelize-cli').Migration} */
 export default {
   async up(queryInterface, Sequelize) {
+    // States
+    await queryInterface.bulkInsert("states", states, {});
+
     // Mountains
     await queryInterface.bulkInsert("mountains", fiftyTwoWav, {});
     await queryInterface.bulkInsert("mountains", acadia26, {});
@@ -40,6 +47,7 @@ export default {
     await queryInterface.bulkInsert("mountains", trw72, {});
     await queryInterface.bulkInsert("mountains", ca14ers, {});
     await queryInterface.bulkInsert("mountains", co14ers, {});
+    await queryInterface.bulkInsert("mountains", fireTowers, {});
 
     // Trails
     const processedR2rData = r2r.map((row) => ({
@@ -58,6 +66,7 @@ export default {
   },
 
   async down(queryInterface, Sequelize) {
+    await queryInterface.bulkDelete("states", null, {});
     await queryInterface.bulkDelete("mountains", null, {});
     await queryInterface.bulkDelete("trails", null, {});
     await queryInterface.bulkDelete("lists", null, {});

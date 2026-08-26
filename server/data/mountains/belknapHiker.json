@@ -2,61 +2,63 @@
   {
     "name": "Belknap Mountain",
     "height": 2382,
-    "state": "NH"
+    "stateId": 30,
+    "lat": 43.51786,
+    "lon": -71.36925
   },
   {
     "name": "Gunstock Mountain",
     "height": 2245,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Piper Mountain (North)",
     "height": 2044,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Klem",
     "height": 2001,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Mack",
     "height": 1945,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "West Quarry Mountain",
     "height": 1894,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Straightback Mountain",
     "height": 1890,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Rand",
     "height": 1883,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Major",
     "height": 1786,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Rowe",
     "height": 1680,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Anna",
     "height": 1670,
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Whiteface Mountain",
     "height": 1664,
-    "state": "NH"
+    "stateId": 30
   }
 ]

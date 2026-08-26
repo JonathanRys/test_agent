@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Blue Job",
+    "height": 1356,
+    "stateId": 30,
+    "lat": 43.3315,
+    "lon": -71.11598
+  },
+  {
+    "name": "Croydon Mountain",
+    "height": 2781,
+    "stateId": 30,
+    "lat": 43.48195,
+    "lon": -72.21923
+  },
+  {
+    "name": "Federal Hill",
+    "height": 690,
+    "stateId": 30,
+    "lat": 42.80482,
+    "lon": -71.63034
+  },
+  {
+    "name": "Green Mountain",
+    "height": 1907,
+    "stateId": 30,
+    "lat": 43.76775,
+    "lon": -71.03689
+  },
+  {
+    "name": "Milan Hill",
+    "height": 1737,
+    "stateId": 30,
+    "lat": 44.57228,
+    "lon": -71.22312
+  },
+  {
+    "name": "Pack Monadnock",
+    "height": 2280,
+    "stateId": 30,
+    "lat": 42.86198,
+    "lon": -71.87859
+  },
+  {
+    "name": "Oak Hill",
+    "height": 920,
+    "stateId": 30,
+    "lat": 43.27922,
+    "lon": -71.50542
+  },
+  {
+    "name": "Pawtuckaway",
+    "height": 908,
+    "stateId": 30,
+    "lat": 43.10195,
+    "lon": -71.18102
+  },
+  {
+    "name": "Pitcher Mountain",
+    "height": 2153,
+    "stateId": 30,
+    "lat": 43.09407,
+    "lon": -72.13499
+  },
+  {
+    "name": "Mount Prospect",
+    "height": 2059,
+    "stateId": 30,
+    "lat": 44.45144,
+    "lon": -71.57106
+  },
+  {
+    "name": "Red Hill",
+    "height": 2029,
+    "stateId": 30,
+    "lat": 43.75558,
+    "lon": -71.45795
+  },
+  {
+    "name": "Warner Hill",
+    "height": 605,
+    "stateId": 30,
+    "lat": 42.88567,
+    "lon": -71.26638
+  }
+]

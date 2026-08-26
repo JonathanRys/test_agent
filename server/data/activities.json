@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Hiking"
+  },
+  {
+    "name": "Biking"
+  },
+  {
+    "name": "Offroading"
+  },
+  {
+    "name": "Snow sports"
+  },
+  {
+    "name": "Boating"
+  },
+  {
+    "name": "Other"
+  },
+  {
+    "name": "Empty"
+  },
+  {
+    "name": "Empty"
+  },
+  {
+    "name": "Empty"
+  },
+  {
+    "name": "Empty"
+  },
+  {
+    "name": "Empty"
+  },
+  {
+    "name": "Hiking",
+    "parentActivity": 1
+  },
+  {
+    "name": "Backpacking",
+    "parentActivity": 1
+  },
+  {
+    "name": "Mountaineering",
+    "parentActivity": 1
+  },
+  {
+    "name": "Running",
+    "parentActivity": 1
+  },
+  {
+    "name": "Trail Running",
+    "parentActivity": 1
+  },
+  {
+    "name": "Walking",
+    "parentActivity": 1
+  },
+  {
+    "name": "Biking",
+    "parentActivity": 2
+  },
+  {
+    "name": "Bikepacking",
+    "parentActivity": 2
+  },
+  {
+    "name": "Mountain Biking",
+    "parentActivity": 2
+  },
+  {
+    "name": "Road Biking",
+    "parentActivity": 2
+  },
+  {
+    "name": "Offroading",
+    "parentActivity": 3
+  },
+  {
+    "name": "4x4",
+    "parentActivity": 3
+  },
+  {
+    "name": "ATV",
+    "parentActivity": 3
+  },
+  {
+    "name": "Dirt Biking",
+    "parentActivity": 3
+  },
+  {
+    "name": "Motorcycling",
+    "parentActivity": 3
+  },
+  {
+    "name": "Over-landing",
+    "parentActivity": 3
+  },
+  {
+    "name": "Downhill Skiing",
+    "parentActivity": 4
+  },
+  {
+    "name": "Cross-country Skiing",
+    "parentActivity": 4
+  },
+  {
+    "name": "Snowboarding",
+    "parentActivity": 4
+  },
+  {
+    "name": "Skate Skiing",
+    "parentActivity": 4
+  },
+  {
+    "name": "Snowshoeing",
+    "parentActivity": 4
+  },
+  {
+    "name": "Snowmobiling",
+    "parentActivity": 4
+  },
+  {
+    "name": "Kayaking",
+    "parentActivity": 5
+  },
+  {
+    "name": "Canoeing",
+    "parentActivity": 5
+  },
+  {
+    "name": "Whitewater Rafting",
+    "parentActivity": 5
+  },
+  {
+    "name": "Horseback Riding",
+    "parentActivity": 6
+  }
+]

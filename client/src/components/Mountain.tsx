@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { State } from "../types/State";
 import { MdArrowDropDown, MdForest } from "react-icons/md";
 import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
@@ -18,7 +19,7 @@ export interface MountainProps {
   height: number;
   prominence: number;
   distance?: number;
-  state: string;
+  state: State;
   range?: string;
   bushwhack?: boolean;
   notes?: string;
@@ -89,14 +90,18 @@ const Mountain = (props: MountainProps) => {
       >
         <span>
           {mountainIcon} {name}{" "}
-          <span title={state}>{StateIcon({ state })}</span>
+          {state && (
+            <span title={state.name}>
+              {StateIcon({ state: state.abbreviation })}
+            </span>
+          )}
         </span>{" "}
         {bushwhackIcon}
       </h2>
       {mountainExpanded && (
         <div>
           <p>Height: {height} ft</p>
-          <p>Prominence: {prominence} ft</p>
+          {prominence && <p>Prominence: {prominence} ft</p>}
           {distance && <p>Distance: {distance} mi</p>}
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>

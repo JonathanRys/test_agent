@@ -3,7 +3,6 @@ import { DataTypes, Model, Sequelize } from "sequelize";
 export class List extends Model {
   declare id: number;
   declare name: string;
-  declare state: string;
   declare type: "peakbagging" | "trace";
   declare description: string;
   declare abbreviation: string;
@@ -27,10 +26,6 @@ export function initList(sequelize: Sequelize): void {
       name: {
         type: DataTypes.ENUM("peakbagging", "trace"),
         allowNull: false,
-      },
-      state: {
-        type: DataTypes.STRING,
-        allowNull: true,
       },
       type: {
         type: DataTypes.STRING,

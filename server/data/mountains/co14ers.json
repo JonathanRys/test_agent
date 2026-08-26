@@ -3,7 +3,7 @@
     "name": "Mount Elbert",
     "height": 14440,
     "prominence": 9093,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 39.11777778,
     "lon": -106.4452778
@@ -12,7 +12,7 @@
     "name": "Mount Massive",
     "height": 14428,
     "prominence": 1961,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 39.1875,
     "lon": -106.4758333
@@ -21,7 +21,7 @@
     "name": "Mount Harvard",
     "height": 14421,
     "prominence": 2360,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.92444444,
     "lon": -106.3208333
@@ -30,7 +30,7 @@
     "name": "Blanca Peak",
     "height": 14351,
     "prominence": 5326,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.5775,
     "lon": -105.4855556
@@ -39,7 +39,7 @@
     "name": "La Plata Peak",
     "height": 14343,
     "prominence": 1836,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 39.02944444,
     "lon": -106.4727778
@@ -48,7 +48,7 @@
     "name": "Uncompahgre Peak",
     "height": 14321,
     "prominence": 4277,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 38.07166667,
     "lon": -107.4622222
@@ -57,7 +57,7 @@
     "name": "Crestone Peak",
     "height": 14300,
     "prominence": 4554,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.96694444,
     "lon": -105.5855556
@@ -66,7 +66,7 @@
     "name": "Mount Lincoln",
     "height": 14293,
     "prominence": 3862,
-    "state": "CO",
+    "stateId": 6,
     "range": "Mosquito Range",
     "lat": 39.35138889,
     "lon": -106.1116667
@@ -75,7 +75,7 @@
     "name": "Castle Peak",
     "height": 14279,
     "prominence": 2365,
-    "state": "CO",
+    "stateId": 6,
     "range": "Elk Mountains",
     "lat": 39.00972222,
     "lon": -106.8613889
@@ -84,7 +84,7 @@
     "name": "Grays Peak",
     "height": 14278,
     "prominence": 2770,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 39.63388889,
     "lon": -105.8175
@@ -93,7 +93,7 @@
     "name": "Mount Antero",
     "height": 14276,
     "prominence": 2503,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.67416667,
     "lon": -106.2461111
@@ -102,7 +102,7 @@
     "name": "Torreys Peak",
     "height": 14275,
     "prominence": 560,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 39.64277778,
     "lon": -105.8211111
@@ -111,7 +111,7 @@
     "name": "Quandary Peak",
     "height": 14271,
     "prominence": 1125,
-    "state": "CO",
+    "stateId": 6,
     "range": "Mosquito Range",
     "lat": 39.39722222,
     "lon": -106.1063889
@@ -120,7 +120,7 @@
     "name": "Mount Blue Sky",
     "height": 14271,
     "prominence": 2770,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 39.58833333,
     "lon": -105.6438889
@@ -129,7 +129,7 @@
     "name": "Longs Peak",
     "height": 14259,
     "prominence": 2940,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 40.255,
     "lon": -105.615
@@ -138,7 +138,7 @@
     "name": "Mount Wilson",
     "height": 14252,
     "prominence": 4024,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Miguel Mountains",
     "lat": 37.83916667,
     "lon": -107.9916667
@@ -147,7 +147,7 @@
     "name": "Mount Shavano",
     "height": 14231,
     "prominence": 1619,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.61916667,
     "lon": -106.2391667
@@ -156,7 +156,7 @@
     "name": "Mount Princeton",
     "height": 14204,
     "prominence": 2177,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.74916667,
     "lon": -106.2425
@@ -165,7 +165,7 @@
     "name": "Mount Belford",
     "height": 14203,
     "prominence": 1337,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.96083333,
     "lon": -106.3608333
@@ -174,7 +174,7 @@
     "name": "Crestone Needle",
     "height": 14203,
     "prominence": 457,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.96472222,
     "lon": -105.5766667
@@ -183,7 +183,7 @@
     "name": "Mount Yale",
     "height": 14200,
     "prominence": 1896,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.84416667,
     "lon": -106.3138889
@@ -192,7 +192,7 @@
     "name": "Mount Bross",
     "height": 14178,
     "prominence": 312,
-    "state": "CO",
+    "stateId": 6,
     "range": "Mosquito Range",
     "lat": 39.33527778,
     "lon": -106.1077778
@@ -201,7 +201,7 @@
     "name": "Kit Carson Mountain",
     "height": 14171,
     "prominence": 1025,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.97972222,
     "lon": -105.6025
@@ -210,7 +210,7 @@
     "name": "Maroon Peak",
     "height": 14163,
     "prominence": 2336,
-    "state": "CO",
+    "stateId": 6,
     "range": "Elk Mountains",
     "lat": 39.07083333,
     "lon": -106.9888889
@@ -219,7 +219,7 @@
     "name": "Tabeguache Peak",
     "height": 14162,
     "prominence": 455,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.62555556,
     "lon": -106.2508333
@@ -228,7 +228,7 @@
     "name": "Mount Oxford",
     "height": 14160,
     "prominence": 653,
-    "state": "CO",
+    "stateId": 6,
     "range": "Collegiate Peaks",
     "lat": 38.96472222,
     "lon": -106.3388889
@@ -237,7 +237,7 @@
     "name": "Mount Sneffels",
     "height": 14158,
     "prominence": 3050,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sneffels Range",
     "lat": 38.00388889,
     "lon": -107.7922222
@@ -246,7 +246,7 @@
     "name": "Mount Democrat",
     "height": 14155,
     "prominence": 768,
-    "state": "CO",
+    "stateId": 6,
     "range": "Mosquito Range",
     "lat": 39.33972222,
     "lon": -106.14
@@ -255,7 +255,7 @@
     "name": "Capitol Peak",
     "height": 14137,
     "prominence": 1750,
-    "state": "CO",
+    "stateId": 6,
     "range": "Elk Mountains",
     "lat": 39.15027778,
     "lon": -107.0827778
@@ -264,7 +264,7 @@
     "name": "Pikes Peak",
     "height": 14115,
     "prominence": 5530,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 38.84055556,
     "lon": -105.0441667
@@ -273,7 +273,7 @@
     "name": "Snowmass Mountain",
     "height": 14099,
     "prominence": 1152,
-    "state": "CO",
+    "stateId": 6,
     "range": "Elk Mountains",
     "lat": 39.11888889,
     "lon": -107.0663889
@@ -282,7 +282,7 @@
     "name": "Windom Peak",
     "height": 14093,
     "prominence": 2187,
-    "state": "CO",
+    "stateId": 6,
     "range": "Needle Mountains",
     "lat": 37.62111111,
     "lon": -107.5919444
@@ -291,7 +291,7 @@
     "name": "Mount Eolus",
     "height": 14090,
     "prominence": 1024,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.62166667,
     "lon": -107.6227778
@@ -300,7 +300,7 @@
     "name": "Challenger Point",
     "height": 14087,
     "prominence": 301,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.98027778,
     "lon": -105.6066667
@@ -309,7 +309,7 @@
     "name": "Mount Columbia",
     "height": 14077,
     "prominence": 893,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.90388889,
     "lon": -106.2975
@@ -318,7 +318,7 @@
     "name": "Missouri Mountain",
     "height": 14074,
     "prominence": 847,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.9475,
     "lon": -106.3786111
@@ -327,7 +327,7 @@
     "name": "Humboldt Peak",
     "height": 14070,
     "prominence": 1204,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.97611111,
     "lon": -105.5552778
@@ -336,7 +336,7 @@
     "name": "Mount Bierstadt",
     "height": 14065,
     "prominence": 720,
-    "state": "CO",
+    "stateId": 6,
     "range": "Front Range",
     "lat": 39.5825,
     "lon": -105.6688889
@@ -345,7 +345,7 @@
     "name": "Sunlight Peak",
     "height": 14065,
     "prominence": 399,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.6275,
     "lon": -107.5958333
@@ -354,7 +354,7 @@
     "name": "Handies Peak",
     "height": 14058,
     "prominence": 1908,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.91305556,
     "lon": -107.5044444
@@ -363,7 +363,7 @@
     "name": "Culebra Peak",
     "height": 14053,
     "prominence": 4827,
-    "state": "CO",
+    "stateId": 6,
     "range": "Culebra Range",
     "lat": 37.1225,
     "lon": -105.1858333
@@ -372,7 +372,7 @@
     "name": "Ellingwood Point",
     "height": 14048,
     "prominence": 342,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.5825,
     "lon": -105.4927778
@@ -381,7 +381,7 @@
     "name": "Mount Lindsey",
     "height": 14048,
     "prominence": 1542,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.58361111,
     "lon": -105.445
@@ -390,7 +390,7 @@
     "name": "Little Bear Peak",
     "height": 14043,
     "prominence": 377,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sangre de Cristo Range",
     "lat": 37.56666667,
     "lon": -105.4972222
@@ -399,7 +399,7 @@
     "name": "Mount Sherman",
     "height": 14043,
     "prominence": 850,
-    "state": "CO",
+    "stateId": 6,
     "range": "Mosquito Range",
     "lat": 39.225,
     "lon": -106.17
@@ -408,7 +408,7 @@
     "name": "Redcloud Peak",
     "height": 14041,
     "prominence": 1436,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.94111111,
     "lon": -107.4219444
@@ -417,7 +417,7 @@
     "name": "Pyramid Peak",
     "height": 14025,
     "prominence": 1638,
-    "state": "CO",
+    "stateId": 6,
     "range": "Elk Mountains",
     "lat": 39.07166667,
     "lon": -106.9502778
@@ -426,7 +426,7 @@
     "name": "Wilson Peak",
     "height": 14023,
     "prominence": 857,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.86027778,
     "lon": -107.9847222
@@ -435,7 +435,7 @@
     "name": "San Luis Peak",
     "height": 14022,
     "prominence": 3113,
-    "state": "CO",
+    "stateId": 6,
     "range": "La Garita Mountains",
     "lat": 37.98666667,
     "lon": -106.9313889
@@ -444,7 +444,7 @@
     "name": "Wetterhorn Peak",
     "height": 14021,
     "prominence": 1635,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 38.06083333,
     "lon": -107.5108333
@@ -453,7 +453,7 @@
     "name": "Mount of the Holy Cross",
     "height": 14011,
     "prominence": 2113,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 39.46666667,
     "lon": -106.4816667
@@ -462,7 +462,7 @@
     "name": "Huron Peak",
     "height": 14010,
     "prominence": 1423,
-    "state": "CO",
+    "stateId": 6,
     "range": "Sawatch Range",
     "lat": 38.94555556,
     "lon": -106.4380556
@@ -471,7 +471,7 @@
     "name": "Sunshine Peak",
     "height": 14007,
     "prominence": 501,
-    "state": "CO",
+    "stateId": 6,
     "range": "San Juan Mountains",
     "lat": 37.92277778,
     "lon": -107.4255556

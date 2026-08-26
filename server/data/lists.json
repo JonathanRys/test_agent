@@ -174,5 +174,16 @@
     "abbreviation": "R2R",
     "patchAvailable": false,
     "website": "https://www.nationalparks.org/connect/blog/grand-canyon-rim-rim-hike"
+  },
+  {
+    "name": "New Hampshire Fire Towers",
+    "type": "peakbagging",
+    "description": "The Division of Forests & Lands operates 15 fire lookout towers throughout the state for the purpose of wildfire detection. Hike five peaks from the list to get the patch.",
+    "abbreviation": "NH Fire Towers",
+    "patchAvailable": true,
+    "website": "https://www.nhdfl.dncr.nh.gov/forest-protection/fire-towers",
+    "phoneNumber": "603-271-2214",
+    "emailAddress": "shelly.angers@dncr.nh.gov",
+    "mailingAddress": "Tower Quest Program\nNH Division of Forest and Lands\n172 Pembroke Road\nConcord, NH 03301"
   }
 ]

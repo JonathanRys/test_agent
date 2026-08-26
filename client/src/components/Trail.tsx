@@ -1,12 +1,14 @@
 import type { LineString } from "geojson";
 import { GiTrail, GiHiking } from "react-icons/gi";
+import type { State } from "../types/State";
+import StateIcon from "./State";
 
 export interface TrailProps {
   id: number;
   index: number;
   name: string;
   description?: string;
-  state?: string;
+  state?: State;
   distance?: number;
   elevationGain?: number;
   elevationLoss?: number;
@@ -19,14 +21,19 @@ export interface TrailProps {
 }
 
 const Trail = (props: TrailProps) => {
-  const { name, description, embeddedGpx } = props;
+  const { name, state, description, embeddedGpx } = props;
 
   const trailIcon = <GiTrail title="Trail" />;
 
   return (
     <div>
       <h2>
-        {trailIcon} {name}
+        {trailIcon} {name}{" "}
+        {state && (
+          <span title={state.name}>
+            {StateIcon({ state: state.abbreviation })}
+          </span>
+        )}
       </h2>
       <p>{description}</p>
       <div className="centered">

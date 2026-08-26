@@ -2958,5 +2958,69 @@
   {
     "mountainId": 396,
     "listId": 16
+  },
+  {
+    "mountainId": 17,
+    "listId": 19
+  },
+  {
+    "mountainId": 25,
+    "listId": 19
+  },
+  {
+    "mountainId": 35,
+    "listId": 19
+  },
+  {
+    "mountainId": 127,
+    "listId": 19
+  },
+  {
+    "mountainId": 397,
+    "listId": 19
+  },
+  {
+    "mountainId": 398,
+    "listId": 19
+  },
+  {
+    "mountainId": 399,
+    "listId": 19
+  },
+  {
+    "mountainId": 400,
+    "listId": 19
+  },
+  {
+    "mountainId": 401,
+    "listId": 19
+  },
+  {
+    "mountainId": 402,
+    "listId": 19
+  },
+  {
+    "mountainId": 403,
+    "listId": 19
+  },
+  {
+    "mountainId": 404,
+    "listId": 19
+  },
+  {
+    "mountainId": 405,
+    "listId": 19
+  },
+  {
+    "mountainId": 406,
+    "listId": 19
+  },
+  {
+    "mountainId": 407,
+    "listId": 19
+  },
+  {
+    "mountainId": 408,
+    "listId": 19
   }
 ]

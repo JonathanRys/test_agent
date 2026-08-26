@@ -90,17 +90,15 @@ listViewRouter.get("/list/:id", async (req: Request, res: Response) => {
 });
 
 listViewRouter.get("/lists", async (req: Request, res: Response) => {
-  const { state, type } = req.query;
+  const { type } = req.query;
 
   if (
-    (state && typeof state !== "string") ||
     (type && typeof type !== "string") ||
     (type && !["peakbagging", "trace"].includes(type))
   ) {
     return res.status(400).json({ error: "Invalid query parameter format" });
   }
   const lists = await getLists({
-    state: state,
     type: type as "peakbagging" | "trace",
   });
 

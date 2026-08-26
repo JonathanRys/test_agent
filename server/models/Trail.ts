@@ -33,8 +33,8 @@ export function initTrail(sequelize: Sequelize): void {
         type: DataTypes.TEXT,
         allowNull: true,
       },
-      state: {
-        type: DataTypes.STRING,
+      stateId: {
+        type: DataTypes.INTEGER,
         allowNull: true,
       },
       distance: {

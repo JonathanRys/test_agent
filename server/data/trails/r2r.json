@@ -2,7 +2,7 @@
   {
     "name": "Rim-to-rim",
     "description": "The Rim-to-Rim hike is a challenging and rewarding trek that takes you across the Grand Canyon from the North Rim to the South Rim. This iconic route offers breathtaking views, diverse landscapes, and a true sense of adventure.",
-    "state": "AZ",
+    "stateId": 3,
     "distance": 20.9,
     "elevationGain": 5938,
     "elevationLoss": 6933,

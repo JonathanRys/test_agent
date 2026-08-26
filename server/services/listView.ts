@@ -2,6 +2,7 @@ import { Sequelize } from "sequelize";
 import path from "path";
 import { fileURLToPath } from "url";
 import {
+  State,
   Mountain,
   Trail,
   List,
@@ -45,6 +46,13 @@ export async function getMountain(id: number): Promise<Mountain | null> {
       where: {
         id,
       },
+      include: [
+        {
+          model: State,
+          as: "state",
+          attributes: ["id", "name", "abbreviation"],
+        },
+      ],
     });
 
     if (!mountain) {
@@ -77,6 +85,13 @@ export async function getMountains(
     const mountains = await Mountain.findAll({
       where: whereQuery,
       order: [["height", "ASC"]],
+      include: [
+        {
+          model: State,
+          as: "state",
+          attributes: ["id", "name", "abbreviation"],
+        },
+      ],
     });
 
     return mountains;
@@ -96,6 +111,13 @@ export async function getTrail(id: number): Promise<Trail | null> {
       where: {
         id,
       },
+      include: [
+        {
+          model: State,
+          as: "state",
+          attributes: ["id", "name", "abbreviation"],
+        },
+      ],
     });
 
     if (!trail) {
@@ -122,7 +144,14 @@ export async function getTrails(filters: TrailFilters): Promise<Trail[]> {
 
     const trails = await Trail.findAll({
       where: whereQuery,
-      order: [["state", "ASC"]],
+      include: [
+        {
+          model: State,
+          as: "state",
+          order: [["state", "ASC"]],
+          attributes: ["id", "name", "abbreviation"],
+        },
+      ],
     });
 
     return trails;
@@ -157,16 +186,14 @@ export async function getList(id: number): Promise<List | null> {
 
 type ListFilters = {
   type?: List["type"];
-  state?: List["state"];
 };
 
 export async function getLists(filters: ListFilters): Promise<List[]> {
   try {
-    const { state, type } = filters;
+    const { type } = filters;
 
     const whereQuery: Record<string, string> = {};
 
-    if (state !== undefined) whereQuery.state = state;
     if (type !== undefined) whereQuery.type = type;
 
     const lists = await List.findAll({
@@ -189,21 +216,19 @@ export async function getMountainsOnList(listId: number): Promise<Mountain[]> {
   try {
     const mountains = await Mountain.findAll({
       order: [["height", "DESC"]],
-
-      where: Sequelize.literal(`
-    "Mountain"."id" IN (
-      SELECT "mountainId" 
-      FROM "MountainLists" 
-      WHERE "listId" = ${Number(listId)}
-    )
-  `),
       include: [
         {
-          model: List, // Pluralizes to 'Lists' automatically
-          attributes: ["id", "name", "abbreviation"], // Only grab what you need
+          model: List,
+          attributes: ["id", "name", "abbreviation"],
+          where: { id: listId },
           through: {
-            attributes: [], // Keeps the join table columns out of the payload
+            attributes: [],
           },
+        },
+        {
+          model: State,
+          as: "state",
+          attributes: ["id", "name", "abbreviation"],
         },
       ],
     });
@@ -224,6 +249,11 @@ export async function getTrailsOnList(listId: number): Promise<Trail[]> {
           where: { id: listId },
           through: { attributes: [] },
           required: true,
+        },
+        {
+          model: State,
+          as: "state",
+          attributes: ["id", "name", "abbreviation"],
         },
       ],
     });

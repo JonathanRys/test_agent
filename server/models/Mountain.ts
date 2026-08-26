@@ -38,8 +38,8 @@ export function initMountain(sequelize: Sequelize): void {
         type: DataTypes.FLOAT,
         allowNull: true,
       },
-      state: {
-        type: DataTypes.STRING,
+      stateId: {
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       range: {

@@ -2,131 +2,131 @@
   {
     "name": "Cadillac (Green)",
     "height": 1530,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Sargent",
     "height": 1373,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Dorr (Flying Squadron)",
     "height": 1270,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Pemetic",
     "height": 1248,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Penobscot (Jordan)",
     "height": 1194,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Bernard (of Western)",
     "height": 1071,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Champlain (Newport)",
     "height": 1058,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Gilmore",
     "height": 1036,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Bald",
     "height": 974,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Mansell (of Western)",
     "height": 949,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Cedar Swamp",
     "height": 942,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Parkman (Little Brown)",
     "height": 941,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "North Bubble",
     "height": 872,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Norumbega (Brown)",
     "height": 852,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Beech",
     "height": 839,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "South Bubble",
     "height": 766,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Huguenot Head (Picket)",
     "height": 731,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "The Triad",
     "height": 698,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Acadia (Robinson)",
     "height": 681,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "St. Sauveur (Dog)",
     "height": 679,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Conners Nubble",
     "height": 588,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Day",
     "height": 580,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Gorham",
     "height": 525,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "The Beehive",
     "height": 520,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Kebo",
     "height": 407,
-    "state": "ME"
+    "stateId": 20
   },
   {
     "name": "Flying",
     "height": 284,
-    "state": "ME"
+    "stateId": 20
   }
 ]

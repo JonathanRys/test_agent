@@ -2,111 +2,155 @@
   {
     "name": "South Brother",
     "height": 3970,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.94421,
+    "lon": -69.00172
   },
   {
     "name": "Snow Mountain - Franklin County",
     "height": 3960,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.29149,
+    "lon": -70.7093
   },
   {
     "name": "Pico Peak",
     "height": 3957,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 43.63943,
+    "lon": -72.83642
   },
   {
     "name": "Stratton Mountain",
     "height": 3940,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 43.08621,
+    "lon": -72.92497
   },
   {
     "name": "Goose Eye Mountain",
     "height": 3870,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 44.50272,
+    "lon": -70.9994
   },
   {
     "name": "Fort Mountain",
     "height": 3861,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.96204,
+    "lon": -68.97479
   },
   {
     "name": "Jay Peak",
     "height": 3858,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 44.92423,
+    "lon": -72.52569
   },
   {
     "name": "White Cap Mountain",
     "height": 3856,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.23589,
+    "lon": -70.81839
   },
   {
     "name": "Boundary Peak",
     "height": 3855,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.26702,
+    "lon": -70.84126
   },
   {
     "name": "Equinox Mountain",
     "height": 3850,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 43.16608,
+    "lon": -73.11841
   },
   {
     "name": "Mendon Peak",
     "height": 3850,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 43.59522,
+    "lon": -72.84652
   },
   {
     "name": "Bread Loaf Mountain",
     "height": 3835,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 44.00228,
+    "lon": -72.94149
   },
   {
     "name": "Mount Bigelow, South Horn",
     "height": 3805,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.14505,
+    "lon": -70.32304
   },
   {
     "name": "Mount Coe",
     "height": 3795,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.93366,
+    "lon": -69.0092
   },
   {
     "name": "East Kennebago Mountain",
     "height": 3791,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.12145,
+    "lon": -70.60033
   },
   {
     "name": "Mount Wilson",
     "height": 3790,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 44.00478,
+    "lon": -72.92594
   },
   {
     "name": "Big Jay",
     "height": 3786,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 44.9151,
+    "lon": -72.5406
   },
   {
     "name": "Snow Mountain - Oxford County",
     "height": 3784,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.16978,
+    "lon": -70.82731
   },
   {
     "name": "Baldpate Mountain",
     "height": 3780,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 44.60842,
+    "lon": -70.89445
   },
   {
     "name": "Kennebago Divide",
     "height": 3775,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 45.22268,
+    "lon": -70.81519
   },
   {
     "name": "Elephant Mountain",
     "height": 3772,
-    "state": "ME"
+    "stateId": 20,
+    "lat": 44.76805,
+    "lon": -70.78212
   },
   {
     "name": "Dorset Mountain",
     "height": 3770,
-    "state": "VT"
+    "stateId": 47,
+    "lat": 43.30933,
+    "lon": -73.02818
   }
 ]

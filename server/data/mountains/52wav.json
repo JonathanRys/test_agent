@@ -3,7 +3,7 @@
     "name": "Sandwich Dome",
     "height": 3993,
     "prominence": 2553,
-    "state": "NH",
+    "stateId": 30,
     "range": "Sandwich",
     "bushwhack": false,
     "notes": "Near Waterville Valley, NH. Various trails."
@@ -11,18 +11,18 @@
   {
     "name": "Mt. Starr King",
     "height": "3915",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Webster",
     "height": "3910",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Horn (Cabot)",
     "height": 3905,
     "prominence": 253,
-    "state": "NH",
+    "stateId": 30,
     "range": "Pilot",
     "bushwhack": false,
     "notes": "On the Kilkenny Ridge Trail."
@@ -31,7 +31,7 @@
     "name": "Shelburne Moriah Mountain",
     "height": 3735,
     "prominence": 1035,
-    "state": "NH",
+    "stateId": 30,
     "range": "Mahoosuc",
     "bushwhack": false,
     "notes": "On the Kenduskeag Trail."
@@ -40,7 +40,7 @@
     "name": "Sugarloaf (Groveton)",
     "height": 3710,
     "prominence": 1290,
-    "state": "NH",
+    "stateId": 30,
     "range": "North Country",
     "bushwhack": false,
     "notes": "On the Sugarloaf Mountain Trail."
@@ -49,7 +49,7 @@
     "name": "North Baldface",
     "height": 3610,
     "prominence": 1260,
-    "state": "NH",
+    "stateId": 30,
     "range": "Royce-Baldface",
     "bushwhack": false,
     "notes": "On the Baldface Circle Trail."
@@ -57,13 +57,13 @@
   {
     "name": "Mt. Success",
     "height": "3592",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "South Baldface",
     "height": 3570,
     "prominence": 304,
-    "state": "NH",
+    "stateId": 30,
     "range": "Royce-Baldface",
     "bushwhack": false,
     "notes": "On the Baldface Circle Trail."
@@ -72,7 +72,7 @@
     "name": "Cherry (Owl's Head)",
     "height": 3563,
     "prominence": 150,
-    "state": "NH",
+    "stateId": 30,
     "range": "Pliny",
     "bushwhack": false,
     "notes": "On the Cherry Mountain Trail."
@@ -80,221 +80,229 @@
   {
     "name": "Jennings Peak",
     "height": "3493",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Chocorua",
     "height": "3490",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Stairs Mountain",
     "height": "3469",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Avalon",
     "height": "3461",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Resolution",
     "height": "3426",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Percy Peaks, North Peak",
     "height": "3415",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Magalloway Mountain",
     "height": "3385",
-    "state": "NH"
+    "stateId": 30,
+    "lat": 45.06353,
+    "lon": -71.16235
   },
   {
     "name": "Tremont",
     "height": "3384",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Middle Sister",
     "height": "3340",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Kearsarge North (Chatham, NH)",
     "height": "3269",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Smarts Mountain",
     "height": "3238",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "North Moat Mountain",
     "height": "3203",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Monadnock",
     "height": "3170",
-    "state": "NH"
+    "stateId": 30,
+    "lat": 42.86109,
+    "lon": -72.10829
   },
   {
     "name": "Imp Face",
     "height": "3165",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Cardigan",
     "height": "3149",
-    "state": "NH"
+    "stateId": 30,
+    "lat": 43.64957,
+    "lon": -71.91427
   },
   {
     "name": "Crawford",
     "height": "3128",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Paugus (South Peak)",
     "height": "3100",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "North Doublehead",
     "height": "3051",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "South Doublehead",
     "height": "2939",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Eagle Crag / Meader",
     "height": "3020",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Parker",
     "height": "3013",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Shaw",
     "height": "2990",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Roger's Ledge",
     "height": "2965",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Eastman Mountain",
     "height": "2938",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Kearsarge Mountain (Warner, NH)",
     "height": "2935",
-    "state": "NH"
+    "stateId": 30,
+    "lat": 43.38345,
+    "lon": -71.85709
   },
   {
     "name": "Cube",
     "height": "2916",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Stinson Mountain",
     "height": "2890",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Willard",
     "height": "2850",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Black Mountain, Benton, NH",
     "height": "2829",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "South Moat Mountain",
     "height": "2772",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Potash Mountain",
     "height": "2691",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Table Mtn.",
     "height": "2669",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Blueberry Mountain",
     "height": "2663",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Israel",
     "height": "2636",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Welch Mountain",
     "height": "2598",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Dickey Mountain",
     "height": "2722",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Roberts",
     "height": "2582",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Hayes",
     "height": "2555",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Pemigewasset",
     "height": "2557",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Hedgehog Mountain",
     "height": "2532",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Middle Sugarloaf",
     "height": "2539",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Pine Mtn. (Gorham)",
     "height": "2404",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Mt. Morgan",
     "height": "2213",
-    "state": "NH"
+    "stateId": 30
   },
   {
     "name": "Mt. Percival",
     "height": "2200",
-    "state": "NH"
+    "stateId": 30
   }
 ]

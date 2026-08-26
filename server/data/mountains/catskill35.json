@@ -3,245 +3,245 @@
     "name": "Slide",
     "height": 4180,
     "distance": 5.86,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Hunter",
     "height": 4040,
     "distance": 6.26,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Blackdome",
     "height": 3980,
     "distance": 5.12,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Blackhead",
     "height": 3940,
     "distance": 5.92,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Thomas Cole",
     "height": 3940,
     "distance": 6.12,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "West Kill",
     "height": 3980,
     "distance": 6.4,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Graham",
     "height": 3868,
     "distance": 8.3,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Cornell",
     "height": 3860,
     "distance": 8.85,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "DoubleTop",
     "height": 3860,
     "distance": 9,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Table",
     "height": 3847,
     "distance": 7.5,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Peekamoose",
     "height": 3843,
     "distance": 9.1,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Plateau",
     "height": 3840,
     "distance": 7.31,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Sugarloaf",
     "height": 3800,
     "distance": 6.69,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Wittenberg",
     "height": 3780,
     "distance": 7.14,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Leavitt",
     "height": 3740,
     "distance": 7.07,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Lone",
     "height": 3721,
     "distance": 6.68,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Balsam Lake",
     "height": 3720,
     "distance": 5.8,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Panther",
     "height": 3720,
     "distance": 6.87,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Big Indian Mtn",
     "height": 3700,
     "distance": 9.12,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Friday",
     "height": 3694,
     "distance": 7.69,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Rusk",
     "height": 3680,
     "distance": 3.66,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Kaaterskill High Peak",
     "height": 3655,
     "distance": 8.23,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Twin",
     "height": 3640,
     "distance": 6.02,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Balsam Cap",
     "height": 3623,
     "distance": 7.69,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Fir",
     "height": 3620,
     "distance": 7.8,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "North Dome",
     "height": 3610,
     "distance": 4.96,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Balsam",
     "height": 3600,
     "distance": 5.51,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Bearpen",
     "height": 3600,
     "distance": 5,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Eagle",
     "height": 3600,
     "distance": 7.86,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Indian Head",
     "height": 3573,
     "distance": 4.62,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Sherrill",
     "height": 3540,
     "distance": 5.75,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Vly",
     "height": 3529,
     "distance": 3.56,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Windham High Peak",
     "height": 3524,
     "distance": 6.2,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Halcott",
     "height": 3520,
     "distance": 4,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   },
   {
     "name": "Rocky",
     "height": 3508,
     "distance": 9.69,
-    "state": "NY",
+    "stateId": 33,
     "range": "Catskill"
   }
 ]
