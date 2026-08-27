@@ -10,6 +10,8 @@ import {
   getMountainsOnList,
   getTrailsOnList,
   createAdventure,
+  editAdventure,
+  deleteAdventure,
 } from "../services/listView.js";
 
 const payloadSchema = z.object({
@@ -30,6 +32,27 @@ const createAdventureSchema = z
       (value.mountainIds?.length ?? 0) > 0 || (value.trailIds?.length ?? 0) > 0,
     { message: "Provide at least one mountainId or trailId" },
   );
+
+const editAdventureSchema = z
+  .object({
+    id: z.number().int().positive(),
+    activityDate: z.string().min(1),
+    mountainId: z.number().int().positive().optional(),
+    trailId: z.number().int().positive().optional(),
+  })
+  .refine((value) => value.mountainId || value.trailId, {
+    message: "Provide at least one mountainId or trailId",
+  });
+
+const deleteAdventureSchema = z
+  .object({
+    id: z.number().int().positive(),
+    mountainId: z.number().int().positive().optional(),
+    trailId: z.number().int().positive().optional(),
+  })
+  .refine((value) => value.mountainId || value.trailId, {
+    message: "Provide at least one mountainId or trailId",
+  });
 
 export const listViewRouter = Router();
 
@@ -155,6 +178,37 @@ listViewRouter.get(
 listViewRouter.post("/adventures", async (req: Request, res: Response) => {
   const payload = createAdventureSchema.parse(req.body);
   const adventure = await createAdventure(payload);
+
+  res.status(201).json(adventure);
+  return res;
+});
+
+listViewRouter.patch("/adventure/:id", async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  if (typeof id !== "string") {
+    return res.status(400).json({ error: "Invalid query parameter format" });
+  }
+
+  const payload = editAdventureSchema.parse({ id: parseInt(id), ...req.body });
+  const adventure = await editAdventure(payload);
+
+  res.status(201).json(adventure);
+  return res;
+});
+
+listViewRouter.delete("/adventure/:id", async (req: Request, res: Response) => {
+  const { id } = req.params;
+
+  if (typeof id !== "string") {
+    return res.status(400).json({ error: "Invalid query parameter format" });
+  }
+
+  const payload = deleteAdventureSchema.parse({
+    id: parseInt(id),
+    ...req.body,
+  });
+  const adventure = await deleteAdventure(payload);
 
   res.status(201).json(adventure);
   return res;

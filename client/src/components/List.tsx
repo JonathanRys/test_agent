@@ -54,8 +54,8 @@ const List = (props: ListProps) => {
       </h2>
       <p>{props.description}</p>
       {typeof totalCount === "number" && typeof completedCount === "number" && (
-        <p className="list-progress">
-          {completedCount} / {totalCount} complete
+        <p className={`list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}>
+          {completedCount} / {totalCount} {completedCount !== totalCount &&(`(${Math.round(completedCount / totalCount * 100)}%)`)} complete
         </p>
       )}
       <ContactForm

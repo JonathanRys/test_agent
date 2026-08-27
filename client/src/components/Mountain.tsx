@@ -5,10 +5,8 @@ import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
 import StateIcon from "./State";
 import Map from "./Map";
-import MarkComplete, {
-  earliestCompletedAt,
-  formatCompletedDate,
-} from "./MarkComplete";
+import MarkComplete, { earliestCompletedAt } from "./MarkComplete";
+import CompletionDate, { earliestCompletedId } from "./CompletionDate";
 
 type List = {
   id: number;
@@ -31,7 +29,7 @@ export interface MountainProps {
   lat?: number;
   lon?: number;
   expanded: boolean;
-  Summits?: Array<{ completedAt: string }>;
+  Summits?: Array<{ id: number; completedAt: string }>;
   onComplete?: () => void;
 }
 
@@ -67,6 +65,7 @@ const Mountain = (props: MountainProps) => {
 
   const [showMap, setShowMap] = useState<boolean>(false);
   const [mountainExpanded, setMountainExpanded] = useState<boolean>(expanded);
+  const [editing, setEditing] = useState<boolean>(false);
 
   const bushwhackIcon = bushwhack ? (
     <MdForest title="Bushwhack" />
@@ -76,6 +75,7 @@ const Mountain = (props: MountainProps) => {
 
   const mountainIcon = <FaMountain title="Mountain" />;
   const completedAt = earliestCompletedAt(Summits);
+  const adventureId = earliestCompletedId(Summits);
 
   return (
     <div
@@ -115,13 +115,23 @@ const Mountain = (props: MountainProps) => {
           {distance && <p>Distance: {distance} mi</p>}
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
-          {completedAt ? (
-            <p className="completion-date">
-              Hiked {formatCompletedDate(completedAt)}
-            </p>
+          {completedAt && adventureId ? (
+            <CompletionDate
+              adventureId={adventureId}
+              mountainId={id}
+              name={name}
+              completedAt={completedAt}
+              editing={editing}
+              setEditing={setEditing}
+              onComplete={onComplete}
+            />
           ) : (
             onComplete && (
-              <MarkComplete name={name} mountainId={id} onComplete={onComplete} />
+              <MarkComplete
+                name={name}
+                mountainId={id}
+                onComplete={onComplete}
+              />
             )
           )}
           {lat && lon && showMap ? (

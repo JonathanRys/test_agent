@@ -87,7 +87,7 @@ export default function ListItems(props: ListItemsProps) {
       {typeof totalCount === "number" &&
         typeof completedCount === "number" &&
         !loading && (
-        <p className="centered list-progress">
+        <p className={`centered list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}>
           {items.filter((item) =>
             type === "trace"
               ? item.TrailCompletions?.length

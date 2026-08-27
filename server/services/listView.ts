@@ -297,11 +297,17 @@ export async function getMountainsOnList(listId: number): Promise<Mountain[]> {
     await ensureInitialized();
     const mountains = await Mountain.findAll({
       order: [["height", "DESC"]],
+      where: Sequelize.literal(`
+        "Mountain"."id" IN (
+          SELECT "MountainId" FROM "MountainLists"
+          WHERE "listId" = :listIdValue
+        )
+      `),
+      replacements: { listIdValue: Number(listId) },
       include: [
         {
           model: List,
           attributes: ["id", "name", "abbreviation"],
-          where: { id: listId },
           through: {
             attributes: [],
           },
@@ -407,5 +413,116 @@ export async function createAdventure(
     }
 
     return adventure;
+  });
+}
+
+export type EditAdventureInput = {
+  id: number;
+  activityDate: Date | string;
+  mountainId?: number;
+  trailId?: number;
+};
+
+export async function editAdventure(
+  input: EditAdventureInput,
+): Promise<{ affectedCount: number[]; adventure: Adventure | null }> {
+  await ensureInitialized();
+
+  const activityDate = new Date(input.activityDate);
+  const mountainId = input.mountainId ?? null;
+  const trailId = input.trailId ?? null;
+
+  return sequelize.transaction(async (transaction) => {
+    const adventure = await Adventure.findByPk(input.id);
+
+    const affectedCount = await Adventure.update(
+      { activityDate },
+      {
+        where: {
+          id: input.id,
+        },
+        transaction,
+      },
+    );
+
+    if (mountainId) {
+      await Summit.update(
+        {
+          completedAt: activityDate,
+        },
+        {
+          where: {
+            adventureId: input.id,
+            mountainId,
+          },
+          transaction,
+        },
+      );
+    }
+
+    if (trailId) {
+      await TrailCompletion.update(
+        {
+          completedAt: activityDate,
+        },
+        {
+          where: {
+            adventureId: input.id,
+            trailId,
+          },
+          transaction,
+        },
+      );
+    }
+
+    return { affectedCount, adventure };
+  });
+}
+
+export type DeleteAdventureInput = {
+  id: number;
+  mountainId?: number;
+  trailId?: number;
+};
+
+export async function deleteAdventure(
+  input: DeleteAdventureInput,
+): Promise<{ affectedCount: number; adventure: Adventure | null }> {
+  await ensureInitialized();
+
+  const mountainId = input.mountainId ?? null;
+  const trailId = input.trailId ?? null;
+
+  return sequelize.transaction(async (transaction) => {
+    const adventure = await Adventure.findByPk(input.id);
+
+    const affectedCount = await Adventure.destroy({
+      where: {
+        id: input.id,
+      },
+      transaction,
+    });
+
+    if (mountainId) {
+      await Summit.destroy({
+        where: {
+          adventureId: input.id,
+          mountainId,
+        },
+        transaction,
+      });
+    }
+
+    if (trailId) {
+      await TrailCompletion.destroy({
+        where: {
+          adventureId: input.id,
+          trailId,
+        },
+        transaction,
+      });
+    }
+
+    return { affectedCount, adventure };
   });
 }

@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { SubmitEvent, useState } from "react";
 
 const HIKING_ACTIVITY_ID = 1;
 
@@ -21,7 +21,7 @@ export default function MarkComplete(props: MarkCompleteProps) {
 
   const label = mountainId ? "Mark hiked" : "Mark completed";
 
-  const submit = async (event: FormEvent) => {
+  const submit = async (event: SubmitEvent) => {
     event.preventDefault();
     event.stopPropagation();
     setSaving(true);
@@ -54,7 +54,11 @@ export default function MarkComplete(props: MarkCompleteProps) {
   };
 
   return (
-    <form className="mark-complete" onClick={(event) => event.stopPropagation()} onSubmit={submit}>
+    <form
+      className="mark-complete"
+      onClick={(event) => event.stopPropagation()}
+      onSubmit={submit}
+    >
       <label>
         Date
         <input
@@ -79,9 +83,7 @@ export function earliestCompletedAt(
     return null;
   }
 
-  return [...completions]
-    .map((completion) => completion.completedAt)
-    .sort()[0];
+  return [...completions].map((completion) => completion.completedAt).sort()[0];
 }
 
 export function formatCompletedDate(value: string) {
@@ -90,5 +92,14 @@ export function formatCompletedDate(value: string) {
     return value.slice(0, 10);
   }
 
-  return date.toLocaleDateString();
+  // Use UTC methods to prevent timezone shifting
+  return new Date(
+    date.getUTCFullYear(),
+    date.getUTCMonth(),
+    date.getUTCDate(),
+  ).toLocaleDateString();
+}
+
+export function completionDateToInputValue(value: string) {
+  return new Date(value).toISOString().slice(0, 10);
 }

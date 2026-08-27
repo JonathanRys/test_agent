@@ -411,7 +411,7 @@
     "prominence": 140,
     "stateId": 30,
     "range": "Pilot",
-    "bushwhack": false,
+    "bushwhack": true,
     "notes": "Bushwhack from the Kilkenny Ridge Trail near Unknown Pond."
   }
 ]
