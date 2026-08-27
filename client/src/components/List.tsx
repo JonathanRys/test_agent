@@ -1,9 +1,9 @@
 import { GiTrail, GiHiking } from "react-icons/gi";
-import { FaAward, FaTrophy, FaMedal } from "react-icons/fa";
+import { FaMedal } from "react-icons/fa";
 import { FaMountain, FaPersonHiking } from "react-icons/fa6";
 
 import ContactForm from "./ContactForm";
-import { State } from "../types/State";
+import { formatCompletedDate } from "./MarkComplete";
 
 export interface ListProps {
   id: number;
@@ -20,9 +20,11 @@ export interface ListProps {
   instagram?: string;
   totalCount?: number;
   completedCount?: number;
+  completedDate?: string;
 }
 
 const List = (props: ListProps) => {
+  console.log(props);
   const {
     type,
     patchAvailable,
@@ -34,6 +36,7 @@ const List = (props: ListProps) => {
     instagram,
     totalCount,
     completedCount,
+    completedDate,
   } = props;
 
   const typeIcon =
@@ -43,6 +46,7 @@ const List = (props: ListProps) => {
       <GiTrail title="Tracing list" />
     );
   const patchIcon = patchAvailable ? <FaMedal title="Patch available" /> : null;
+  const completed = completedCount === totalCount;
 
   return (
     <div>
@@ -54,8 +58,16 @@ const List = (props: ListProps) => {
       </h2>
       <p>{props.description}</p>
       {typeof totalCount === "number" && typeof completedCount === "number" && (
-        <p className={`list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}>
-          {completedCount} / {totalCount} {completedCount !== totalCount &&(`(${Math.round(completedCount / totalCount * 100)}%)`)} complete
+        <p
+          className={`list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}
+        >
+          {completedCount} / {totalCount}{" "}
+          {!completed &&
+            `(${Math.round((completedCount / totalCount) * 100)}%)`}{" "}
+          complete
+          {completed &&
+            completedDate &&
+            ` on ${formatCompletedDate(completedDate)}`}
         </p>
       )}
       <ContactForm

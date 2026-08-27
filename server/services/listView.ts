@@ -235,51 +235,77 @@ export async function getLists(
       await Promise.all([
         MountainList.findAll({ attributes: ["listId", "mountainId"] }),
         TrailList.findAll({ attributes: ["listId", "trailId"] }),
-        Summit.findAll({ attributes: ["mountainId"] }),
-        TrailCompletion.findAll({ attributes: ["trailId"] }),
+        Summit.findAll({ attributes: ["mountainId", "completedAt"] }),
+        TrailCompletion.findAll({ attributes: ["trailId", "completedAt"] }),
       ]);
-
-    const completedMountainIds = new Set(
-      summits.map((summit) => summit.mountainId),
-    );
-    const completedTrailIds = new Set(
-      trailCompletions.map((completion) => completion.trailId),
-    );
-
-    const mountainsByList = new Map<number, number[]>();
-    for (const link of mountainLinks) {
-      const ids = mountainsByList.get(link.listId) ?? [];
-      ids.push(link.mountainId);
-      mountainsByList.set(link.listId, ids);
-    }
-
-    const trailsByList = new Map<number, number[]>();
-    for (const link of trailLinks) {
-      const ids = trailsByList.get(link.listId) ?? [];
-      ids.push(link.trailId);
-      trailsByList.set(link.listId, ids);
-    }
 
     return lists.map((list) => {
       const json = list.toJSON() as List;
+
       if (list.type === "trace") {
+        // Trail
+        const completedTrailIds = new Set(
+          trailCompletions.map((completion) => completion.trailId),
+        );
+
+        const trailsByList = new Map<number, number[]>();
+        for (const link of trailLinks) {
+          const ids = trailsByList.get(link.listId) ?? [];
+          ids.push(link.trailId);
+          trailsByList.set(link.listId, ids);
+        }
+
         const trailIds = trailsByList.get(list.id) ?? [];
+        const completedTrails = trailCompletions.filter((trailCompletion) =>
+          trailIds.includes(trailCompletion.trailId),
+        );
+
+        const completedTrailsDate =
+          completedTrails
+            .map((trail) => new Date(trail.completedAt).getTime())
+            .sort((a, b) => a - b)[0] || undefined;
+
         const completedCount = trailIds.filter((id) =>
           completedTrailIds.has(id),
         ).length;
         return Object.assign(json, {
           totalCount: trailIds.length,
           completedCount,
+          completedDate: completedTrailsDate,
         }) as ListWithProgress;
       }
 
+      /// Mountain
+      const completedMountainIds = new Set(
+        summits.map((summit) => summit.mountainId),
+      );
+
+      const mountainsByList = new Map<number, number[]>();
+      for (const link of mountainLinks) {
+        const ids = mountainsByList.get(link.listId) ?? [];
+        ids.push(link.mountainId);
+        mountainsByList.set(link.listId, ids);
+      }
+
       const mountainIds = mountainsByList.get(list.id) ?? [];
+
+      const completedSummits = summits.filter((summitCompletion) =>
+        mountainIds.includes(summitCompletion.mountainId),
+      );
+
+      const completedMountainsDate =
+        completedSummits
+          .map((summit) => summit.completedAt)
+          .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0] ||
+        undefined;
+
       const completedCount = mountainIds.filter((id) =>
         completedMountainIds.has(id),
       ).length;
       return Object.assign(json, {
         totalCount: mountainIds.length,
         completedCount,
+        completedDate: completedMountainsDate,
       }) as ListWithProgress;
     });
   } catch (error) {

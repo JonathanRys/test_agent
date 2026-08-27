@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
-import List from "./List";
+import List, { type ListProps } from "./List";
 import ListItems from "./ListItems";
 
 function scrollToTop() {
@@ -12,7 +12,7 @@ function scrollToTop() {
 
 export default function Lists() {
   const [selectedList, setSelectedList] = useState<number | null>(null);
-  const [lists, setLists] = useState<any[]>([]);
+  const [lists, setLists] = useState<ListProps[]>([]);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -46,6 +46,7 @@ export default function Lists() {
         if (!response.ok) {
           throw new Error(data.error ?? "Request failed");
         }
+        console.log(data);
         setLists(data);
       } catch (error) {
         console.error("Error fetching lists.", error);
