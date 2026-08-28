@@ -1,5 +1,13 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
 import type { FeatureCollection } from "geojson";
+
+interface DBModels {
+  State: ModelStatic<Model>;
+  TrailCompletion: ModelStatic<Model>;
+  List: ModelStatic<Model>;
+  TrailList: ModelStatic<Model>;
+}
 
 export class Trail extends Model {
   declare id: number;
@@ -15,6 +23,15 @@ export class Trail extends Model {
   declare endLon: number;
   declare gpx: FeatureCollection;
   declare embeddedGpx: string;
+  static associate(models: DBModels) {
+    this.hasMany(models.TrailCompletion, { foreignKey: "trailId" });
+    this.belongsTo(models.State, { foreignKey: "stateId", as: "state" });
+    this.belongsToMany(models.List, {
+      through: models.TrailList,
+      foreignKey: "trailId",
+      otherKey: "listId",
+    });
+  }
 }
 
 export function initTrail(sequelize: Sequelize): void {

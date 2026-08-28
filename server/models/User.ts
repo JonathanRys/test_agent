@@ -1,4 +1,14 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
+
+interface DBModels {
+  User: ModelStatic<Model>;
+  Session: ModelStatic<Model>;
+  Adventure: ModelStatic<Model>;
+  Summit: ModelStatic<Model>;
+  TrailCompletion: ModelStatic<Model>;
+  [key: string]: ModelStatic<Model>; // Fallback index signature
+}
 
 export class User extends Model {
   declare id: number;
@@ -10,6 +20,12 @@ export class User extends Model {
   declare createdAt: Date;
   declare updatedAt: Date;
   declare deletedAt: Date;
+  static associate(models: DBModels) {
+    this.hasMany(models.Session, { foreignKey: "userId" });
+    this.hasMany(models.Adventure, { foreignKey: "userId" });
+    this.hasMany(models.Summit, { foreignKey: "userId" });
+    this.hasMany(models.TrailCompletion, { foreignKey: "userId" });
+  }
 }
 
 export function initUser(sequelize: Sequelize): void {

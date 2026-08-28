@@ -17,6 +17,7 @@ import trw72 from "../data/mountains/trw72.json" with { type: "json" };
 import ca14ers from "../data/mountains/ca14ers.json" with { type: "json" };
 import co14ers from "../data/mountains/co14ers.json" with { type: "json" };
 import fireTowers from "../data/mountains/fireTowers.json" with { type: "json" };
+import highPointers from "../data/mountains/highPointers.json" with { type: "json" };
 
 // Trails
 import r2r from "../data/trails/r2r.json" with { type: "json" };
@@ -48,6 +49,7 @@ export default {
     await queryInterface.bulkInsert("mountains", ca14ers, {});
     await queryInterface.bulkInsert("mountains", co14ers, {});
     await queryInterface.bulkInsert("mountains", fireTowers, {});
+    await queryInterface.bulkInsert("mountains", highPointers, {});
 
     // Trails
     const processedR2rData = r2r.map((row) => ({

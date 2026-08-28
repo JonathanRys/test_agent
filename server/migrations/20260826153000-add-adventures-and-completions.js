@@ -1,5 +1,6 @@
 "use strict";
 
+import { createTableFromModel } from "../utils/migration.ts";
 import { Activity, initActivity } from "../models/Activity.ts";
 import { Adventure, initAdventure } from "../models/Adventure.ts";
 import { Summit, initSummit } from "../models/Summit.ts";
@@ -8,24 +9,14 @@ import {
   initTrailCompletion,
 } from "../models/TrailCompletion.ts";
 
-const createTableFromModel = async (queryInterface, model) => {
-  const tableName = model.tableName;
-  const attributes = model.getAttributes();
-
-  await queryInterface.createTable(tableName, attributes);
-};
-
 /** @type {import('sequelize-cli').Migration} */
 export default {
   async up(queryInterface) {
-    [
-      initActivity,
-      initAdventure,
-      initSummit,
-      initTrailCompletion,
-    ].forEach((initMethod) => {
-      initMethod(queryInterface.sequelize);
-    });
+    [initActivity, initAdventure, initSummit, initTrailCompletion].forEach(
+      (initMethod) => {
+        initMethod(queryInterface.sequelize);
+      },
+    );
 
     for (const model of [Activity, Adventure, Summit, TrailCompletion]) {
       await createTableFromModel(queryInterface, model);
@@ -33,14 +24,11 @@ export default {
   },
 
   async down(queryInterface) {
-    [
-      initActivity,
-      initAdventure,
-      initSummit,
-      initTrailCompletion,
-    ].forEach((initMethod) => {
-      initMethod(queryInterface.sequelize);
-    });
+    [initActivity, initAdventure, initSummit, initTrailCompletion].forEach(
+      (initMethod) => {
+        initMethod(queryInterface.sequelize);
+      },
+    );
 
     try {
       await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");

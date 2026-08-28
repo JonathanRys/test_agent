@@ -1,4 +1,12 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
+
+interface DBModels {
+  State: ModelStatic<Model>;
+  Summit: ModelStatic<Model>;
+  List: ModelStatic<Model>;
+  MountainList: ModelStatic<Model>;
+}
 
 export class Mountain extends Model {
   declare id: number;
@@ -12,6 +20,15 @@ export class Mountain extends Model {
   declare notes: string;
   declare lat: number;
   declare lon: number;
+  static associate(models: DBModels) {
+    this.hasMany(models.Summit, { foreignKey: "mountainId" });
+    this.belongsTo(models.State, { foreignKey: "stateId", as: "state" });
+    this.belongsToMany(models.List, {
+      through: models.MountainList,
+      foreignKey: "mountainId",
+      otherKey: "listId",
+    });
+  }
 }
 
 export function initMountain(sequelize: Sequelize): void {

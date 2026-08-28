@@ -206,5 +206,25 @@
   {
     "name": "Wyoming",
     "abbreviation": "WY"
+  },
+  {
+    "name": "American Samoa",
+    "abbreviation": "AS"
+  },
+  {
+    "name": "Guam",
+    "abbreviation": "GU"
+  },
+  {
+    "name": "Northern Marianas Islands",
+    "abbreviation": "MP"
+  },
+  {
+    "name": "Puerto Rico",
+    "abbreviation": "PR"
+  },
+  {
+    "name": "US Virgin Islands",
+    "abbreviation": "VI"
   }
 ]

@@ -1,4 +1,12 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
+
+interface DBModels {
+  Trail: ModelStatic<Model>;
+  Mountain: ModelStatic<Model>;
+  TrailList: ModelStatic<Model>;
+  MountainList: ModelStatic<Model>;
+}
 
 export class List extends Model {
   declare id: number;
@@ -13,6 +21,18 @@ export class List extends Model {
   declare mailingAddress: string;
   declare facebook: string;
   declare instagram: string;
+  static associate(models: DBModels) {
+    this.belongsToMany(models.Mountain, {
+      through: models.MountainList,
+      foreignKey: "listId",
+      otherKey: "mountainId",
+    });
+    this.belongsToMany(models.Trail, {
+      through: models.TrailList,
+      foreignKey: "listId",
+      otherKey: "trailId",
+    });
+  }
 }
 
 export function initList(sequelize: Sequelize): void {

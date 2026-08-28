@@ -46,7 +46,7 @@ export default function Lists() {
         if (!response.ok) {
           throw new Error(data.error ?? "Request failed");
         }
-        console.log(data);
+
         setLists(data);
       } catch (error) {
         console.error("Error fetching lists.", error);

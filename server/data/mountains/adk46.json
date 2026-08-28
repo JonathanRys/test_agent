@@ -4,7 +4,9 @@
     "height": 5344,
     "stateId": 33,
     "range": "Adirondack",
-    "bushwhack": false
+    "bushwhack": false,
+    "lat": 44.11278,
+    "lon": -73.9237
   },
   {
     "name": "Algonquin Peak",

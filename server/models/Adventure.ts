@@ -1,14 +1,29 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
+
+interface DBModels {
+  User: ModelStatic<Model>;
+  Activity: ModelStatic<Model>;
+  TrailCompletion: ModelStatic<Model>;
+  Summit: ModelStatic<Model>;
+}
 
 export class Adventure extends Model {
   declare id: number;
   declare name: string;
+  declare userId: number;
   declare activityId: number | null;
   declare activityDate: Date;
   declare activityTrack: unknown | null;
   declare createdAt: Date;
   declare updatedAt: Date;
   declare deletedAt: Date | null;
+  static associate(models: DBModels) {
+    this.belongsTo(models.User, { foreignKey: "userId" });
+    this.belongsTo(models.Activity, { foreignKey: "activityId" });
+    this.hasMany(models.TrailCompletion, { foreignKey: "adventureId" });
+    this.hasMany(models.Summit, { foreignKey: "adventureId" });
+  }
 }
 
 export function initAdventure(sequelize: Sequelize): void {
@@ -21,6 +36,10 @@ export function initAdventure(sequelize: Sequelize): void {
       },
       name: {
         type: DataTypes.STRING,
+        allowNull: false,
+      },
+      userId: {
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       activityId: {

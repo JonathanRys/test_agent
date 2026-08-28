@@ -1,4 +1,10 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
+import type { ModelStatic } from "sequelize";
+
+interface DBModels {
+  Session: ModelStatic<Model>;
+  Summary: ModelStatic<Model>;
+}
 
 export class Message extends Model {
   declare id: number;
@@ -6,6 +12,11 @@ export class Message extends Model {
   declare message: string;
   declare role: "user" | "assistant";
   declare createdAt: Date;
+  static associate(models: DBModels) {
+    this.belongsTo(models.Session, { foreignKey: "sessionId" });
+    this.hasMany(models.Summary, { foreignKey: "userMessageId" });
+    this.hasMany(models.Summary, { foreignKey: "assistantMessageId" });
+  }
 }
 
 export function initMessage(sequelize: Sequelize): void {

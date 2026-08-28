@@ -67,7 +67,7 @@ const List = (props: ListProps) => {
           complete
           {completed &&
             completedDate &&
-            ` on ${formatCompletedDate(completedDate)}`}
+            `d on ${formatCompletedDate(completedDate)}`}
         </p>
       )}
       <ContactForm
