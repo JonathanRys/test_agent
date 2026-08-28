@@ -4,6 +4,7 @@ import { createTableFromModel } from "../utils/migration.ts";
 import { Activity, initActivity } from "../models/Activity.ts";
 import { Adventure, initAdventure } from "../models/Adventure.ts";
 import { Summit, initSummit } from "../models/Summit.ts";
+import { State, initState } from "../models/State.ts";
 import {
   TrailCompletion,
   initTrailCompletion,
@@ -18,7 +19,7 @@ export default {
       },
     );
 
-    for (const model of [Activity, Adventure, Summit, TrailCompletion]) {
+    for (const model of [Activity, Adventure, TrailCompletion]) {
       await createTableFromModel(queryInterface, model);
     }
   },
@@ -33,7 +34,7 @@ export default {
     try {
       await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
 
-      for (const model of [TrailCompletion, Summit, Adventure, Activity]) {
+      for (const model of [TrailCompletion, Adventure, Activity]) {
         await queryInterface.dropTable(model.tableName);
       }
     } finally {

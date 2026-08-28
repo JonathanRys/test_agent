@@ -24,7 +24,6 @@ export interface ListProps {
 }
 
 const List = (props: ListProps) => {
-  console.log(props);
   const {
     type,
     patchAvailable,

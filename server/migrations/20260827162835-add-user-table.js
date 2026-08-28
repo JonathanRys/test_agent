@@ -42,15 +42,6 @@ export default {
       onDelete: "CASCADE",
     };
 
-    await queryInterface.addColumn(Session.tableName, "userId", columnConfig);
-    await queryInterface.addColumn(Adventure.tableName, "userId", columnConfig);
-    await queryInterface.addColumn(Summit.tableName, "userId", columnConfig);
-    await queryInterface.addColumn(
-      TrailCompletion.tableName,
-      "userId",
-      columnConfig,
-    );
-
     const [existingUsers] = await queryInterface.sequelize.query(
       `SELECT id FROM ${User.tableName} WHERE email = 'system@jonathanrys.com' LIMIT 1;`,
     );
@@ -145,15 +136,23 @@ export default {
   },
 
   async down(queryInterface, Sequelize) {
-    initUser(queryInterface.sequelize);
+    [
+      initUser,
+      initSession,
+      initAdventure,
+      initSummit,
+      initTrailCompletion,
+    ].forEach((initMethod) => {
+      initMethod(queryInterface.sequelize);
+    });
 
     try {
       await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
 
-      await queryInterface.removeColumn(Session, "userId");
-      await queryInterface.removeColumn(Adventure, "userId");
-      await queryInterface.removeColumn(Summit, "userId");
-      await queryInterface.removeColumn(TrailCompletion, "userId");
+      await queryInterface.removeColumn(Session.tableName, "userId");
+      await queryInterface.removeColumn(Adventure.tableName, "userId");
+      await queryInterface.removeColumn(Summit.tableName, "userId");
+      await queryInterface.removeColumn(TrailCompletion.tableName, "userId");
 
       await queryInterface.dropTable(User.tableName);
     } finally {
