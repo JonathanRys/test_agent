@@ -136,6 +136,10 @@ h1 {
   cursor: wait;
 }
 
+.normal-cursor {
+  cursor: default;
+}
+
 .chat-window {
   display: flex;
   flex-direction: column;

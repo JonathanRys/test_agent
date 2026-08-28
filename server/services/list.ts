@@ -14,6 +14,7 @@ import {
   SeasonWithDates,
   DateRange,
 } from "./types.js";
+import { getSeasonForDate, transformSeasons } from "../utils/listHelpers.js";
 
 export async function getList(id: number): Promise<List | null> {
   try {
@@ -67,64 +68,9 @@ export async function getLists(
         }),
       ]);
 
-    const globalSeasonsMap = new Map<number, SeasonWithDates>(
-      seasonDates.map((seasonModel) => {
-        // TODO: extract to utils
-        const json = seasonModel.toJSON() as any;
-        const seasonDatesArray = (json.SeasonDates || []) as Array<{
-          startDate: string;
-          endDate: string;
-        }>;
-
-        const formatDate = (dateInput: any): string => {
-          if (!dateInput) return "";
-          const parsedDate = new Date(dateInput);
-          if (isNaN(parsedDate.getTime())) return "";
-          return parsedDate.toISOString().split("T")[0];
-        };
-
-        // 1. Map over all 50+ entries to build an array of clean date range strings
-        const ranges: DateRange[] = seasonDatesArray
-          .map((dateBlock) => ({
-            startDate: formatDate(dateBlock.startDate),
-            endDate: formatDate(dateBlock.endDate),
-          }))
-          .filter((range) => range.startDate !== "" && range.endDate !== ""); // Clear out bad values
-
-        return [
-          seasonModel.id,
-          {
-            id: json.id,
-            name: json.name,
-            ranges, // 2. Store the full collection of intervals safely inside this season key
-          } satisfies SeasonWithDates,
-        ];
-      }),
+    const seasonsMap = new Map<number, SeasonWithDates>(
+      seasonDates.map(transformSeasons),
     );
-
-    const getSeasonForDate = (
-      completedAtStr: string | Date | undefined,
-    ): string | undefined => {
-      if (!completedAtStr) return undefined;
-
-      // Format standard completion target date string into YYYY-MM-DD
-      const compDateStr = new Date(completedAtStr).toISOString().split("T")[0];
-
-      // Loop through all seasons (Spring, Summer, Autumn, Winter) inside our configuration map
-      for (const season of globalSeasonsMap.values()) {
-        // Check if the timestamp hits ANY historical year range entry for this specific season
-        const matchesSeason = season.ranges.some(
-          (range) =>
-            compDateStr >= range.startDate && compDateStr <= range.endDate,
-        );
-
-        if (matchesSeason) {
-          return season.name; // Return "Summer", "Winter", etc. immediately upon match
-        }
-      }
-
-      return undefined;
-    };
 
     return lists.map((list) => {
       const json = list.toJSON() as List;
@@ -143,19 +89,25 @@ export async function getLists(
         }
 
         const trailIds = trailsByList.get(list.id) ?? [];
-        const completedTrails = trailCompletions.filter((trailCompletion) =>
-          trailIds.includes(trailCompletion.trailId),
+
+        const filteredTrailCompletions = trailCompletions.filter((tc) =>
+          trailIds.includes(tc.trailId),
         );
 
-        const completedTrailsWithSeason = trailCompletions
-          .filter((tc) => trailIds.includes(tc.trailId))
-          .map((tc) => ({
-            ...tc.toJSON(), // Grab original data model properties cleanly
-            season: getSeasonForDate(tc.completedAt), // Append calculated season name string field
-          }));
+        const completedTrailsWithSeason = filteredTrailCompletions.reduce(
+          (acc, cur) => {
+            const rawTrailCompletion = cur.toJSON();
+            acc[rawTrailCompletion.trailId] = {
+              season: getSeasonForDate(seasonsMap, cur.completedAt),
+              completedAt: rawTrailCompletion.completedAt,
+            };
+            return acc;
+          },
+          {} as Record<number, { season?: string; completedAt: string }>,
+        );
 
         const completedTrailsDate =
-          completedTrailsWithSeason
+          filteredTrailCompletions
             .map((trail) => new Date(trail.completedAt).getTime())
             .sort((a, b) => a - b)[0] || undefined;
 
@@ -184,15 +136,24 @@ export async function getLists(
 
       const mountainIds = mountainsByList.get(list.id) ?? [];
 
-      const completedSummitsWithSeason = summits
-        .filter((summit) => mountainIds.includes(summit.mountainId))
-        .map((summit) => ({
-          ...summit.toJSON(), // Grab original data model properties cleanly
-          season: getSeasonForDate(summit.completedAt), // Append calculated season name string field
-        }));
+      const filteredSummits = summits.filter((summit) =>
+        mountainIds.includes(summit.mountainId),
+      );
+
+      const completedSummitsWithSeason = filteredSummits.reduce(
+        (acc, cur) => {
+          const rawSummit = cur.toJSON();
+          acc[rawSummit.mountainId] = {
+            season: getSeasonForDate(seasonsMap, cur.completedAt),
+            completedAt: rawSummit.completedAt,
+          };
+          return acc;
+        },
+        {} as Record<number, { season?: string; completedAt: string }>,
+      );
 
       const completedMountainsDate =
-        completedSummitsWithSeason
+        filteredSummits
           .map((summit) => summit.completedAt)
           .sort((a, b) => new Date(b).getTime() - new Date(a).getTime())[0] ||
         undefined;

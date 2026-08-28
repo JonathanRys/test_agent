@@ -1,7 +1,7 @@
 import { useState } from "react";
 import type { List } from "../types/List";
 import type { Mountain as MountainType } from "../types/Mountain";
-import { MdArrowDropDown, MdForest } from "react-icons/md";
+import { MdArrowDropDown, MdArrowDropUp, MdForest } from "react-icons/md";
 import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
 import StateIcon from "./State";
@@ -19,7 +19,7 @@ const ListBubble = (props: List) => {
   const { name, abbreviation } = props;
 
   return (
-    <span className="meta-pill" title={name}>
+    <span className="meta-pill normal-cursor" title={name}>
       {abbreviation}
     </span>
   );
@@ -117,7 +117,19 @@ const Mountain = (props: MountainProps) => {
             )
           )}
           {lat && lon && showMap ? (
-            <Map lat={lat} lon={lon} />
+            <>
+              {" "}
+              <div
+                className="centered clickable"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setShowMap(false);
+                }}
+              >
+                <MdArrowDropUp style={{ fontSize: "24px" }} />
+              </div>
+              <Map lat={lat} lon={lon} />
+            </>
           ) : (
             lat &&
             lon && (
@@ -129,7 +141,7 @@ const Mountain = (props: MountainProps) => {
                 }}
               >
                 Show on Map&nbsp;
-                <MdArrowDropDown />
+                <MdArrowDropDown style={{ fontSize: "24px" }} />
               </div>
             )
           )}

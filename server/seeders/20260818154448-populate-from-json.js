@@ -34,6 +34,10 @@ export default {
   async up(queryInterface, Sequelize) {
     // States
     await queryInterface.bulkInsert("states", states, {});
+    console.log("adding lists");
+    // Lists
+    await queryInterface.bulkInsert("lists", lists, {});
+    console.log("adding mountains");
 
     // Mountains
     await queryInterface.bulkInsert("mountains", fiftyTwoWav, {});
@@ -58,9 +62,6 @@ export default {
     }));
 
     await queryInterface.bulkInsert("trails", processedR2rData, {});
-
-    // Lists
-    await queryInterface.bulkInsert("lists", lists, {});
 
     // Connections
     await queryInterface.bulkInsert("mountainLists", mountainLists, {});

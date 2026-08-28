@@ -38,6 +38,8 @@ const List = (props: ListProps) => {
     completedDate,
   } = props;
 
+  console.log(props);
+
   const typeIcon =
     type === "peakbagging" ? (
       <GiHiking title="Peak-bagging list" />
