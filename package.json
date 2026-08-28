@@ -9,8 +9,8 @@
   "scripts": {
     "db:migrate": "cd server && npx sequelize-cli db:migrate",
     "db:migrate:undo": "cd server && npx sequelize-cli db:migrate:undo",
-    "db:seed": "cd server && npx sequelize-cli db:seed:all",
-    "db:seed:undo": "cd server && npx sequelize-cli db:seed:undo:all",
+    "db:seed": "cd server && npx sequelize-cli db:seed",
+    "db:seed:undo": "cd server && npx sequelize-cli db:seed:undo",
     "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
     "dev:server": "tsx watch server/index.ts",
     "dev:client": "vite --config client/vite.config.ts",

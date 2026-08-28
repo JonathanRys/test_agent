@@ -1,6 +1,5 @@
 import { DataTypes, Model, Sequelize } from "sequelize";
 import type { ModelStatic } from "sequelize";
-import type { FeatureCollection } from "geojson";
 
 interface DBModels {
   State: ModelStatic<Model>;
@@ -13,6 +12,7 @@ export class Trail extends Model {
   declare id: number;
   declare name: string;
   declare description: string;
+  declare required: boolean;
   declare state: string;
   declare distance: number;
   declare elevationGain: number;
@@ -21,7 +21,7 @@ export class Trail extends Model {
   declare startLon: number;
   declare endLat: number;
   declare endLon: number;
-  declare gpx: FeatureCollection;
+  declare gpx: string;
   declare embeddedGpx: string;
   static associate(models: DBModels) {
     this.hasMany(models.TrailCompletion, { foreignKey: "trailId" });
@@ -48,6 +48,10 @@ export function initTrail(sequelize: Sequelize): void {
       },
       description: {
         type: DataTypes.TEXT,
+        allowNull: true,
+      },
+      required: {
+        type: DataTypes.BOOLEAN,
         allowNull: true,
       },
       stateId: {

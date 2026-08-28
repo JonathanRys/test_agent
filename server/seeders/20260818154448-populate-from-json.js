@@ -68,11 +68,13 @@ export default {
   },
 
   async down(queryInterface, Sequelize) {
+    await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
     await queryInterface.bulkDelete("states", null, {});
     await queryInterface.bulkDelete("mountains", null, {});
     await queryInterface.bulkDelete("trails", null, {});
     await queryInterface.bulkDelete("lists", null, {});
     await queryInterface.bulkDelete("mountainLists", null, {});
     await queryInterface.bulkDelete("trailLists", null, {});
+    await queryInterface.sequelize.query("PRAGMA foreign_keys = ON;");
   },
 };

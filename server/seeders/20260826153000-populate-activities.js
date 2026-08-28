@@ -10,6 +10,8 @@ export default {
   },
 
   async down(queryInterface) {
+    await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
     await queryInterface.bulkDelete("activities", null, {});
+    await queryInterface.sequelize.query("PRAGMA foreign_keys = ON;");
   },
 };

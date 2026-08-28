@@ -22,13 +22,13 @@ export default {
       initUser,
       initSession,
       initAdventure,
-      initSummit,
-      initTrailCompletion,
+      // initSummit,
+      // initTrailCompletion,
     ].forEach((initMethod) => {
       initMethod(queryInterface.sequelize);
     });
 
-    createTableFromModel(queryInterface, User);
+    await createTableFromModel(queryInterface, User);
 
     // Add columns to linked tables
     const columnConfig = {
@@ -72,6 +72,10 @@ export default {
         });
     }
 
+    // Add userId column to tables
+    await queryInterface.addColumn(Session.tableName, "userId", columnConfig);
+    await queryInterface.addColumn(Adventure.tableName, "userId", columnConfig);
+
     // Update all existing legacy rows to point to our fallback system user
     await queryInterface.sequelize.query(
       `UPDATE "${Session.tableName}" SET "userId" = :userId WHERE "userId" IS NULL;`,
@@ -85,20 +89,20 @@ export default {
         replacements: { userId: defaultUserId },
       },
     );
-    await queryInterface.sequelize.query(
-      `UPDATE "${Summit.tableName}" SET "userId" = :userId WHERE "userId" IS NULL;`,
-      {
-        replacements: { userId: defaultUserId },
-      },
-    );
-    await queryInterface.sequelize.query(
-      `UPDATE "${TrailCompletion.tableName}" SET "userId" = :userId WHERE "userId" IS NULL;`,
-      {
-        replacements: {
-          userId: defaultUserId,
-        },
-      },
-    );
+    // await queryInterface.sequelize.query(
+    //   `UPDATE "${Summit.tableName}" SET "userId" = :userId WHERE "userId" IS NULL;`,
+    //   {
+    //     replacements: { userId: defaultUserId },
+    //   },
+    // );
+    // await queryInterface.sequelize.query(
+    //   `UPDATE "${TrailCompletion.tableName}" SET "userId" = :userId WHERE "userId" IS NULL;`,
+    //   {
+    //     replacements: {
+    //       userId: defaultUserId,
+    //     },
+    //   },
+    // );
 
     await queryInterface.sequelize.transaction(async (transaction) => {
       await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;", {
@@ -117,14 +121,14 @@ export default {
         `UPDATE sqlite_master SET sql = replace(sql, '"userId" INTEGER', '"userId" INTEGER NOT NULL') WHERE name = '${Adventure.tableName}' AND type = 'table';`,
         { transaction },
       );
-      await queryInterface.sequelize.query(
-        `UPDATE sqlite_master SET sql = replace(sql, '"userId" INTEGER', '"userId" INTEGER NOT NULL') WHERE name = '${Summit.tableName}' AND type = 'table';`,
-        { transaction },
-      );
-      await queryInterface.sequelize.query(
-        `UPDATE sqlite_master SET sql = replace(sql, '"userId" INTEGER', '"userId" INTEGER NOT NULL') WHERE name = '${TrailCompletion.tableName}' AND type = 'table';`,
-        { transaction },
-      );
+      // await queryInterface.sequelize.query(
+      //   `UPDATE sqlite_master SET sql = replace(sql, '"userId" INTEGER', '"userId" INTEGER NOT NULL') WHERE name = '${Summit.tableName}' AND type = 'table';`,
+      //   { transaction },
+      // );
+      // await queryInterface.sequelize.query(
+      //   `UPDATE sqlite_master SET sql = replace(sql, '"userId" INTEGER', '"userId" INTEGER NOT NULL') WHERE name = '${TrailCompletion.tableName}' AND type = 'table';`,
+      //   { transaction },
+      // );
 
       await queryInterface.sequelize.query("PRAGMA foreign_keys = ON;", {
         transaction,
@@ -140,8 +144,8 @@ export default {
       initUser,
       initSession,
       initAdventure,
-      initSummit,
-      initTrailCompletion,
+      // initSummit,
+      // initTrailCompletion,
     ].forEach((initMethod) => {
       initMethod(queryInterface.sequelize);
     });
@@ -151,8 +155,8 @@ export default {
 
       await queryInterface.removeColumn(Session.tableName, "userId");
       await queryInterface.removeColumn(Adventure.tableName, "userId");
-      await queryInterface.removeColumn(Summit.tableName, "userId");
-      await queryInterface.removeColumn(TrailCompletion.tableName, "userId");
+      // await queryInterface.removeColumn(Summit.tableName, "userId");
+      // await queryInterface.removeColumn(TrailCompletion.tableName, "userId");
 
       await queryInterface.dropTable(User.tableName);
     } finally {

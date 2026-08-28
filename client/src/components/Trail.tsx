@@ -1,28 +1,13 @@
-import type { LineString } from "geojson";
 import { GiTrail } from "react-icons/gi";
-import type { State } from "../types/State";
+import type { Trail as TrailType } from "../types/Trail";
 import StateIcon from "./State";
 import MarkComplete, {
   earliestCompletedAt,
   formatCompletedDate,
 } from "./MarkComplete";
 
-export interface TrailProps {
-  id: number;
+export interface TrailProps extends TrailType {
   index: number;
-  name: string;
-  description?: string;
-  state?: State;
-  distance?: number;
-  elevationGain?: number;
-  elevationLoss?: number;
-  startLat?: number;
-  startLon?: number;
-  endLat?: number;
-  endLon?: number;
-  gpx?: LineString;
-  embeddedGpx?: string;
-  TrailCompletions?: Array<{ completedAt: string }>;
   onComplete?: () => void;
 }
 

@@ -3,7 +3,10 @@ import express from "express";
 import cors from "cors";
 import { z } from "zod";
 import { agentRouter } from "./routes/agent.js";
-import { listViewRouter } from "./routes/listView.js";
+import { listViewRouter } from "./routes/list.js";
+import { adventureRouter } from "./routes/adventure.js";
+import { mountainRouter } from "./routes/mountain.js";
+import { trailRouter } from "./routes/trail.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3001);
@@ -21,6 +24,9 @@ app.get("/health", (_req, res) => {
 
 app.use("/api", agentRouter);
 app.use("/api", listViewRouter);
+app.use("/api", adventureRouter);
+app.use("/api", mountainRouter);
+app.use("/api", trailRouter);
 
 app.use(
   (

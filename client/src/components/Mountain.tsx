@@ -1,5 +1,6 @@
 import { useState } from "react";
-import type { State } from "../types/State";
+import type { List } from "../types/List";
+import type { Mountain as MountainType } from "../types/Mountain";
 import { MdArrowDropDown, MdForest } from "react-icons/md";
 import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
@@ -8,28 +9,9 @@ import Map from "./Map";
 import MarkComplete, { earliestCompletedAt } from "./MarkComplete";
 import CompletionDate, { earliestCompletedId } from "./CompletionDate";
 
-type List = {
-  id: number;
-  name: string;
-  abbreviation: string;
-};
-
-export interface MountainProps {
-  id: number;
+export interface MountainProps extends MountainType {
   index: number;
-  name: string;
-  height: number;
-  prominence: number;
-  distance?: number;
-  state: State;
-  range?: string;
-  bushwhack?: boolean;
-  notes?: string;
-  Lists?: List[];
-  lat?: number;
-  lon?: number;
   expanded: boolean;
-  Summits?: Array<{ id: number; completedAt: string }>;
   onComplete?: () => void;
 }
 

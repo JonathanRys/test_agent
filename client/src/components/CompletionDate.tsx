@@ -59,6 +59,7 @@ const CompletionDate = (props: CompletionDateProps) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           activityDate,
+          activityId: 7, // TODO: add activity dropdown
           mountainId: mountainId ? mountainId : undefined,
           trailIds: trailId ? trailId : undefined,
         }),
@@ -145,7 +146,10 @@ const CompletionDate = (props: CompletionDateProps) => {
 
   if (completedAt) {
     return (
-      <p className="completion-date">
+      <p
+        className="completion-date"
+        onClick={(event) => event.stopPropagation()}
+      >
         First Hiked: {formatCompletedDate(completedAt)} &nbsp;{" "}
         <FaPen
           className="edit-icon"

@@ -5,7 +5,8 @@
     "database": "database_development",
     "host": "127.0.0.1",
     "dialect": "sqlite",
-    "storage": "../data/memory.db"
+    "storage": "../data/memory.db",
+    "seederStorage": "json"
   },
   "test": {
     "username": "root",
@@ -13,7 +14,8 @@
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "sqlite",
-    "storage": "../data/memory.db"
+    "storage": "../data/memory.db",
+    "seederStorage": "json"
   },
   "production": {
     "username": "root",
@@ -21,6 +23,7 @@
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "sqlite",
-    "storage": "../data/memory.db"
+    "storage": "../data/memory.db",
+    "seederStorage": "json"
   }
 }

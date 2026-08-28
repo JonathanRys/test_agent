@@ -13,13 +13,11 @@ import {
 /** @type {import('sequelize-cli').Migration} */
 export default {
   async up(queryInterface) {
-    [initActivity, initAdventure, initSummit, initTrailCompletion].forEach(
-      (initMethod) => {
-        initMethod(queryInterface.sequelize);
-      },
-    );
+    [initActivity, initAdventure].forEach((initMethod) => {
+      initMethod(queryInterface.sequelize);
+    });
 
-    for (const model of [Activity, Adventure, Summit, TrailCompletion]) {
+    for (const model of [Activity]) {
       await createTableFromModel(queryInterface, model);
     }
   },
@@ -34,7 +32,7 @@ export default {
     try {
       await queryInterface.sequelize.query("PRAGMA foreign_keys = OFF;");
 
-      for (const model of [TrailCompletion, Summit, Adventure, Activity]) {
+      for (const model of [Activity]) {
         await queryInterface.dropTable(model.tableName);
       }
     } finally {
