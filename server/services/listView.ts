@@ -410,6 +410,7 @@ export async function createAdventure(
     const adventure = await Adventure.create(
       {
         name: input.name,
+        userId: 1, // TODO: derive userId from session
         activityId: input.activityId,
         activityDate,
       },
@@ -419,6 +420,7 @@ export async function createAdventure(
     if (mountainIds.length > 0) {
       await Summit.bulkCreate(
         mountainIds.map((mountainId) => ({
+          userId: 1, // TODO: derive userId from session
           adventureId: adventure.id,
           mountainId,
           completedAt: activityDate,
@@ -430,6 +432,7 @@ export async function createAdventure(
     if (trailIds.length > 0) {
       await TrailCompletion.bulkCreate(
         trailIds.map((trailId) => ({
+          userId: 1, // TODO: derive userId from session
           adventureId: adventure.id,
           trailId,
           completedAt: activityDate,

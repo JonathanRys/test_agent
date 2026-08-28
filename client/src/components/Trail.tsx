@@ -27,8 +27,15 @@ export interface TrailProps {
 }
 
 const Trail = (props: TrailProps) => {
-  const { id, name, state, description, embeddedGpx, TrailCompletions, onComplete } =
-    props;
+  const {
+    id,
+    name,
+    state,
+    description,
+    embeddedGpx,
+    TrailCompletions,
+    onComplete,
+  } = props;
 
   const trailIcon = <GiTrail title="Trail" />;
   const completedAt = earliestCompletedAt(TrailCompletions);
@@ -53,6 +60,7 @@ const Trail = (props: TrailProps) => {
           <MarkComplete name={name} trailId={id} onComplete={onComplete} />
         )
       )}
+      <br />
       <div className="centered">
         {embeddedGpx && (
           <iframe src={embeddedGpx} width="640" height="480"></iframe>

@@ -56,7 +56,7 @@ export async function getOrCreateSession(
     // Try to load from database first
     try {
       const [session] = await Session.findOrCreate({
-        where: { id: sessionId },
+        where: { id: sessionId, userId: 1 }, // TODO: derive userId from session
         defaults: { memoryType: "short-term" },
       });
       sessionMemoryTypes.set(sessionId, session.memoryType);
