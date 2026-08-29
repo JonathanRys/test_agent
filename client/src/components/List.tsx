@@ -21,6 +21,12 @@ export interface ListProps {
   totalCount?: number;
   completedCount?: number;
   completedDate?: string;
+  completions: {
+    number: {
+      completedAt: string;
+      season: string;
+    };
+  };
 }
 
 const List = (props: ListProps) => {
@@ -37,8 +43,6 @@ const List = (props: ListProps) => {
     completedCount,
     completedDate,
   } = props;
-
-  console.log(props);
 
   const typeIcon =
     type === "peakbagging" ? (

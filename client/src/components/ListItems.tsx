@@ -9,6 +9,13 @@ interface ListItemsProps {
   type: "peakbagging" | "trace";
   totalCount?: number;
   completedCount?: number;
+  completions: Record<
+    number,
+    {
+      completedAt: string;
+      season: string;
+    }
+  >;
   back: () => void;
 }
 
@@ -16,7 +23,8 @@ export default function ListItems(props: ListItemsProps) {
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const { id, name, type, back, totalCount, completedCount } = props;
+  const { id, name, type, back, totalCount, completedCount, completions } =
+    props;
 
   let endpoint: string = "/api/mountainList/0";
   let Item = Mountain;
@@ -87,15 +95,19 @@ export default function ListItems(props: ListItemsProps) {
       {typeof totalCount === "number" &&
         typeof completedCount === "number" &&
         !loading && (
-        <p className={`centered list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}>
-          {items.filter((item) =>
-            type === "trace"
-              ? item.TrailCompletions?.length
-              : item.Summits?.length,
-          ).length}{" "}
-          / {items.length || totalCount} complete
-        </p>
-      )}
+          <p
+            className={`centered list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}
+          >
+            {
+              items.filter((item) =>
+                type === "trace"
+                  ? item.TrailCompletions?.length
+                  : item.Summits?.length,
+              ).length
+            }{" "}
+            / {items.length || totalCount} complete
+          </p>
+        )}
       <br />
       {loading
         ? "Loading..."
@@ -104,9 +116,11 @@ export default function ListItems(props: ListItemsProps) {
               <section
                 key={`${key}-${item.id}`}
                 className={`panel${
-                  (type === "trace"
-                    ? item.TrailCompletions?.length
-                    : item.Summits?.length)
+                  (
+                    type === "trace"
+                      ? item.TrailCompletions?.length
+                      : item.Summits?.length
+                  )
                     ? " panel-completed"
                     : ""
                 }`}
@@ -115,6 +129,7 @@ export default function ListItems(props: ListItemsProps) {
                   {...item}
                   index={i + 1}
                   onComplete={refreshItems}
+                  season={completions[item.id]?.season || null}
                 />
               </section>
             ))

@@ -12,6 +12,7 @@ interface CompletionDateProps {
   name: string;
   completedAt: string;
   editing: boolean;
+  season: string;
   setEditing: (editing: boolean) => void;
   onComplete?: () => void;
 }
@@ -38,6 +39,7 @@ const CompletionDate = (props: CompletionDateProps) => {
     name,
     completedAt,
     editing,
+    season,
     setEditing,
     onComplete,
   } = props;
@@ -150,15 +152,18 @@ const CompletionDate = (props: CompletionDateProps) => {
         className="completion-date"
         onClick={(event) => event.stopPropagation()}
       >
-        First Hiked: {formatCompletedDate(completedAt)} &nbsp;{" "}
-        <FaPen
-          className="edit-icon"
-          onClick={(event) => {
-            event.stopPropagation();
-            setEditing(true);
-          }}
-          title="Edit"
-        />
+        First Hiked:{" "}
+        <span className={season}>
+          {formatCompletedDate(completedAt)}&nbsp;{" "}
+          <FaPen
+            className="edit-icon"
+            onClick={(event) => {
+              event.stopPropagation();
+              setEditing(true);
+            }}
+            title="Edit"
+          />
+        </span>
       </p>
     );
   }

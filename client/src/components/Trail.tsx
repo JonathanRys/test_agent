@@ -8,6 +8,7 @@ import MarkComplete, {
 
 export interface TrailProps extends TrailType {
   index: number;
+  season: string;
   onComplete?: () => void;
 }
 

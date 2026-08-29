@@ -379,7 +379,6 @@ button:disabled {
 }
 
 .edit-icon {
-  color: #86efac;
   cursor: pointer;
 }
 
@@ -387,4 +386,18 @@ button:disabled {
   color: #fca5a5;
   cursor: pointer;
   margin-bottom: 5px;
+}
+
+/**/
+.Spring {
+  color: hotpink;
+}
+.Summer {
+  color: yellow;
+}
+.Autumn {
+  color: orangered;
+}
+.Winter {
+  color: skyblue;
 }

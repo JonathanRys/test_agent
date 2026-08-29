@@ -8,10 +8,12 @@ import StateIcon from "./State";
 import Map from "./Map";
 import MarkComplete, { earliestCompletedAt } from "./MarkComplete";
 import CompletionDate, { earliestCompletedId } from "./CompletionDate";
+import Season from "./Season";
 
 export interface MountainProps extends MountainType {
   index: number;
   expanded: boolean;
+  season: string;
   onComplete?: () => void;
 }
 
@@ -43,7 +45,10 @@ const Mountain = (props: MountainProps) => {
     Summits,
     onComplete,
     id,
+    season,
   } = props;
+
+  // console.log(props);
 
   const [showMap, setShowMap] = useState<boolean>(false);
   const [mountainExpanded, setMountainExpanded] = useState<boolean>(expanded);
@@ -106,6 +111,7 @@ const Mountain = (props: MountainProps) => {
               editing={editing}
               setEditing={setEditing}
               onComplete={onComplete}
+              season={season}
             />
           ) : (
             onComplete && (
@@ -115,6 +121,11 @@ const Mountain = (props: MountainProps) => {
                 onComplete={onComplete}
               />
             )
+          )}
+          {season && (
+            <div>
+              <Season season={season} />
+            </div>
           )}
           {lat && lon && showMap ? (
             <>
