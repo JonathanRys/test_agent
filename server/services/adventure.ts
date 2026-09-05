@@ -19,8 +19,8 @@ export async function createAdventure(
     const adventure = await Adventure.create(
       {
         name: input.name,
-        userId: 1, // TODO: derive userId from session
         activityId: input.activityId,
+        userId: 1, // TODO: derive userId from session
         activityDate,
       },
       { transaction },
@@ -34,7 +34,10 @@ export async function createAdventure(
           mountainId,
           completedAt: activityDate,
         })),
-        { transaction },
+        {
+          updateOnDuplicate: ["userId", "adventureId", "mountainId"],
+          transaction,
+        },
       );
     }
 
@@ -46,7 +49,10 @@ export async function createAdventure(
           trailId,
           completedAt: activityDate,
         })),
-        { transaction },
+        {
+          updateOnDuplicate: ["userId", "adventureId", "trailId"],
+          transaction,
+        },
       );
     }
 

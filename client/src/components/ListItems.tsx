@@ -129,7 +129,7 @@ export default function ListItems(props: ListItemsProps) {
                   {...item}
                   index={i + 1}
                   onComplete={refreshItems}
-                  season={completions[item.id]?.season || null}
+                  season={completions?.[item.id]?.season || null}
                 />
               </section>
             ))

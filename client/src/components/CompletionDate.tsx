@@ -4,6 +4,7 @@ import MarkComplete, {
   formatCompletedDate,
   completionDateToInputValue,
 } from "./MarkComplete";
+import Season from "./Season";
 
 interface CompletionDateProps {
   adventureId: number;
@@ -16,21 +17,6 @@ interface CompletionDateProps {
   setEditing: (editing: boolean) => void;
   onComplete?: () => void;
 }
-
-// export function earliestCompletedId(
-//   completions?: Array<{ id: number; completedAt: string }>,
-// ): number | null {
-//   if (!completions?.length) {
-//     return null;
-//   }
-
-//   return [...completions]
-//     .map((completion) => completion)
-//     .sort(
-//       (a, b) =>
-//         new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime(),
-//     )[0].id;
-// }
 
 const CompletionDate = (props: CompletionDateProps) => {
   const {
@@ -149,23 +135,30 @@ const CompletionDate = (props: CompletionDateProps) => {
 
   if (completedAt) {
     return (
-      <p
-        className="completion-date"
-        onClick={(event) => event.stopPropagation()}
-      >
-        First Hiked:{" "}
-        <span className={season}>
-          {formatCompletedDate(completedAt)}&nbsp;{" "}
-          <FaPen
-            className="edit-icon"
-            onClick={(event) => {
-              event.stopPropagation();
-              setEditing(true);
-            }}
-            title="Edit"
-          />
-        </span>
-      </p>
+      <>
+        <p
+          className="completion-date"
+          onClick={(event) => event.stopPropagation()}
+        >
+          First Hiked:{" "}
+          <span className={season}>
+            {formatCompletedDate(completedAt)}&nbsp;{" "}
+            <FaPen
+              className="edit-icon"
+              onClick={(event) => {
+                event.stopPropagation();
+                setEditing(true);
+              }}
+              title="Edit"
+            />
+          </span>
+        </p>
+        {season && (
+          <div>
+            <Season season={season} />
+          </div>
+        )}
+      </>
     );
   }
 

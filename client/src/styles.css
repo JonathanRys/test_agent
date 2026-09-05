@@ -330,6 +330,7 @@ button:disabled {
 .completion-date {
   color: #86efac;
   font-size: 0.9rem;
+  margin-bottom: 2px;
 }
 
 .mark-complete {

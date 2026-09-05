@@ -1,7 +1,7 @@
 import { SubmitEvent, useState } from "react";
 import { Completion } from "../types/Completion";
 
-const HIKING_ACTIVITY_ID = 1;
+const HIKING_ACTIVITY_ID = 7;
 
 function todayInputValue() {
   return new Date().toISOString().slice(0, 10);
@@ -34,7 +34,7 @@ export default function MarkComplete(props: MarkCompleteProps) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           name,
-          activityId: HIKING_ACTIVITY_ID,
+          activityId: HIKING_ACTIVITY_ID, // TODO: Add activity dropdown
           activityDate,
           mountainIds: mountainId ? [mountainId] : undefined,
           trailIds: trailId ? [trailId] : undefined,
