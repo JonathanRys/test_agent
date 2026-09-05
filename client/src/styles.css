@@ -378,7 +378,12 @@ button:disabled {
   height: 30px;
 }
 
+.state-icon {
+  color: #e2e8f0;
+}
+
 .edit-icon {
+  color: #e2e8f0;
   cursor: pointer;
 }
 

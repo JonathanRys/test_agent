@@ -1,4 +1,5 @@
 import { SubmitEvent, useState } from "react";
+import { Completion } from "../types/Completion";
 
 const HIKING_ACTIVITY_ID = 1;
 
@@ -76,14 +77,17 @@ export default function MarkComplete(props: MarkCompleteProps) {
   );
 }
 
-export function earliestCompletedAt(
-  completions?: Array<{ completedAt: string }>,
-): string | null {
+export function earliestCompleted(
+  completions?: Array<Completion>,
+): Completion | null {
   if (!completions?.length) {
     return null;
   }
 
-  return [...completions].map((completion) => completion.completedAt).sort()[0];
+  return [...completions].sort(
+    (a, b) =>
+      new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime(),
+  )[0];
 }
 
 export function formatCompletedDate(value: string) {

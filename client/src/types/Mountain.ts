@@ -14,6 +14,7 @@ export type Mountain = {
   notes?: string;
   lat?: number;
   lon?: number;
+  season: string;
   Lists?: List[];
   Summits?: Array<Completion>;
 };

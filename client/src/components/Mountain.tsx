@@ -6,14 +6,13 @@ import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
 import StateIcon from "./State";
 import Map from "./Map";
-import MarkComplete, { earliestCompletedAt } from "./MarkComplete";
-import CompletionDate, { earliestCompletedId } from "./CompletionDate";
+import MarkComplete, { earliestCompleted } from "./MarkComplete";
+import CompletionDate from "./CompletionDate";
 import Season from "./Season";
 
 export interface MountainProps extends MountainType {
   index: number;
   expanded: boolean;
-  season: string;
   onComplete?: () => void;
 }
 
@@ -61,8 +60,8 @@ const Mountain = (props: MountainProps) => {
   );
 
   const mountainIcon = <FaMountain title="Mountain" />;
-  const completedAt = earliestCompletedAt(Summits);
-  const adventureId = earliestCompletedId(Summits);
+  const earliestCompletedSummit = earliestCompleted(Summits);
+  const completedAt = earliestCompletedSummit?.completedAt;
 
   return (
     <div
@@ -88,7 +87,7 @@ const Mountain = (props: MountainProps) => {
         <span>
           {mountainIcon} {name}{" "}
           {state && (
-            <span title={state.name}>
+            <span className="state-icon" title={state.name}>
               {StateIcon({ state: state.abbreviation })}
             </span>
           )}
@@ -102,9 +101,9 @@ const Mountain = (props: MountainProps) => {
           {distance && <p>Distance: {distance} mi</p>}
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
-          {completedAt && adventureId ? (
+          {completedAt ? (
             <CompletionDate
-              adventureId={adventureId}
+              adventureId={earliestCompletedSummit?.id}
               mountainId={id}
               name={name}
               completedAt={completedAt}

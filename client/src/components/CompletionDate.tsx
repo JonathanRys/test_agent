@@ -16,20 +16,21 @@ interface CompletionDateProps {
   setEditing: (editing: boolean) => void;
   onComplete?: () => void;
 }
-export function earliestCompletedId(
-  completions?: Array<{ id: number; completedAt: string }>,
-): number | null {
-  if (!completions?.length) {
-    return null;
-  }
 
-  return [...completions]
-    .map((completion) => completion)
-    .sort(
-      (a, b) =>
-        new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime(),
-    )[0].id;
-}
+// export function earliestCompletedId(
+//   completions?: Array<{ id: number; completedAt: string }>,
+// ): number | null {
+//   if (!completions?.length) {
+//     return null;
+//   }
+
+//   return [...completions]
+//     .map((completion) => completion)
+//     .sort(
+//       (a, b) =>
+//         new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime(),
+//     )[0].id;
+// }
 
 const CompletionDate = (props: CompletionDateProps) => {
   const {
