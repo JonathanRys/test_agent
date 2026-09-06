@@ -17,7 +17,7 @@ export const transformSeasons = (
     return parsedDate.toISOString().split("T")[0];
   };
 
-  const ranges: DateRange[] = seasonDatesArray
+  const seasonDates: DateRange[] = seasonDatesArray
     .map((dateBlock) => ({
       startDate: formatDate(dateBlock.startDate),
       endDate: formatDate(dateBlock.endDate),
@@ -29,7 +29,7 @@ export const transformSeasons = (
     {
       id: json.id,
       name: json.name,
-      ranges,
+      seasonDates,
     } satisfies SeasonWithDates,
   ];
 };
@@ -46,7 +46,7 @@ export const getSeasonForDate = (
   // Loop through all seasons (Spring, Summer, Autumn, Winter) inside our configuration map
   for (const season of globalSeasonsMap.values()) {
     // Check if the timestamp hits ANY historical year range entry for this specific season
-    const matchesSeason = season.ranges.some(
+    const matchesSeason = season.seasonDates.some(
       (range) => compDateStr >= range.startDate && compDateStr <= range.endDate,
     );
 

@@ -1,6 +1,6 @@
 import { GiTrail, GiHiking } from "react-icons/gi";
 import { FaMedal } from "react-icons/fa";
-import { FaMountain, FaPersonHiking } from "react-icons/fa6";
+// import { FaMountain, FaPersonHiking } from "react-icons/fa6";
 
 import ContactForm from "./ContactForm";
 import { formatCompletedDate } from "./MarkComplete";

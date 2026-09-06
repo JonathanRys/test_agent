@@ -1,14 +1,14 @@
-import { List } from "../models/index.js";
+import type { List, Mountain, Trail } from "../models/index.js";
+
 export type DateRange = {
   startDate: string;
   endDate: string;
 };
 
-// Update your type to carry an array of historical ranges
 export type SeasonWithDates = {
   id: number;
   name: string;
-  ranges: DateRange[];
+  seasonDates: DateRange[];
 };
 
 export type ListWithProgress = List & {
@@ -41,3 +41,20 @@ export type CreateAdventureInput = {
   mountainIds?: number[];
   trailIds?: number[];
 };
+
+// Define a type for the Summit model with an optional season property
+interface SummitWithSeason {
+  id: number;
+  completedAt: string | Date;
+  adventureId: number;
+  season?: string;
+  [key: string]: any;
+}
+
+export interface MountainWithRelations extends Mountain {
+  Summits?: SummitWithSeason[];
+}
+
+export interface TrailWithRelations extends Trail {
+  Summits?: SummitWithSeason[];
+}

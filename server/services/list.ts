@@ -8,12 +8,7 @@ import {
   Summit,
   TrailCompletion,
 } from "../models/index.js";
-import {
-  ListFilters,
-  ListWithProgress,
-  SeasonWithDates,
-  DateRange,
-} from "./types.js";
+import { ListFilters, ListWithProgress, SeasonWithDates } from "./types.js";
 import { getSeasonForDate, transformSeasons } from "../utils/listHelpers.js";
 
 export async function getList(id: number): Promise<List | null> {

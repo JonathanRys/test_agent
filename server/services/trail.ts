@@ -1,6 +1,15 @@
 import { ensureInitialized } from "../utils/db.js";
-import { State, Trail, List, TrailCompletion } from "../models/index.js";
+import {
+  State,
+  Trail,
+  List,
+  TrailCompletion,
+  SeasonDate,
+  Season,
+} from "../models/index.js";
 import { completionInclude } from "./common.js";
+import { SeasonWithDates, TrailWithRelations } from "./types.js";
+import { getSeasonForDate } from "../utils/listHelpers.js";
 
 export async function getTrail(id: number): Promise<Trail | null> {
   try {
@@ -87,6 +96,49 @@ export async function getTrailsOnList(listId: number): Promise<Trail[]> {
         },
       ],
     });
+
+    // Query Season and SeasonDate for all seasons and their date ranges
+    const seasonDates = await Season.findAll({
+      include: [
+        {
+          model: SeasonDate,
+          attributes: ["startDate", "endDate"],
+        },
+      ],
+    });
+
+    // Create seasons map
+    const seasonsMap = new Map<number, SeasonWithDates>(
+      seasonDates.map((instance) => {
+        const json = instance.toJSON() as any;
+        return [
+          json.id,
+          {
+            ...json,
+            // Safely fall back to an empty array if SeasonDates is missing or undefined
+            seasonDates: json.SeasonDates || [],
+          },
+        ];
+      }),
+    );
+
+    // Add season information to each summit based on the completion date
+    const trailsWithSeasons = trails.map((trail) => {
+      const plainTrail = trail.get({
+        plain: true,
+      }) as TrailWithRelations;
+
+      if (plainTrail.Summits) {
+        plainTrail.Summits = plainTrail.Summits.map((summit) => ({
+          ...summit,
+          season: getSeasonForDate(seasonsMap, summit.completedAt),
+        }));
+      }
+
+      return plainTrail;
+    });
+
+    return trailsWithSeasons;
 
     return trails;
   } catch (error) {

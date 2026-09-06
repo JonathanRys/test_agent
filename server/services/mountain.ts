@@ -1,8 +1,17 @@
 import { Sequelize } from "sequelize";
 
 import { ensureInitialized } from "../utils/db.js";
-import { State, Mountain, List, Summit } from "../models/index.js";
+import {
+  State,
+  Mountain,
+  List,
+  Summit,
+  SeasonDate,
+  Season,
+} from "../models/index.js";
 import { completionInclude } from "./common.js";
+import type { MountainWithRelations, SeasonWithDates } from "./types.js";
+import { getSeasonForDate } from "../utils/listHelpers.js";
 
 export async function getMountain(id: number): Promise<Mountain | null> {
   try {
@@ -71,7 +80,9 @@ export async function getMountains(
   }
 }
 
-export async function getMountainsOnList(listId: number): Promise<Mountain[]> {
+export async function getMountainsOnList(
+  listId: number,
+): Promise<MountainWithRelations[]> {
   try {
     await ensureInitialized();
     const mountains = await Mountain.findAll({
@@ -104,7 +115,48 @@ export async function getMountainsOnList(listId: number): Promise<Mountain[]> {
       ],
     });
 
-    return mountains;
+    // Query Season and SeasonDate for all seasons and their date ranges
+    const seasonDates = await Season.findAll({
+      include: [
+        {
+          model: SeasonDate,
+          attributes: ["startDate", "endDate"],
+        },
+      ],
+    });
+
+    // Create seasons map
+    const seasonsMap = new Map<number, SeasonWithDates>(
+      seasonDates.map((instance) => {
+        const json = instance.toJSON() as any;
+        return [
+          json.id,
+          {
+            ...json,
+            // Safely fall back to an empty array if SeasonDates is missing or undefined
+            seasonDates: json.SeasonDates || [],
+          },
+        ];
+      }),
+    );
+
+    // Add season information to each summit based on the completion date
+    const mountainsWithSeasons = mountains.map((mountain) => {
+      const plainMountain = mountain.get({
+        plain: true,
+      }) as MountainWithRelations;
+
+      if (plainMountain.Summits) {
+        plainMountain.Summits = plainMountain.Summits.map((summit) => ({
+          ...summit,
+          season: getSeasonForDate(seasonsMap, summit.completedAt),
+        }));
+      }
+
+      return plainMountain;
+    });
+
+    return mountainsWithSeasons;
   } catch (error) {
     console.error(`Error fetching mountains from database:`, error);
     return [];

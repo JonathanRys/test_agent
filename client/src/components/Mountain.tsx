@@ -58,6 +58,7 @@ const Mountain = (props: MountainProps) => {
 
   const mountainIcon = <FaMountain title="Mountain" />;
   const earliestCompletedSummit = earliestCompleted(Summits);
+  const earliestCompletedSeason = earliestCompletedSummit?.season;
   const completedAt = earliestCompletedSummit?.completedAt;
 
   return (
@@ -107,7 +108,7 @@ const Mountain = (props: MountainProps) => {
               editing={editing}
               setEditing={setEditing}
               onComplete={onComplete}
-              season={season}
+              season={earliestCompletedSeason || season}
             />
           ) : (
             onComplete && (
