@@ -135,7 +135,7 @@ const CompletionDate = (props: CompletionDateProps) => {
 
   if (completedAt) {
     return (
-      <>
+      <div>
         <p
           className="completion-date"
           onClick={(event) => event.stopPropagation()}
@@ -158,7 +158,7 @@ const CompletionDate = (props: CompletionDateProps) => {
             <Season season={season} />
           </div>
         )}
-      </>
+      </div>
     );
   }
 

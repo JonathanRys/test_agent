@@ -8,6 +8,7 @@ import StateIcon from "./State";
 import Map from "./Map";
 import MarkComplete, { earliestCompleted } from "./MarkComplete";
 import CompletionDate from "./CompletionDate";
+import GridIcon from "./GridIcon";
 
 export interface MountainProps extends MountainType {
   index: number;
@@ -60,6 +61,21 @@ const Mountain = (props: MountainProps) => {
   const earliestCompletedSummit = earliestCompleted(Summits);
   const earliestCompletedSeason = earliestCompletedSummit?.season;
   const completedAt = earliestCompletedSummit?.completedAt;
+  const extractMonthIndex = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.getMonth();
+  };
+  const completions = Summits?.reduce(
+    (acc, summit) => {
+      if (summit.completedAt) {
+        acc[extractMonthIndex(summit.completedAt)] = {
+          completedAt: summit.completedAt,
+        };
+      }
+      return acc;
+    },
+    {} as Record<number, { completedAt: string }>,
+  );
 
   return (
     <div
@@ -99,26 +115,29 @@ const Mountain = (props: MountainProps) => {
           {distance && <p>Distance: {distance} mi</p>}
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
-          {completedAt ? (
-            <CompletionDate
-              adventureId={earliestCompletedSummit?.id}
-              mountainId={id}
-              name={name}
-              completedAt={completedAt}
-              editing={editing}
-              setEditing={setEditing}
-              onComplete={onComplete}
-              season={earliestCompletedSeason || season}
-            />
-          ) : (
-            onComplete && (
-              <MarkComplete
-                name={name}
+          <div className="space-between-row">
+            {completedAt ? (
+              <CompletionDate
+                adventureId={earliestCompletedSummit?.id}
                 mountainId={id}
+                name={name}
+                completedAt={completedAt}
+                editing={editing}
+                setEditing={setEditing}
                 onComplete={onComplete}
+                season={earliestCompletedSeason || season}
               />
-            )
-          )}
+            ) : (
+              onComplete && (
+                <MarkComplete
+                  name={name}
+                  mountainId={id}
+                  onComplete={onComplete}
+                />
+              )
+            )}
+            {completedAt && <GridIcon completions={completions} />}
+          </div>
           {lat && lon && showMap ? (
             <>
               {" "}

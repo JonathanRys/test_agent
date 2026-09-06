@@ -247,6 +247,12 @@ button:disabled {
   cursor: pointer;
 }
 
+.space-between-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .media {
   font-size: larger;
   margin: 5px;
@@ -406,4 +412,39 @@ button:disabled {
 }
 .Winter {
   color: skyblue;
+}
+
+.grid-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: small;
+  cursor: default;
+}
+
+.grid-icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0px;
+}
+
+.grid-icon-row > * {
+  margin: 0px;
+}
+
+.grid-icon-cell {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.grid-icon-cell.completed {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-color: rgba(59, 130, 246, 0.4);
 }
