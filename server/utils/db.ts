@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import { DataTypes, Sequelize } from "sequelize";
 import path from "path";
 import { fileURLToPath } from "url";
 import { Activity, initializeModels } from "../models/index.js";
@@ -27,6 +27,29 @@ export async function ensureInitialized(): Promise<void> {
 
   try {
     await sequelize.sync();
+    const userColumns = await sequelize
+      .getQueryInterface()
+      .describeTable("users");
+    if (!userColumns.passwordHash) {
+      await sequelize.getQueryInterface().addColumn("users", "passwordHash", {
+        type: DataTypes.STRING,
+        allowNull: true,
+      });
+    }
+    if (!userColumns.emailVerifiedAt) {
+      await sequelize
+        .getQueryInterface()
+        .addColumn("users", "emailVerifiedAt", {
+          type: DataTypes.DATE,
+          allowNull: true,
+        });
+    }
+    if (!userColumns.birthdate) {
+      await sequelize.getQueryInterface().addColumn("users", "birthdate", {
+        type: DataTypes.DATEONLY,
+        allowNull: true,
+      });
+    }
     const activityCount = await Activity.count();
     if (activityCount === 0) {
       const activityRows = (

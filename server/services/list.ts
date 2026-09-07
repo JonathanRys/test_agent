@@ -33,6 +33,7 @@ export async function getList(id: number): Promise<List | null> {
 
 export async function getLists(
   filters: ListFilters,
+  userId?: number,
 ): Promise<ListWithProgress[]> {
   try {
     await ensureInitialized();
@@ -51,8 +52,14 @@ export async function getLists(
       await Promise.all([
         MountainList.findAll({ attributes: ["listId", "mountainId"] }),
         TrailList.findAll({ attributes: ["listId", "trailId"] }),
-        Summit.findAll({ attributes: ["mountainId", "completedAt"] }),
-        TrailCompletion.findAll({ attributes: ["trailId", "completedAt"] }),
+        Summit.findAll({
+          attributes: ["mountainId", "completedAt"],
+          where: userId ? { userId } : { userId: -1 },
+        }),
+        TrailCompletion.findAll({
+          attributes: ["trailId", "completedAt"],
+          where: userId ? { userId } : { userId: -1 },
+        }),
         Season.findAll({
           include: [
             {
@@ -84,6 +91,12 @@ export async function getLists(
         }
 
         const trailIds = trailsByList.get(list.id) ?? [];
+
+        if (!userId) {
+          return Object.assign(json, {
+            totalCount: trailIds.length,
+          }) as ListWithProgress;
+        }
 
         const filteredTrailCompletions = trailCompletions.filter((tc) =>
           trailIds.includes(tc.trailId),
@@ -130,6 +143,12 @@ export async function getLists(
       }
 
       const mountainIds = mountainsByList.get(list.id) ?? [];
+
+      if (!userId) {
+        return Object.assign(json, {
+          totalCount: mountainIds.length,
+        }) as ListWithProgress;
+      }
 
       const filteredSummits = summits.filter((summit) =>
         mountainIds.includes(summit.mountainId),

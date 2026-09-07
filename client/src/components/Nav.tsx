@@ -1,26 +1,29 @@
-interface NavProps {
-  mode: "agent" | "list";
-  setMode: (mode: "agent" | "list") => void;
-}
+import { Link, NavLink } from "react-router-dom";
+import { FaUserCircle } from "react-icons/fa";
+import { useAuth } from "../auth/AuthContext";
 
-const Nav = (props: NavProps) => {
-  const { mode, setMode } = props;
+const Nav = () => {
+  const { user } = useAuth();
   return (
     <div className="nav">
       <div className="nav-container">
-        Mode
-        <div>
-          <div
-            className={mode === "agent" ? "active option" : "option"}
-            onClick={() => setMode("agent")}
-          >
-            Agent
-          </div>
-          <div
-            className={mode === "list" ? "active option" : "option"}
-            onClick={() => setMode("list")}
-          >
-            List
+        <Link
+          className="account-icon"
+          to={user ? "/account" : "/login"}
+          aria-label={user ? "Open account" : "Log in"}
+          title={user ? "Open account" : "Log in"}
+        >
+          <FaUserCircle aria-hidden="true" />
+        </Link>
+        <div className="mode-controls">
+          <span className="mode-label">Mode</span>
+          <div className="mode-options">
+            <NavLink className="option" to="/agent">
+              Agent
+            </NavLink>
+            <NavLink className="option" to="/">
+              List
+            </NavLink>
           </div>
         </div>
       </div>

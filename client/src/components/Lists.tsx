@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 import List, { type ListProps } from "./List";
 import ListItems from "./ListItems";
+import { useAuth } from "../auth/AuthContext";
 
 function scrollToTop() {
   window.scroll({
@@ -11,6 +12,7 @@ function scrollToTop() {
 }
 
 export default function Lists() {
+  const { apiFetch, user } = useAuth();
   const [selectedList, setSelectedList] = useState<number | null>(null);
   const [lists, setLists] = useState<ListProps[]>([]);
   const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +40,7 @@ export default function Lists() {
 
     const loadLists = async () => {
       try {
-        const response = await fetch("/api/lists", {
+        const response = await apiFetch("/api/lists", {
           method: "GET",
         });
 
@@ -53,7 +55,7 @@ export default function Lists() {
       }
     };
     loadLists();
-  }, [selectedList]);
+  }, [selectedList, user?.id]);
 
   const selectList = (listIndex: number) => {
     setSelectedList(listIndex);

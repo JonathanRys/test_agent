@@ -7,6 +7,7 @@ import CompletionDate from "./CompletionDate";
 import GridIcon from "./GridIcon";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { List } from "../types/List";
+import { useAuth } from "../auth/AuthContext";
 
 export interface TrailProps extends TrailType {
   index: number;
@@ -25,6 +26,7 @@ const ListBubble = (props: List) => {
 };
 
 const Trail = (props: TrailProps) => {
+  const { user } = useAuth();
   const {
     index,
     id,
@@ -45,28 +47,32 @@ const Trail = (props: TrailProps) => {
   const [editing, setEditing] = useState<boolean>(false);
 
   const trailIcon = <GiTrail title="Trail" />;
-  const earliestCompletedTrail = earliestCompleted(TrailCompletions);
+  const earliestCompletedTrail = user
+    ? earliestCompleted(TrailCompletions)
+    : undefined;
   const earliestCompletedSeason = earliestCompletedTrail?.season;
   const completedAt = earliestCompletedTrail?.completedAt;
   const extractMonthIndex = (dateString: string) => {
     const date = new Date(dateString);
     return date.getMonth();
   };
-  const completions = TrailCompletions?.reduce(
-    (acc, trailCompletion) => {
-      if (trailCompletion.completedAt) {
-        acc[extractMonthIndex(trailCompletion.completedAt)] = {
-          completedAt: trailCompletion.completedAt,
-        };
-      }
-      return acc;
-    },
-    {} as Record<number, { completedAt: string }>,
-  );
+  const completions = user
+    ? TrailCompletions?.reduce(
+        (acc, trailCompletion) => {
+          if (trailCompletion.completedAt) {
+            acc[extractMonthIndex(trailCompletion.completedAt)] = {
+              completedAt: trailCompletion.completedAt,
+            };
+          }
+          return acc;
+        },
+        {} as Record<number, { completedAt: string }>,
+      )
+    : undefined;
 
   return (
     <div
-      className={`${trailCompletionExpanded ? "" : "clickable align-center"}${completedAt ? " item-completed" : ""}`}
+      className={`${trailCompletionExpanded ? "" : "clickable align-center"}${user && completedAt ? " item-completed" : ""}`}
       onClick={() => {
         setShowMap(trailCompletionExpanded ? false : showMap);
         setTrailCompletionExpanded(!trailCompletionExpanded);
@@ -98,7 +104,7 @@ const Trail = (props: TrailProps) => {
         <div>
           <p>{description}</p>
           <div className="space-between-row">
-            {completedAt ? (
+            {user && completedAt ? (
               <CompletionDate
                 adventureId={earliestCompletedTrail?.id}
                 mountainId={id}
@@ -110,6 +116,7 @@ const Trail = (props: TrailProps) => {
                 season={earliestCompletedSeason || season}
               />
             ) : (
+              user &&
               onComplete && (
                 <MarkComplete
                   name={name}
@@ -118,7 +125,7 @@ const Trail = (props: TrailProps) => {
                 />
               )
             )}
-            {completedAt && <GridIcon completions={completions} />}
+            {user && completedAt && <GridIcon completions={completions} />}
           </div>
           <br />
           <div className="centered">

@@ -3,6 +3,7 @@ import type { ModelStatic } from "sequelize";
 
 interface DBModels {
   User: ModelStatic<Model>;
+  UserPreference: ModelStatic<Model>;
   Session: ModelStatic<Model>;
   Adventure: ModelStatic<Model>;
   Summit: ModelStatic<Model>;
@@ -15,6 +16,9 @@ export class User extends Model {
   declare name: string;
   declare email: string;
   declare password: string;
+  declare passwordHash: string | null;
+  declare emailVerifiedAt: Date | null;
+  declare birthdate: string | null;
   declare fitnessLevel: "beginner" | "intermediate" | "expert";
   declare homeLocation: string; // needed in case location is disabled
   declare createdAt: Date;
@@ -25,6 +29,7 @@ export class User extends Model {
     this.hasMany(models.Adventure, { foreignKey: "userId" });
     this.hasMany(models.Summit, { foreignKey: "userId" });
     this.hasMany(models.TrailCompletion, { foreignKey: "userId" });
+    this.hasOne(models.UserPreference, { foreignKey: "userId" });
   }
 }
 
@@ -46,7 +51,19 @@ export function initUser(sequelize: Sequelize): void {
       },
       password: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
+      },
+      passwordHash: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      emailVerifiedAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
+      },
+      birthdate: {
+        type: DataTypes.DATEONLY,
+        allowNull: true,
       },
       fitnessLevel: {
         type: DataTypes.STRING,

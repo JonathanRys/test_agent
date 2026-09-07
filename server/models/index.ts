@@ -7,6 +7,8 @@ import { Summary, initSummary } from "./Summary.js";
 
 // User models
 import { User, initUser } from "./User.js";
+import { AuthSession, initAuthSession } from "./AuthSession.js";
+import { UserPreference, initUserPreference } from "./UserPreference.js";
 
 // Data models
 import { State, initState } from "./State.js";
@@ -34,6 +36,8 @@ const models = {
   Season,
   SeasonDate,
   User,
+  AuthSession,
+  UserPreference,
   Mountain,
   Trail,
   List,
@@ -53,6 +57,8 @@ export {
   Season,
   SeasonDate,
   User,
+  AuthSession,
+  UserPreference,
   Mountain,
   Trail,
   List,
@@ -73,6 +79,8 @@ export function initializeModels(sequelize: Sequelize): void {
   initSeasonDate(sequelize);
 
   initUser(sequelize);
+  initAuthSession(sequelize);
+  initUserPreference(sequelize);
 
   initState(sequelize);
   initMountain(sequelize);

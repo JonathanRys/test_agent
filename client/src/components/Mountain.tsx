@@ -9,6 +9,7 @@ import Map from "./Map";
 import MarkComplete, { earliestCompleted } from "./MarkComplete";
 import CompletionDate from "./CompletionDate";
 import GridIcon from "./GridIcon";
+import { useAuth } from "../auth/AuthContext";
 
 export interface MountainProps extends MountainType {
   index: number;
@@ -27,6 +28,7 @@ const ListBubble = (props: List) => {
 };
 
 const Mountain = (props: MountainProps) => {
+  const { user } = useAuth();
   const {
     index,
     name,
@@ -58,28 +60,30 @@ const Mountain = (props: MountainProps) => {
   );
 
   const mountainIcon = <FaMountain title="Mountain" />;
-  const earliestCompletedSummit = earliestCompleted(Summits);
+  const earliestCompletedSummit = user ? earliestCompleted(Summits) : undefined;
   const earliestCompletedSeason = earliestCompletedSummit?.season;
   const completedAt = earliestCompletedSummit?.completedAt;
   const extractMonthIndex = (dateString: string) => {
     const date = new Date(dateString);
     return date.getMonth();
   };
-  const completions = Summits?.reduce(
-    (acc, summit) => {
-      if (summit.completedAt) {
-        acc[extractMonthIndex(summit.completedAt)] = {
-          completedAt: summit.completedAt,
-        };
-      }
-      return acc;
-    },
-    {} as Record<number, { completedAt: string }>,
-  );
+  const completions = user
+    ? Summits?.reduce(
+        (acc, summit) => {
+          if (summit.completedAt) {
+            acc[extractMonthIndex(summit.completedAt)] = {
+              completedAt: summit.completedAt,
+            };
+          }
+          return acc;
+        },
+        {} as Record<number, { completedAt: string }>,
+      )
+    : undefined;
 
   return (
     <div
-      className={`${mountainExpanded ? "" : "clickable align-center"}${completedAt ? " item-completed" : ""}`}
+      className={`${mountainExpanded ? "" : "clickable align-center"}${user && completedAt ? " item-completed" : ""}`}
       onClick={() => {
         setShowMap(mountainExpanded ? false : showMap);
         setMountainExpanded(!mountainExpanded);
@@ -116,7 +120,7 @@ const Mountain = (props: MountainProps) => {
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
           <div className="space-between-row">
-            {completedAt ? (
+            {user && completedAt ? (
               <CompletionDate
                 adventureId={earliestCompletedSummit?.id}
                 mountainId={id}
@@ -128,6 +132,7 @@ const Mountain = (props: MountainProps) => {
                 season={earliestCompletedSeason || season}
               />
             ) : (
+              user &&
               onComplete && (
                 <MarkComplete
                   name={name}
@@ -136,7 +141,7 @@ const Mountain = (props: MountainProps) => {
                 />
               )
             )}
-            {completedAt && <GridIcon completions={completions} />}
+            {user && completedAt && <GridIcon completions={completions} />}
           </div>
           {lat && lon && showMap ? (
             <>

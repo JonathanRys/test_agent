@@ -6,6 +6,7 @@ import {
   editAdventure,
   deleteAdventure,
 } from "../services/adventure.js";
+import { requireUser } from "../middleware/auth.js";
 
 const createAdventureSchema = z
   .object({
@@ -45,31 +46,43 @@ const deleteAdventureSchema = z
 
 export const adventureRouter = Router();
 
-adventureRouter.post("/adventures", async (req: Request, res: Response) => {
-  const payload = createAdventureSchema.parse(req.body);
-  const adventure = await createAdventure(payload);
+adventureRouter.post(
+  "/adventures",
+  requireUser,
+  async (req: Request, res: Response) => {
+    const payload = createAdventureSchema.parse(req.body);
+    const adventure = await createAdventure(payload, req.user!.id);
 
-  res.status(201).json(adventure);
-  return res;
-});
+    res.status(201).json(adventure);
+    return res;
+  },
+);
 
-adventureRouter.patch("/adventure/:id", async (req: Request, res: Response) => {
-  const { id } = req.params;
+adventureRouter.patch(
+  "/adventure/:id",
+  requireUser,
+  async (req: Request, res: Response) => {
+    const { id } = req.params;
 
-  if (typeof id !== "string") {
-    return res.status(400).json({ error: "Invalid query parameter format" });
-  }
+    if (typeof id !== "string") {
+      return res.status(400).json({ error: "Invalid query parameter format" });
+    }
 
-  const payload = editAdventureSchema.parse({ id: parseInt(id), ...req.body });
+    const payload = editAdventureSchema.parse({
+      id: parseInt(id),
+      ...req.body,
+    });
 
-  const adventure = await editAdventure(payload);
+    const adventure = await editAdventure(payload, req.user!.id);
 
-  res.status(201).json(adventure);
-  return res;
-});
+    res.status(201).json(adventure);
+    return res;
+  },
+);
 
 adventureRouter.delete(
   "/adventure/:id",
+  requireUser,
   async (req: Request, res: Response) => {
     const { id } = req.params;
 
@@ -81,7 +94,7 @@ adventureRouter.delete(
       id: parseInt(id),
       ...req.body,
     });
-    const adventure = await deleteAdventure(payload);
+    const adventure = await deleteAdventure(payload, req.user!.id);
 
     res.status(201).json(adventure);
     return res;

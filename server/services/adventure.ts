@@ -8,6 +8,7 @@ import {
 
 export async function createAdventure(
   input: CreateAdventureInput,
+  userId: number,
 ): Promise<Adventure> {
   await ensureInitialized();
 
@@ -20,7 +21,7 @@ export async function createAdventure(
       {
         name: input.name,
         activityId: input.activityId,
-        userId: 1, // TODO: derive userId from session
+        userId,
         activityDate,
       },
       { transaction },
@@ -29,7 +30,7 @@ export async function createAdventure(
     if (mountainIds.length > 0) {
       await Summit.bulkCreate(
         mountainIds.map((mountainId) => ({
-          userId: 1, // TODO: derive userId from session
+          userId,
           adventureId: adventure.id,
           mountainId,
           completedAt: activityDate,
@@ -44,7 +45,7 @@ export async function createAdventure(
     if (trailIds.length > 0) {
       await TrailCompletion.bulkCreate(
         trailIds.map((trailId) => ({
-          userId: 1, // TODO: derive userId from session
+          userId,
           adventureId: adventure.id,
           trailId,
           completedAt: activityDate,
@@ -62,6 +63,7 @@ export async function createAdventure(
 
 export async function editAdventure(
   input: EditAdventureInput,
+  userId: number,
 ): Promise<{ affectedCount: number[]; adventure: Adventure | null }> {
   await ensureInitialized();
 
@@ -71,14 +73,15 @@ export async function editAdventure(
   const activityId = input.activityId ?? null;
 
   return sequelize.transaction(async (transaction) => {
-    const adventure = await Adventure.findByPk(input.id);
+    const adventure = await Adventure.findOne({
+      where: { id: input.id, userId },
+      transaction,
+    });
 
     const affectedCount = await Adventure.update(
       { activityDate, activityId },
       {
-        where: {
-          id: input.id,
-        },
+        where: { id: input.id, userId },
         transaction,
       },
     );
@@ -92,6 +95,7 @@ export async function editAdventure(
           where: {
             adventureId: input.id,
             mountainId,
+            userId,
           },
           transaction,
         },
@@ -107,6 +111,7 @@ export async function editAdventure(
           where: {
             adventureId: input.id,
             trailId,
+            userId,
           },
           transaction,
         },
@@ -119,6 +124,7 @@ export async function editAdventure(
 
 export async function deleteAdventure(
   input: DeleteAdventureInput,
+  userId: number,
 ): Promise<{ affectedCount: number; adventure: Adventure | null }> {
   await ensureInitialized();
 
@@ -126,11 +132,15 @@ export async function deleteAdventure(
   const trailId = input.trailId ?? null;
 
   return sequelize.transaction(async (transaction) => {
-    const adventure = await Adventure.findByPk(input.id);
+    const adventure = await Adventure.findOne({
+      where: { id: input.id, userId },
+      transaction,
+    });
 
     const affectedCount = await Adventure.destroy({
       where: {
         id: input.id,
+        userId,
       },
       transaction,
     });
@@ -140,6 +150,7 @@ export async function deleteAdventure(
         where: {
           adventureId: input.id,
           mountainId,
+          userId,
         },
         transaction,
       });
@@ -150,6 +161,7 @@ export async function deleteAdventure(
         where: {
           adventureId: input.id,
           trailId,
+          userId,
         },
         transaction,
       });

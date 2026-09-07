@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MdArrowBack } from "react-icons/md";
 import Mountain from "./Mountain";
 import Trail from "./Trail";
+import { useAuth } from "../auth/AuthContext";
 
 interface ListItemsProps {
   id: number;
@@ -20,6 +21,7 @@ interface ListItemsProps {
 }
 
 export default function ListItems(props: ListItemsProps) {
+  const { user, apiFetch } = useAuth();
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -46,7 +48,7 @@ export default function ListItems(props: ListItemsProps) {
   useEffect(() => {
     const loadItems = async () => {
       try {
-        const response = await fetch(endpoint, {
+        const response = await apiFetch(endpoint, {
           method: "GET",
         });
 
@@ -67,7 +69,7 @@ export default function ListItems(props: ListItemsProps) {
 
   const refreshItems = async () => {
     try {
-      const response = await fetch(endpoint, {
+      const response = await apiFetch(endpoint, {
         method: "GET",
       });
       const data = await response.json();
@@ -92,7 +94,8 @@ export default function ListItems(props: ListItemsProps) {
         &nbsp;
         {name}
       </h1>
-      {typeof totalCount === "number" &&
+      {user &&
+        typeof totalCount === "number" &&
         typeof completedCount === "number" &&
         !loading && (
           <p
@@ -128,7 +131,7 @@ export default function ListItems(props: ListItemsProps) {
                 <Item
                   {...item}
                   index={i + 1}
-                  onComplete={refreshItems}
+                  onComplete={user ? refreshItems : undefined}
                   season={completions?.[item.id]?.season || null}
                 />
               </section>

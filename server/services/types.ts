@@ -13,7 +13,9 @@ export type SeasonWithDates = {
 
 export type ListWithProgress = List & {
   totalCount: number;
-  completedCount: number;
+  completedCount?: number;
+  completedDate?: string | Date;
+  completions?: Record<number, { season?: string; completedAt: string }>;
 };
 
 export type ListFilters = {
@@ -56,5 +58,5 @@ export interface MountainWithRelations extends Mountain {
 }
 
 export interface TrailWithRelations extends Trail {
-  Summits?: SummitWithSeason[];
+  TrailCompletions?: SummitWithSeason[];
 }

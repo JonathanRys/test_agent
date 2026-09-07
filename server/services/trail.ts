@@ -73,7 +73,10 @@ export async function getTrails(filters: TrailFilters): Promise<Trail[]> {
   }
 }
 
-export async function getTrailsOnList(listId: number): Promise<Trail[]> {
+export async function getTrailsOnList(
+  listId: number,
+  userId?: number,
+): Promise<TrailWithRelations[]> {
   try {
     await ensureInitialized();
     const trails = await Trail.findAll({
@@ -92,6 +95,8 @@ export async function getTrailsOnList(listId: number): Promise<Trail[]> {
         {
           model: TrailCompletion,
           attributes: ["id", "completedAt", "adventureId"],
+          where: userId ? { userId } : { userId: -1 },
+          required: false,
           include: [completionInclude],
         },
       ],
@@ -128,19 +133,19 @@ export async function getTrailsOnList(listId: number): Promise<Trail[]> {
         plain: true,
       }) as TrailWithRelations;
 
-      if (plainTrail.Summits) {
-        plainTrail.Summits = plainTrail.Summits.map((summit) => ({
-          ...summit,
-          season: getSeasonForDate(seasonsMap, summit.completedAt),
-        }));
+      if (plainTrail.TrailCompletions) {
+        plainTrail.TrailCompletions = plainTrail.TrailCompletions.map(
+          (completion) => ({
+            ...completion,
+            season: getSeasonForDate(seasonsMap, completion.completedAt),
+          }),
+        );
       }
 
       return plainTrail;
     });
 
     return trailsWithSeasons;
-
-    return trails;
   } catch (error) {
     console.error(`Error fetching trails from database:`, error);
     return [];

@@ -4,6 +4,7 @@ import { getList, getLists } from "../services/list.js";
 
 import { getMountainsOnList } from "../services/mountain.js";
 import { getTrailsOnList } from "../services/trail.js";
+import { optionalUser } from "../middleware/auth.js";
 
 const payloadSchema = z.object({
   prompt: z.string().min(1).max(4000),
@@ -11,6 +12,7 @@ const payloadSchema = z.object({
 });
 
 export const listViewRouter = Router();
+listViewRouter.use(optionalUser);
 
 listViewRouter.get("/list/:id", async (req: Request, res: Response) => {
   const { id } = req.params;
@@ -34,9 +36,12 @@ listViewRouter.get("/lists", async (req: Request, res: Response) => {
   ) {
     return res.status(400).json({ error: "Invalid query parameter format" });
   }
-  const lists = await getLists({
-    type: type as "peakbagging" | "trace",
-  });
+  const lists = await getLists(
+    {
+      type: type as "peakbagging" | "trace",
+    },
+    req.user?.id,
+  );
 
   res.status(200).json(lists);
   return res;
@@ -51,7 +56,7 @@ listViewRouter.get(
       return res.status(400).json({ error: "Invalid query parameter format" });
     }
 
-    const mountains = await getMountainsOnList(parseInt(listId));
+    const mountains = await getMountainsOnList(parseInt(listId), req.user?.id);
 
     res.status(200).json(mountains);
     return res;
@@ -67,7 +72,7 @@ listViewRouter.get(
       return res.status(400).json({ error: "Invalid query parameter format" });
     }
 
-    const trails = await getTrailsOnList(parseInt(listId));
+    const trails = await getTrailsOnList(parseInt(listId), req.user?.id);
 
     res.status(200).json(trails);
     return res;

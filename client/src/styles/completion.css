@@ -1,0 +1,67 @@
+.mark-complete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mark-complete label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.mark-complete input[type="date"] {
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 8px;
+  color: #e2e8f0;
+  padding: 6px 10px;
+}
+
+.mark-complete-error {
+  width: 100%;
+  margin: 0;
+  color: #fca5a5;
+  font-size: 0.85rem;
+}
+
+.completion-date {
+  color: #86efac;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.state-icon {
+  color: #e2e8f0;
+}
+
+.edit-icon {
+  color: #e2e8f0;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #fca5a5;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.Spring {
+  color: hotpink;
+}
+
+.Summer {
+  color: yellow;
+}
+
+.Autumn {
+  color: orangered;
+}
+
+.Winter {
+  color: skyblue;
+}

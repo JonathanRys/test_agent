@@ -1,0 +1,69 @@
+.split-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.split-title.inline {
+  width: 90%;
+  margin-left: 10px;
+  display: inline-flex;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-progress {
+  margin: 8px 0 0;
+  color: #7dd3fc;
+  font-size: 0.9rem;
+}
+
+.list-progress.completed {
+  color: #86efac;
+}
+
+.panel-completed {
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+.item-completed h2 {
+  color: #bbf7d0;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  color: rgba(225, 225, 225, 0.3);
+  border: 2px solid rgba(225, 225, 225, 0.3);
+  border-radius: 50%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 8px 14px;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  border-radius: 10px;
+  background: rgba(14, 116, 144, 0.18);
+  color: #bae6fd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.action-link:hover {
+  border-color: rgba(125, 211, 252, 0.7);
+  background: rgba(14, 116, 144, 0.3);
+  color: #f0f9ff;
+}

@@ -1,5 +1,6 @@
 import { SubmitEvent, useState } from "react";
 import { Completion } from "../types/Completion";
+import { useAuth } from "../auth/AuthContext";
 
 const HIKING_ACTIVITY_ID = 7;
 
@@ -16,6 +17,7 @@ type MarkCompleteProps = {
 
 export default function MarkComplete(props: MarkCompleteProps) {
   const { name, mountainId, trailId, onComplete } = props;
+  const { apiFetch } = useAuth();
   const [activityDate, setActivityDate] = useState(todayInputValue);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -29,7 +31,7 @@ export default function MarkComplete(props: MarkCompleteProps) {
     setError(null);
 
     try {
-      const response = await fetch("/api/adventures", {
+      const response = await apiFetch("/api/adventures", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

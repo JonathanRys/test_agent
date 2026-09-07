@@ -1,0 +1,13 @@
+.mailing-address {
+  margin: 3px 10px;
+  white-space: pre-wrap;
+}
+
+.media {
+  font-size: larger;
+  margin: 5px;
+}
+
+.media:first-of-type {
+  margin-left: 0;
+}

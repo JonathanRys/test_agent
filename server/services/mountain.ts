@@ -82,6 +82,7 @@ export async function getMountains(
 
 export async function getMountainsOnList(
   listId: number,
+  userId?: number,
 ): Promise<MountainWithRelations[]> {
   try {
     await ensureInitialized();
@@ -110,6 +111,8 @@ export async function getMountainsOnList(
         {
           model: Summit,
           attributes: ["id", "completedAt", "adventureId"],
+          where: userId ? { userId } : { userId: -1 },
+          required: false,
           include: [completionInclude],
         },
       ],

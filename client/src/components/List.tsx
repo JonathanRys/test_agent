@@ -4,6 +4,7 @@ import { FaMedal } from "react-icons/fa";
 
 import ContactForm from "./ContactForm";
 import { formatCompletedDate } from "./MarkComplete";
+import { useAuth } from "../auth/AuthContext";
 
 export interface ListProps {
   id: number;
@@ -30,6 +31,7 @@ export interface ListProps {
 }
 
 const List = (props: ListProps) => {
+  const { user } = useAuth();
   const {
     type,
     patchAvailable,
@@ -62,19 +64,21 @@ const List = (props: ListProps) => {
         <span>{patchIcon}</span>
       </h2>
       <p>{props.description}</p>
-      {typeof totalCount === "number" && typeof completedCount === "number" && (
-        <p
-          className={`list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}
-        >
-          {completedCount} / {totalCount}{" "}
-          {!completed &&
-            `(${Math.round((completedCount / totalCount) * 100)}%)`}{" "}
-          complete
-          {completed &&
-            completedDate &&
-            `d on ${formatCompletedDate(completedDate)}`}
-        </p>
-      )}
+      {user &&
+        typeof totalCount === "number" &&
+        typeof completedCount === "number" && (
+          <p
+            className={`list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}
+          >
+            {completedCount} / {totalCount}{" "}
+            {!completed &&
+              `(${Math.round((completedCount / totalCount) * 100)}%)`}{" "}
+            complete
+            {completed &&
+              completedDate &&
+              `d on ${formatCompletedDate(completedDate)}`}
+          </p>
+        )}
       <ContactForm
         website={website}
         phoneNumber={phoneNumber}

@@ -5,6 +5,7 @@ import MarkComplete, {
   completionDateToInputValue,
 } from "./MarkComplete";
 import Season from "./Season";
+import { useAuth } from "../auth/AuthContext";
 
 interface CompletionDateProps {
   adventureId: number;
@@ -30,6 +31,7 @@ const CompletionDate = (props: CompletionDateProps) => {
     setEditing,
     onComplete,
   } = props;
+  const { apiFetch } = useAuth();
   const [activityDate, setActivityDate] = useState(
     completionDateToInputValue(completedAt),
   );
@@ -43,14 +45,14 @@ const CompletionDate = (props: CompletionDateProps) => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/adventure/${adventureId}`, {
+      const response = await apiFetch(`/api/adventure/${adventureId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           activityDate,
           activityId: 7, // TODO: add activity dropdown
           mountainId: mountainId ? mountainId : undefined,
-          trailIds: trailId ? trailId : undefined,
+          trailId: trailId ? trailId : undefined,
         }),
       });
 
@@ -76,12 +78,12 @@ const CompletionDate = (props: CompletionDateProps) => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/adventure/${adventureId}`, {
+      const response = await apiFetch(`/api/adventure/${adventureId}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           mountainId: mountainId ? mountainId : undefined,
-          trailIds: trailId ? trailId : undefined,
+          trailId: trailId ? trailId : undefined,
         }),
       });
 

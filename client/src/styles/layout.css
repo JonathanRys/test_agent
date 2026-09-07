@@ -1,0 +1,22 @@
+.app-shell {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.auth-shell {
+  align-content: start;
+}
+
+.auth-shell .auth-panel {
+  margin-top: clamp(12px, 3vh, 32px);
+}
+
+.account-shell {
+  align-content: start;
+}
+
+.account-shell .panel {
+  margin-top: clamp(12px, 3vh, 32px);
+}

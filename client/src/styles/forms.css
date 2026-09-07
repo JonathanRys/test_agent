@@ -1,0 +1,74 @@
+.composer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-panel {
+  width: min(460px, 100%);
+}
+
+.auth-panel > p:not(.eyebrow) {
+  color: #94a3b8;
+}
+
+.floating-field {
+  position: relative;
+  display: block;
+  padding-top: 8px;
+}
+
+.floating-field input,
+.floating-field select {
+  width: 100%;
+  min-height: 54px;
+  padding: 19px 15px 7px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.82);
+  color: #f8fafc;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.floating-field input:focus,
+.floating-field select:focus {
+  border-color: #38b6ff;
+  box-shadow: 0 0 0 3px rgba(56, 182, 255, 0.16);
+}
+
+.floating-field span {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  color: #94a3b8;
+  pointer-events: none;
+  transform-origin: left top;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.floating-field input:focus + span,
+.floating-field input:not(:placeholder-shown) + span,
+.floating-field select + span {
+  color: #7dd3fc;
+  transform: translateY(-9px) scale(0.72);
+}
+
+.preference-notification {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(134, 239, 172, 0.35);
+  border-radius: 10px;
+  background: rgba(22, 101, 52, 0.2);
+  color: #bbf7d0;
+}
+
+.preference-notification.error {
+  border-color: rgba(252, 165, 165, 0.35);
+  background: rgba(127, 29, 29, 0.2);
+  color: #fecaca;
+}

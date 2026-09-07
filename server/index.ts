@@ -7,12 +7,16 @@ import { listViewRouter } from "./routes/list.js";
 import { adventureRouter } from "./routes/adventure.js";
 import { mountainRouter } from "./routes/mountain.js";
 import { trailRouter } from "./routes/trail.js";
+import { authRouter } from "./routes/auth.js";
+import { preferencesRouter } from "./routes/preferences.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3001);
 
 app.use(cors());
 app.use(express.json());
+app.use("/api", authRouter);
+app.use("/api", preferencesRouter);
 
 app.get("/health", (_req, res) => {
   res.json({
