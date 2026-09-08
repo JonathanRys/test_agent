@@ -1,8 +1,10 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
+import DatePickerField from "./DatePickerField";
 
 type Preferences = {
+  birthdate: string | null;
   fitnessLevel: "beginner" | "intermediate" | "expert" | null;
   homeLocation: string | null;
   units: "imperial" | "metric";
@@ -12,6 +14,7 @@ type Preferences = {
 };
 
 const initialPreferences: Preferences = {
+  birthdate: null,
   fitnessLevel: null,
   homeLocation: "",
   units: "imperial",
@@ -29,7 +32,6 @@ export default function Settings() {
   const { apiFetch } = useAuth();
   const navigate = useNavigate();
   const [preferences, setPreferences] = useState(initialPreferences);
-  const [birthdate, setBirthdate] = useState("");
   const [status, setStatus] = useState<SaveStatus | null>(null);
   const [saving, setSaving] = useState(false);
   const navigationTimer = useRef<number | null>(null);
@@ -44,14 +46,9 @@ export default function Settings() {
 
   useEffect(() => {
     async function load() {
-      const [preferencesResponse, meResponse] = await Promise.all([
-        apiFetch("/api/me/preferences"),
-        apiFetch("/api/auth/me"),
-      ]);
+      const preferencesResponse = await apiFetch("/api/me/preferences");
       const preferencesData = await preferencesResponse.json();
-      const meData = await meResponse.json();
       if (preferencesResponse.ok) setPreferences(preferencesData.preferences);
-      if (meResponse.ok) setBirthdate(meData.user.birthdate ?? "");
     }
     void load();
   }, []);
@@ -64,7 +61,7 @@ export default function Settings() {
       const response = await apiFetch("/api/me/preferences", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...preferences, birthdate: birthdate || null }),
+        body: JSON.stringify(preferences),
       });
 
       if (!response.ok) {
@@ -86,15 +83,16 @@ export default function Settings() {
       <p className="eyebrow">Account</p>
       <h1>Preferences</h1>
       <form onSubmit={save} className="composer">
-        <label className="floating-field">
-          <input
-            type="date"
-            placeholder=" "
-            value={birthdate}
-            onChange={(event) => setBirthdate(event.target.value)}
-          />
-          <span>Birthdate</span>
-        </label>
+        <DatePickerField
+          label="Birthdate"
+          value={preferences.birthdate ?? ""}
+          onChange={(value) =>
+            setPreferences({ ...preferences, birthdate: value || null })
+          }
+          fullWidth
+          className="settings-date"
+          floatingLabel
+        />
         <label className="floating-field">
           <select
             value={preferences.fitnessLevel ?? ""}

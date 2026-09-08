@@ -14,12 +14,41 @@
   color: #cbd5e1;
 }
 
-.mark-complete input[type="date"] {
-  background: rgba(30, 41, 59, 0.9);
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  border-radius: 8px;
-  color: #e2e8f0;
-  padding: 6px 10px;
+.mark-complete-date .MuiInputBase-root {
+  min-width: 150px;
+  height: 54px !important;
+  min-height: 54px !important;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.82);
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.mark-complete-date .MuiPickersSectionList-root,
+.mark-complete-date .MuiPickersInputBase-sectionsContainer {
+  padding-top: 10px;
+  transform: translateY(6px);
+}
+
+.mark-complete-date .MuiPickersOutlinedInput-root {
+  padding: 4px 20px 0;
+}
+
+.mark-complete-date .MuiOutlinedInput-notchedOutline,
+.mark-complete-date .MuiPickersOutlinedInput-notchedOutline {
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  border-radius: 12px;
+}
+
+.mark-complete-date .MuiInputLabel-root,
+.mark-complete-date .MuiPickersInputBase-label,
+.mark-complete-date .MuiInputBase-input,
+.mark-complete-date .MuiPickersSectionList-root,
+.mark-complete-date .MuiPickersSectionList-section {
+  color: #f8fafc !important;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 .mark-complete-error {

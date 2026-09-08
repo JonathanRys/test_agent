@@ -58,6 +58,54 @@
   transform: translateY(-9px) scale(0.72);
 }
 
+.settings-date .MuiInputBase-root {
+  height: 54px !important;
+  min-height: 54px !important;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.82);
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.settings-date .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+.settings-date .MuiInputBase-input {
+  color: #94a3b8;
+}
+
+.date-picker-floating-field {
+  position: relative;
+  padding-top: 8px;
+}
+
+.date-picker-floating-field > span {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 15px;
+  background: transparent;
+  padding: 0;
+  font-size: 0.72rem;
+  color: #7dd3fc !important;
+  font-family: inherit;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.date-picker-floating-field .MuiPickersSectionList-root,
+.date-picker-floating-field .MuiPickersInputBase-sectionsContainer {
+  padding-top: 10px;
+  transform: translateY(6px);
+}
+
+.settings-date .MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #38b6ff;
+  box-shadow: 0 0 0 3px rgba(56, 182, 255, 0.16);
+}
+
 .preference-notification {
   margin: 0;
   padding: 12px 14px;

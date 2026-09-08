@@ -6,7 +6,6 @@ type User = {
   name: string;
   email: string;
   emailVerifiedAt: string | null;
-  birthdate: string | null;
 };
 
 type AuthContextValue = {
@@ -22,6 +21,31 @@ type AuthContextValue = {
 const AuthContext = createContext<AuthContextValue | null>(null);
 const refreshStorageKey = "hiking-agent-refresh-token";
 
+function getStoredRefreshToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return typeof window.localStorage?.getItem === "function"
+    ? window.localStorage.getItem(refreshStorageKey)
+    : null;
+}
+
+function setStoredRefreshToken(token: string): void {
+  if (
+    typeof window !== "undefined" &&
+    typeof window.localStorage?.setItem === "function"
+  ) {
+    window.localStorage.setItem(refreshStorageKey, token);
+  }
+}
+
+function removeStoredRefreshToken(): void {
+  if (
+    typeof window !== "undefined" &&
+    typeof window.localStorage?.removeItem === "function"
+  ) {
+    window.localStorage.removeItem(refreshStorageKey);
+  }
+}
+
 async function parseError(response: Response): Promise<Error> {
   const data = await response.json().catch(() => ({}));
   return new Error(data.error ?? "Request failed");
@@ -31,20 +55,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [loading, setLoading] = useState(() =>
-    Boolean(sessionStorage.getItem(refreshStorageKey)),
+    Boolean(getStoredRefreshToken()),
   );
 
   async function applyTokens(response: Response): Promise<string> {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error ?? "Authentication failed");
     setAccessToken(data.accessToken);
-    sessionStorage.setItem(refreshStorageKey, data.refreshToken);
+    setStoredRefreshToken(data.refreshToken);
     setUser(data.user);
     return data.accessToken;
   }
 
   async function refreshAccessToken(): Promise<string | null> {
-    const refreshToken = sessionStorage.getItem(refreshStorageKey);
+    const refreshToken = getStoredRefreshToken();
     if (!refreshToken) return null;
 
     const response = await fetch("/api/auth/refresh", {
@@ -53,7 +77,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       body: JSON.stringify({ refreshToken }),
     });
     if (!response.ok) {
-      sessionStorage.removeItem(refreshStorageKey);
+      removeStoredRefreshToken();
       setAccessToken(null);
       setUser(null);
       return null;
@@ -62,8 +86,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    if (!sessionStorage.getItem(refreshStorageKey)) return;
+    if (!getStoredRefreshToken()) return;
     refreshAccessToken().finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    function handleStorage(event: StorageEvent) {
+      if (event.key === refreshStorageKey && event.newValue === null) {
+        setAccessToken(null);
+        setUser(null);
+      }
+    }
+
+    window.addEventListener("storage", handleStorage);
+    return () => window.removeEventListener("storage", handleStorage);
   }, []);
 
   async function login(email: string, password: string): Promise<void> {
@@ -99,7 +135,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
     setAccessToken(null);
     setUser(null);
-    sessionStorage.removeItem(refreshStorageKey);
+    removeStoredRefreshToken();
   }
 
   async function apiFetch(

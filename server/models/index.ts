@@ -9,6 +9,10 @@ import { Summary, initSummary } from "./Summary.js";
 import { User, initUser } from "./User.js";
 import { AuthSession, initAuthSession } from "./AuthSession.js";
 import { UserPreference, initUserPreference } from "./UserPreference.js";
+import {
+  PasswordResetToken,
+  initPasswordResetToken,
+} from "./PasswordResetToken.js";
 
 // Data models
 import { State, initState } from "./State.js";
@@ -38,6 +42,7 @@ const models = {
   User,
   AuthSession,
   UserPreference,
+  PasswordResetToken,
   Mountain,
   Trail,
   List,
@@ -59,6 +64,7 @@ export {
   User,
   AuthSession,
   UserPreference,
+  PasswordResetToken,
   Mountain,
   Trail,
   List,
@@ -81,6 +87,7 @@ export function initializeModels(sequelize: Sequelize): void {
   initUser(sequelize);
   initAuthSession(sequelize);
   initUserPreference(sequelize);
+  initPasswordResetToken(sequelize);
 
   initState(sequelize);
   initMountain(sequelize);

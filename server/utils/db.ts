@@ -44,11 +44,33 @@ export async function ensureInitialized(): Promise<void> {
           allowNull: true,
         });
     }
-    if (!userColumns.birthdate) {
-      await sequelize.getQueryInterface().addColumn("users", "birthdate", {
+    const queryInterface = sequelize.getQueryInterface();
+    const preferenceColumns =
+      await queryInterface.describeTable("userPreferences");
+    if (!preferenceColumns.birthdate) {
+      await queryInterface.addColumn("userPreferences", "birthdate", {
         type: DataTypes.DATEONLY,
         allowNull: true,
       });
+    }
+    const legacyPreferenceColumns = [
+      "birthdate",
+      "fitnessLevel",
+      "homeLocation",
+    ].filter((column) => userColumns[column]);
+    if (legacyPreferenceColumns.length > 0) {
+      await sequelize.query(`
+        INSERT OR IGNORE INTO "userPreferences"
+          ("userId", "birthdate", "fitnessLevel", "homeLocation", "createdAt", "updatedAt")
+        SELECT "id", "birthdate", "fitnessLevel", "homeLocation", CURRENT_TIMESTAMP, CURRENT_TIMESTAMP
+        FROM "users";
+      `);
+      await sequelize.query(`
+        UPDATE "userPreferences"
+        SET "birthdate" = COALESCE("birthdate", (SELECT "birthdate" FROM "users" WHERE "users"."id" = "userPreferences"."userId")),
+            "fitnessLevel" = COALESCE("fitnessLevel", (SELECT "fitnessLevel" FROM "users" WHERE "users"."id" = "userPreferences"."userId")),
+            "homeLocation" = COALESCE("homeLocation", (SELECT "homeLocation" FROM "users" WHERE "users"."id" = "userPreferences"."userId"));
+      `);
     }
     const activityCount = await Activity.count();
     if (activityCount === 0) {

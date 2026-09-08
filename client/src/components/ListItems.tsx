@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ComponentType } from "react";
 import { MdArrowBack } from "react-icons/md";
 import Mountain from "./Mountain";
 import Trail from "./Trail";
+import RockClimbing from "./RockClimbing";
+import TrailMaintenance from "./TrailMaintenance";
 import { useAuth } from "../auth/AuthContext";
+import type { ListDefinition } from "../types/List";
 
 interface ListItemsProps {
   id: number;
   name: string;
-  type: "peakbagging" | "trace";
+  type: "peakbagging" | "trace" | "rockClimbing" | "trailMaintenance";
   totalCount?: number;
   completedCount?: number;
   completions: Record<
@@ -20,6 +23,33 @@ interface ListItemsProps {
   back: () => void;
 }
 
+const listDefinitions: Record<ListItemsProps["type"], ListDefinition> = {
+  peakbagging: {
+    endpoint: (id) => `/api/mountainList/${id}`,
+    item: Mountain,
+    itemKey: "mountain",
+    isCompleted: (item) => Boolean(item.Summits?.length),
+  },
+  trace: {
+    endpoint: (id) => `/api/trailList/${id}`,
+    item: Trail,
+    itemKey: "trail",
+    isCompleted: (item) => Boolean(item.TrailCompletions?.length),
+  },
+  rockClimbing: {
+    endpoint: (id) => `/api/rockClimbingList/${id}`,
+    item: RockClimbing,
+    itemKey: "rockClimbing",
+    isCompleted: (item) => Boolean(item.RockClimbingCompletions?.length),
+  },
+  trailMaintenance: {
+    endpoint: (id) => `/api/trailMaintenanceList/${id}`,
+    item: TrailMaintenance,
+    itemKey: "trailMaintenance",
+    isCompleted: (item) => Boolean(item.TrailMaintenanceCompletions?.length),
+  },
+};
+
 export default function ListItems(props: ListItemsProps) {
   const { user, apiFetch } = useAuth();
   const [items, setItems] = useState<any[]>([]);
@@ -28,22 +58,8 @@ export default function ListItems(props: ListItemsProps) {
   const { id, name, type, back, totalCount, completedCount, completions } =
     props;
 
-  let endpoint: string = "/api/mountainList/0";
-  let Item = Mountain;
-  let key = "mountain";
-
-  switch (type) {
-    case "peakbagging":
-      endpoint = `/api/mountainList/${id}`;
-      Item = Mountain;
-      key = "mountain";
-      break;
-    case "trace":
-      endpoint = `/api/trailList/${id}`;
-      Item = Trail;
-      key = "trail";
-      break;
-  }
+  const definition = listDefinitions[type];
+  const endpoint = definition.endpoint(id);
 
   useEffect(() => {
     const loadItems = async () => {
@@ -101,14 +117,8 @@ export default function ListItems(props: ListItemsProps) {
           <p
             className={`centered list-progress${completedCount > 0 && completedCount === totalCount ? " completed" : ""}`}
           >
-            {
-              items.filter((item) =>
-                type === "trace"
-                  ? item.TrailCompletions?.length
-                  : item.Summits?.length,
-              ).length
-            }{" "}
-            / {items.length || totalCount} complete
+            {items.filter(definition.isCompleted).length} /{" "}
+            {items.length || totalCount} complete
           </p>
         )}
       <br />
@@ -117,18 +127,12 @@ export default function ListItems(props: ListItemsProps) {
         : items.length
           ? items.map((item, i) => (
               <section
-                key={`${key}-${item.id}`}
+                key={`${definition.itemKey}-${item.id}`}
                 className={`panel${
-                  (
-                    type === "trace"
-                      ? item.TrailCompletions?.length
-                      : item.Summits?.length
-                  )
-                    ? " panel-completed"
-                    : ""
+                  definition.isCompleted(item) ? " panel-completed" : ""
                 }`}
               >
-                <Item
+                <definition.item
                   {...item}
                   index={i + 1}
                   onComplete={user ? refreshItems : undefined}

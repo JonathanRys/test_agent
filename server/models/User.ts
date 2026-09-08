@@ -15,12 +15,8 @@ export class User extends Model {
   declare id: number;
   declare name: string;
   declare email: string;
-  declare password: string;
   declare passwordHash: string | null;
   declare emailVerifiedAt: Date | null;
-  declare birthdate: string | null;
-  declare fitnessLevel: "beginner" | "intermediate" | "expert";
-  declare homeLocation: string; // needed in case location is disabled
   declare createdAt: Date;
   declare updatedAt: Date;
   declare deletedAt: Date;
@@ -49,28 +45,12 @@ export function initUser(sequelize: Sequelize): void {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
       passwordHash: {
         type: DataTypes.STRING,
         allowNull: true,
       },
       emailVerifiedAt: {
         type: DataTypes.DATE,
-        allowNull: true,
-      },
-      birthdate: {
-        type: DataTypes.DATEONLY,
-        allowNull: true,
-      },
-      fitnessLevel: {
-        type: DataTypes.STRING,
-        allowNull: true,
-      },
-      homeLocation: {
-        type: DataTypes.STRING,
         allowNull: true,
       },
     },

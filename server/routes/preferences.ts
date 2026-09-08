@@ -27,7 +27,7 @@ preferencesRouter.get(
         where: { userId: req.user!.id },
         defaults: { userId: req.user!.id },
       });
-      res.json({ ok: true, preferences, birthdate: req.user!.birthdate });
+      res.json({ ok: true, preferences });
     } catch (error) {
       next(error);
     }
@@ -40,16 +40,12 @@ preferencesRouter.patch(
   async (req, res, next) => {
     try {
       const values = preferencesSchema.parse(req.body);
-      if (values.birthdate !== undefined) {
-        await req.user!.update({ birthdate: values.birthdate });
-      }
-      const { birthdate: _birthdate, ...preferenceValues } = values;
       const [preferences] = await UserPreference.findOrCreate({
         where: { userId: req.user!.id },
-        defaults: { userId: req.user!.id, ...preferenceValues },
+        defaults: { userId: req.user!.id, ...values },
       });
-      await preferences.update(preferenceValues);
-      res.json({ ok: true, preferences, birthdate: req.user!.birthdate });
+      await preferences.update(values);
+      res.json({ ok: true, preferences });
     } catch (error) {
       next(error);
     }

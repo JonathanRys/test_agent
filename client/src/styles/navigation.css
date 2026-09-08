@@ -2,12 +2,13 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .nav-container {
   width: min(760px, 100%);
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 16px;
 }
@@ -27,21 +28,48 @@
   border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.7);
-  margin-bottom: 10px;
 }
 
 .account-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  gap: 8px;
+  min-height: 36px;
+  padding: 5px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 10px;
+  background: rgba(30, 41, 59, 0.9);
   color: #cbd5e1;
   font-size: 1.4rem;
+  text-decoration: none;
 }
 
+.account-icon.active,
+a.account-icon.active:link:hover,
+a.account-icon.active:visited:hover,
+.account-icon.active:hover {
+  border-color: rgba(148, 163, 184, 0.2);
+  background-color: #2563eb;
+  color: #cbd5e1;
+}
+
+a.account-icon:link:hover,
+a.account-icon:visited:hover,
 .account-icon:hover {
-  color: #38b6ff;
+  border-color: rgba(59, 130, 246, 0.6);
+  background-color: rgba(59, 130, 246, 0.25);
+  color: rgb(56, 182, 255);
+}
+
+a.account-icon:link,
+a.account-icon:visited {
+  color: #cbd5e1;
+}
+
+.account-name {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .mode-label {

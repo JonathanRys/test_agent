@@ -89,6 +89,11 @@ export default function AuthForm({ mode }: AuthFormProps) {
               : "Create account"}
         </button>
       </form>
+      {mode === "login" && (
+        <p>
+          <Link to="/forgot-password">Forgot your password?</Link>
+        </p>
+      )}
       <p>
         {mode === "login" ? "New here? " : "Already have an account? "}
         <Link to={mode === "login" ? "/register" : "/login"}>

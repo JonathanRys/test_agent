@@ -6,6 +6,7 @@ import MarkComplete, {
 } from "./MarkComplete";
 import Season from "./Season";
 import { useAuth } from "../auth/AuthContext";
+import DatePickerField from "./DatePickerField";
 
 interface CompletionDateProps {
   adventureId: number;
@@ -109,19 +110,14 @@ const CompletionDate = (props: CompletionDateProps) => {
         onClick={(event) => event.stopPropagation()}
         onSubmit={submit}
       >
-        <label>
-          Date
-          <input
-            type="date"
-            value={activityDate}
-            onChange={(event) => {
-              if (event.target.value !== completedAt) {
-                setActivityDate(event.target.value);
-              }
-            }}
-            required
-          />
-        </label>{" "}
+        <DatePickerField
+          label="Date"
+          value={activityDate}
+          onChange={setActivityDate}
+          required
+          className="mark-complete-date"
+          floatingLabel
+        />{" "}
         <button type="submit" disabled={saving}>
           {saving ? "Saving..." : "Update"}
         </button>{" "}

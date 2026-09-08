@@ -8,6 +8,8 @@ import {
   refreshSession,
   registerUser,
   revokeSession,
+  requestPasswordReset,
+  resetPassword,
 } from "../services/auth.js";
 
 const credentials = z.object({
@@ -63,6 +65,46 @@ authRouter.post("/auth/refresh", async (req, res, next) => {
   } catch (error) {
     if (error instanceof Error && error.message === "INVALID_REFRESH_TOKEN") {
       res.status(401).json({ ok: false, error: "Invalid refresh token" });
+      return;
+    }
+    next(error);
+  }
+});
+
+authRouter.post("/auth/forgot-password", async (req, res, next) => {
+  try {
+    const email = z.string().email().parse(req.body?.email);
+    const token = await requestPasswordReset(email);
+    if (token && process.env.NODE_ENV !== "production") {
+      console.info(
+        `Password reset link: ${process.env.CLIENT_URL ?? "http://localhost:5173"}/reset-password?token=${token}`,
+      );
+    }
+    res.json({
+      ok: true,
+      message: "If that email exists, a reset link has been sent.",
+    });
+  } catch (error) {
+    next(error);
+  }
+});
+
+authRouter.post("/auth/reset-password", async (req, res, next) => {
+  try {
+    const body = credentials
+      .omit({ email: true })
+      .extend({ token: z.string().min(1) })
+      .parse(req.body);
+    const user = await resetPassword(body.token, body.password);
+    res.json({ ok: true, user: publicUser(user) });
+  } catch (error) {
+    if (
+      error instanceof Error &&
+      error.message === "INVALID_PASSWORD_RESET_TOKEN"
+    ) {
+      res
+        .status(400)
+        .json({ ok: false, error: "Invalid or expired reset link" });
       return;
     }
     next(error);

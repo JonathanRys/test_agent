@@ -2,6 +2,8 @@ import React from "react";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, expect, it } from "vitest";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { AuthProvider } from "../client/src/auth/AuthContext";
 import Settings from "../client/src/components/Settings";
 import { fetchMock } from "./setup";
@@ -46,14 +48,19 @@ describe("Settings", () => {
     });
 
     render(
-      <MemoryRouter initialEntries={["/account", "/settings"]} initialIndex={1}>
-        <AuthProvider>
-          <Routes>
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/account" element={<p>Account page</p>} />
-          </Routes>
-        </AuthProvider>
-      </MemoryRouter>,
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <MemoryRouter
+          initialEntries={["/account", "/settings"]}
+          initialIndex={1}
+        >
+          <AuthProvider>
+            <Routes>
+              <Route path="/settings" element={<Settings />} />
+              <Route path="/account" element={<p>Account page</p>} />
+            </Routes>
+          </AuthProvider>
+        </MemoryRouter>
+      </LocalizationProvider>,
     );
 
     await screen.findByText("Preferences");

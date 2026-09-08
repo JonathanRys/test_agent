@@ -8,12 +8,13 @@ const Nav = () => {
     <div className="nav">
       <div className="nav-container">
         <Link
-          className="account-icon"
+          className={`account-icon${user ? " active" : ""}`}
           to={user ? "/account" : "/login"}
           aria-label={user ? "Open account" : "Log in"}
           title={user ? "Open account" : "Log in"}
         >
           <FaUserCircle aria-hidden="true" />
+          {user && <span className="account-name">{user.name}</span>}
         </Link>
         <div className="mode-controls">
           <span className="mode-label">Mode</span>

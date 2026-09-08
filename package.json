@@ -23,10 +23,15 @@
     "typecheck:tests": "tsc -p tests/tsconfig.json"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.4.0",
+    "@mui/x-date-pickers": "^9.13.0",
     "@state-icons/react": "^0.1.1",
     "@vis.gl/react-google-maps": "^1.9.0",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
+    "dayjs": "^1.11.23",
     "dotenv": "^17.4.2",
     "express": "^5.1.1",
     "express-handlebars": "^9.0.1",

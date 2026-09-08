@@ -1,10 +1,11 @@
 import bcrypt from "bcryptjs";
 import { createHash, randomBytes } from "node:crypto";
-import { AuthSession, User } from "../models/index.js";
+import { AuthSession, PasswordResetToken, User } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
 
 const ACCESS_LIFETIME_MS = 15 * 60 * 1000;
-const REFRESH_LIFETIME_MS = 30 * 24 * 60 * 60 * 1000;
+const REFRESH_LIFETIME_MS = 60 * 60 * 1000;
+const PASSWORD_RESET_LIFETIME_MS = 60 * 60 * 1000;
 
 export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
@@ -18,13 +19,16 @@ function createToken(): string {
   return randomBytes(32).toString("base64url");
 }
 
+export async function hashPassword(password: string): Promise<string> {
+  return bcrypt.hash(password, 12);
+}
+
 export function publicUser(user: User) {
   return {
     id: user.id,
     name: user.name,
     email: user.email,
     emailVerifiedAt: user.emailVerifiedAt,
-    birthdate: user.birthdate,
   };
 }
 
@@ -41,6 +45,15 @@ async function issueSession(user: User) {
   return { accessToken, refreshToken };
 }
 
+async function issueAccessToken(session: AuthSession, user: User) {
+  const accessToken = createToken();
+  session.accessTokenHash = hashToken(accessToken);
+  session.accessExpiresAt = new Date(Date.now() + ACCESS_LIFETIME_MS);
+  session.refreshExpiresAt = new Date(Date.now() + REFRESH_LIFETIME_MS);
+  await session.save();
+  return { accessToken, refreshToken: undefined, user };
+}
+
 export async function registerUser(
   name: string,
   email: string,
@@ -54,10 +67,50 @@ export async function registerUser(
   const user = await User.create({
     name: name.trim(),
     email: normalizedEmail,
-    password: "",
-    passwordHash: await bcrypt.hash(password, 12),
+    passwordHash: await hashPassword(password),
   });
   return { user, tokens: await issueSession(user) };
+}
+
+export async function requestPasswordReset(
+  email: string,
+): Promise<string | null> {
+  await ensureInitialized();
+  const user = await User.findOne({ where: { email: normalizeEmail(email) } });
+  if (!user) return null;
+
+  const token = createToken();
+  await PasswordResetToken.create({
+    userId: user.id,
+    tokenHash: hashToken(token),
+    expiresAt: new Date(Date.now() + PASSWORD_RESET_LIFETIME_MS),
+  });
+  return token;
+}
+
+export async function resetPassword(
+  token: string,
+  password: string,
+): Promise<User> {
+  await ensureInitialized();
+  const resetToken = await PasswordResetToken.findOne({
+    where: { tokenHash: hashToken(token), consumedAt: null },
+    include: [{ model: User }],
+  });
+  if (!resetToken || resetToken.expiresAt.getTime() <= Date.now()) {
+    throw new Error("INVALID_PASSWORD_RESET_TOKEN");
+  }
+
+  const user = resetToken.get("User") as User;
+  user.passwordHash = await hashPassword(password);
+  await user.save();
+  resetToken.consumedAt = new Date();
+  await resetToken.save();
+  await AuthSession.update(
+    { revokedAt: new Date() },
+    { where: { userId: user.id, revokedAt: null } },
+  );
+  return user;
 }
 
 export async function loginUser(email: string, password: string) {
@@ -80,10 +133,15 @@ export async function refreshSession(refreshToken: string) {
     throw new Error("INVALID_REFRESH_TOKEN");
   }
 
-  session.revokedAt = new Date();
-  await session.save();
   const user = session.get("User") as User;
-  return { user, tokens: await issueSession(user) };
+  const tokens = await issueAccessToken(session, user);
+  return {
+    user,
+    tokens: {
+      accessToken: tokens.accessToken,
+      refreshToken,
+    },
+  };
 }
 
 export async function revokeSession(session: AuthSession): Promise<void> {

@@ -13,21 +13,31 @@ import Agent from "./components/Agent";
 import Lists from "./components/Lists";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Settings from "./components/Settings";
+import ForgotPassword from "./components/ForgotPassword";
+import ResetPassword from "./components/ResetPassword";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
 export function App() {
   return (
-    <BrowserRouter>
-      <AuthProvider>
-        <AppLayout />
-      </AuthProvider>
-    </BrowserRouter>
+    <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <BrowserRouter>
+        <AuthProvider>
+          <AppLayout />
+        </AuthProvider>
+      </BrowserRouter>
+    </LocalizationProvider>
   );
 }
 
 function AppLayout() {
   const location = useLocation();
-  const isAuthRoute =
-    location.pathname === "/login" || location.pathname === "/register";
+  const isAuthRoute = [
+    "/login",
+    "/register",
+    "/forgot-password",
+    "/reset-password",
+  ].includes(location.pathname);
   const isAccountRoute =
     location.pathname === "/account" || location.pathname === "/settings";
 
@@ -40,6 +50,8 @@ function AppLayout() {
         <Route path="/" element={<Lists />} />
         <Route path="/login" element={<AuthForm mode="login" />} />
         <Route path="/register" element={<AuthForm mode="register" />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/agent" element={<Agent />} />
           <Route path="/account" element={<Account />} />

@@ -40,5 +40,6 @@ vi.stubGlobal("fetch", fetchMock);
 
 afterEach(() => {
   fetchMock.mockClear();
-  sessionStorage.clear();
+  if (typeof sessionStorage?.clear === "function") sessionStorage.clear();
+  if (typeof localStorage?.clear === "function") localStorage.clear();
 });

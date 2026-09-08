@@ -1,6 +1,7 @@
 import { SubmitEvent, useState } from "react";
 import { Completion } from "../types/Completion";
 import { useAuth } from "../auth/AuthContext";
+import DatePickerField from "./DatePickerField";
 
 const HIKING_ACTIVITY_ID = 7;
 
@@ -62,15 +63,14 @@ export default function MarkComplete(props: MarkCompleteProps) {
       onClick={(event) => event.stopPropagation()}
       onSubmit={submit}
     >
-      <label>
-        Date
-        <input
-          type="date"
-          value={activityDate}
-          onChange={(event) => setActivityDate(event.target.value)}
-          required
-        />
-      </label>
+      <DatePickerField
+        label="Date"
+        value={activityDate}
+        onChange={setActivityDate}
+        required
+        className="mark-complete-date"
+        floatingLabel
+      />
       <button type="submit" disabled={saving}>
         {saving ? "Saving..." : label}
       </button>
