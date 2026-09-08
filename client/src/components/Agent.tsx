@@ -74,7 +74,7 @@ export default function Agent() {
             loadedMessages.push({
               role: "assistant",
               content:
-                "Ask me anything and I will respond through the local agent endpoint.",
+                "Hello, I am your hiking assistant. I can check your hiking completions, provide information about trails and mountains, and help you plan your next adventure. How can I assist you today?",
             });
           }
 
@@ -90,7 +90,7 @@ export default function Agent() {
           {
             role: "assistant",
             content:
-              "Ask me anything and I will respond through the local agent endpoint.",
+              "Hello, I am your hiking assistant. I can check your hiking completions, provide information about trails and mountains, and help you plan your next adventure. How can I assist you today?",
           },
         ]);
       } finally {

@@ -5,6 +5,10 @@
   padding: 24px;
 }
 
+.app-shell .panel {
+  margin-top: clamp(12px, 3vh, 32px);
+}
+
 .auth-shell {
   align-content: start;
 }
@@ -15,8 +19,4 @@
 
 .account-shell {
   align-content: start;
-}
-
-.account-shell .panel {
-  margin-top: clamp(12px, 3vh, 32px);
 }
