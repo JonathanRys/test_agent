@@ -6,6 +6,15 @@ export type List = {
   abbreviation: string;
 };
 
+export type MountainFilterState = {
+  state: string;
+  completion: "all" | "hiked" | "unhiked";
+  season: string;
+  month: string;
+  trail: "all" | "marked" | "bushwhack";
+  list: string;
+};
+
 type ListItem = {
   TrailCompletions?: unknown[];
   Summits?: unknown[];

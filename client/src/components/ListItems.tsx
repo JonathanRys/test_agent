@@ -1,13 +1,17 @@
-import { useEffect, useState, type ComponentType } from "react";
+import { useEffect, useState } from "react";
 import { MdArrowBack } from "react-icons/md";
 import Mountain from "./Mountain";
 import Trail from "./Trail";
 import RockClimbing from "./RockClimbing";
 import TrailMaintenance from "./TrailMaintenance";
+import MountainFilters, {
+  filterMountains,
+  initialMountainFilters,
+} from "./MountainFilters";
 import { useAuth } from "../auth/AuthContext";
-import type { ListDefinition } from "../types/List";
+import type { ListDefinition, MountainFilterState } from "../types/List";
 
-interface ListItemsProps {
+export interface ListItemsProps {
   id: number;
   name: string;
   type: "peakbagging" | "trace" | "rockClimbing" | "trailMaintenance";
@@ -54,12 +58,20 @@ export default function ListItems(props: ListItemsProps) {
   const { user, apiFetch } = useAuth();
   const [items, setItems] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const [mountainFilters, setMountainFilters] = useState<MountainFilterState>(
+    initialMountainFilters,
+  );
 
   const { id, name, type, back, totalCount, completedCount, completions } =
     props;
 
   const definition = listDefinitions[type];
   const endpoint = definition.endpoint(id);
+
+  const isMountainList = type === "peakbagging";
+  const filteredItems = isMountainList
+    ? filterMountains(items, mountainFilters, Boolean(user))
+    : items;
 
   useEffect(() => {
     const loadItems = async () => {
@@ -122,10 +134,20 @@ export default function ListItems(props: ListItemsProps) {
           </p>
         )}
       <br />
+      {isMountainList && !loading && (
+        <MountainFilters
+          mountains={items}
+          activeListId={id}
+          isAuthenticated={Boolean(user)}
+          value={mountainFilters}
+          onChange={setMountainFilters}
+          onReset={() => setMountainFilters(initialMountainFilters)}
+        />
+      )}
       {loading
         ? "Loading..."
-        : items.length
-          ? items.map((item, i) => (
+        : filteredItems.length
+          ? filteredItems.map((item, i) => (
               <section
                 key={`${definition.itemKey}-${item.id}`}
                 className={`panel${
@@ -140,7 +162,9 @@ export default function ListItems(props: ListItemsProps) {
                 />
               </section>
             ))
-          : "Coming soon..."}
+          : isMountainList && items.length
+            ? "No mountains match the selected filters."
+            : "Coming soon..."}
     </>
   );
 }

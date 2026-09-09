@@ -25,6 +25,45 @@
   color: #86efac;
 }
 
+.list-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  margin: 0 auto 18px;
+  max-width: 1100px;
+  padding: 14px;
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.list-filters label {
+  display: grid;
+  gap: 4px;
+  color: #bae6fd;
+  font-size: 0.78rem;
+}
+
+.list-filters select,
+.filter-reset {
+  min-height: 34px;
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  border-radius: 6px;
+  background: #172033;
+  color: #e0f2fe;
+  padding: 6px 8px;
+}
+
+.filter-reset {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-reset:hover {
+  border-color: rgba(125, 211, 252, 0.7);
+}
+
 .panel-completed {
   border-color: rgba(74, 222, 128, 0.35);
 }

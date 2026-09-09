@@ -2,7 +2,7 @@ import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 import dayjs from "dayjs";
 import { useEffect, useRef, useState } from "react";
 
-type DatePickerFieldProps = {
+export type DatePickerFieldProps = {
   label: string;
   value: string;
   onChange: (value: string) => void;

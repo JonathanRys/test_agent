@@ -6,7 +6,7 @@ import {
 
 const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
 
-interface MapProps {
+export interface MapProps {
   lat: number;
   lon: number;
   zoom?: number;

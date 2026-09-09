@@ -8,7 +8,7 @@ import Season from "./Season";
 import { useAuth } from "../auth/AuthContext";
 import DatePickerField from "./DatePickerField";
 
-interface CompletionDateProps {
+export interface CompletionDateProps {
   adventureId: number;
   mountainId?: number;
   trailId?: number;

@@ -1,11 +1,5 @@
 import { SubmitEvent, useEffect, useLayoutEffect, useState } from "react";
-
-type Message = {
-  role: "user" | "assistant";
-  content: string;
-};
-
-type MemoryType = "short-term" | "long-term";
+import type { MemoryType, Message } from "../types/Agent";
 
 function generateUUID(): string {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {

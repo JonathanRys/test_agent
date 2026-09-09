@@ -1,4 +1,4 @@
-interface GridIconProps {
+export interface GridIconProps {
   completions?: Record<
     number,
     {

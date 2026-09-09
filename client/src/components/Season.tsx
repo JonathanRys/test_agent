@@ -1,7 +1,7 @@
 import { FaSeedling, FaSun, FaLeaf, FaSnowflake } from "react-icons/fa6";
 import { GiFlowerEmblem, GiMapleLeaf } from "react-icons/gi";
 
-interface SeasonProps {
+export interface SeasonProps {
   season: string;
 }
 

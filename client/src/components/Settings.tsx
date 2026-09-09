@@ -2,16 +2,7 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 import DatePickerField from "./DatePickerField";
-
-type Preferences = {
-  birthdate: string | null;
-  fitnessLevel: "beginner" | "intermediate" | "expert" | null;
-  homeLocation: string | null;
-  units: "imperial" | "metric";
-  interests: string[];
-  publicProfile: boolean;
-  publicRatings: boolean;
-};
+import type { Preferences, SaveStatus } from "../types/Settings";
 
 const initialPreferences: Preferences = {
   birthdate: null,
@@ -21,11 +12,6 @@ const initialPreferences: Preferences = {
   interests: [],
   publicProfile: false,
   publicRatings: true,
-};
-
-type SaveStatus = {
-  message: string;
-  kind: "success" | "error";
 };
 
 export default function Settings() {

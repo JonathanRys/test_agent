@@ -9,7 +9,7 @@ function todayInputValue() {
   return new Date().toISOString().slice(0, 10);
 }
 
-type MarkCompleteProps = {
+export type MarkCompleteProps = {
   name: string;
   mountainId?: number;
   trailId?: number;
