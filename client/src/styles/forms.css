@@ -4,6 +4,12 @@
   gap: 12px;
 }
 
+.composer .floating-field input,
+.composer .floating-field input:-internal-autofill-selected {
+  color: #f8fafc !important;
+  background-color: rgba(15, 23, 42, 0.82) !important;
+}
+
 .auth-panel {
   width: min(460px, 100%);
 }

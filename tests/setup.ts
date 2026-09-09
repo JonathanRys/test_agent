@@ -15,26 +15,28 @@ const listsResponse = [
   },
 ];
 
-export const fetchMock = vi.fn(async (input: RequestInfo | URL) => {
-  if (String(input).endsWith("/api/lists")) {
-    return new Response(JSON.stringify(listsResponse), {
-      status: 200,
+export const fetchMock = vi.fn(
+  async (input: RequestInfo | URL, _init?: RequestInit) => {
+    if (String(input).endsWith("/api/lists")) {
+      return new Response(JSON.stringify(listsResponse), {
+        status: 200,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    if (String(input).endsWith("/api/auth/refresh")) {
+      return new Response(JSON.stringify({ error: "No refresh session" }), {
+        status: 401,
+        headers: { "Content-Type": "application/json" },
+      });
+    }
+
+    return new Response(JSON.stringify({ error: "Not mocked" }), {
+      status: 404,
       headers: { "Content-Type": "application/json" },
     });
-  }
-
-  if (String(input).endsWith("/api/auth/refresh")) {
-    return new Response(JSON.stringify({ error: "No refresh session" }), {
-      status: 401,
-      headers: { "Content-Type": "application/json" },
-    });
-  }
-
-  return new Response(JSON.stringify({ error: "Not mocked" }), {
-    status: 404,
-    headers: { "Content-Type": "application/json" },
-  });
-});
+  },
+);
 
 vi.stubGlobal("fetch", fetchMock);
 

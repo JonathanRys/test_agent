@@ -35,23 +35,25 @@ export function publicUser(user: User) {
 async function issueSession(user: User) {
   const accessToken = createToken();
   const refreshToken = createToken();
+  const refreshExpiresAt = new Date(Date.now() + REFRESH_LIFETIME_MS);
   await AuthSession.create({
     userId: user.id,
     accessTokenHash: hashToken(accessToken),
     refreshTokenHash: hashToken(refreshToken),
     accessExpiresAt: new Date(Date.now() + ACCESS_LIFETIME_MS),
-    refreshExpiresAt: new Date(Date.now() + REFRESH_LIFETIME_MS),
+    refreshExpiresAt,
   });
-  return { accessToken, refreshToken };
+  return { accessToken, refreshToken, refreshExpiresAt };
 }
 
 async function issueAccessToken(session: AuthSession, user: User) {
   const accessToken = createToken();
+  const refreshExpiresAt = new Date(Date.now() + REFRESH_LIFETIME_MS);
   session.accessTokenHash = hashToken(accessToken);
   session.accessExpiresAt = new Date(Date.now() + ACCESS_LIFETIME_MS);
-  session.refreshExpiresAt = new Date(Date.now() + REFRESH_LIFETIME_MS);
+  session.refreshExpiresAt = refreshExpiresAt;
   await session.save();
-  return { accessToken, refreshToken: undefined, user };
+  return { accessToken, refreshToken: undefined, refreshExpiresAt, user };
 }
 
 export async function registerUser(
@@ -140,6 +142,7 @@ export async function refreshSession(refreshToken: string) {
     tokens: {
       accessToken: tokens.accessToken,
       refreshToken,
+      refreshExpiresAt: tokens.refreshExpiresAt,
     },
   };
 }

@@ -8,6 +8,10 @@ export default function AuthForm({ mode }: AuthFormProps) {
   const { login, register } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const locationState = location.state as {
+    from?: string;
+    message?: string;
+  } | null;
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,8 +25,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
     try {
       if (mode === "login") await login(email, password);
       else await register(name, email, password);
-      const destination =
-        (location.state as { from?: string } | null)?.from ?? "/agent";
+      const destination = locationState?.from ?? "/agent";
       navigate(destination, { replace: true });
     } catch (caught) {
       setError(
@@ -81,6 +84,9 @@ export default function AuthForm({ mode }: AuthFormProps) {
           <span>Password</span>
         </label>
         {error && <p role="alert">{error}</p>}
+        {!error && locationState?.message && (
+          <p role="alert">{locationState.message}</p>
+        )}
         <button type="submit" disabled={submitting}>
           {submitting
             ? "Working..."

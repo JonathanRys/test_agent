@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { ReactNode } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 type User = {
   id: number;
@@ -54,14 +55,35 @@ async function parseError(response: Response): Promise<Error> {
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [accessToken, setAccessToken] = useState<string | null>(null);
+  const [refreshExpiresAt, setRefreshExpiresAt] = useState<string | null>(null);
   const [loading, setLoading] = useState(() =>
     Boolean(getStoredRefreshToken()),
   );
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  function clearSessionAndRedirect(): void {
+    removeStoredRefreshToken();
+    setAccessToken(null);
+    setRefreshExpiresAt(null);
+    setUser(null);
+
+    if (location.pathname !== "/login") {
+      navigate("/login", {
+        replace: true,
+        state: {
+          from: `${location.pathname}${location.search}`,
+          message: "Your session expired. Please log in again.",
+        },
+      });
+    }
+  }
 
   async function applyTokens(response: Response): Promise<string> {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error ?? "Authentication failed");
     setAccessToken(data.accessToken);
+    setRefreshExpiresAt(data.refreshExpiresAt);
     setStoredRefreshToken(data.refreshToken);
     setUser(data.user);
     return data.accessToken;
@@ -77,9 +99,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       body: JSON.stringify({ refreshToken }),
     });
     if (!response.ok) {
-      removeStoredRefreshToken();
-      setAccessToken(null);
-      setUser(null);
+      clearSessionAndRedirect();
       return null;
     }
     return applyTokens(response);
@@ -91,9 +111,20 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    if (!refreshExpiresAt) return;
+
+    const timeout = window.setTimeout(
+      clearSessionAndRedirect,
+      Math.max(0, new Date(refreshExpiresAt).getTime() - Date.now()),
+    );
+    return () => window.clearTimeout(timeout);
+  }, [location.pathname, location.search, refreshExpiresAt]);
+
+  useEffect(() => {
     function handleStorage(event: StorageEvent) {
       if (event.key === refreshStorageKey && event.newValue === null) {
         setAccessToken(null);
+        setRefreshExpiresAt(null);
         setUser(null);
       }
     }
@@ -134,6 +165,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       });
     }
     setAccessToken(null);
+    setRefreshExpiresAt(null);
     setUser(null);
     removeStoredRefreshToken();
   }
