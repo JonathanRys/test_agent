@@ -35,7 +35,12 @@
   padding: 14px;
   border: 1px solid rgba(125, 211, 252, 0.2);
   border-radius: 8px;
-  background: rgba(15, 23, 42, 0.45);
+  background: linear-gradient(
+    45deg,
+    darkslategray,
+    rgba(15, 23, 42, 0.45),
+    darkslategray
+  );
 }
 
 .list-filters label {

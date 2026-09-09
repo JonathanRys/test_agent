@@ -114,9 +114,12 @@ export default function MountainFilters({
   const hikedMonths = Array.from(
     new Set(
       mountains.flatMap((item) =>
-        (item.Summits ?? []).map((summit) =>
-          new Date(summit.completedAt).getMonth(),
-        ),
+        (item.Summits ?? [])
+          .filter(
+            (summit) =>
+              value.season === "all" || summit.season === value.season,
+          )
+          .map((summit) => new Date(summit.completedAt).getMonth()),
       ),
     ),
   ).sort((left, right) => left - right);
@@ -173,7 +176,9 @@ export default function MountainFilters({
             Hiked month
             <select
               value={value.month}
-              onChange={(event) => updateFilter(onChange, value, "month", event)}
+              onChange={(event) =>
+                updateFilter(onChange, value, "month", event)
+              }
             >
               <option value="all">Any month</option>
               {hikedMonths.map((monthIndex) => (
