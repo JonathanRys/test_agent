@@ -15,6 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Settings from "./components/Settings";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
+import ListPage from "./components/ListPage";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
@@ -48,6 +49,7 @@ function AppLayout() {
       <Nav />
       <Routes>
         <Route path="/" element={<Lists />} />
+        <Route path="/list/:id" element={<ListPage />} />
         <Route path="/login" element={<AuthForm mode="login" />} />
         <Route path="/register" element={<AuthForm mode="register" />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />

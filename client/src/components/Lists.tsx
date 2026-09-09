@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 import List, { type ListProps } from "./List";
-import ListItems from "./ListItems";
 import { useAuth } from "../auth/AuthContext";
+import { useNavigate } from "react-router-dom";
+
+const listScrollPositionKey = "lists-scroll-position";
 
 function scrollToTop() {
   window.scroll({
@@ -13,7 +15,7 @@ function scrollToTop() {
 
 export default function Lists() {
   const { apiFetch, user } = useAuth();
-  const [selectedList, setSelectedList] = useState<number | null>(null);
+  const navigate = useNavigate();
   const [lists, setLists] = useState<ListProps[]>([]);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -34,10 +36,6 @@ export default function Lists() {
   }, []);
 
   useEffect(() => {
-    if (selectedList !== null) {
-      return;
-    }
-
     const loadLists = async () => {
       try {
         const response = await apiFetch("/api/lists", {
@@ -50,42 +48,38 @@ export default function Lists() {
         }
 
         setLists(data);
+        window.requestAnimationFrame(() => {
+          const savedScrollPosition = sessionStorage.getItem(
+            listScrollPositionKey,
+          );
+          if (savedScrollPosition !== null) {
+            window.scrollTo(0, Number(savedScrollPosition));
+            sessionStorage.removeItem(listScrollPositionKey);
+          }
+        });
       } catch (error) {
         console.error("Error fetching lists.", error);
       }
     };
     loadLists();
-  }, [selectedList, user?.id]);
+  }, [user?.id]);
 
-  const selectList = (listIndex: number) => {
-    setSelectedList(listIndex);
+  const selectList = (list: ListProps) => {
+    sessionStorage.setItem(listScrollPositionKey, String(window.scrollY));
+    navigate(`/list/${list.id}`);
   };
-
-  const activeList =
-    (selectedList || selectedList === 0) && lists[selectedList];
 
   return (
     <>
-      {activeList ? (
-        <ListItems
-          {...activeList}
-          back={() => {
-            setSelectedList(null);
-          }}
-        />
-      ) : (
-        <>
-          {lists.map((list, i) => (
-            <section
-              key={`list-${list.id}`}
-              className="clickable panel"
-              onClick={() => selectList(i)}
-            >
-              <List {...list} />
-            </section>
-          ))}
-        </>
-      )}
+      {lists.map((list) => (
+        <section
+          key={`list-${list.id}`}
+          className="clickable panel"
+          onClick={() => selectList(list)}
+        >
+          <List {...list} />
+        </section>
+      ))}
       {isVisible && (
         <div
           className="scroll-to-top"
