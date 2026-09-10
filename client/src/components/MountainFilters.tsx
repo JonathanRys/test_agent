@@ -157,7 +157,7 @@ export default function MountainFilters({
             </select>
           </label>
           <label>
-            Hiked season
+            Season hiked
             <select
               value={value.season}
               onChange={(event) =>
@@ -173,7 +173,7 @@ export default function MountainFilters({
             </select>
           </label>
           <label>
-            Hiked month
+            Month hiked
             <select
               value={value.month}
               onChange={(event) =>
@@ -191,7 +191,7 @@ export default function MountainFilters({
         </>
       )}
       <label>
-        Trail
+        Trail type
         <select
           value={value.trail}
           onChange={(event) => updateFilter(onChange, value, "trail", event)}

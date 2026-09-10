@@ -32,11 +32,15 @@ async function authenticate(req: Request): Promise<void> {
 
 export async function optionalUser(
   req: Request,
-  _res: Response,
+  res: Response,
   next: NextFunction,
 ): Promise<void> {
   try {
     await authenticate(req);
+    if (req.header("authorization") && !req.user) {
+      res.status(401).json({ ok: false, error: "Invalid access token" });
+      return;
+    }
     next();
   } catch (error) {
     next(error);

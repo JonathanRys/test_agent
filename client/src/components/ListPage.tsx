@@ -7,7 +7,7 @@ import ListItems from "./ListItems";
 export default function ListPage() {
   const navigate = useNavigate();
   const { id } = useParams();
-  const { apiFetch } = useAuth();
+  const { apiFetch, user } = useAuth();
   const [list, setList] = useState<ListProps | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -44,7 +44,7 @@ export default function ListPage() {
     return () => {
       cancelled = true;
     };
-  }, [id]);
+  }, [id, user?.id]);
 
   if (loading) return <p className="centered">Loading...</p>;
   if (error) return <p className="centered">{error}</p>;

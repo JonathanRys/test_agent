@@ -63,10 +63,13 @@
 .filter-reset {
   cursor: pointer;
   font-weight: 600;
+  background-color: rgba(59, 130, 246, 0.25);
 }
 
 .filter-reset:hover {
   border-color: rgba(125, 211, 252, 0.7);
+  background: #2563eb;
+  color: #e0f2fe;
 }
 
 .panel-completed {

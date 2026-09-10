@@ -1,9 +1,11 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 import { useAuth } from "../auth/AuthContext";
 
 const Nav = () => {
   const { user } = useAuth();
+  const location = useLocation();
+
   return (
     <div className="nav">
       <div className="nav-container">
@@ -22,7 +24,10 @@ const Nav = () => {
             <NavLink className="option" to="/agent">
               Agent
             </NavLink>
-            <NavLink className="option" to="/">
+            <NavLink
+              className={`option${location.pathname === "/" || location.pathname.startsWith("/list/") ? " active" : ""}`}
+              to="/"
+            >
               List
             </NavLink>
           </div>

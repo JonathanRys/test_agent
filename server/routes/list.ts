@@ -1,6 +1,6 @@
 import { Router, Request, Response, NextFunction } from "express";
 import { z } from "zod";
-import { getList, getLists } from "../services/list.js";
+import { getLists } from "../services/list.js";
 
 import { getMountainsOnList } from "../services/mountain.js";
 import { getTrailsOnList } from "../services/trail.js";
@@ -21,7 +21,8 @@ listViewRouter.get("/list/:id", async (req: Request, res: Response) => {
     return res.status(400).json({ error: "Invalid ID format" });
   }
 
-  const list = await getList(parseInt(id));
+  const lists = await getLists({}, req.user?.id);
+  const list = lists.find((candidate) => candidate.id === parseInt(id)) ?? null;
 
   res.status(200).json(list);
   return res;
