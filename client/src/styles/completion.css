@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 12px;
-  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .mark-complete label {
@@ -61,7 +61,31 @@
 .completion-date {
   color: #86efac;
   font-size: 0.9rem;
-  margin-bottom: 2px;
+  margin: 0;
+}
+
+.completion-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.completion-section-label {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.completion-seasons {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.completion-season {
+  display: inline-flex;
+  font-size: 1.2rem;
 }
 
 .state-icon {

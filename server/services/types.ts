@@ -32,6 +32,7 @@ export type EditAdventureInput = {
   id: number;
   activityDate: Date | string;
   activityId?: number;
+  season?: string;
   mountainId?: number;
   trailId?: number;
 };
@@ -40,6 +41,7 @@ export type CreateAdventureInput = {
   name: string;
   activityId: number;
   activityDate: Date | string;
+  season?: string;
   mountainIds?: number[];
   trailIds?: number[];
 };
@@ -49,7 +51,7 @@ interface SummitWithSeason {
   id: number;
   completedAt: string | Date;
   adventureId: number;
-  season?: string;
+  season?: string | null;
   [key: string]: any;
 }
 

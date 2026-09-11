@@ -76,7 +76,7 @@ const uniqueDateConstraint = (
 
   adventures.forEach((adventure) => {
     getCompletions(adventure).forEach((completion) => {
-      completions.push({ adventureId: adventure.id, ...completion });
+      completions.push({ ...completion, adventureId: adventure.id });
     });
   });
 

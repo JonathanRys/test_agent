@@ -53,11 +53,11 @@ export async function getLists(
         MountainList.findAll({ attributes: ["listId", "mountainId"] }),
         TrailList.findAll({ attributes: ["listId", "trailId"] }),
         Summit.findAll({
-          attributes: ["mountainId", "completedAt"],
+          attributes: ["mountainId", "completedAt", "season"],
           where: userId ? { userId } : { userId: -1 },
         }),
         TrailCompletion.findAll({
-          attributes: ["trailId", "completedAt"],
+          attributes: ["trailId", "completedAt", "season"],
           where: userId ? { userId } : { userId: -1 },
         }),
         Season.findAll({
@@ -106,7 +106,8 @@ export async function getLists(
           (acc, cur) => {
             const rawTrailCompletion = cur.toJSON();
             acc[rawTrailCompletion.trailId] = {
-              season: getSeasonForDate(seasonsMap, cur.completedAt),
+              season:
+                cur.season ?? getSeasonForDate(seasonsMap, cur.completedAt),
               completedAt: rawTrailCompletion.completedAt,
             };
             return acc;
@@ -158,7 +159,8 @@ export async function getLists(
         (acc, cur) => {
           const rawSummit = cur.toJSON();
           acc[rawSummit.mountainId] = {
-            season: getSeasonForDate(seasonsMap, cur.completedAt),
+            season:
+              cur.season ?? getSeasonForDate(seasonsMap, cur.completedAt),
             completedAt: rawSummit.completedAt,
           };
           return acc;

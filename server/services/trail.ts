@@ -94,7 +94,7 @@ export async function getTrailsOnList(
         },
         {
           model: TrailCompletion,
-          attributes: ["id", "completedAt", "adventureId"],
+          attributes: ["id", "completedAt", "adventureId", "season"],
           where: userId ? { userId } : { userId: -1 },
           required: false,
           include: [completionInclude],
@@ -137,7 +137,9 @@ export async function getTrailsOnList(
         plainTrail.TrailCompletions = plainTrail.TrailCompletions.map(
           (completion) => ({
             ...completion,
-            season: getSeasonForDate(seasonsMap, completion.completedAt),
+            season:
+              completion.season ??
+              getSeasonForDate(seasonsMap, completion.completedAt),
           }),
         );
       }

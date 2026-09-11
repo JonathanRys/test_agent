@@ -110,7 +110,7 @@ export async function getMountainsOnList(
         },
         {
           model: Summit,
-          attributes: ["id", "completedAt", "adventureId"],
+          attributes: ["id", "completedAt", "adventureId", "season"],
           where: userId ? { userId } : { userId: -1 },
           required: false,
           include: [completionInclude],
@@ -152,7 +152,8 @@ export async function getMountainsOnList(
       if (plainMountain.Summits) {
         plainMountain.Summits = plainMountain.Summits.map((summit) => ({
           ...summit,
-          season: getSeasonForDate(seasonsMap, summit.completedAt),
+            season:
+              summit.season ?? getSeasonForDate(seasonsMap, summit.completedAt),
         }));
       }
 

@@ -34,6 +34,7 @@ export async function createAdventure(
           adventureId: adventure.id,
           mountainId,
           completedAt: activityDate,
+          season: input.season ?? null,
         })),
         {
           updateOnDuplicate: ["userId", "adventureId", "mountainId"],
@@ -49,6 +50,7 @@ export async function createAdventure(
           adventureId: adventure.id,
           trailId,
           completedAt: activityDate,
+          season: input.season ?? null,
         })),
         {
           updateOnDuplicate: ["userId", "adventureId", "trailId"],
@@ -71,6 +73,7 @@ export async function editAdventure(
   const mountainId = input.mountainId ?? null;
   const trailId = input.trailId ?? null;
   const activityId = input.activityId ?? null;
+  const season = input.season ?? null;
 
   return sequelize.transaction(async (transaction) => {
     const adventure = await Adventure.findOne({
@@ -90,6 +93,7 @@ export async function editAdventure(
       await Summit.update(
         {
           completedAt: activityDate,
+          season,
         },
         {
           where: {
@@ -106,6 +110,7 @@ export async function editAdventure(
       await TrailCompletion.update(
         {
           completedAt: activityDate,
+          season,
         },
         {
           where: {

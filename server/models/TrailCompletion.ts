@@ -13,6 +13,7 @@ export class TrailCompletion extends Model {
   declare adventureId: number;
   declare trailId: number;
   declare completedAt: Date;
+  declare season: string | null;
   static associate(models: DBModels) {
     this.belongsTo(models.User, { foreignKey: "userId" });
     this.belongsTo(models.Adventure, { foreignKey: "adventureId" });
@@ -43,6 +44,10 @@ export function initTrailCompletion(sequelize: Sequelize): void {
       completedAt: {
         type: DataTypes.DATE,
         allowNull: false,
+      },
+      season: {
+        type: DataTypes.STRING,
+        allowNull: true,
       },
     },
     {

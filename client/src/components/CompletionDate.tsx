@@ -4,9 +4,9 @@ import MarkComplete, {
   formatCompletedDate,
   completionDateToInputValue,
 } from "./MarkComplete";
-import Season from "./Season";
 import { useAuth } from "../auth/AuthContext";
 import DatePickerField from "./DatePickerField";
+import SeasonPicker from "./SeasonPicker";
 
 export interface CompletionDateProps {
   adventureId: number;
@@ -15,7 +15,7 @@ export interface CompletionDateProps {
   name: string;
   completedAt: string;
   editing: boolean;
-  season: string;
+  season?: string;
   setEditing: (editing: boolean) => void;
   onComplete?: () => void;
 }
@@ -36,6 +36,7 @@ const CompletionDate = (props: CompletionDateProps) => {
   const [activityDate, setActivityDate] = useState(
     completionDateToInputValue(completedAt),
   );
+  const [selectedSeason, setSelectedSeason] = useState<string | undefined>(season);
   const [saving, setSaving] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -51,6 +52,7 @@ const CompletionDate = (props: CompletionDateProps) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           activityDate,
+          season: selectedSeason,
           activityId: 7, // TODO: add activity dropdown
           mountainId: mountainId ? mountainId : undefined,
           trailId: trailId ? trailId : undefined,
@@ -118,6 +120,11 @@ const CompletionDate = (props: CompletionDateProps) => {
           className="mark-complete-date"
           floatingLabel
         />{" "}
+        <SeasonPicker
+          activityDate={activityDate}
+          value={selectedSeason}
+          onChange={setSelectedSeason}
+        />{" "}
         <button type="submit" disabled={saving}>
           {saving ? "Saving..." : "Update"}
         </button>{" "}
@@ -138,7 +145,6 @@ const CompletionDate = (props: CompletionDateProps) => {
           className="completion-date"
           onClick={(event) => event.stopPropagation()}
         >
-          First Hiked:{" "}
           <span className={season}>
             {formatCompletedDate(completedAt)}&nbsp;{" "}
             <FaPen
@@ -151,11 +157,6 @@ const CompletionDate = (props: CompletionDateProps) => {
             />
           </span>
         </p>
-        {season && (
-          <div>
-            <Season season={season} />
-          </div>
-        )}
       </div>
     );
   }

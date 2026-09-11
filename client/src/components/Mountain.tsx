@@ -6,9 +6,14 @@ import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
 import StateIcon from "./State";
 import Map from "./Map";
-import MarkComplete, { earliestCompleted } from "./MarkComplete";
+import MarkComplete, {
+  earliestCompleted,
+  seasonOrder,
+  sortCompletionsByDate,
+} from "./MarkComplete";
 import CompletionDate from "./CompletionDate";
 import GridIcon from "./GridIcon";
+import Season from "./Season";
 import { useAuth } from "../auth/AuthContext";
 
 export interface MountainProps extends MountainType {
@@ -51,7 +56,9 @@ const Mountain = (props: MountainProps) => {
 
   const [showMap, setShowMap] = useState<boolean>(false);
   const [mountainExpanded, setMountainExpanded] = useState<boolean>(expanded);
-  const [editing, setEditing] = useState<boolean>(false);
+  const [editingCompletionId, setEditingCompletionId] = useState<number | null>(
+    null,
+  );
 
   const bushwhackIcon = bushwhack ? (
     <MdForest title="Bushwhack" />
@@ -61,23 +68,27 @@ const Mountain = (props: MountainProps) => {
 
   const mountainIcon = <FaMountain title="Mountain" />;
   const earliestCompletedSummit = user ? earliestCompleted(Summits) : undefined;
-  const earliestCompletedSeason = earliestCompletedSummit?.season;
   const completedAt = earliestCompletedSummit?.completedAt;
   const extractMonthIndex = (dateString: string) => {
     const date = new Date(dateString);
     return date.getMonth();
   };
+  const completionItems = sortCompletionsByDate(Summits ?? []);
+  const completedSeasons = Array.from(
+    new Set(completionItems.map((summit) => summit.season).filter(Boolean)),
+  ).sort(
+    (left, right) => seasonOrder.indexOf(left!) - seasonOrder.indexOf(right!),
+  ) as string[];
   const completions = user
-    ? Summits?.reduce(
+    ? completionItems.reduce(
         (acc, summit) => {
           if (summit.completedAt) {
-            acc[extractMonthIndex(summit.completedAt)] = {
-              completedAt: summit.completedAt,
-            };
+            const month = extractMonthIndex(summit.completedAt);
+            acc[month] = [...(acc[month] ?? []), { completedAt: summit.completedAt }];
           }
           return acc;
         },
-        {} as Record<number, { completedAt: string }>,
+        {} as Record<number, Array<{ completedAt: string }>>,
       )
     : undefined;
 
@@ -120,26 +131,45 @@ const Mountain = (props: MountainProps) => {
           {range && <p>Range: {range}</p>}
           <p>{notes}</p>
           <div className="space-between-row">
-            {user && completedAt ? (
-              <CompletionDate
-                adventureId={earliestCompletedSummit?.id}
-                mountainId={id}
-                name={name}
-                completedAt={completedAt}
-                editing={editing}
-                setEditing={setEditing}
-                onComplete={onComplete}
-                season={earliestCompletedSeason || season}
-              />
-            ) : (
-              user &&
-              onComplete && (
-                <MarkComplete
-                  name={name}
-                  mountainId={id}
-                  onComplete={onComplete}
-                />
-              )
+            {user && (
+              <div className="completion-summary">
+                <div className="completion-section-label">Hiked:</div>
+                {completionItems.map((summit) => (
+                  <CompletionDate
+                    key={summit.id}
+                    adventureId={summit.adventureId}
+                    mountainId={id}
+                    name={name}
+                    completedAt={summit.completedAt}
+                    editing={editingCompletionId === summit.id}
+                    setEditing={(editing) =>
+                      setEditingCompletionId(editing ? summit.id : null)
+                    }
+                    onComplete={onComplete}
+                    season={summit.season}
+                  />
+                ))}
+                {completedSeasons.length > 0 && (
+                  <div className="completion-seasons" aria-label="Seasons hiked">
+                    {completedSeasons.map((completedSeason) => (
+                      <span
+                        key={completedSeason}
+                        className="completion-season"
+                        title={completedSeason}
+                      >
+                        <Season season={completedSeason} />
+                      </span>
+                    ))}
+                  </div>
+                )}
+                {onComplete && (
+                  <MarkComplete
+                    name={name}
+                    mountainId={id}
+                    onComplete={onComplete}
+                  />
+                )}
+              </div>
             )}
             {user && completedAt && <GridIcon completions={completions} />}
           </div>

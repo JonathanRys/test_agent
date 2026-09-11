@@ -13,6 +13,7 @@ const createAdventureSchema = z
     name: z.string().min(1).max(255),
     activityId: z.number().int().positive(),
     activityDate: z.string().min(1),
+    season: z.string().min(1).optional(),
     mountainIds: z.array(z.number().int().positive()).optional(),
     trailIds: z.array(z.number().int().positive()).optional(),
   })
@@ -27,6 +28,7 @@ const editAdventureSchema = z
     id: z.number().int().positive(),
     activityDate: z.string().min(1),
     activityId: z.number().int().positive().optional(),
+    season: z.string().min(1).optional(),
     mountainId: z.number().int().positive().optional(),
     trailId: z.number().int().positive().optional(),
   })

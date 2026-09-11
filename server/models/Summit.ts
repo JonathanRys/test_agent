@@ -13,6 +13,7 @@ export class Summit extends Model {
   declare adventureId: number;
   declare mountainId: number;
   declare completedAt: Date;
+  declare season: string | null;
   static associate(models: DBModels) {
     this.belongsTo(models.User, { foreignKey: "userId" });
     this.belongsTo(models.Adventure, { foreignKey: "adventureId" });
@@ -43,6 +44,10 @@ export function initSummit(sequelize: Sequelize): void {
       completedAt: {
         type: DataTypes.DATE,
         allowNull: false,
+      },
+      season: {
+        type: DataTypes.STRING,
+        allowNull: true,
       },
     },
     {

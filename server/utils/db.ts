@@ -45,6 +45,15 @@ export async function ensureInitialized(): Promise<void> {
         });
     }
     const queryInterface = sequelize.getQueryInterface();
+    for (const table of ["summits", "trailCompletions"]) {
+      const columns = await queryInterface.describeTable(table);
+      if (!columns.season) {
+        await queryInterface.addColumn(table, "season", {
+          type: DataTypes.STRING,
+          allowNull: true,
+        });
+      }
+    }
     const preferenceColumns =
       await queryInterface.describeTable("userPreferences");
     if (!preferenceColumns.birthdate) {

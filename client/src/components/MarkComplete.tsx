@@ -2,8 +2,11 @@ import { SubmitEvent, useState } from "react";
 import { Completion } from "../types/Completion";
 import { useAuth } from "../auth/AuthContext";
 import DatePickerField from "./DatePickerField";
+import SeasonPicker from "./SeasonPicker";
 
 const HIKING_ACTIVITY_ID = 7;
+
+export const seasonOrder = ["Spring", "Summer", "Autumn", "Winter"];
 
 function todayInputValue() {
   return new Date().toISOString().slice(0, 10);
@@ -20,10 +23,11 @@ export default function MarkComplete(props: MarkCompleteProps) {
   const { name, mountainId, trailId, onComplete } = props;
   const { apiFetch } = useAuth();
   const [activityDate, setActivityDate] = useState(todayInputValue);
+  const [season, setSeason] = useState<string | undefined>();
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const label = mountainId ? "Mark hiked" : "Mark completed";
+  const label = "Mark completed";
 
   const submit = async (event: SubmitEvent) => {
     event.preventDefault();
@@ -39,6 +43,7 @@ export default function MarkComplete(props: MarkCompleteProps) {
           name,
           activityId: HIKING_ACTIVITY_ID, // TODO: Add activity dropdown
           activityDate,
+          season,
           mountainIds: mountainId ? [mountainId] : undefined,
           trailIds: trailId ? [trailId] : undefined,
         }),
@@ -71,6 +76,11 @@ export default function MarkComplete(props: MarkCompleteProps) {
         className="mark-complete-date"
         floatingLabel
       />
+      <SeasonPicker
+        activityDate={activityDate}
+        value={season}
+        onChange={setSeason}
+      />
       <button type="submit" disabled={saving}>
         {saving ? "Saving..." : label}
       </button>
@@ -90,6 +100,13 @@ export function earliestCompleted(
     (a, b) =>
       new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime(),
   )[0];
+}
+
+export function sortCompletionsByDate(completions: Array<Completion>) {
+  return [...completions].sort(
+    (a, b) =>
+      new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime(),
+  );
 }
 
 export function formatCompletedDate(value: string) {
