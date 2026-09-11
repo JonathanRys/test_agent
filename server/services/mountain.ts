@@ -152,8 +152,8 @@ export async function getMountainsOnList(
       if (plainMountain.Summits) {
         plainMountain.Summits = plainMountain.Summits.map((summit) => ({
           ...summit,
-            season:
-              summit.season ?? getSeasonForDate(seasonsMap, summit.completedAt),
+          season:
+            summit.season ?? getSeasonForDate(seasonsMap, summit.completedAt),
         }));
       }
 

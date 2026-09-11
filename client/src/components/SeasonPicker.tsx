@@ -57,7 +57,11 @@ export default function SeasonPicker({
   return (
     <label>
       Season
-      <select value={value ?? ""} onChange={(event) => onChange(event.target.value)} required>
+      <select
+        value={value ?? ""}
+        onChange={(event) => onChange(event.target.value)}
+        required
+      >
         {borderSeasons.map((season) => (
           <option key={season} value={season}>
             {season}

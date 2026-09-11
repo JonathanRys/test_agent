@@ -64,7 +64,9 @@ const Trail = (props: TrailProps) => {
   };
   const completionItems = sortCompletionsByDate(TrailCompletions ?? []);
   const completedSeasons = Array.from(
-    new Set(completionItems.map((completion) => completion.season).filter(Boolean)),
+    new Set(
+      completionItems.map((completion) => completion.season).filter(Boolean),
+    ),
   ).sort(
     (left, right) => seasonOrder.indexOf(left!) - seasonOrder.indexOf(right!),
   ) as string[];
@@ -137,7 +139,10 @@ const Trail = (props: TrailProps) => {
                   />
                 ))}
                 {completedSeasons.length > 0 && (
-                  <div className="completion-seasons" aria-label="Seasons completed">
+                  <div
+                    className="completion-seasons"
+                    aria-label="Seasons completed"
+                  >
                     {completedSeasons.map((completedSeason) => (
                       <span
                         key={completedSeason}

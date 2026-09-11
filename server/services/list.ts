@@ -159,8 +159,7 @@ export async function getLists(
         (acc, cur) => {
           const rawSummit = cur.toJSON();
           acc[rawSummit.mountainId] = {
-            season:
-              cur.season ?? getSeasonForDate(seasonsMap, cur.completedAt),
+            season: cur.season ?? getSeasonForDate(seasonsMap, cur.completedAt),
             completedAt: rawSummit.completedAt,
           };
           return acc;

@@ -1,10 +1,11 @@
 import { GiTrail, GiHiking } from "react-icons/gi";
 import { FaMedal } from "react-icons/fa";
 // import { FaMountain, FaPersonHiking } from "react-icons/fa6";
-
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import ContactForm from "./ContactForm";
 import { formatCompletedDate } from "./MarkComplete";
 import { useAuth } from "../auth/AuthContext";
+import { useState } from "react";
 
 export interface ListProps {
   id: number;
@@ -46,6 +47,8 @@ const List = (props: ListProps) => {
     completedDate,
   } = props;
 
+  const [showContactInfo, setShowContactInfo] = useState<boolean>(false);
+
   const typeIcon =
     type === "peakbagging" ? (
       <GiHiking title="Peak-bagging list" />
@@ -79,14 +82,38 @@ const List = (props: ListProps) => {
               `d on ${formatCompletedDate(completedDate)}`}
           </p>
         )}
-      <ContactForm
-        website={website}
-        phoneNumber={phoneNumber}
-        emailAddress={emailAddress}
-        mailingAddress={mailingAddress}
-        facebook={facebook}
-        instagram={instagram}
-      />
+
+      {showContactInfo ? (
+        <>
+          <div
+            className="clickable contact-info"
+            onClick={(event) => {
+              event.stopPropagation();
+              setShowContactInfo(false);
+            }}
+          >
+            Hide contact info <MdArrowDropUp />
+          </div>
+          <ContactForm
+            website={website}
+            phoneNumber={phoneNumber}
+            emailAddress={emailAddress}
+            mailingAddress={mailingAddress}
+            facebook={facebook}
+            instagram={instagram}
+          />
+        </>
+      ) : (
+        <div
+          className="clickable contact-info"
+          onClick={(event) => {
+            event.stopPropagation();
+            setShowContactInfo(true);
+          }}
+        >
+          Show contact info <MdArrowDropDown />
+        </div>
+      )}
     </div>
   );
 };

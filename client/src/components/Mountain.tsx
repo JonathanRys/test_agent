@@ -84,7 +84,10 @@ const Mountain = (props: MountainProps) => {
         (acc, summit) => {
           if (summit.completedAt) {
             const month = extractMonthIndex(summit.completedAt);
-            acc[month] = [...(acc[month] ?? []), { completedAt: summit.completedAt }];
+            acc[month] = [
+              ...(acc[month] ?? []),
+              { completedAt: summit.completedAt },
+            ];
           }
           return acc;
         },
@@ -150,7 +153,10 @@ const Mountain = (props: MountainProps) => {
                   />
                 ))}
                 {completedSeasons.length > 0 && (
-                  <div className="completion-seasons" aria-label="Seasons hiked">
+                  <div
+                    className="completion-seasons"
+                    aria-label="Seasons hiked"
+                  >
                     {completedSeasons.map((completedSeason) => (
                       <span
                         key={completedSeason}

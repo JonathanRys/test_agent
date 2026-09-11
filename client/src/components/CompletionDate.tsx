@@ -36,7 +36,9 @@ const CompletionDate = (props: CompletionDateProps) => {
   const [activityDate, setActivityDate] = useState(
     completionDateToInputValue(completedAt),
   );
-  const [selectedSeason, setSelectedSeason] = useState<string | undefined>(season);
+  const [selectedSeason, setSelectedSeason] = useState<string | undefined>(
+    season,
+  );
   const [saving, setSaving] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 

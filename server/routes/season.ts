@@ -9,6 +9,8 @@ seasonRouter.get("/seasons", async (_req: Request, res: Response) => {
     include: [{ model: SeasonDate, attributes: ["startDate", "endDate"] }],
   });
 
-  res.status(200).json(seasons.map(transformSeasons).map(([, season]) => season));
+  res
+    .status(200)
+    .json(seasons.map(transformSeasons).map(([, season]) => season));
   return res;
 });
