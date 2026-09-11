@@ -209,7 +209,7 @@ export default function MountainFilters({
         >
           <option value="all">Any list</option>
           {lists.map((list) => (
-            <option key={list.id} value={String(list.id)}>
+            <option key={list.id} title={list.name} value={String(list.id)}>
               {list.abbreviation}
             </option>
           ))}

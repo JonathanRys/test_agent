@@ -86,7 +86,7 @@ const List = (props: ListProps) => {
       {showContactInfo ? (
         <>
           <div
-            className="clickable contact-info"
+            className="clickable align-center contact-info"
             onClick={(event) => {
               event.stopPropagation();
               setShowContactInfo(false);
@@ -105,7 +105,7 @@ const List = (props: ListProps) => {
         </>
       ) : (
         <div
-          className="clickable contact-info"
+          className="clickable align-center contact-info"
           onClick={(event) => {
             event.stopPropagation();
             setShowContactInfo(true);

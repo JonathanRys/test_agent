@@ -12,7 +12,7 @@
   {
     "name": "New Hampshire Hundred Highest",
     "type": "peakbagging",
-    "description": "The 100 tallest mountains in NH",
+    "description": "The 100 tallest mountains in NH.",
     "abbreviation": "NHHH",
     "patchAvailable": false,
     "website": "https://trailsnh.com/tag/NH-100-Highest"
@@ -30,7 +30,7 @@
   {
     "name": "New England Hundred Highest",
     "type": "peakbagging",
-    "description": "The 100 tallest mountains in New England",
+    "description": "The 100 tallest mountains in New England.",
     "abbreviation": "NEHH",
     "patchAvailable": true,
     "website": "https://www.amc4000footer.org/the-lists-we-recognize.html",
@@ -60,7 +60,7 @@
   {
     "name": "52 with a View",
     "type": "peakbagging",
-    "description": "Combined with the 48 4000-footers, these are the 100 \"best\" hikes in New Hampshire",
+    "description": "Combined with the 48 4000-footers, these are the 100 \"best\" hikes in New Hampshire.",
     "abbreviation": "52WAV",
     "patchAvailable": true,
     "website": "https://overthehillhikers.blogspot.com/p/official-52-with-view-list.html",
@@ -70,7 +70,7 @@
   {
     "name": "Terrifying 25",
     "type": "trace",
-    "description": "The 25 most terrifying trails in New Hampshire",
+    "description": "The 25 most terrifying trails in New Hampshire. Hike all 19 of the required trails plus 6 electives.",
     "abbreviation": "T25",
     "patchAvailable": true,
     "website": "https://www.theterrifying25.com/",
@@ -90,7 +90,7 @@
   {
     "name": "Belknap Range Hiker",
     "type": "peakbagging",
-    "description": "Hikle to the summit of all 12 mountains in the Belknap range",
+    "description": "Hike to the summit of all 12 mountains in the Belknap range.",
     "abbreviation": "Belknap Range Hiker",
     "patchAvailable": true,
     "website": "https://www.bcsanh.com/events/programs-we-offer/belknap-range-hiking-program/",
@@ -112,7 +112,7 @@
   {
     "name": "Acadia 26",
     "type": "peakbagging",
-    "description": "The 26 most prominent peaks in Acadia National Park",
+    "description": "The 26 most prominent peaks in Acadia National Park.",
     "abbreviation": "Acadia 26",
     "patchAvailable": false,
     "website": "https://acadiaonmymind.com/the-26-peaks-of-acadia-national-park/"
@@ -120,7 +120,7 @@
   {
     "name": "Castle in the Clouds",
     "type": "trace",
-    "description": "Hike every inch of trails in the Castle in the Clouds Conservation Area",
+    "description": "Hike every trail in the Castle in the Clouds Conservation Area.",
     "abbreviation": "Castle in the Clouds",
     "patchAvailable": true,
     "website": "https://lrct.org/explore/hiker-achievement-patch-program",
@@ -131,7 +131,7 @@
   {
     "name": "RMC 100 Challenge",
     "type": "trace",
-    "description": "The 26 most prominent peaks in Acadia National Park",
+    "description": "Hike all 100 miles of the Randolph Mountain Club's trails in the White Mountains of New Hampshire.",
     "abbreviation": "RMC100",
     "patchAvailable": false,
     "website": "https://randolphmountainclub.org/trails/rmc-100-challenge/",
@@ -158,7 +158,7 @@
   {
     "name": "High Pointers",
     "type": "peakbagging",
-    "description": "The highest point in each of the 50 states",
+    "description": "Hike to the summit of the highest point in each of the US states and territories.",
     "abbreviation": "HP50",
     "patchAvailable": true,
     "website": "https://highpointers.org/",
