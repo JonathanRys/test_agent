@@ -7,6 +7,7 @@ import {
 import { env } from "../config/env.js";
 import { getListCompletionStatus } from "./completion.js";
 import { getUserProfile } from "./profile.js";
+import { applicationTools, executeApplicationTool } from "../agent/tools.js";
 
 export const openrouter = new OpenAI({
   apiKey: env.OPENROUTER_API_KEY ?? "demo-key",
@@ -41,22 +42,60 @@ export async function generateAgentReply(prompt: string, userId?: number) {
     };
   }
 
-  const response = await openrouter.chat.completions.create({
-    model: env.OPENROUTER_MODEL,
-    messages: [
-      {
-        role: "system",
-        content: buildAgentSystemPrompt(requestContext),
-      },
-      { role: "user", content: prompt },
-    ],
-    tools: [webSearchTool],
-    temperature: 0.7,
-  });
+  const messages: OpenAI.Chat.Completions.ChatCompletionMessageParam[] = [
+    {
+      role: "system",
+      content: buildAgentSystemPrompt(requestContext),
+    },
+    { role: "user", content: prompt },
+  ];
+
+  for (let attempt = 0; attempt < 4; attempt += 1) {
+    const response = await openrouter.chat.completions.create({
+      model: env.OPENROUTER_MODEL,
+      messages,
+      tools: [webSearchTool, ...(userId ? applicationTools : [])],
+      temperature: 0.7,
+    });
+    const message = response.choices[0]?.message;
+
+    if (!message?.tool_calls?.length) {
+      return {
+        role: "assistant",
+        content: message?.content ?? "No response returned.",
+      };
+    }
+
+    messages.push(message);
+    for (const toolCall of message.tool_calls) {
+      if (toolCall.type !== "function") continue;
+
+      let args: Record<string, unknown>;
+      try {
+        args = JSON.parse(toolCall.function.arguments) as Record<
+          string,
+          unknown
+        >;
+      } catch {
+        args = {};
+      }
+
+      const result = userId
+        ? await executeApplicationTool(toolCall.function.name, args, userId)
+        : JSON.stringify({ ok: false, error: "Authentication required" });
+
+      messages.push({
+        role: "tool",
+        tool_call_id: toolCall.id,
+        content: result,
+      });
+    }
+  }
 
   return {
     role: "assistant",
-    content: response.choices[0]?.message?.content ?? "No response returned.",
+    content:
+      "I could not finish retrieving that information. Please try again.",
   };
 }
 

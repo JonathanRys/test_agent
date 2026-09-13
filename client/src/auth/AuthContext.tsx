@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -13,14 +13,27 @@ type AuthContextValue = {
   user: User | null;
   loading: boolean;
   accessToken: string | null;
-  login: (email: string, password: string) => Promise<void>;
-  register: (name: string, email: string, password: string) => Promise<void>;
+  login: (email: string, password: string) => Promise<User>;
+  register: (name: string, email: string, password: string) => Promise<User>;
   logout: () => Promise<void>;
   apiFetch: (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>;
 };
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 const refreshStorageKey = "hiking-agent-refresh-token";
+const lastAgentSessionPrefix = "hiking-agent-last-session:";
+
+export function getLastAgentSession(userId: number): string | null {
+  if (typeof window === "undefined") return null;
+  return (
+    window.localStorage?.getItem(`${lastAgentSessionPrefix}${userId}`) ?? null
+  );
+}
+
+export function setLastAgentSession(userId: number, sessionId: string): void {
+  if (typeof window === "undefined") return;
+  window.localStorage?.setItem(`${lastAgentSessionPrefix}${userId}`, sessionId);
+}
 
 function getStoredRefreshToken(): string | null {
   if (typeof window === "undefined") return null;
@@ -56,6 +69,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [refreshExpiresAt, setRefreshExpiresAt] = useState<string | null>(null);
+  const refreshPromise = useRef<Promise<string | null> | null>(null);
   const [loading, setLoading] = useState(() =>
     Boolean(getStoredRefreshToken()),
   );
@@ -79,30 +93,44 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }
 
-  async function applyTokens(response: Response): Promise<string> {
+  async function applyTokens(
+    response: Response,
+  ): Promise<{ accessToken: string; user: User }> {
     const data = await response.json();
     if (!response.ok) throw new Error(data.error ?? "Authentication failed");
     setAccessToken(data.accessToken);
     setRefreshExpiresAt(data.refreshExpiresAt);
     setStoredRefreshToken(data.refreshToken);
     setUser(data.user);
-    return data.accessToken;
+    return { accessToken: data.accessToken, user: data.user };
   }
 
   async function refreshAccessToken(): Promise<string | null> {
+    if (refreshPromise.current) return refreshPromise.current;
+
     const refreshToken = getStoredRefreshToken();
     if (!refreshToken) return null;
 
-    const response = await fetch("/api/auth/refresh", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ refreshToken }),
-    });
-    if (!response.ok) {
-      clearSessionAndRedirect();
-      return null;
+    const refresh = (async () => {
+      const response = await fetch("/api/auth/refresh", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ refreshToken }),
+      });
+      if (!response.ok) {
+        clearSessionAndRedirect();
+        return null;
+      }
+      const tokens = await applyTokens(response);
+      return tokens.accessToken;
+    })();
+
+    refreshPromise.current = refresh;
+    try {
+      return await refresh;
+    } finally {
+      if (refreshPromise.current === refresh) refreshPromise.current = null;
     }
-    return applyTokens(response);
   }
 
   useEffect(() => {
@@ -133,28 +161,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return () => window.removeEventListener("storage", handleStorage);
   }, []);
 
-  async function login(email: string, password: string): Promise<void> {
-    await applyTokens(
+  async function login(email: string, password: string): Promise<User> {
+    const tokens = await applyTokens(
       await fetch("/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       }),
     );
+    return tokens.user;
   }
 
   async function register(
     name: string,
     email: string,
     password: string,
-  ): Promise<void> {
-    await applyTokens(
+  ): Promise<User> {
+    const tokens = await applyTokens(
       await fetch("/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),
       }),
     );
+    return tokens.user;
   }
 
   async function logout(): Promise<void> {

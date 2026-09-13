@@ -1,5 +1,10 @@
 import { SubmitEvent, useEffect, useLayoutEffect, useState } from "react";
-import { useAuth } from "../auth/AuthContext";
+import { useNavigate } from "react-router-dom";
+import {
+  getLastAgentSession,
+  setLastAgentSession,
+  useAuth,
+} from "../auth/AuthContext";
 import type { MemoryType, Message } from "../types/Agent";
 
 function generateUUID(): string {
@@ -40,8 +45,38 @@ function scrollToBottom() {
   }
 }
 
+async function readAgentResponse(
+  response: Response,
+): Promise<Record<string, any>> {
+  const body = await response.text();
+  if (!body.trim()) {
+    throw new Error("The agent connection was interrupted. Please try again.");
+  }
+
+  try {
+    return JSON.parse(body) as Record<string, any>;
+  } catch {
+    throw new Error(
+      "The agent returned an invalid response. Please try again.",
+    );
+  }
+}
+
+function getAgentErrorMessage(error: unknown): string {
+  if (
+    error instanceof TypeError ||
+    (error instanceof Error &&
+      /socket hang up|fetch failed/i.test(error.message))
+  ) {
+    return "The agent connection was interrupted. Please try again.";
+  }
+
+  return error instanceof Error ? error.message : "Something went wrong.";
+}
+
 export default function Agent() {
-  const { apiFetch } = useAuth();
+  const { apiFetch, user } = useAuth();
+  const navigate = useNavigate();
   const [sessionId, setSessionId] = useState<string>(() =>
     getSessionIdFromUrl(),
   );
@@ -53,13 +88,28 @@ export default function Agent() {
   const [isLoadingSession, setIsLoadingSession] = useState(true);
   const [model, setModel] = useState<string>("loading...");
 
+  useEffect(() => {
+    if (user) setLastAgentSession(user.id, sessionId);
+  }, [sessionId, user]);
+
+  function startNewSession() {
+    const newSessionId = generateUUID();
+    setSessionId(newSessionId);
+    setMessages([]);
+    setMemoryType("short-term");
+    setModel("loading...");
+    navigate(`/agent?session=${newSessionId}`, { replace: true });
+  }
+
   // Load session data on mount or when sessionId changes
   useEffect(() => {
     async function loadSession() {
       setIsLoadingSession(true);
       try {
         const response = await apiFetch(`/api/sessions/${sessionId}`);
-        const data = await response.json();
+        const data = await readAgentResponse(response);
+        if (!response.ok)
+          throw new Error(data.error ?? "Failed to load session");
 
         if (data.ok) {
           // Load messages from database
@@ -111,7 +161,7 @@ export default function Agent() {
         },
       );
 
-      const data = await response.json();
+      const data = await readAgentResponse(response);
       if (!response.ok) {
         throw new Error(data.error ?? "Failed to toggle memory");
       }
@@ -144,7 +194,7 @@ export default function Agent() {
         body: JSON.stringify({ prompt: trimmedPrompt, sessionId }),
       });
 
-      const data = await response.json();
+      const data = await readAgentResponse(response);
       if (!response.ok) {
         throw new Error(data.error ?? "Request failed");
       }
@@ -168,8 +218,7 @@ export default function Agent() {
         ...nextMessages,
         {
           role: "assistant",
-          content:
-            error instanceof Error ? error.message : "Something went wrong.",
+          content: getAgentErrorMessage(error),
         },
       ]);
     } finally {
@@ -205,15 +254,6 @@ export default function Agent() {
         >
           Memory: {memoryType} {togglingMemory ? "..." : ""}
         </button>
-        <span className="meta-pill">
-          Tools: profile + list status + web search
-        </span>
-        <span
-          className="meta-pill"
-          style={{ fontSize: "0.65rem", opacity: 0.7 }}
-        >
-          Session: {sessionId}
-        </span>
       </div>
       <div className="chat-window" aria-live="polite">
         {messages.map((message, index) => (
@@ -233,9 +273,27 @@ export default function Agent() {
           placeholder="Type a message for the agent..."
           aria-label="Prompt"
         />
-        <button type="submit" disabled={loading || !prompt.trim()}>
-          {loading ? "Thinking..." : "Send"}
-        </button>
+        <div className="agent-controls">
+          <button
+            type="button"
+            className={
+              loading || isLoadingSession ? "loading-cursor" : undefined
+            }
+            disabled={loading || !prompt.trim()}
+            onClick={startNewSession}
+          >
+            New session
+          </button>
+          <button
+            type="submit"
+            className={
+              loading || isLoadingSession ? "loading-cursor" : undefined
+            }
+            disabled={loading || !prompt.trim()}
+          >
+            {loading ? "Thinking..." : "Send"}
+          </button>
+        </div>
       </form>
     </section>
   );

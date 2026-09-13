@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../auth/AuthContext";
+import { getLastAgentSession, useAuth } from "../auth/AuthContext";
 
 type AuthFormProps = { mode: "login" | "register" };
 
@@ -23,9 +23,18 @@ export default function AuthForm({ mode }: AuthFormProps) {
     setError(null);
     setSubmitting(true);
     try {
-      if (mode === "login") await login(email, password);
-      else await register(name, email, password);
-      const destination = locationState?.from ?? "/agent";
+      const authenticatedUser =
+        mode === "login"
+          ? await login(email, password)
+          : await register(name, email, password);
+      const destination =
+        locationState?.from ??
+        (mode === "login"
+          ? (() => {
+              const sessionId = getLastAgentSession(authenticatedUser.id);
+              return sessionId ? `/agent?session=${sessionId}` : "/agent";
+            })()
+          : "/agent");
       navigate(destination, { replace: true });
     } catch (caught) {
       setError(

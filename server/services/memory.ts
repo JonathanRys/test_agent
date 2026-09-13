@@ -49,37 +49,41 @@ async function ensureInitialized(): Promise<void> {
 
 export async function getOrCreateSession(
   sessionId: string,
+  userId: number,
 ): Promise<"short-term" | "long-term"> {
   await ensureInitialized();
+  const cacheKey = `${userId}:${sessionId}`;
 
-  if (!sessionMemoryTypes.has(sessionId)) {
-    // Try to load from database first
-    try {
-      const [session] = await Session.findOrCreate({
-        where: { id: sessionId, userId: 1 }, // TODO: derive userId from session
-        defaults: { memoryType: "short-term" },
-      });
-      sessionMemoryTypes.set(sessionId, session.memoryType);
+  if (!sessionMemoryTypes.has(cacheKey)) {
+    const existingSession = await Session.findByPk(sessionId);
+    if (existingSession && existingSession.userId !== userId) {
+      throw new Error("SESSION_NOT_FOUND");
+    }
 
-      // Initialize in-memory storage if short-term
-      if (session.memoryType === "short-term") {
-        inMemorySessions.set(sessionId, []);
-      }
-    } catch (error) {
-      console.error("Error creating session in database:", error);
-      sessionMemoryTypes.set(sessionId, "short-term");
-      inMemorySessions.set(sessionId, []);
+    const [session] = await Session.findOrCreate({
+      where: { id: sessionId },
+      defaults: { userId, memoryType: "short-term" },
+    });
+    sessionMemoryTypes.set(cacheKey, session.memoryType);
+
+    // Initialize in-memory storage if short-term
+    if (session.memoryType === "short-term") {
+      inMemorySessions.set(cacheKey, []);
     }
   }
 
-  return sessionMemoryTypes.get(sessionId)!;
+  return sessionMemoryTypes.get(cacheKey)!;
 }
 
-export async function getSessionMemory(sessionId: string): Promise<string[]> {
-  const memoryType = await getOrCreateSession(sessionId);
+export async function getSessionMemory(
+  sessionId: string,
+  userId: number,
+): Promise<string[]> {
+  const memoryType = await getOrCreateSession(sessionId, userId);
+  const cacheKey = `${userId}:${sessionId}`;
 
   if (memoryType === "short-term") {
-    const messages = inMemorySessions.get(sessionId) ?? [];
+    const messages = inMemorySessions.get(cacheKey) ?? [];
     return messages.map((m) => m.message);
   }
 
@@ -100,12 +104,14 @@ export async function getSessionMemory(sessionId: string): Promise<string[]> {
 
 export async function getSessionMessages(
   sessionId: string,
+  userId: number,
 ): Promise<Array<{ role: "user" | "assistant"; content: string }>> {
-  const memoryType = await getOrCreateSession(sessionId);
+  const memoryType = await getOrCreateSession(sessionId, userId);
+  const cacheKey = `${userId}:${sessionId}`;
 
   if (memoryType === "short-term") {
     // For short-term, return in-memory messages
-    const messages = inMemorySessions.get(sessionId) ?? [];
+    const messages = inMemorySessions.get(cacheKey) ?? [];
     return messages.map((m) => ({
       role: m.role,
       content: m.message,
@@ -161,17 +167,19 @@ export async function addMessageToSession(
   sessionId: string,
   message: string,
   role: "user" | "assistant" = "user",
+  userId: number,
 ): Promise<void> {
-  const memoryType = await getOrCreateSession(sessionId);
+  const memoryType = await getOrCreateSession(sessionId, userId);
+  const cacheKey = `${userId}:${sessionId}`;
 
   if (memoryType === "short-term") {
-    const history = inMemorySessions.get(sessionId) ?? [];
+    const history = inMemorySessions.get(cacheKey) ?? [];
     history.push({ role, message });
     // Keep only last 6 messages for short-term
     if (history.length > 6) {
       history.shift();
     }
-    inMemorySessions.set(sessionId, history);
+    inMemorySessions.set(cacheKey, history);
   } else {
     // Long-term: save to database
     try {
@@ -189,21 +197,26 @@ export async function addMessageToSession(
 
 export async function toggleMemoryType(
   sessionId: string,
+  userId: number,
 ): Promise<"short-term" | "long-term"> {
   await ensureInitialized();
 
-  const currentType = await getOrCreateSession(sessionId);
+  const currentType = await getOrCreateSession(sessionId, userId);
+  const cacheKey = `${userId}:${sessionId}`;
   const newType = currentType === "short-term" ? "long-term" : "short-term";
 
-  sessionMemoryTypes.set(sessionId, newType);
+  sessionMemoryTypes.set(cacheKey, newType);
 
   // Update in database
   try {
-    await Session.update({ memoryType: newType }, { where: { id: sessionId } });
+    await Session.update(
+      { memoryType: newType },
+      { where: { id: sessionId, userId } },
+    );
 
     // If switching to long-term, migrate in-memory history to database
     if (newType === "long-term") {
-      const history = inMemorySessions.get(sessionId) ?? [];
+      const history = inMemorySessions.get(cacheKey) ?? [];
       for (const msg of history) {
         await Message.create({
           sessionId,
@@ -211,7 +224,7 @@ export async function toggleMemoryType(
           role: msg.role,
         });
       }
-      inMemorySessions.delete(sessionId);
+      inMemorySessions.delete(cacheKey);
     }
 
     // If switching to short-term, populate in-memory from database
@@ -226,7 +239,7 @@ export async function toggleMemoryType(
         role: (msg as any).role,
         message: (msg as any).message,
       }));
-      inMemorySessions.set(sessionId, history);
+      inMemorySessions.set(cacheKey, history);
     }
   } catch (error) {
     console.error("Error toggling memory type:", error);
@@ -238,23 +251,28 @@ export async function toggleMemoryType(
 
 export async function getSessionMemoryType(
   sessionId: string,
+  userId: number,
 ): Promise<"short-term" | "long-term"> {
-  return await getOrCreateSession(sessionId);
+  return await getOrCreateSession(sessionId, userId);
 }
 
-export async function clearSessionMemory(sessionId: string): Promise<void> {
+export async function clearSessionMemory(
+  sessionId: string,
+  userId: number,
+): Promise<void> {
   await ensureInitialized();
+  const cacheKey = `${userId}:${sessionId}`;
 
-  inMemorySessions.delete(sessionId);
+  inMemorySessions.delete(cacheKey);
 
   try {
     await Message.destroy({ where: { sessionId } });
-    await Session.destroy({ where: { id: sessionId } });
+    await Session.destroy({ where: { id: sessionId, userId } });
   } catch (error) {
     console.error("Error clearing session memory:", error);
   }
 
-  sessionMemoryTypes.delete(sessionId);
+  sessionMemoryTypes.delete(cacheKey);
 }
 
 export { sequelize };

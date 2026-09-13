@@ -86,3 +86,16 @@
   background: rgba(30, 41, 59, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.15);
 }
+
+.agent-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agent-controls button:disabled {
+  cursor: not-allowed;
+}
+
+.agent-controls button.loading-cursor:disabled {
+  cursor: wait;
+}
