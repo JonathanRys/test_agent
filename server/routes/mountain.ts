@@ -16,7 +16,6 @@ mountainRouter.get("/mountain/:id", async (req: Request, res: Response) => {
   res.status(200).json(mountain);
   return res;
 });
-
 mountainRouter.get("/mountains", async (req: Request, res: Response) => {
   const { state, range } = req.query;
 

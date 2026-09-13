@@ -1,4 +1,5 @@
 import { SubmitEvent, useEffect, useLayoutEffect, useState } from "react";
+import { useAuth } from "../auth/AuthContext";
 import type { MemoryType, Message } from "../types/Agent";
 
 function generateUUID(): string {
@@ -40,6 +41,7 @@ function scrollToBottom() {
 }
 
 export default function Agent() {
+  const { apiFetch } = useAuth();
   const [sessionId, setSessionId] = useState<string>(() =>
     getSessionIdFromUrl(),
   );
@@ -56,7 +58,7 @@ export default function Agent() {
     async function loadSession() {
       setIsLoadingSession(true);
       try {
-        const response = await fetch(`/api/sessions/${sessionId}`);
+        const response = await apiFetch(`/api/sessions/${sessionId}`);
         const data = await response.json();
 
         if (data.ok) {
@@ -94,17 +96,20 @@ export default function Agent() {
     }
 
     loadSession();
-  }, [sessionId]);
+  }, [apiFetch, sessionId]);
 
   useLayoutEffect(scrollToBottom, [messages]);
 
   async function handleToggleMemory() {
     setTogglingMemory(true);
     try {
-      const response = await fetch(`/api/sessions/${sessionId}/toggle-memory`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-      });
+      const response = await apiFetch(
+        `/api/sessions/${sessionId}/toggle-memory`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+        },
+      );
 
       const data = await response.json();
       if (!response.ok) {
@@ -133,7 +138,7 @@ export default function Agent() {
     setLoading(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await apiFetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: trimmedPrompt, sessionId }),
@@ -200,7 +205,9 @@ export default function Agent() {
         >
           Memory: {memoryType} {togglingMemory ? "..." : ""}
         </button>
-        <span className="meta-pill">Tools: chat + healthcheck</span>
+        <span className="meta-pill">
+          Tools: profile + list status + web search
+        </span>
         <span
           className="meta-pill"
           style={{ fontSize: "0.65rem", opacity: 0.7 }}

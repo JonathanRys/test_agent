@@ -19,7 +19,7 @@ export const preferencesSchema = z.object({
 export const preferencesRouter = Router();
 
 preferencesRouter.get(
-  "/me/preferences",
+  "/user/preferences",
   requireUser,
   async (req, res, next) => {
     try {
@@ -35,7 +35,7 @@ preferencesRouter.get(
 );
 
 preferencesRouter.patch(
-  "/me/preferences",
+  "/user/preferences",
   requireUser,
   async (req, res, next) => {
     try {

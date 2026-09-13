@@ -9,6 +9,7 @@ import { mountainRouter } from "./routes/mountain.js";
 import { trailRouter } from "./routes/trail.js";
 import { authRouter } from "./routes/auth.js";
 import { preferencesRouter } from "./routes/preferences.js";
+import { profileRouter } from "./routes/profile.js";
 import { seasonRouter } from "./routes/season.js";
 
 const app = express();
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api", authRouter);
 app.use("/api", preferencesRouter);
+app.use("/api", profileRouter);
 app.use("/api", seasonRouter);
 
 app.get("/health", (_req, res) => {

@@ -6,7 +6,7 @@ export type ToolResult = {
 export function healthcheckTool(): ToolResult {
   return {
     ok: true,
-    message: 'Agent healthcheck passed. Service is running and reachable.',
+    message: "Agent healthcheck passed. Service is running and reachable.",
   };
 }
 

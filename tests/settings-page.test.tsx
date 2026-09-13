@@ -18,10 +18,10 @@ describe("Settings", () => {
           status: 401,
         });
       }
-      if (url.endsWith("/api/me/preferences") && init?.method === "PATCH") {
+      if (url.endsWith("/api/user/preferences") && init?.method === "PATCH") {
         return new Response(JSON.stringify({ ok: true }));
       }
-      if (url.endsWith("/api/me/preferences")) {
+      if (url.endsWith("/api/user/preferences")) {
         return new Response(
           JSON.stringify({
             ok: true,

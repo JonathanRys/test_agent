@@ -2,6 +2,7 @@ import { Router, Request, Response, NextFunction } from "express";
 import { z } from "zod";
 import { generateAgentReply } from "../services/openrouter.js";
 import { env } from "../config/env.js";
+import { optionalUser } from "../middleware/auth.js";
 import {
   getSessionMemory,
   getSessionMessages,
@@ -16,6 +17,7 @@ const payloadSchema = z.object({
 });
 
 export const agentRouter = Router();
+agentRouter.use(optionalUser);
 
 agentRouter.post(
   "/chat",
@@ -26,7 +28,7 @@ agentRouter.post(
 
       const history = await getSessionMemory(sessionId);
       const memory = [...history, body.prompt].slice(-6);
-      const reply = await generateAgentReply(memory.join("\n"));
+      const reply = await generateAgentReply(memory.join("\n"), req.user?.id);
 
       await addMessageToSession(sessionId, body.prompt, "user");
       await addMessageToSession(sessionId, reply.content, "assistant");

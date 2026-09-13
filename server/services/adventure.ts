@@ -1,10 +1,43 @@
 import { sequelize, ensureInitialized } from "../utils/db.js";
-import { Adventure, Summit, TrailCompletion } from "../models/index.js";
+import {
+  Activity,
+  Adventure,
+  Summit,
+  TrailCompletion,
+} from "../models/index.js";
 import {
   CreateAdventureInput,
   DeleteAdventureInput,
   EditAdventureInput,
 } from "./types.js";
+
+const adventureIncludes = [
+  { model: Activity },
+  { model: Summit },
+  { model: TrailCompletion },
+];
+
+export async function getAdventures(userId: number): Promise<Adventure[]> {
+  await ensureInitialized();
+
+  return Adventure.findAll({
+    where: { userId },
+    include: adventureIncludes,
+    order: [["activityDate", "DESC"]],
+  });
+}
+
+export async function getAdventure(
+  id: number,
+  userId: number,
+): Promise<Adventure | null> {
+  await ensureInitialized();
+
+  return Adventure.findOne({
+    where: { id, userId },
+    include: adventureIncludes,
+  });
+}
 
 export async function createAdventure(
   input: CreateAdventureInput,

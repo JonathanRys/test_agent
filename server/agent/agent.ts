@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import Handlebars from "handlebars";
+import type { ListCompletionStatus } from "../services/completion.js";
+import type { UserProfile } from "../services/profile.js";
 
 type Prompt = {
   name: string;
@@ -16,6 +18,11 @@ export type AgentMessage = {
 export type AgentContext = {
   memory: string[];
   tools: string[];
+};
+
+export type AgentRequestContext = {
+  profile?: UserProfile;
+  listCompletions?: ListCompletionStatus[];
 };
 
 // prompts live in ../prompts
@@ -45,8 +52,16 @@ const cachedPrompts = prompts.reduce(
   {} as Record<string, string>,
 );
 
-export function buildAgentSystemPrompt() {
-  return cachedPrompts["systemPrompt"];
+export function buildAgentSystemPrompt(context?: AgentRequestContext) {
+  const prompt = cachedPrompts["systemPrompt"];
+  if (!context?.profile && !context?.listCompletions) return prompt;
+
+  return `${prompt}
+
+Current authenticated user context:
+${JSON.stringify(context, null, 2)}
+
+Use the user's profile when personalizing recommendations. Prefer unfinished lists when suggesting goals or destinations, and mention completion progress when it is relevant.`;
 }
 
 export function buildAgentSummaryPrompt(
@@ -60,6 +75,15 @@ export function buildAgentSummaryPrompt(
 export function createAgentContext(): AgentContext {
   return {
     memory: [],
-    tools: ["chat", "healthcheck"],
+    tools: [
+      "chat",
+      "healthcheck",
+      "user_profile",
+      "list_completion_status",
+      "web_search",
+      "weather",
+      "road_closures",
+      "trail_conditions",
+    ],
   };
 }

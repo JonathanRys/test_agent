@@ -32,7 +32,7 @@ export default function Settings() {
 
   useEffect(() => {
     async function load() {
-      const preferencesResponse = await apiFetch("/api/me/preferences");
+      const preferencesResponse = await apiFetch("/api/user/preferences");
       const preferencesData = await preferencesResponse.json();
       if (preferencesResponse.ok) setPreferences(preferencesData.preferences);
     }
@@ -44,7 +44,7 @@ export default function Settings() {
     setStatus(null);
     setSaving(true);
     try {
-      const response = await apiFetch("/api/me/preferences", {
+      const response = await apiFetch("/api/user/preferences", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(preferences),

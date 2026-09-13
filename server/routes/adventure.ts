@@ -5,6 +5,8 @@ import {
   createAdventure,
   editAdventure,
   deleteAdventure,
+  getAdventure,
+  getAdventures,
 } from "../services/adventure.js";
 import { requireUser } from "../middleware/auth.js";
 
@@ -47,6 +49,36 @@ const deleteAdventureSchema = z
   });
 
 export const adventureRouter = Router();
+
+adventureRouter.get(
+  "/adventures",
+  requireUser,
+  async (req: Request, res: Response) => {
+    const adventures = await getAdventures(req.user!.id);
+    res.status(200).json(adventures);
+    return res;
+  },
+);
+
+adventureRouter.get(
+  "/adventure/:id",
+  requireUser,
+  async (req: Request, res: Response) => {
+    const { id } = req.params;
+
+    if (typeof id !== "string" || !/^\d+$/.test(id)) {
+      return res.status(400).json({ error: "Invalid ID format" });
+    }
+
+    const adventure = await getAdventure(parseInt(id, 10), req.user!.id);
+    if (!adventure) {
+      return res.status(404).json({ error: "Adventure not found" });
+    }
+
+    res.status(200).json(adventure);
+    return res;
+  },
+);
 
 adventureRouter.post(
   "/adventures",
