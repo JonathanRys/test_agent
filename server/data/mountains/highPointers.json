@@ -1,364 +1,350 @@
 [
   {
     "name": "Cheaha Mountain",
-    "height": "2,407",
+    "height": 2407,
     "stateId": 1,
     "lat": 33.48533,
     "lon": -85.8088
   },
   {
     "name": "Denali (Mount McKinley)",
-    "height": "20,310",
+    "height": 20310,
     "stateId": 2,
     "lat": 63.06911,
     "lon": -151.00624
   },
   {
     "name": "Lata Mountain",
-    "height": "3,170",
+    "height": 3170,
     "stateId": 52,
     "lat": -14.23304,
     "lon": -169.45243
   },
   {
     "name": "Humphreys Peak",
-    "height": "12,637",
+    "height": 12637,
     "stateId": 3,
     "lat": 35.34637,
     "lon": -111.67796
   },
   {
     "name": "Magazine Mountain (Signal Hill)",
-    "height": "2,753",
+    "height": 2753,
     "stateId": 4,
     "lat": 35.16732,
     "lon": -93.64491
   },
   {
-    "name": "Mount Whitney",
-    "height": "14,505",
-    "stateId": 5,
-    "lat": 36.57859,
-    "lon": -118.29213
-  },
-  {
-    "name": "Mount Elbert",
-    "height": "14,440",
-    "stateId": 6,
-    "lat": 39.11776,
-    "lon": -106.44537
-  },
-  {
     "name": "Mount Frissell-South Slope",
-    "height": "2,380",
+    "height": 2380,
     "stateId": 7,
     "lat": 42.05125,
     "lon": -73.48199
   },
   {
     "name": "Ebright Azimuth",
-    "height": "448",
+    "height": 448,
     "stateId": 8,
     "lat": 39.83607,
     "lon": -75.51908
   },
   {
     "name": "Point Reno",
-    "height": "409",
+    "height": 409,
     "stateId": 9,
     "lat": 38.95194,
     "lon": -77.07611
   },
   {
     "name": "Britton Hill",
-    "height": "345",
+    "height": 345,
     "stateId": 10,
     "lat": 30.9864,
     "lon": -86.28151
   },
   {
     "name": "Brasstown Bald",
-    "height": "4,784",
+    "height": 4784,
     "stateId": 11,
     "lat": 34.87437,
     "lon": -83.81105
   },
   {
     "name": "Mount Lamlam",
-    "height": "1,332",
+    "height": 1332,
     "stateId": 53,
     "lat": 13.33787,
     "lon": 144.66672
   },
   {
     "name": "Mauna Kea (Pu’u Wekiu)",
-    "height": "13,803",
+    "height": 13803,
     "stateId": 12,
     "lat": 19.82067,
     "lon": -155.46807
   },
   {
     "name": "Borah Peak",
-    "height": "12,662",
+    "height": 12662,
     "stateId": 13,
     "lat": 44.13738,
     "lon": -113.78109
   },
   {
     "name": "Charles Mound",
-    "height": "1,235",
+    "height": 1235,
     "stateId": 14,
     "lat": 42.50411,
     "lon": -90.23983
   },
   {
     "name": "Hoosier High Point",
-    "height": "1,257",
+    "height": 1257,
     "stateId": 15,
     "lat": 40.0012,
     "lon": -84.84876
   },
   {
     "name": "Hawkeye Point",
-    "height": "1,670",
+    "height": 1670,
     "stateId": 16,
     "lat": 43.46016,
     "lon": -95.70899
   },
   {
     "name": "Mount Sunflower",
-    "height": "4,039",
+    "height": 4039,
     "stateId": 17,
     "lat": 39.02193,
     "lon": -102.03726
   },
   {
     "name": "Black Mountain",
-    "height": "4,145",
+    "height": 4145,
     "stateId": 18,
     "lat": 36.9143,
     "lon": -82.89378
   },
   {
     "name": "Driskill Mountain",
-    "height": "535",
+    "height": 535,
     "stateId": 19,
     "lat": 32.42484,
     "lon": -92.89661
   },
   {
     "name": "Backbone Mountain (Hoye Crest)",
-    "height": "3,360",
+    "height": 3360,
     "stateId": 21,
     "lat": 39.23755,
     "lon": -79.48544
   },
   {
     "name": "Mount Greylock",
-    "height": "3,491",
+    "height": 3491,
     "stateId": 22,
     "lat": 42.63726,
     "lon": -73.16598
   },
   {
     "name": "Mount Arvon",
-    "height": "1,979",
+    "height": 1979,
     "stateId": 23,
     "lat": 46.75583,
     "lon": -88.15533
   },
   {
     "name": "Eagle Mountain",
-    "height": "2,301",
+    "height": 2301,
     "stateId": 24,
     "lat": 47.89743,
     "lon": -90.56035
   },
   {
     "name": "Woodall Mountain",
-    "height": "806",
+    "height": 806,
     "stateId": 25,
     "lat": 34.78787,
     "lon": -88.24172
   },
   {
     "name": "Taum Sauk Mountain",
-    "height": "1,772",
+    "height": 1772,
     "stateId": 26,
     "lat": 37.57118,
     "lon": -90.72922
   },
   {
     "name": "Granite Peak",
-    "height": "12,807",
+    "height": 12807,
     "stateId": 27,
     "lat": 45.16343,
     "lon": -109.80753
   },
   {
     "name": "Panorama Point",
-    "height": "5,424",
+    "height": 5424,
     "stateId": 28,
     "lat": 41.0078,
     "lon": -104.0316
   },
   {
     "name": "Boundary Peak",
-    "height": "13,147",
+    "height": 13147,
     "stateId": 29,
     "lat": 37.84609,
     "lon": -118.35131
   },
   {
     "name": "High Point",
-    "height": "1,803",
+    "height": 1803,
     "stateId": 31,
     "lat": 41.32091,
     "lon": -74.66154
   },
   {
     "name": "Wheeler Peak",
-    "height": "13,167",
+    "height": 13167,
     "stateId": 32,
     "lat": 36.5569,
     "lon": -105.4168
   },
   {
     "name": "Mount Mitchell",
-    "height": "6,684",
+    "height": 6684,
     "stateId": 34,
     "lat": 35.76495,
     "lon": -82.26511
   },
   {
     "name": "White Butte",
-    "height": "3,506",
+    "height": 3506,
     "stateId": 35,
     "lat": 46.38702,
     "lon": -103.30258
   },
   {
     "name": "Agrihan",
-    "height": "3,166",
+    "height": 3166,
     "stateId": 54,
     "lat": 18.77784,
     "lon": 145.68066
   },
   {
     "name": "Campbell Hill",
-    "height": "1,549",
+    "height": 1549,
     "stateId": 36,
     "lat": 40.37015,
     "lon": -83.72007
   },
   {
     "name": "Black Mesa",
-    "height": "4,973",
+    "height": 4973,
     "stateId": 37,
     "lat": 36.9319,
     "lon": -102.99762
   },
   {
     "name": "Mount Hood",
-    "height": "11,249",
+    "height": 11249,
     "stateId": 38,
     "lat": 45.37351,
     "lon": -121.69588
   },
   {
     "name": "Mount Davis",
-    "height": "3,213",
+    "height": 3213,
     "stateId": 39,
     "lat": 39.78598,
     "lon": -79.17675
   },
   {
     "name": "Cerro de Punta",
-    "height": "4,390",
+    "height": 4390,
     "stateId": 55,
     "lat": 18.17224,
     "lon": -66.59172
   },
   {
     "name": "Jerimoth Hill",
-    "height": "812",
+    "height": 812,
     "stateId": 40,
     "lat": 41.84922,
     "lon": -71.77924
   },
   {
     "name": "Sassafras Mountain",
-    "height": "3,553",
+    "height": 3553,
     "stateId": 41,
     "lat": 35.06517,
     "lon": -82.77722
   },
   {
     "name": "Black Elk Peak (Harney Peak)",
-    "height": "7,244",
+    "height": 7244,
     "stateId": 42,
     "lat": 43.866,
     "lon": -103.53101
   },
   {
     "name": "Clingmans Dome (Kuwohi)",
-    "height": "6,643",
+    "height": 6643,
     "stateId": 43,
     "lat": 35.56287,
     "lon": -83.49839
   },
   {
     "name": "Guadalupe Peak",
-    "height": "8,751",
+    "height": 8751,
     "stateId": 44,
     "lat": 31.89146,
     "lon": -104.86068
   },
   {
     "name": "Crown Mountain",
-    "height": "1,555",
+    "height": 1555,
     "stateId": 56,
     "lat": 18.35705,
     "lon": -64.97297
   },
   {
     "name": "Kings Peak",
-    "height": "13,528",
+    "height": 13528,
     "stateId": 45,
     "lat": 40.77624,
     "lon": -110.37279
   },
   {
     "name": "Mount Rogers",
-    "height": "5,729",
+    "height": 5729,
     "stateId": 47,
     "lat": 36.65985,
     "lon": -81.54456
   },
   {
     "name": "Mount Rainier",
-    "height": "14,410",
+    "height": 14410,
     "stateId": 48,
     "lat": 46.85221,
     "lon": -121.75753
   },
   {
     "name": "Spruce Knob",
-    "height": "4,863",
+    "height": 4863,
     "stateId": 49,
     "lat": 38.69983,
     "lon": -79.53282
   },
   {
     "name": "Timms Hill",
-    "height": "1,952",
+    "height": 1952,
     "stateId": 50,
     "lat": 45.45083,
     "lon": -90.19511
   },
   {
     "name": "Gannett Peak",
-    "height": "13,804",
+    "height": 13804,
     "stateId": 51,
     "lat": 43.1844,
     "lon": -109.65405

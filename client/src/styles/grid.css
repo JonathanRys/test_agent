@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  align-self: flex-start;
   font-size: small;
   cursor: default;
 }
@@ -31,4 +32,24 @@
 .grid-icon-cell.completed {
   background: linear-gradient(135deg, #3b82f6, #8b5cf6);
   border-color: rgba(59, 130, 246, 0.4);
+}
+
+.grid-icon-row .grid-icon-cell.completed {
+  border-radius: 0px;
+}
+
+.grid-icon-row:first-of-type .grid-icon-cell:first-of-type.completed {
+  border-top-left-radius: 4px;
+}
+
+.grid-icon-row:first-of-type .grid-icon-cell:last-of-type.completed {
+  border-top-right-radius: 4px;
+}
+
+.grid-icon-row:last-of-type .grid-icon-cell:first-of-type.completed {
+  border-bottom-left-radius: 4px;
+}
+
+.grid-icon-row:last-of-type .grid-icon-cell:last-of-type.completed {
+  border-bottom-right-radius: 4px;
 }

@@ -123,21 +123,23 @@ const Trail = (props: TrailProps) => {
             {user && (
               <div className="completion-summary">
                 <div className="completion-section-label">Hiked:</div>
-                {completionItems.map((completion) => (
-                  <CompletionDate
-                    key={completion.id}
-                    adventureId={completion.adventureId}
-                    trailId={id}
-                    name={name}
-                    completedAt={completion.completedAt}
-                    editing={editingCompletionId === completion.id}
-                    setEditing={(editing) =>
-                      setEditingCompletionId(editing ? completion.id : null)
-                    }
-                    onComplete={onComplete}
-                    season={completion.season}
-                  />
-                ))}
+                <div className="completion-section-dates">
+                  {completionItems.map((completion) => (
+                    <CompletionDate
+                      key={completion.id}
+                      adventureId={completion.adventureId}
+                      trailId={id}
+                      name={name}
+                      completedAt={completion.completedAt}
+                      editing={editingCompletionId === completion.id}
+                      setEditing={(editing) =>
+                        setEditingCompletionId(editing ? completion.id : null)
+                      }
+                      onComplete={onComplete}
+                      season={completion.season}
+                    />
+                  ))}
+                </div>
                 {completedSeasons.length > 0 && (
                   <div
                     className="completion-seasons"

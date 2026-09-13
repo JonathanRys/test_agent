@@ -17,6 +17,7 @@ const GridIcon = (props: GridIconProps) => {
 
   return (
     <div className={`grid-icon${props.className ? ` ${props.className}` : ""}`}>
+      Grid Progress
       <div className="grid-icon-row">
         <div
           title={monthTitle(0, "January")}

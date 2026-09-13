@@ -104,6 +104,12 @@ const stateComponents: Record<string, React.ComponentType<any>> = {
   WV: WV,
   WI: WI,
   WY: WY,
+  DC: () => null,
+  PR: () => null,
+  AS: () => null,
+  GU: () => null,
+  MP: () => null,
+  VI: () => null,
 };
 
 // 2. Define the wrapper component props

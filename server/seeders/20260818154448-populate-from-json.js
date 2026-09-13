@@ -34,10 +34,9 @@ export default {
   async up(queryInterface, Sequelize) {
     // States
     await queryInterface.bulkInsert("states", states, {});
-    console.log("adding lists");
+
     // Lists
     await queryInterface.bulkInsert("lists", lists, {});
-    console.log("adding mountains");
 
     // Mountains
     await queryInterface.bulkInsert("mountains", fiftyTwoWav, {});

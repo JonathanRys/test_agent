@@ -15,6 +15,7 @@ import CompletionDate from "./CompletionDate";
 import GridIcon from "./GridIcon";
 import Season from "./Season";
 import { useAuth } from "../auth/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export interface MountainProps extends MountainType {
   index: number;
@@ -23,10 +24,10 @@ export interface MountainProps extends MountainType {
 }
 
 const ListBubble = (props: List) => {
-  const { name, abbreviation } = props;
+  const { id, name, abbreviation } = props;
 
   return (
-    <span className="meta-pill normal-cursor" title={name}>
+    <span className="meta-pill clickable" title={name}>
       {abbreviation}
     </span>
   );
@@ -59,6 +60,7 @@ const Mountain = (props: MountainProps) => {
   const [editingCompletionId, setEditingCompletionId] = useState<number | null>(
     null,
   );
+  const navigate = useNavigate();
 
   const bushwhackIcon = bushwhack ? (
     <MdForest title="Bushwhack" />
@@ -108,7 +110,15 @@ const Mountain = (props: MountainProps) => {
         {mountainExpanded && (
           <span>
             {Lists?.map((list) => (
-              <ListBubble key={`list${list.id}`} {...list} />
+              <span
+                onClick={(event) => {
+                  event.stopPropagation();
+                  navigate(`/list/${list.id}`);
+                }}
+                key={`list${list.id}`}
+              >
+                <ListBubble {...list} />
+              </span>
             ))}
           </span>
         )}
@@ -137,21 +147,23 @@ const Mountain = (props: MountainProps) => {
             {user && (
               <div className="completion-summary">
                 <div className="completion-section-label">Hiked:</div>
-                {completionItems.map((summit) => (
-                  <CompletionDate
-                    key={summit.id}
-                    adventureId={summit.adventureId}
-                    mountainId={id}
-                    name={name}
-                    completedAt={summit.completedAt}
-                    editing={editingCompletionId === summit.id}
-                    setEditing={(editing) =>
-                      setEditingCompletionId(editing ? summit.id : null)
-                    }
-                    onComplete={onComplete}
-                    season={summit.season}
-                  />
-                ))}
+                <div className="completion-section-dates">
+                  {completionItems.map((summit) => (
+                    <CompletionDate
+                      key={summit.id}
+                      adventureId={summit.adventureId}
+                      mountainId={id}
+                      name={name}
+                      completedAt={summit.completedAt}
+                      editing={editingCompletionId === summit.id}
+                      setEditing={(editing) =>
+                        setEditingCompletionId(editing ? summit.id : null)
+                      }
+                      onComplete={onComplete}
+                      season={summit.season}
+                    />
+                  ))}
+                </div>
                 {completedSeasons.length > 0 && (
                   <div
                     className="completion-seasons"
