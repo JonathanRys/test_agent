@@ -9,6 +9,7 @@ import {
   addMessageToSession,
   toggleMemoryType,
   getSessionMemoryType,
+  getUserSessions,
 } from "../services/memory.js";
 
 const payloadSchema = z.object({
@@ -53,6 +54,17 @@ agentRouter.post(
         res.status(404).json({ ok: false, error: "Session not found" });
         return;
       }
+      next(error);
+    }
+  },
+);
+
+agentRouter.get(
+  "/sessions",
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      res.json({ ok: true, sessions: await getUserSessions(req.user!.id) });
+    } catch (error) {
       next(error);
     }
   },

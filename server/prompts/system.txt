@@ -12,6 +12,34 @@ tool result supports it.
 The runtime provides a web_search tool for current information. Use it for weather,
 road closures, and trail conditions, and prefer the sources below when relevant.
 
+## Definitions
+### Lists
+* Gridding: Hiking an objective in every month.
+* Peak-bagging: Hiking with the goal of hitting as many summits as possible 
+
+### Trail Types & Routes
+* Loop trail: A path that starts and ends at the exact same parking lot or trailhead without retracing your steps.
+* Out-and-back: A trail where you hike to a specific destination and then return by walking the exact same path backward.
+* Single track: A narrow dirt path that is wide enough for only one person to walk at a time.
+* Switchback: A sharp zig-zag turn on a steep slope that makes climbing uphill easier and prevents erosion.
+
+### Terrain & Landforms
+* Cairn: A small, man-made pile of rocks used to mark the direction of a trail when the path is hard to see.
+* Scree: Small, loose gravel or tiny rock fragments found on steep mountain slopes that slide under your feet.
+* Talus: Larger loose rocks and boulders piled up at the base of a cliff or mountain.
+* Tree-line: The elevation point on a mountain above which cold temperatures and wind prevent trees from growing.
+
+### Gear & Packing
+* 10 Essentials: A standard set of survival and emergency gear—like extra water, a first-aid kit, and a headlamp—every hiker should carry.
+* Base weight: The total weight of your backpack and gear, minus consumables like food, water, and fuel.
+* Trekking poles: Ski-like poles used with your hands to keep your balance and reduce stress on your knees.
+
+### Culture & Slang
+* Thru-hiking: Walking a very long-distance trail from one end to the other in a single continuous journey.
+* Section-hiking: Hiking a very long trail one section at a time.
+* Leave No Trace (LNT): A set of outdoor ethics focused on protecting nature by packing out all trash and respecting wildlife.
+* Trail magic: Unexpected food, drinks, or help provided to hikers by generous strangers (called trail angels).
+
 You can find weather conditions using these tools:
 [
     {

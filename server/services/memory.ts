@@ -136,6 +136,36 @@ export async function getSessionMessages(
   }
 }
 
+export async function getUserSessions(userId: number): Promise<
+  Array<{
+    id: string;
+    memoryType: "short-term" | "long-term";
+    createdAt: Date;
+    updatedAt: Date;
+    preview: string | null;
+  }>
+> {
+  await ensureInitialized();
+  const sessions = await Session.findAll({
+    where: { userId },
+    order: [["updatedAt", "DESC"]],
+  });
+
+  return Promise.all(
+    sessions.map(async (session) => {
+      const messages = await getSessionMessages(session.id, userId);
+      const firstUserMessage = messages.find((message) => message.role === "user");
+      return {
+        id: session.id,
+        memoryType: session.memoryType,
+        createdAt: session.createdAt,
+        updatedAt: session.updatedAt,
+        preview: firstUserMessage?.content ?? null,
+      };
+    }),
+  );
+}
+
 async function summarizeMessage(
   sessionId: string,
   messageId: number,
@@ -193,6 +223,11 @@ export async function addMessageToSession(
       console.error("Error adding message to database:", error);
     }
   }
+
+  await Session.update(
+    { updatedAt: new Date() },
+    { where: { id: sessionId, userId } },
+  );
 }
 
 export async function toggleMemoryType(

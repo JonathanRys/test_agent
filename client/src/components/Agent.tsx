@@ -5,7 +5,7 @@ import {
   setLastAgentSession,
   useAuth,
 } from "../auth/AuthContext";
-import type { MemoryType, Message } from "../types/Agent";
+import type { AgentSession, MemoryType, Message } from "../types/Agent";
 
 function generateUUID(): string {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -15,18 +15,11 @@ function generateUUID(): string {
   });
 }
 
-function getSessionIdFromUrl(): string {
+function getSessionIdFromUrl(): string | null {
   const params = new URLSearchParams(window.location.search);
   const sessionId = params.get("session");
 
-  if (sessionId) {
-    return sessionId;
-  }
-
-  // Generate new UUID if no session ID in URL
-  const newSessionId = generateUUID();
-  setSessionIdInUrl(newSessionId);
-  return newSessionId;
+  return sessionId;
 }
 
 function setSessionIdInUrl(id: string): void {
@@ -77,7 +70,7 @@ function getAgentErrorMessage(error: unknown): string {
 export default function Agent() {
   const { apiFetch, user } = useAuth();
   const navigate = useNavigate();
-  const [sessionId, setSessionId] = useState<string>(() =>
+  const [sessionId, setSessionId] = useState<string | null>(() =>
     getSessionIdFromUrl(),
   );
   const [prompt, setPrompt] = useState("");
@@ -87,9 +80,19 @@ export default function Agent() {
   const [togglingMemory, setTogglingMemory] = useState(false);
   const [isLoadingSession, setIsLoadingSession] = useState(true);
   const [model, setModel] = useState<string>("loading...");
+  const [sessions, setSessions] = useState<AgentSession[]>([]);
+  const [showHistory, setShowHistory] = useState(false);
 
   useEffect(() => {
-    if (user) setLastAgentSession(user.id, sessionId);
+    if (!user || sessionId) return;
+
+    const restoredSessionId = getLastAgentSession(user.id) ?? generateUUID();
+    setSessionId(restoredSessionId);
+    setSessionIdInUrl(restoredSessionId);
+  }, [sessionId, user]);
+
+  useEffect(() => {
+    if (user && sessionId) setLastAgentSession(user.id, sessionId);
   }, [sessionId, user]);
 
   function startNewSession() {
@@ -101,9 +104,31 @@ export default function Agent() {
     navigate(`/agent?session=${newSessionId}`, { replace: true });
   }
 
+  async function loadSessionHistory() {
+    try {
+      const response = await apiFetch("/api/sessions");
+      const data = await readAgentResponse(response);
+      if (!response.ok) throw new Error(data.error ?? "Failed to load sessions");
+      setSessions(data.sessions ?? []);
+    } catch (error) {
+      console.error("Failed to load session history:", error);
+    }
+  }
+
+  function resumeSession(id: string) {
+    setShowHistory(false);
+    setSessionId(id);
+    navigate(`/agent?session=${id}`);
+  }
+
+  useEffect(() => {
+    if (user) loadSessionHistory();
+  }, [user]);
+
   // Load session data on mount or when sessionId changes
   useEffect(() => {
     async function loadSession() {
+      if (!sessionId) return;
       setIsLoadingSession(true);
       try {
         const response = await apiFetch(`/api/sessions/${sessionId}`);
@@ -243,8 +268,42 @@ export default function Agent() {
           <p className="eyebrow">Hiking Agent</p>
           <h1>Hiking Agent</h1>
         </div>
-        <span className="status">Model: {model}</span>
+        <div className="agent-header-actions">
+          <button
+            type="button"
+            className="history-button"
+            onClick={() => {
+              setShowHistory(!showHistory);
+              if (!showHistory) loadSessionHistory();
+            }}
+          >
+            {showHistory ? "Hide history" : "History"}
+          </button>
+          <span className="status">Model: {model}</span>
+        </div>
       </header>
+      {showHistory && (
+        <div className="session-history" aria-label="Conversation history">
+          <h2>Previous conversations</h2>
+          {sessions.length === 0 ? (
+            <p className="session-empty">No previous conversations yet.</p>
+          ) : (
+            <div className="session-list">
+              {sessions.map((session) => (
+                <button
+                  type="button"
+                  className={`session-item${session.id === sessionId ? " active" : ""}`}
+                  key={session.id}
+                  onClick={() => resumeSession(session.id)}
+                >
+                  <strong>{session.preview || "Untitled conversation"}</strong>
+                  <span>{new Date(session.updatedAt).toLocaleString()}</span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
       <div className="meta-row">
         <button
           className="meta-pill memory-toggle"

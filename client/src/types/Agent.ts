@@ -4,3 +4,11 @@ export type Message = {
 };
 
 export type MemoryType = "short-term" | "long-term";
+
+export type AgentSession = {
+  id: string;
+  memoryType: MemoryType;
+  createdAt: string;
+  updatedAt: string;
+  preview: string | null;
+};
