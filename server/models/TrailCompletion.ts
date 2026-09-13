@@ -55,6 +55,13 @@ export function initTrailCompletion(sequelize: Sequelize): void {
       modelName: "TrailCompletion",
       tableName: "trailCompletions",
       timestamps: false,
+      indexes: [
+        {
+          unique: true,
+          name: "trail_completions_user_trail_completed_at_unique",
+          fields: ["userId", "trailId", "completedAt"],
+        },
+      ],
     },
   );
 }

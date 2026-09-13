@@ -68,11 +68,11 @@ const CompletionDate = (props: CompletionDateProps) => {
       }
 
       onComplete && onComplete();
+      setEditing(false);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Request failed");
     } finally {
       setSaving(false);
-      setEditing(false);
     }
   };
 

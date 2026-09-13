@@ -10,6 +10,16 @@ import {
   DeleteAdventureInput,
   EditAdventureInput,
 } from "./types.js";
+import { Op } from "sequelize";
+
+export class DuplicateCompletionError extends Error {
+  statusCode = 409;
+
+  constructor(entity: "trail" | "summit") {
+    super(`This ${entity} has already been completed on that date.`);
+    this.name = "DuplicateCompletionError";
+  }
+}
 
 const adventureIncludes = [
   { model: Activity },
@@ -50,6 +60,32 @@ export async function createAdventure(
   const trailIds = input.trailIds ?? [];
 
   return sequelize.transaction(async (transaction) => {
+    const [existingSummit, existingTrail] = await Promise.all([
+      mountainIds.length > 0
+        ? Summit.findOne({
+            where: {
+              userId,
+              mountainId: { [Op.in]: mountainIds },
+              completedAt: activityDate,
+            },
+            transaction,
+          })
+        : null,
+      trailIds.length > 0
+        ? TrailCompletion.findOne({
+            where: {
+              userId,
+              trailId: { [Op.in]: trailIds },
+              completedAt: activityDate,
+            },
+            transaction,
+          })
+        : null,
+    ]);
+
+    if (existingSummit) throw new DuplicateCompletionError("summit");
+    if (existingTrail) throw new DuplicateCompletionError("trail");
+
     const adventure = await Adventure.create(
       {
         name: input.name,
@@ -69,10 +105,7 @@ export async function createAdventure(
           completedAt: activityDate,
           season: input.season ?? null,
         })),
-        {
-          updateOnDuplicate: ["userId", "adventureId", "mountainId"],
-          transaction,
-        },
+        { transaction },
       );
     }
 
@@ -85,10 +118,7 @@ export async function createAdventure(
           completedAt: activityDate,
           season: input.season ?? null,
         })),
-        {
-          updateOnDuplicate: ["userId", "adventureId", "trailId"],
-          transaction,
-        },
+        { transaction },
       );
     }
 
@@ -113,6 +143,32 @@ export async function editAdventure(
       where: { id: input.id, userId },
       transaction,
     });
+
+    if (mountainId) {
+      const existingSummit = await Summit.findOne({
+        where: {
+          userId,
+          mountainId,
+          completedAt: activityDate,
+          adventureId: { [Op.ne]: input.id },
+        },
+        transaction,
+      });
+      if (existingSummit) throw new DuplicateCompletionError("summit");
+    }
+
+    if (trailId) {
+      const existingTrail = await TrailCompletion.findOne({
+        where: {
+          userId,
+          trailId,
+          completedAt: activityDate,
+          adventureId: { [Op.ne]: input.id },
+        },
+        transaction,
+      });
+      if (existingTrail) throw new DuplicateCompletionError("trail");
+    }
 
     const affectedCount = await Adventure.update(
       { activityDate, activityId },

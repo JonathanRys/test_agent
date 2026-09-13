@@ -55,6 +55,13 @@ export function initSummit(sequelize: Sequelize): void {
       modelName: "Summit",
       tableName: "summits",
       timestamps: false,
+      indexes: [
+        {
+          unique: true,
+          name: "summits_user_mountain_completed_at_unique",
+          fields: ["userId", "mountainId", "completedAt"],
+        },
+      ],
     },
   );
 }
