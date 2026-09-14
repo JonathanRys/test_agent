@@ -95,7 +95,9 @@ async function readAgentStream(
   if (buffer.trim()) processEvent(buffer);
 
   if (!doneData) {
-    throw new Error("The agent connection ended before completing the response.");
+    throw new Error(
+      "The agent connection ended before completing the response.",
+    );
   }
   return doneData;
 }
@@ -153,7 +155,8 @@ export default function Agent() {
     try {
       const response = await apiFetch("/api/sessions");
       const data = await readAgentResponse(response);
-      if (!response.ok) throw new Error(data.error ?? "Failed to load sessions");
+      if (!response.ok)
+        throw new Error(data.error ?? "Failed to load sessions");
       setSessions(data.sessions ?? []);
     } catch (error) {
       console.error("Failed to load session history:", error);
@@ -387,7 +390,7 @@ export default function Agent() {
             className={
               loading || isLoadingSession ? "loading-cursor" : undefined
             }
-            disabled={loading || !prompt.trim()}
+            disabled={loading || messages.length <= 1}
             onClick={startNewSession}
           >
             New session

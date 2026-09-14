@@ -146,7 +146,9 @@ export function calculateAMCRating(metrics: TrailMetrics): AMCRating {
 export function getStubTrailDifficulty(
   trailId: number,
 ): StubTrailDifficulty | null {
-  const trail = STUB_TRAIL_METRICS.find((candidate) => candidate.trailId === trailId);
+  const trail = STUB_TRAIL_METRICS.find(
+    (candidate) => candidate.trailId === trailId,
+  );
   if (!trail) return null;
 
   return {

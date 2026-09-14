@@ -56,7 +56,11 @@ const cachedPrompts = prompts.reduce(
 
 export function buildAgentSystemPrompt(context?: AgentRequestContext) {
   const prompt = cachedPrompts["systemPrompt"];
-  if (!context?.profile && !context?.listCompletions && !context?.completedPeaks)
+  if (
+    !context?.profile &&
+    !context?.listCompletions &&
+    !context?.completedPeaks
+  )
     return prompt;
 
   return `${prompt}

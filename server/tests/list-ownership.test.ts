@@ -41,7 +41,8 @@ describe("completion ownership in public reads", () => {
 
     expect(
       mountains.every(
-        (mountain) => (mountain as any).state?.abbreviation === state.abbreviation,
+        (mountain) =>
+          (mountain as any).state?.abbreviation === state.abbreviation,
       ),
     ).toBe(true);
   });

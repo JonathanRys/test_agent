@@ -34,7 +34,9 @@ agentRouter.post(
         durationMs: Date.now() - contextStartedAt,
         characters: history.length,
       });
-      const prompt = [history, `user: ${body.prompt}`].filter(Boolean).join("\n");
+      const prompt = [history, `user: ${body.prompt}`]
+        .filter(Boolean)
+        .join("\n");
 
       res.status(200);
       res.setHeader("Content-Type", "text/event-stream");

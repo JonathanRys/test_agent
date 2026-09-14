@@ -204,7 +204,9 @@ export async function getUserSessions(userId: number): Promise<
   return Promise.all(
     sessions.map(async (session) => {
       const messages = await getSessionMessages(session.id, userId);
-      const firstUserMessage = messages.find((message) => message.role === "user");
+      const firstUserMessage = messages.find(
+        (message) => message.role === "user",
+      );
       return {
         id: session.id,
         memoryType: session.memoryType,
