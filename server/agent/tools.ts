@@ -1,9 +1,13 @@
 import { getAdventures } from "../services/adventure.js";
-import { getListCompletionStatus } from "../services/completion.js";
+import {
+  getListCompletionStatus,
+  getUserCompletedPeaks,
+} from "../services/completion.js";
 import { getLists } from "../services/list.js";
-import { getMountain } from "../services/mountain.js";
+import { getMountain, getMountains } from "../services/mountain.js";
 import { getUserProfile } from "../services/profile.js";
 import { getTrail } from "../services/trail.js";
+import { getStubMountainDifficulty } from "../utils/amcRating.js";
 
 export type ToolResult = {
   ok: boolean;
@@ -53,6 +57,19 @@ export const applicationTools = [
   {
     type: "function",
     function: {
+      name: "search_mountains",
+      description:
+        "Find uncompleted mountain peaks, optionally filtered by state or range. Results include estimated difficulty.",
+      parameters: {
+        type: "object",
+        properties: { state: { type: "string" }, range: { type: "string" } },
+        additionalProperties: false,
+      },
+    },
+  },
+  {
+    type: "function",
+    function: {
       name: "get_mountain",
       description: "Get a mountain by ID.",
       parameters: {
@@ -90,6 +107,12 @@ export const applicationTools = [
   },
 ] as const;
 
+export function shouldUseWebSearch(prompt: string): boolean {
+  return /weather|forecast|conditions?|road closure|road condition|open today|current|recent|latest|snow|mud|ice/i.test(
+    prompt,
+  );
+}
+
 export async function executeApplicationTool(
   name: string,
   args: Record<string, unknown>,
@@ -110,6 +133,30 @@ export async function executeApplicationTool(
         userId,
       );
       break;
+    case "search_mountains": {
+      const [mountains, completedPeaks] = await Promise.all([
+        getMountains({
+          state: args.state as string | undefined,
+          range: args.range as string | undefined,
+        }),
+        getUserCompletedPeaks(userId),
+      ]);
+      const completedIds = new Set(completedPeaks.map((peak) => peak.id));
+      result = mountains
+        .filter((mountain) => !completedIds.has(mountain.id))
+        .slice(0, 25)
+        .map((mountain) => ({
+          id: mountain.id,
+          name: mountain.name,
+          state: mountain.state,
+          range: mountain.range,
+          height: mountain.height,
+          distance: mountain.distance,
+          bushwhack: mountain.bushwhack,
+          difficulty: getStubMountainDifficulty(mountain.id),
+        }));
+      break;
+    }
     case "get_mountain":
       result = await getMountain(Number(args.id));
       break;
@@ -134,8 +181,5 @@ export function healthcheckTool(): ToolResult {
 }
 
 export function echoTool(value: string): ToolResult {
-  return {
-    ok: true,
-    message: `Tool echo: ${value}`,
-  };
+  return { ok: true, message: `Tool echo: ${value}` };
 }

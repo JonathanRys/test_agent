@@ -4,10 +4,11 @@ import {
   List,
   MountainList,
   Summit,
+  State,
   User,
 } from "../models/index.js";
 import { getLists } from "../services/list.js";
-import { getMountainsOnList } from "../services/mountain.js";
+import { getMountains, getMountainsOnList } from "../services/mountain.js";
 import { getTrailsOnList } from "../services/trail.js";
 
 describe("completion ownership in public reads", () => {
@@ -30,6 +31,19 @@ describe("completion ownership in public reads", () => {
 
     expect(mountains.every((mountain) => !mountain.Summits?.length)).toBe(true);
     expect(trails.every((trail) => !trail.TrailCompletions?.length)).toBe(true);
+  });
+
+  it("filters mountains by the associated state abbreviation", async () => {
+    const state = await State.findOne();
+    if (!state) return;
+
+    const mountains = await getMountains({ state: state.abbreviation });
+
+    expect(
+      mountains.every(
+        (mountain) => (mountain as any).state?.abbreviation === state.abbreviation,
+      ),
+    ).toBe(true);
   });
 
   it("returns a completion only to its owner", async () => {

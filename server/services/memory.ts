@@ -102,6 +102,56 @@ export async function getSessionMemory(
   }
 }
 
+export async function getSessionPromptContext(
+  sessionId: string,
+  userId: number,
+): Promise<string> {
+  const memoryType = await getOrCreateSession(sessionId, userId);
+  const cacheKey = `${userId}:${sessionId}`;
+
+  if (memoryType === "short-term") {
+    const messages = inMemorySessions.get(cacheKey) ?? [];
+    return messages
+      .map((message) => `${message.role}: ${message.message}`)
+      .join("\n");
+  }
+
+  try {
+    const allMessages = await Message.findAll({
+      where: { sessionId },
+      order: [["createdAt", "ASC"]],
+    });
+    const recentMessages = allMessages.slice(-4);
+    const messageIds = allMessages.map((message) => (message as any).id);
+    const summaries = messageIds.length
+      ? await Summary.findAll({
+          where: { assistantMessageId: messageIds },
+          order: [["createdAt", "DESC"]],
+          limit: 4,
+        })
+      : [];
+
+    const recent = recentMessages
+      .map((message) => `${(message as any).role}: ${(message as any).message}`)
+      .join("\n");
+    const summaryText = summaries
+      .map((summary) => (summary as any).summary)
+      .filter(Boolean)
+      .reverse()
+      .join("\n");
+
+    return [
+      summaryText && `Earlier conversation summaries:\n${summaryText}`,
+      recent,
+    ]
+      .filter(Boolean)
+      .join("\n\n");
+  } catch (error) {
+    console.error("Error fetching prompt context:", error);
+    return "";
+  }
+}
+
 export async function getSessionMessages(
   sessionId: string,
   userId: number,

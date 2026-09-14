@@ -55,6 +55,51 @@ async function readAgentResponse(
   }
 }
 
+async function readAgentStream(
+  response: Response,
+  onToken: (content: string) => void,
+): Promise<Record<string, any>> {
+  if (!response.body) {
+    throw new Error("The agent connection was interrupted. Please try again.");
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+  let content = "";
+  let doneData: Record<string, any> | null = null;
+
+  const processEvent = (event: string) => {
+    const dataLine = event
+      .split("\n")
+      .find((line) => line.startsWith("data: "));
+    if (!dataLine) return;
+    const data = JSON.parse(dataLine.slice(6)) as Record<string, any>;
+    if (event.startsWith("event: token")) {
+      content += data.token ?? "";
+      onToken(content);
+    }
+    if (event.startsWith("event: done")) doneData = data;
+  };
+
+  while (true) {
+    const chunk = await reader.read();
+    buffer += decoder.decode(chunk.value ?? new Uint8Array(), {
+      stream: !chunk.done,
+    });
+    const events = buffer.split("\n\n");
+    buffer = events.pop() ?? "";
+    events.forEach(processEvent);
+    if (chunk.done) break;
+  }
+  if (buffer.trim()) processEvent(buffer);
+
+  if (!doneData) {
+    throw new Error("The agent connection ended before completing the response.");
+  }
+  return doneData;
+}
+
 function getAgentErrorMessage(error: unknown): string {
   if (
     error instanceof TypeError ||
@@ -219,10 +264,14 @@ export default function Agent() {
         body: JSON.stringify({ prompt: trimmedPrompt, sessionId }),
       });
 
-      const data = await readAgentResponse(response);
       if (!response.ok) {
+        const data = await readAgentResponse(response);
         throw new Error(data.error ?? "Request failed");
       }
+
+      const data = await readAgentStream(response, (content) => {
+        setMessages([...nextMessages, { role: "assistant", content }]);
+      });
 
       setMessages([
         ...nextMessages,

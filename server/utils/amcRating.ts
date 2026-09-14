@@ -6,13 +6,56 @@ type AMCRating =
   | "Vigorous"
   | "Strenuous";
 
-interface TrailMetrics {
+export type StubTrailDifficulty = {
+  trailId: number;
+  name: string;
+  rating: AMCRating;
+};
+
+export interface TrailMetrics {
   durationHours: number;
   mileage: number;
   elevationGainFt: number;
   isYouthOrFamily: boolean;
   isBackpacking?: boolean;
 }
+
+const STUB_TRAIL_METRICS: Array<{
+  trailId: number;
+  name: string;
+  metrics: TrailMetrics;
+}> = [
+  {
+    trailId: 1,
+    name: "Stub Valley Loop",
+    metrics: {
+      durationHours: 3.5,
+      mileage: 5,
+      elevationGainFt: 800,
+      isYouthOrFamily: false,
+    },
+  },
+  {
+    trailId: 2,
+    name: "Stub Ridge Route",
+    metrics: {
+      durationHours: 5,
+      mileage: 8,
+      elevationGainFt: 1800,
+      isYouthOrFamily: false,
+    },
+  },
+  {
+    trailId: 3,
+    name: "Stub Summit Traverse",
+    metrics: {
+      durationHours: 8,
+      mileage: 16,
+      elevationGainFt: 4000,
+      isYouthOrFamily: false,
+    },
+  },
+];
 
 interface ThresholdCriteria {
   relaxed: { maxDuration: number; maxMiles: number; maxElevation: number };
@@ -58,8 +101,8 @@ export function calculateAMCRating(metrics: TrailMetrics): AMCRating {
 
   // 1. Evaluate Duration
   if (metrics.durationHours >= limits.strenuous.minDuration) durationScore = 6;
-  else if (metrics.durationHours > limits.easy.maxDuration)
-    durationScore = 5; // e.g., 4.5 to 6 hrs -> Vigorous
+  else if (metrics.durationHours > limits.moderate.maxDuration)
+    durationScore = 5;
   else if (metrics.durationHours > limits.easy.maxDuration) durationScore = 4;
   else if (metrics.durationHours > limits.relaxed.maxDuration)
     durationScore = 3;
@@ -94,4 +137,54 @@ export function calculateAMCRating(metrics: TrailMetrics): AMCRating {
   }
 
   return ratings[finalIndex];
+}
+
+/**
+ * Temporary fixture lookup until trails and mountain-trail associations exist.
+ * Replace this with a query against the future association table.
+ */
+export function getStubTrailDifficulty(
+  trailId: number,
+): StubTrailDifficulty | null {
+  const trail = STUB_TRAIL_METRICS.find((candidate) => candidate.trailId === trailId);
+  if (!trail) return null;
+
+  return {
+    trailId: trail.trailId,
+    name: trail.name,
+    rating: calculateAMCRating(trail.metrics),
+  };
+}
+
+export function getStubMountainDifficulty(mountainId: number): {
+  mountainId: number;
+  low: AMCRating;
+  high: AMCRating;
+  trails: StubTrailDifficulty[];
+} | null {
+  const mountainTrails: Record<number, number[]> = {
+    1: [1, 2],
+    2: [2, 3],
+  };
+  const trails = (mountainTrails[mountainId] ?? [])
+    .map(getStubTrailDifficulty)
+    .filter((trail): trail is StubTrailDifficulty => trail !== null);
+  if (trails.length === 0) return null;
+
+  const ratingOrder: AMCRating[] = [
+    "Accessible",
+    "Relaxed",
+    "Easy",
+    "Moderate",
+    "Vigorous",
+    "Strenuous",
+  ];
+  const indexes = trails.map((trail) => ratingOrder.indexOf(trail.rating));
+
+  return {
+    mountainId,
+    low: ratingOrder[Math.min(...indexes)],
+    high: ratingOrder[Math.max(...indexes)],
+    trails,
+  };
 }

@@ -54,7 +54,6 @@ export async function getMountains(
 
     const whereQuery: Record<string, string> = {};
 
-    if (state !== undefined) whereQuery.state = state;
     if (range !== undefined) whereQuery.range = range;
 
     const mountains = await Mountain.findAll({
@@ -65,6 +64,9 @@ export async function getMountains(
           model: State,
           as: "state",
           attributes: ["id", "name", "abbreviation"],
+          ...(state !== undefined
+            ? { where: { abbreviation: state }, required: true }
+            : {}),
         },
       ],
     });

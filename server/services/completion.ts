@@ -1,4 +1,6 @@
 import { getLists } from "./list.js";
+import { Mountain, State, Summit } from "../models/index.js";
+import { ensureInitialized } from "../utils/db.js";
 
 export type ListCompletionStatus = {
   id: number;
@@ -10,6 +12,50 @@ export type ListCompletionStatus = {
   remainingCount: number;
   complete: boolean;
 };
+
+export type CompletedPeak = {
+  id: number;
+  name: string;
+  state: string | null;
+  height: number;
+  distance: number | null;
+  bushwhack: boolean;
+  completedAt: Date;
+};
+
+export async function getUserCompletedPeaks(
+  userId: number,
+): Promise<CompletedPeak[]> {
+  await ensureInitialized();
+  const completions = await Summit.findAll({
+    where: { userId },
+    include: [
+      {
+        model: Mountain,
+        attributes: ["id", "name", "height", "distance", "bushwhack"],
+        include: [{ model: State, as: "state", attributes: ["abbreviation"] }],
+      },
+    ],
+    order: [["completedAt", "DESC"]],
+  });
+
+  return completions.flatMap((completion) => {
+    const peak = (completion as any).Mountain;
+    if (!peak) return [];
+    const state = peak.state?.abbreviation ?? null;
+    return [
+      {
+        id: peak.id,
+        name: peak.name,
+        state,
+        height: peak.height,
+        distance: peak.distance,
+        bushwhack: Boolean(peak.bushwhack),
+        completedAt: (completion as any).completedAt,
+      },
+    ];
+  });
+}
 
 export function sortListCompletionStatus(
   lists: ListCompletionStatus[],
