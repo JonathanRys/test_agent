@@ -1,5 +1,5 @@
 import React from "react";
-import { act, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { App } from "../client/src/App";
 
@@ -9,8 +9,8 @@ describe("App", () => {
     expect(screen.getByRole("link", { name: "Log in" })).toBeInTheDocument();
     expect(screen.getByText("Agent")).toBeInTheDocument();
     expect(screen.getByText("List")).toBeInTheDocument();
-    expect(await screen.findByText("Presidential Range")).toBeInTheDocument();
-    expect(screen.queryByText(/0 \/ 10 complete/)).not.toBeInTheDocument();
+    expect(await screen.findByText("Welcome back")).toBeInTheDocument();
+    expect(screen.queryByText("Presidential Range")).not.toBeInTheDocument();
   });
 
   it("protects the agent route", async () => {
@@ -21,12 +21,12 @@ describe("App", () => {
     });
   });
 
-  it("loads the public list view from the API", async () => {
+  it("protects the lists route", async () => {
     window.history.pushState({}, "", "/");
-    await act(async () => {
-      render(React.createElement(App));
-      await Promise.resolve();
+    render(React.createElement(App));
+    await vi.waitFor(() => {
+      expect(screen.getByText("Welcome back")).toBeInTheDocument();
     });
-    expect(screen.getByText("Presidential Range")).toBeInTheDocument();
+    expect(screen.queryByText("Presidential Range")).not.toBeInTheDocument();
   });
 });

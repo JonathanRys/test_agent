@@ -341,17 +341,22 @@ export default function Agent() {
             <p className="session-empty">No previous conversations yet.</p>
           ) : (
             <div className="session-list">
-              {sessions.map((session) => (
-                <button
-                  type="button"
-                  className={`session-item${session.id === sessionId ? " active" : ""}`}
-                  key={session.id}
-                  onClick={() => resumeSession(session.id)}
-                >
-                  <strong>{session.preview || "Untitled conversation"}</strong>
-                  <span>{new Date(session.updatedAt).toLocaleString()}</span>
-                </button>
-              ))}
+              {sessions.map(
+                (session) =>
+                  session.preview && (
+                    <button
+                      type="button"
+                      className={`session-item${session.id === sessionId ? " active" : ""}`}
+                      key={session.id}
+                      onClick={() => resumeSession(session.id)}
+                    >
+                      <strong>{session.preview}</strong>
+                      <span>
+                        {new Date(session.updatedAt).toLocaleString()}
+                      </span>
+                    </button>
+                  ),
+              )}
             </div>
           )}
         </div>

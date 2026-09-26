@@ -4,7 +4,7 @@ import { getLists } from "../services/list.js";
 
 import { getMountainsOnList } from "../services/mountain.js";
 import { getTrailsOnList } from "../services/trail.js";
-import { optionalUser } from "../middleware/auth.js";
+import { requireUser } from "../middleware/auth.js";
 
 const payloadSchema = z.object({
   prompt: z.string().min(1).max(4000),
@@ -12,7 +12,7 @@ const payloadSchema = z.object({
 });
 
 export const listViewRouter = Router();
-listViewRouter.use(optionalUser);
+listViewRouter.use(requireUser);
 
 listViewRouter.get("/list/:id", async (req: Request, res: Response) => {
   const { id } = req.params;

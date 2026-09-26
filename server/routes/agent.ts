@@ -52,6 +52,8 @@ agentRouter.post(
         (token) => sendEvent("token", { token }),
       );
 
+      console.log("headers set");
+
       await addMessageToSession(sessionId, body.prompt, "user", req.user!.id);
       await addMessageToSession(
         sessionId,
@@ -76,6 +78,27 @@ agentRouter.post(
       });
       res.end();
     } catch (error) {
+      if (res.headersSent) {
+        console.error("Stream disrupted by error:", error);
+
+        // Format the error into your event-stream layout so the frontend sees it
+        const isNotFoundError =
+          error instanceof Error && error.message === "SESSION_NOT_FOUND";
+
+        res.write(
+          `event: error\ndata: ${JSON.stringify({
+            ok: false,
+            error: isNotFoundError
+              ? "Session not found"
+              : "Internal stream error",
+          })}\n\n`,
+        );
+
+        res.end();
+        return;
+      }
+
+      // If headers weren't sent yet (e.g., payloadSchema.parse or getSessionPromptContext failed)
       if (error instanceof Error && error.message === "SESSION_NOT_FOUND") {
         res.status(404).json({ ok: false, error: "Session not found" });
         return;

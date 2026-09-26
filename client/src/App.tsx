@@ -48,13 +48,13 @@ function AppLayout() {
     >
       <Nav />
       <Routes>
-        <Route path="/" element={<Lists />} />
-        <Route path="/list/:id" element={<ListPage />} />
         <Route path="/login" element={<AuthForm mode="login" />} />
         <Route path="/register" element={<AuthForm mode="register" />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route element={<ProtectedRoute />}>
+          <Route path="/" element={<Lists />} />
+          <Route path="/list/:id" element={<ListPage />} />
           <Route path="/agent" element={<Agent />} />
           <Route path="/account" element={<Account />} />
           <Route path="/settings" element={<Settings />} />

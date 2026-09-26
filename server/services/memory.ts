@@ -177,8 +177,8 @@ export async function getSessionMessages(
     });
 
     return messages.map((msg) => ({
-      role: (msg as any).role,
-      content: (msg as any).message,
+      role: msg.role,
+      content: msg.message,
     }));
   } catch (error) {
     console.error("Error fetching session messages from database:", error);
@@ -207,6 +207,7 @@ export async function getUserSessions(userId: number): Promise<
       const firstUserMessage = messages.find(
         (message) => message.role === "user",
       );
+
       return {
         id: session.id,
         memoryType: session.memoryType,
