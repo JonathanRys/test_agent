@@ -89,7 +89,8 @@ export function buildWeatherRequestUrl(
     latitude: points.map((point) => point.lat.toFixed(4)).join(","),
     longitude: points.map((point) => point.lon.toFixed(4)).join(","),
     current: "temperature_2m,weather_code,wind_speed_10m",
-    daily: "temperature_2m_max,temperature_2m_min,precipitation_probability_max",
+    daily:
+      "temperature_2m_max,temperature_2m_min,precipitation_probability_max",
     forecast_days: "1",
     temperature_unit: units === "imperial" ? "fahrenheit" : "celsius",
     wind_speed_unit: units === "imperial" ? "mph" : "kmh",

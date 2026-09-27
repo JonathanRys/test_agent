@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "regionCode": "r01",
+    "name": "Northern Region"
+  },
+  {
+    "id": 2,
+    "regionCode": "r02",
+    "name": "Rocky Mountain Region"
+  },
+  {
+    "id": 3,
+    "regionCode": "r03",
+    "name": "Southwestern Region"
+  },
+  {
+    "id": 4,
+    "regionCode": "r04",
+    "name": "Intermountain Region"
+  },
+  {
+    "id": 5,
+    "regionCode": "r05",
+    "name": "Pacific Southwest Region"
+  },
+  {
+    "id": 6,
+    "regionCode": "r06",
+    "name": "Pacific Northwest Region"
+  },
+  {
+    "id": 8,
+    "regionCode": "r08",
+    "name": "Southern Region"
+  },
+  {
+    "id": 9,
+    "regionCode": "r09",
+    "name": "Eastern Region"
+  },
+  {
+    "id": 10,
+    "regionCode": "r10",
+    "name": "Alaska Region"
+  }
+]

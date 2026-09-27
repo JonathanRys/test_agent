@@ -16,6 +16,8 @@ import {
 
 // Data models
 import { State, initState } from "./State.js";
+import { UsdaRegion, initUsdaRegion } from "./UsdaRegion.js";
+import { UsdaPark, initUsdaPark } from "./UsdaPark.js";
 import { Season, initSeason } from "./Season.js";
 import { SeasonDate, initSeasonDate } from "./SeasonDate.js";
 
@@ -34,6 +36,8 @@ import { TrailCompletion, initTrailCompletion } from "./TrailCompletion.js";
 
 const models = {
   State,
+  UsdaRegion,
+  UsdaPark,
   Session,
   Message,
   Summary,
@@ -56,6 +60,8 @@ const models = {
 
 export {
   State,
+  UsdaRegion,
+  UsdaPark,
   Session,
   Message,
   Summary,
@@ -90,6 +96,8 @@ export function initializeModels(sequelize: Sequelize): void {
   initPasswordResetToken(sequelize);
 
   initState(sequelize);
+  initUsdaRegion(sequelize);
+  initUsdaPark(sequelize);
   initMountain(sequelize);
   initTrail(sequelize);
   initList(sequelize);

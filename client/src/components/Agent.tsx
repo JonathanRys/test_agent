@@ -6,6 +6,7 @@ import {
   useAuth,
 } from "../auth/AuthContext";
 import type { AgentSession, MemoryType, Message } from "../types/Agent";
+import Markdown from "./Markdown";
 
 function generateUUID(): string {
   return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
@@ -375,9 +376,15 @@ export default function Agent() {
         {messages.map((message, index) => (
           <div
             key={`${message.role}-${index}`}
-            className={`bubble ${message.role}`}
+            className={`bubble ${message.role}${
+              message.role === "assistant" ? " markdown" : ""
+            }`}
           >
-            {message.content}
+            {message.role === "assistant" ? (
+              <Markdown>{message.content}</Markdown>
+            ) : (
+              message.content
+            )}
           </div>
         ))}
       </div>

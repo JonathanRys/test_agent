@@ -2,44 +2,42 @@ import { DataTypes, Model, Sequelize } from "sequelize";
 import type { ModelStatic } from "sequelize";
 
 interface DBModels {
-  Mountain: ModelStatic<Model>;
-  Trail: ModelStatic<Model>;
+  State: ModelStatic<Model>;
+  UsdaRegion: ModelStatic<Model>;
   UsdaPark: ModelStatic<Model>;
   [key: string]: ModelStatic<Model>;
 }
 
-export class State extends Model {
+export class UsdaRegion extends Model {
   declare id: number;
+  declare regionCode: string;
   declare name: string;
-  declare abbreviation: string;
   static associate(models: DBModels) {
-    this.hasMany(models.Mountain, { foreignKey: "stateId" });
-    this.hasMany(models.Trail, { foreignKey: "stateId" });
-    this.hasMany(models.UsdaPark, { foreignKey: "stateId" });
+    this.hasMany(models.UsdaPark, { foreignKey: "regionId" });
   }
 }
 
-export function initState(sequelize: Sequelize): void {
-  State.init(
+export function initUsdaRegion(sequelize: Sequelize): void {
+  UsdaRegion.init(
     {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
       },
-      name: {
+      regionCode: {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      abbreviation: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false,
       },
     },
     {
       sequelize,
-      modelName: "State",
-      tableName: "states",
+      modelName: "UsdaRegion",
+      tableName: "usdaRegions",
       timestamps: false,
     },
   );
