@@ -2,6 +2,7 @@ import { Router } from "express";
 import { z } from "zod";
 import { requireUser } from "../middleware/auth.js";
 import { UserPreference } from "../models/index.js";
+import { refreshUserAgentContextSafe } from "../services/userContext.js";
 
 export const preferencesSchema = z.object({
   fitnessLevel: z
@@ -45,6 +46,8 @@ preferencesRouter.patch(
         defaults: { userId: req.user!.id, ...values },
       });
       await preferences.update(values);
+      // Profile is part of the cached agent context: keep it fresh.
+      await refreshUserAgentContextSafe(req.user!.id);
       res.json({ ok: true, preferences });
     } catch (error) {
       next(error);

@@ -1,4 +1,5 @@
 import { Router, Request, Response, NextFunction } from "express";
+import OpenAI from "openai";
 import { z } from "zod";
 import { generateAgentReplyStream } from "../services/openrouter.js";
 import { env } from "../config/env.js";
@@ -11,6 +12,7 @@ import {
   getSessionMemoryType,
   getUserSessions,
 } from "../services/memory.js";
+import { touchUserAgentContext } from "../services/userContext.js";
 
 const payloadSchema = z.object({
   prompt: z.string().min(1).max(4000),
@@ -50,7 +52,14 @@ agentRouter.post(
         prompt,
         req.user?.id,
         (token) => sendEvent("token", { token }),
+        // Gate tool offers on the raw user turn only: the history-prefixed
+        // prompt accumulates recommendation language ("specific", peak names)
+        // that would otherwise re-arm detail tools on every turn.
+        body.prompt,
       );
+      // Cache-aside touch: active agent use keeps the context TTL aligned
+      // with the sliding session (Redis EXPIRE, slightly longer than session).
+      await touchUserAgentContext(req.user!.id);
 
       console.log("headers set");
 
@@ -81,16 +90,28 @@ agentRouter.post(
       if (res.headersSent) {
         console.error("Stream disrupted by error:", error);
 
-        // Format the error into your event-stream layout so the frontend sees it
+        // Format the error into your event-stream layout so the frontend sees it.
+        // 429s from the shared free-model pool are retryable: send a friendly
+        // "busy, try again" message (plus a retryable flag) instead of a
+        // generic "Internal stream error" that looks permanent.
         const isNotFoundError =
           error instanceof Error && error.message === "SESSION_NOT_FOUND";
+        const isRateLimited =
+          error instanceof OpenAI.RateLimitError ||
+          (typeof error === "object" &&
+            error !== null &&
+            "status" in error &&
+            Number((error as { status?: unknown }).status) === 429);
 
         res.write(
           `event: error\ndata: ${JSON.stringify({
             ok: false,
             error: isNotFoundError
               ? "Session not found"
-              : "Internal stream error",
+              : isRateLimited
+                ? "The hike advisor is busy right now (shared model pool is rate-limited). Please wait a moment and try again."
+                : "Internal stream error",
+            retryable: isRateLimited || undefined,
           })}\n\n`,
         );
 

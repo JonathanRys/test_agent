@@ -11,6 +11,11 @@ import {
   requestPasswordReset,
   resetPassword,
 } from "../services/auth.js";
+import {
+  dropUserAgentContext,
+  refreshUserAgentContextSafe,
+  touchUserAgentContext,
+} from "../services/userContext.js";
 
 const credentials = z.object({
   email: z.string().email(),
@@ -29,6 +34,9 @@ authRouter.post("/auth/register", async (req, res, next) => {
       normalizeEmail(body.email),
       body.password,
     );
+    // Pre-fetch/cache the tool-call context (profile + priority unfinished
+    // lists + remaining hikes) so later agent calls read from Redis.
+    await refreshUserAgentContextSafe(result.user.id);
     res
       .status(201)
       .json({ ok: true, user: publicUser(result.user), ...result.tokens });
@@ -47,6 +55,9 @@ authRouter.post("/auth/login", async (req, res, next) => {
   try {
     const body = credentials.parse(req.body);
     const result = await loginUser(body.email, body.password);
+    // Pre-fetch/cache the tool-call context (profile + priority unfinished
+    // lists + remaining hikes) so later agent calls read from Redis.
+    await refreshUserAgentContextSafe(result.user.id);
     res.json({ ok: true, user: publicUser(result.user), ...result.tokens });
   } catch (error) {
     if (error instanceof Error && error.message === "INVALID_CREDENTIALS") {
@@ -61,6 +72,8 @@ authRouter.post("/auth/refresh", async (req, res, next) => {
   try {
     const refreshToken = z.string().min(1).parse(req.body?.refreshToken);
     const result = await refreshSession(refreshToken);
+    // Cache-aside touch: extend cache while the session is still sliding.
+    await touchUserAgentContext(result.user.id);
     res.json({ ok: true, user: publicUser(result.user), ...result.tokens });
   } catch (error) {
     if (error instanceof Error && error.message === "INVALID_REFRESH_TOKEN") {
@@ -96,6 +109,8 @@ authRouter.post("/auth/reset-password", async (req, res, next) => {
       .extend({ token: z.string().min(1) })
       .parse(req.body);
     const user = await resetPassword(body.token, body.password);
+    // All sessions were revoked: drop the cached tool-call context.
+    await dropUserAgentContext(user.id);
     res.json({ ok: true, user: publicUser(user) });
   } catch (error) {
     if (
@@ -114,12 +129,20 @@ authRouter.post("/auth/reset-password", async (req, res, next) => {
 authRouter.post("/auth/logout", requireUser, async (req, res, next) => {
   try {
     await revokeSession(req.authSession!);
+    // Session expired/revoked: drop the cached tool-call context.
+    await dropUserAgentContext(req.user!.id);
     res.json({ ok: true });
   } catch (error) {
     next(error);
   }
 });
 
-authRouter.get("/auth/me", requireUser, (req, res) => {
-  res.json({ ok: true, user: publicUser(req.user!) });
+authRouter.get("/auth/me", requireUser, async (req, res, next) => {
+  try {
+    // Keep cache-aside expiry aligned with active sessions.
+    await touchUserAgentContext(req.user!.id);
+    res.json({ ok: true, user: publicUser(req.user!) });
+  } catch (error) {
+    next(error);
+  }
 });

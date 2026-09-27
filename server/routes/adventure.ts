@@ -11,6 +11,7 @@ import {
   DuplicateCompletionError,
 } from "../services/adventure.js";
 import { requireUser } from "../middleware/auth.js";
+import { refreshUserAgentContextSafe } from "../services/userContext.js";
 
 const createAdventureSchema = z
   .object({
@@ -89,6 +90,9 @@ adventureRouter.post(
     try {
       const payload = createAdventureSchema.parse(req.body);
       const adventure = await createAdventure(payload, req.user!.id);
+      // A completion changed: rerun the same unfinished-lists query and
+      // refresh the cached remaining hikes instead of removing keys ad hoc.
+      await refreshUserAgentContextSafe(req.user!.id);
 
       res.status(201).json(adventure);
       return res;
@@ -123,6 +127,8 @@ adventureRouter.patch(
       });
 
       const adventure = await editAdventure(payload, req.user!.id);
+      // Completion may have changed: rerun the cached unfinished-lists query.
+      await refreshUserAgentContextSafe(req.user!.id);
 
       res.status(201).json(adventure);
       return res;
@@ -153,6 +159,8 @@ adventureRouter.delete(
       ...req.body,
     });
     const adventure = await deleteAdventure(payload, req.user!.id);
+    // Completion may have changed: rerun the cached unfinished-lists query.
+    await refreshUserAgentContextSafe(req.user!.id);
 
     res.status(201).json(adventure);
     return res;

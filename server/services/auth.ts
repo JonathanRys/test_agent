@@ -2,10 +2,11 @@ import bcrypt from "bcryptjs";
 import { createHash, randomBytes } from "node:crypto";
 import { AuthSession, PasswordResetToken, User } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
-
-const ACCESS_LIFETIME_MS = 15 * 60 * 1000;
-const REFRESH_LIFETIME_MS = 60 * 60 * 1000;
-const PASSWORD_RESET_LIFETIME_MS = 60 * 60 * 1000;
+import {
+  ACCESS_LIFETIME_MS,
+  PASSWORD_RESET_LIFETIME_MS,
+  REFRESH_LIFETIME_MS,
+} from "../config/session.js";
 
 export function normalizeEmail(email: string): string {
   return email.trim().toLowerCase();
