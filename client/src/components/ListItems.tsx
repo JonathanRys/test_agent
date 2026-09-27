@@ -147,21 +147,25 @@ export default function ListItems(props: ListItemsProps) {
       {loading
         ? "Loading..."
         : filteredItems.length
-          ? filteredItems.map((item, i) => (
-              <section
-                key={`${definition.itemKey}-${item.id}`}
-                className={`panel${
-                  definition.isCompleted(item) ? " panel-completed" : ""
-                }`}
-              >
-                <definition.item
-                  {...item}
-                  index={i + 1}
-                  onComplete={user ? refreshItems : undefined}
-                  season={completions?.[item.id]?.season || null}
-                />
-              </section>
-            ))
+          ? filteredItems.map((item) => {
+              const originalIndex =
+                items.findIndex((original) => original.id === item.id) + 1;
+              return (
+                <section
+                  key={`${definition.itemKey}-${item.id}`}
+                  className={`panel${
+                    definition.isCompleted(item) ? " panel-completed" : ""
+                  }`}
+                >
+                  <definition.item
+                    {...item}
+                    index={originalIndex}
+                    onComplete={user ? refreshItems : undefined}
+                    season={completions?.[item.id]?.season || null}
+                  />
+                </section>
+              );
+            })
           : isMountainList && items.length
             ? "No mountains match the selected filters."
             : "Coming soon..."}
