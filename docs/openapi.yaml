@@ -1,0 +1,1725 @@
+openapi: 3.0.3
+info:
+  title: Test Agent API
+  version: 1.0.0
+  description: >-
+    Hiking companion API. AI chat agent with sessions, peakbagging and
+    trail list tracking, adventure logging, profiles, seasons, and
+    email/password auth. All `/api` routes use JSON unless noted.
+  contact:
+    name: Test Agent API Support
+    url: https://github.com/JonathanRys/test_agent/issues
+  license:
+    name: MIT
+servers:
+  - url: http://localhost:3001
+    description: Development server
+  - url: https://staging.example.com
+    description: Staging server
+  - url: https://api.example.com
+    description: Production server
+tags:
+  - name: Health
+    description: Liveness probe
+  - name: Auth
+    description: Register, login, sessions, passwords
+  - name: Agent
+    description: Streaming chat and chat sessions
+  - name: Lists
+    description: Hiking list browsing
+  - name: Mountains
+    description: Peak lookup
+  - name: Trails
+    description: Trail lookup
+  - name: Adventures
+    description: Trip log entries
+  - name: Profile
+    description: User profile and completions
+  - name: Preferences
+    description: User preferences
+  - name: Seasons
+    description: Season definitions
+externalDocs:
+  description: Project README and setup guide
+  url: https://github.com/JonathanRys/test_agent
+paths:
+  /health:
+    get:
+      tags: [Health]
+      summary: Check API liveness
+      operationId: healthCheck
+      responses:
+        '200':
+          description: API is running
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthStatus'
+              example:
+                ok: true
+                service: agent-api
+                timestamp: '2026-09-28T06:00:00.000Z'
+  /api/auth/register:
+    post:
+      tags: [Auth]
+      summary: Register a new account
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+            example:
+              name: Ada Hiker
+              email: ada@example.com
+              password: correct-horse-9
+      responses:
+        '201':
+          description: Account created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/auth/login:
+    post:
+      tags: [Auth]
+      summary: Log in with email and password
+      operationId: loginUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+            example:
+              email: ada@example.com
+              password: correct-horse-9
+      responses:
+        '200':
+          description: Logged in
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+# __APPEND__
+  /api/auth/refresh:
+    post:
+      tags: [Auth]
+      summary: Rotate an access token
+      operationId: refreshSession
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshRequest'
+            example:
+              refreshToken: replace-with-refresh-token
+      responses:
+        '200':
+          description: Session rotated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/auth/forgot-password:
+    post:
+      tags: [Auth]
+      summary: Request a password reset link
+      operationId: forgotPassword
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ForgotPasswordRequest'
+            example:
+              email: ada@example.com
+      responses:
+        '200':
+          description: Reset requested
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+              example:
+                ok: true
+                message: If that email exists, a reset link has been sent.
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/auth/reset-password:
+    post:
+      tags: [Auth]
+      summary: Set a new password with a token
+      operationId: resetPassword
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResetPasswordRequest'
+            example:
+              token: replace-with-reset-token
+              password: new-correct-horse-9
+      responses:
+        '200':
+          description: Password reset
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/auth/logout:
+    post:
+      tags: [Auth]
+      summary: Revoke the current session
+      operationId: logoutUser
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Logged out
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OkResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/auth/me:
+    get:
+      tags: [Auth]
+      summary: Get the current user
+      operationId: getCurrentUser
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Current user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+  /api/chat:
+    post:
+      tags: [Agent]
+      summary: Stream an agent reply
+      operationId: postChat
+      description: >-
+        Server-sent events stream. Emits `token` events with
+        `{ token }` fragments, then a `done` event with
+        `{ ok, message, sessionId, memoryType, memory, model }`.
+        Errors after headers stream as `error` events instead
+        of JSON responses.
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatRequest'
+            example:
+              prompt: Plan a beginner-friendly NH48 weekend.
+              sessionId: default
+      responses:
+        '200':
+          description: SSE stream of tokens then done
+          content:
+            text/event-stream:
+              schema:
+                $ref: '#/components/schemas/ChatStream'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/sessions:
+    get:
+      tags: [Agent]
+      summary: List chat sessions
+      operationId: listSessions
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Session list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionList'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/sessions/{sessionId}:
+    get:
+      tags: [Agent]
+      summary: Get session messages
+      operationId: getSession
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Session detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SessionDetail'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/sessions/{sessionId}/toggle-memory:
+    post:
+      tags: [Agent]
+      summary: Toggle session memory type
+      operationId: toggleMemory
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Memory type toggled
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MemoryToggle'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/lists:
+    get:
+      tags: [Lists]
+      summary: List hiking lists
+      operationId: listHikingLists
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: type
+          in: query
+          description: Filter by list type
+          required: false
+          schema:
+            $ref: '#/components/schemas/ListType'
+      responses:
+        '200':
+          description: Lists with progress
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/HikingList'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/list/{id}:
+    get:
+      tags: [Lists]
+      summary: Get a hiking list
+      operationId: getHikingList
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/ListId'
+      responses:
+        '200':
+          description: List detail, or null when missing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HikingList'
+                nullable: true
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/mountainList/{listId}:
+    get:
+      tags: [Lists]
+      summary: Get mountains on a list
+      operationId: listMountainsOnList
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/MountainListId'
+      responses:
+        '200':
+          description: Mountains with summits
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MountainDetail'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/trailList/{listId}:
+    get:
+      tags: [Lists]
+      summary: Get trails on a list
+      operationId: listTrailsOnList
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/TrailListId'
+      responses:
+        '200':
+          description: Trails with completions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TrailDetail'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/mountains:
+    get:
+      tags: [Mountains]
+      summary: Search mountains
+      operationId: searchMountains
+      parameters:
+        - name: state
+          in: query
+          description: State abbreviation, e.g. NH
+          required: true
+          schema:
+            type: string
+            minLength: 2
+            maxLength: 2
+            example: NH
+        - name: range
+          in: query
+          description: Mountain range name
+          required: true
+          schema:
+            type: string
+            example: Presidential Range
+      responses:
+        '200':
+          description: Matching mountains
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Mountain'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/mountain/{id}:
+    get:
+      tags: [Mountains]
+      summary: Get a mountain
+      operationId: getMountain
+      parameters:
+        - $ref: '#/components/parameters/MountainId'
+      responses:
+        '200':
+          description: Mountain detail, or null
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Mountain'
+                nullable: true
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/trails:
+    get:
+      tags: [Trails]
+      summary: Search trails
+      operationId: searchTrails
+      parameters:
+        - name: state
+          in: query
+          description: State abbreviation, e.g. NH
+          required: true
+          schema:
+            type: string
+            minLength: 2
+            maxLength: 2
+            example: NH
+      responses:
+        '200':
+          description: Matching trails
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Trail'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/trail/{id}:
+    get:
+      tags: [Trails]
+      summary: Get a trail
+      operationId: getTrail
+      parameters:
+        - $ref: '#/components/parameters/TrailId'
+      responses:
+        '200':
+          description: Trail detail, or null
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Trail'
+                nullable: true
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/adventures:
+    get:
+      tags: [Adventures]
+      summary: List adventures
+      operationId: listAdventures
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Newest-first adventures
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Adventure'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+    post:
+      tags: [Adventures]
+      summary: Log an adventure
+      operationId: createAdventure
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateAdventure'
+            example:
+              name: Franconia Ridge Loop
+              activityId: 1
+              activityDate: '2026-09-20'
+              season: Summer
+              mountainIds: [1, 2]
+      responses:
+        '201':
+          description: Adventure created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Adventure'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/adventure/{id}:
+    get:
+      tags: [Adventures]
+      summary: Get an adventure
+      operationId: getAdventure
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/AdventureId'
+      responses:
+        '200':
+          description: Adventure detail
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Adventure'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/ServerError'
+    patch:
+      tags: [Adventures]
+      summary: Edit an adventure completion
+      operationId: editAdventure
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/AdventureId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EditAdventure'
+            example:
+              activityDate: '2026-09-21'
+              mountainId: 1
+              season: Autumn
+      responses:
+        '201':
+          description: Adventure updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EditAdventureResult'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '409':
+          $ref: '#/components/responses/Conflict'
+        '500':
+          $ref: '#/components/responses/ServerError'
+    delete:
+      tags: [Adventures]
+      summary: Delete an adventure completion
+      operationId: deleteAdventure
+      security:
+        - bearerAuth: []
+      parameters:
+        - $ref: '#/components/parameters/AdventureId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DeleteAdventure'
+            example:
+              id: 12
+              mountainId: 1
+      responses:
+        '201':
+          description: Adventure deleted
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteAdventureResult'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+
+  /api/user/profile:
+    get:
+      tags: [Profile]
+      summary: Get user profile
+      operationId: getProfile
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Profile with preferences
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProfileResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/user/list-completions:
+    get:
+      tags: [Profile]
+      summary: Get list completion status
+      operationId: listCompletions
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Completion status per list
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CompletionList'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/user/preferences:
+    get:
+      tags: [Preferences]
+      summary: Get user preferences
+      operationId: getPreferences
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Preferences
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PreferencesResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+    patch:
+      tags: [Preferences]
+      summary: Update user preferences
+      operationId: updatePreferences
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdatePreferences'
+      responses:
+        '200':
+          description: Updated preferences
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PreferencesResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/ServerError'
+  /api/seasons:
+    get:
+      tags: [Seasons]
+      summary: List seasons with date ranges
+      operationId: listSeasons
+      responses:
+        '200':
+          description: Seasons
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Season'
+        '500':
+          $ref: '#/components/responses/ServerError'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Access token from login or register.
+  parameters:
+    SessionId:
+      name: sessionId
+      in: path
+      required: true
+      description: Chat session id
+      schema:
+        type: string
+        minLength: 1
+      example: default
+    ListId:
+      name: id
+      in: path
+      required: true
+      description: Hiking list id
+      schema:
+        type: integer
+        minimum: 1
+      example: 1
+    MountainListId:
+      name: listId
+      in: path
+      required: true
+      description: Mountain list id
+      schema:
+        type: integer
+        minimum: 1
+      example: 1
+    TrailListId:
+      name: listId
+      in: path
+      required: true
+      description: Trail list id
+      schema:
+        type: integer
+        minimum: 1
+      example: 1
+    MountainId:
+      name: id
+      in: path
+      required: true
+      description: Mountain id
+      schema:
+        type: integer
+        minimum: 1
+      example: 42
+    TrailId:
+      name: id
+      in: path
+      required: true
+      description: Trail id
+      schema:
+        type: integer
+        minimum: 1
+      example: 7
+    AdventureId:
+      name: id
+      in: path
+      required: true
+      description: Adventure id
+      schema:
+        type: integer
+        minimum: 1
+      example: 12
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            error: Invalid ID format
+    ValidationError:
+      description: Schema validation failed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ValidationErrorBody'
+          example:
+            ok: false
+            error: Validation error
+    Unauthorized:
+      description: Missing or invalid credentials
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            ok: false
+            error: Authentication required
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            ok: false
+            error: Adventure not found
+    Conflict:
+      description: Duplicate or conflicting state
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            ok: false
+            error: An account already exists for that email
+    RateLimited:
+      description: AI provider rate limit hit
+      headers:
+        Retry-After:
+          description: Seconds until retry
+          schema:
+            type: string
+          example: '30'
+        X-RateLimit-Reset:
+          description: Reset timestamp hint
+          schema:
+            type: string
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            ok: false
+            error: The AI provider is rate-limited.
+    ServerError:
+      description: Unexpected failure
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorBody'
+          example:
+            ok: false
+            error: Internal server error
+
+  schemas:
+    HealthStatus:
+      title: HealthStatus
+      type: object
+      required: [ok, service, timestamp]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        service:
+          type: string
+          example: agent-api
+        timestamp:
+          type: string
+          format: date-time
+    ErrorBody:
+      title: ErrorBody
+      type: object
+      required: [error]
+      properties:
+        ok:
+          type: boolean
+          example: false
+        error:
+          type: string
+          example: Invalid ID format
+    ValidationErrorBody:
+      title: ValidationErrorBody
+      type: object
+      required: [ok, error]
+      properties:
+        ok:
+          type: boolean
+          example: false
+        error:
+          type: string
+          example: Validation error
+        details:
+          type: object
+          description: Zod flattened error detail
+    OkResponse:
+      title: OkResponse
+      type: object
+      required: [ok]
+      properties:
+        ok:
+          type: boolean
+          example: true
+    MessageResponse:
+      title: MessageResponse
+      type: object
+      required: [ok, message]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        message:
+          type: string
+    User:
+      title: User
+      type: object
+      required: [id, name, email]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+          example: 7
+        name:
+          type: string
+          example: Ada Hiker
+        email:
+          type: string
+          format: email
+        emailVerifiedAt:
+          type: string
+          format: date-time
+          nullable: true
+    EmailPassword:
+      title: EmailPassword
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 128
+          writeOnly: true
+    LoginRequest:
+      title: LoginRequest
+      allOf:
+        - $ref: '#/components/schemas/EmailPassword'
+    RegisterRequest:
+      title: RegisterRequest
+      type: object
+      required: [name, email, password]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: Ada Hiker
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 128
+          writeOnly: true
+    RefreshRequest:
+      title: RefreshRequest
+      type: object
+      required: [refreshToken]
+      properties:
+        refreshToken:
+          type: string
+          minLength: 1
+          writeOnly: true
+    ForgotPasswordRequest:
+      title: ForgotPasswordRequest
+      type: object
+      required: [email]
+      properties:
+        email:
+          type: string
+          format: email
+    ResetPasswordRequest:
+      title: ResetPasswordRequest
+      type: object
+      required: [token, password]
+      properties:
+        token:
+          type: string
+          minLength: 1
+          writeOnly: true
+        password:
+          type: string
+          format: password
+          minLength: 8
+          maxLength: 128
+          writeOnly: true
+    AuthResponse:
+      title: AuthResponse
+      type: object
+      required: [ok, user, accessToken, refreshToken]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        user:
+          $ref: '#/components/schemas/User'
+        accessToken:
+          type: string
+        refreshToken:
+          type: string
+          writeOnly: true
+        refreshExpiresAt:
+          type: string
+          format: date-time
+    UserResponse:
+      title: UserResponse
+      type: object
+      required: [ok, user]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        user:
+          $ref: '#/components/schemas/User'
+
+    ChatRequest:
+      title: ChatRequest
+      type: object
+      required: [prompt]
+      properties:
+        prompt:
+          type: string
+          minLength: 1
+          maxLength: 4000
+          example: Plan a beginner-friendly NH48 weekend.
+        sessionId:
+          type: string
+          default: default
+          example: default
+    ChatMessage:
+      title: ChatMessage
+      type: object
+      required: [role, content]
+      properties:
+        role:
+          type: string
+          enum: [user, assistant]
+        content:
+          type: string
+    MemoryType:
+      title: MemoryType
+      type: string
+      enum: [short-term, long-term]
+    ChatStream:
+      title: ChatStream
+      type: string
+      description: SSE payload with token and done events.
+    ChatDone:
+      title: ChatDone
+      type: object
+      required: [ok, message, sessionId, memoryType]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        message:
+          $ref: '#/components/schemas/ChatMessage'
+        sessionId:
+          type: string
+        memoryType:
+          $ref: '#/components/schemas/MemoryType'
+        memory:
+          type: integer
+          minimum: 0
+        model:
+          type: string
+    ChatStreamError:
+      title: ChatStreamError
+      type: object
+      required: [ok, error]
+      properties:
+        ok:
+          type: boolean
+          example: false
+        error:
+          type: string
+        retryable:
+          type: boolean
+    SessionSummary:
+      title: SessionSummary
+      type: object
+      required: [id, memoryType]
+      properties:
+        id:
+          type: string
+        memoryType:
+          $ref: '#/components/schemas/MemoryType'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        preview:
+          type: string
+          nullable: true
+    SessionList:
+      title: SessionList
+      type: object
+      required: [ok, sessions]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        sessions:
+          type: array
+          items:
+            $ref: '#/components/schemas/SessionSummary'
+    SessionDetail:
+      title: SessionDetail
+      type: object
+      required: [ok, sessionId, messages, memoryType]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        sessionId:
+          type: string
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/ChatMessage'
+        memoryType:
+          $ref: '#/components/schemas/MemoryType'
+        model:
+          type: string
+    MemoryToggle:
+      title: MemoryToggle
+      type: object
+      required: [ok, sessionId, memoryType]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        sessionId:
+          type: string
+        memoryType:
+          $ref: '#/components/schemas/MemoryType'
+    ListType:
+      title: ListType
+      type: string
+      enum: [peakbagging, trace]
+    HikingList:
+      title: HikingList
+      type: object
+      required: [id, name, type]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+        type:
+          $ref: '#/components/schemas/ListType'
+        description:
+          type: string
+          nullable: true
+        abbreviation:
+          type: string
+          nullable: true
+        patchAvailable:
+          type: boolean
+        website:
+          type: string
+          nullable: true
+        totalCount:
+          type: integer
+          minimum: 0
+        completedCount:
+          type: integer
+          minimum: 0
+        completedDate:
+          type: string
+        completions:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/CompletionMark'
+    CompletionMark:
+      title: CompletionMark
+      type: object
+      required: [completedAt]
+      properties:
+        season:
+          type: string
+        completedAt:
+          type: string
+    StateRef:
+      title: StateRef
+      type: object
+      required: [id, name, abbreviation]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+          example: New Hampshire
+        abbreviation:
+          type: string
+          minLength: 2
+          maxLength: 2
+          example: NH
+
+    SummitMark:
+      title: SummitMark
+      type: object
+      required: [id, completedAt, adventureId]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        completedAt:
+          type: string
+        adventureId:
+          type: integer
+          minimum: 1
+        season:
+          type: string
+          nullable: true
+    Mountain:
+      title: Mountain
+      type: object
+      required: [id, name, height]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+          example: Mount Washington
+        height:
+          type: integer
+          minimum: 0
+          example: 6288
+        prominence:
+          type: integer
+          nullable: true
+        distance:
+          type: number
+          nullable: true
+        range:
+          type: string
+          nullable: true
+        bushwhack:
+          type: boolean
+          nullable: true
+        notes:
+          type: string
+          nullable: true
+        lat:
+          type: number
+          nullable: true
+        lon:
+          type: number
+          nullable: true
+        state:
+          $ref: '#/components/schemas/StateRef'
+    MountainDetail:
+      title: MountainDetail
+      allOf:
+        - $ref: '#/components/schemas/Mountain'
+        - type: object
+          properties:
+            Lists:
+              type: array
+              items:
+                $ref: '#/components/schemas/ListRef'
+            Summits:
+              type: array
+              items:
+                $ref: '#/components/schemas/SummitMark'
+    ListRef:
+      title: ListRef
+      type: object
+      required: [id, name]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+        abbreviation:
+          type: string
+          nullable: true
+    TrailCompletionMark:
+      title: TrailCompletionMark
+      type: object
+      required: [id, completedAt, adventureId]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        completedAt:
+          type: string
+        adventureId:
+          type: integer
+          minimum: 1
+        season:
+          type: string
+          nullable: true
+    Trail:
+      title: Trail
+      type: object
+      required: [id, name]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+        description:
+          type: string
+          nullable: true
+        required:
+          type: boolean
+          nullable: true
+        distance:
+          type: number
+          nullable: true
+        elevationGain:
+          type: number
+          nullable: true
+        elevationLoss:
+          type: number
+          nullable: true
+        startLat:
+          type: number
+          nullable: true
+        startLon:
+          type: number
+          nullable: true
+        endLat:
+          type: number
+          nullable: true
+        endLon:
+          type: number
+          nullable: true
+        state:
+          $ref: '#/components/schemas/StateRef'
+    TrailDetail:
+      title: TrailDetail
+      allOf:
+        - $ref: '#/components/schemas/Trail'
+        - type: object
+          properties:
+            Lists:
+              type: array
+              items:
+                $ref: '#/components/schemas/ListRef'
+            TrailCompletions:
+              type: array
+              items:
+                $ref: '#/components/schemas/TrailCompletionMark'
+    Adventure:
+      title: Adventure
+      type: object
+      required: [id, name, userId, activityDate]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+          maxLength: 255
+        userId:
+          type: integer
+          minimum: 1
+        activityId:
+          type: integer
+          nullable: true
+        activityDate:
+          type: string
+          format: date
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+    CreateAdventure:
+      title: CreateAdventure
+      type: object
+      required: [name, activityId, activityDate]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 255
+        activityId:
+          type: integer
+          minimum: 1
+        activityDate:
+          type: string
+          example: '2026-09-20'
+        season:
+          type: string
+          minLength: 1
+        mountainIds:
+          type: array
+          items:
+            type: integer
+            minimum: 1
+        trailIds:
+          type: array
+          items:
+            type: integer
+            minimum: 1
+
+    EditAdventure:
+      title: EditAdventure
+      type: object
+      required: [activityDate]
+      properties:
+        activityDate:
+          type: string
+          example: '2026-09-21'
+        activityId:
+          type: integer
+          minimum: 1
+        season:
+          type: string
+          minLength: 1
+        mountainId:
+          type: integer
+          minimum: 1
+        trailId:
+          type: integer
+          minimum: 1
+    EditAdventureResult:
+      title: EditAdventureResult
+      type: object
+      required: [affectedCount]
+      properties:
+        affectedCount:
+          type: array
+          items:
+            type: integer
+        adventure:
+          $ref: '#/components/schemas/Adventure'
+          nullable: true
+    DeleteAdventure:
+      title: DeleteAdventure
+      type: object
+      required: [id]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        mountainId:
+          type: integer
+          minimum: 1
+        trailId:
+          type: integer
+          minimum: 1
+    DeleteAdventureResult:
+      title: DeleteAdventureResult
+      type: object
+      required: [affectedCount]
+      properties:
+        affectedCount:
+          type: integer
+          minimum: 0
+        adventure:
+          $ref: '#/components/schemas/Adventure'
+          nullable: true
+    UserPreferences:
+      title: UserPreferences
+      type: object
+      required: [userId, units, interests]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        userId:
+          type: integer
+          minimum: 1
+        birthdate:
+          type: string
+          format: date
+          nullable: true
+        fitnessLevel:
+          type: string
+          enum: [beginner, intermediate, expert]
+          nullable: true
+        homeLocation:
+          type: string
+          maxLength: 255
+          nullable: true
+        units:
+          type: string
+          enum: [imperial, metric]
+        interests:
+          type: array
+          maxItems: 20
+          items:
+            type: string
+            maxLength: 80
+        publicProfile:
+          type: boolean
+        publicRatings:
+          type: boolean
+    UpdatePreferences:
+      title: UpdatePreferences
+      type: object
+      properties:
+        fitnessLevel:
+          type: string
+          enum: [beginner, intermediate, expert]
+          nullable: true
+        homeLocation:
+          type: string
+          maxLength: 255
+          nullable: true
+        units:
+          type: string
+          enum: [imperial, metric]
+        interests:
+          type: array
+          maxItems: 20
+          items:
+            type: string
+            maxLength: 80
+        publicProfile:
+          type: boolean
+        publicRatings:
+          type: boolean
+        birthdate:
+          type: string
+          format: date
+          nullable: true
+    PreferencesResponse:
+      title: PreferencesResponse
+      type: object
+      required: [ok, preferences]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        preferences:
+          $ref: '#/components/schemas/UserPreferences'
+    ProfilePreferences:
+      title: ProfilePreferences
+      type: object
+      required: [birthdate, fitnessLevel, homeLocation, units]
+      properties:
+        birthdate:
+          type: string
+          format: date
+          nullable: true
+        fitnessLevel:
+          type: string
+          enum: [beginner, intermediate, expert]
+          nullable: true
+        homeLocation:
+          type: string
+          nullable: true
+        units:
+          type: string
+          enum: [imperial, metric]
+        interests:
+          type: array
+          items:
+            type: string
+    UserProfile:
+      title: UserProfile
+      type: object
+      required: [id, name, email, preferences]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+        email:
+          type: string
+          format: email
+        preferences:
+          $ref: '#/components/schemas/ProfilePreferences'
+    ProfileResponse:
+      title: ProfileResponse
+      type: object
+      required: [ok, profile]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        profile:
+          $ref: '#/components/schemas/UserProfile'
+    ListCompletion:
+      title: ListCompletion
+      type: object
+      required: [id, name, abbreviation, type, totalCount]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+        abbreviation:
+          type: string
+        type:
+          $ref: '#/components/schemas/ListType'
+        totalCount:
+          type: integer
+          minimum: 0
+        completedCount:
+          type: integer
+          minimum: 0
+        remainingCount:
+          type: integer
+          minimum: 0
+        complete:
+          type: boolean
+    CompletionList:
+      title: CompletionList
+      type: object
+      required: [ok, completions]
+      properties:
+        ok:
+          type: boolean
+          example: true
+        completions:
+          type: array
+          items:
+            $ref: '#/components/schemas/ListCompletion'
+    DateRange:
+      title: DateRange
+      type: object
+      required: [startDate, endDate]
+      properties:
+        startDate:
+          type: string
+          format: date
+        endDate:
+          type: string
+          format: date
+    Season:
+      title: Season
+      type: object
+      required: [id, name, seasonDates]
+      properties:
+        id:
+          type: integer
+          minimum: 1
+        name:
+          type: string
+          example: Spring
+        seasonDates:
+          type: array
+          items:
+            $ref: '#/components/schemas/DateRange'
+

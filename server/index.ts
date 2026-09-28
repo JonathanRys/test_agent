@@ -2,6 +2,7 @@ import "./config/loadEnv.js";
 import express from "express";
 import cors from "cors";
 import OpenAI from "openai";
+import swaggerUi from "swagger-ui-express";
 import { z } from "zod";
 import { agentRouter } from "./routes/agent.js";
 import { listViewRouter } from "./routes/list.js";
@@ -12,6 +13,10 @@ import { authRouter } from "./routes/auth.js";
 import { preferencesRouter } from "./routes/preferences.js";
 import { profileRouter } from "./routes/profile.js";
 import { seasonRouter } from "./routes/season.js";
+import {
+  loadOpenApiSpec,
+  resolveOpenApiSpecPath,
+} from "./routes/openapi.js";
 
 const app = express();
 const port = Number(process.env.PORT ?? 3001);
@@ -48,6 +53,19 @@ app.get("/health", (_req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+// Interactive API reference. Serves docs/openapi.yaml at /api-docs.
+// Skipped (with a warning) when the spec file is absent, e.g. a
+// partial deploy — the rest of the API keeps working.
+const openApiSpecPath = resolveOpenApiSpecPath();
+if (openApiSpecPath) {
+  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(loadOpenApiSpec(openApiSpecPath)));
+  app.get("/openapi.yaml", (_req, res) => {
+    res.type("text/yaml").sendFile(openApiSpecPath);
+  });
+} else {
+  console.warn("OpenAPI spec not found; skipping /api-docs");
+}
 
 app.use("/api", agentRouter);
 app.use("/api", listViewRouter);
