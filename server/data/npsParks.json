@@ -1,0 +1,3227 @@
+[
+  {
+    "stateId": 2,
+    "name": "Alagnak",
+    "link": "https://www.nps.gov/alag/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Alaska Public Lands",
+    "link": "https://www.nps.gov/anch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Aleutian Islands World War II",
+    "link": "https://www.nps.gov/aleu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Aniakchak",
+    "link": "https://www.nps.gov/ania/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Bering Land Bridge",
+    "link": "https://www.nps.gov/bela/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Cape Krusenstern",
+    "link": "https://www.nps.gov/cakr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Denali",
+    "link": "https://www.nps.gov/dena/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Gates Of The Arctic",
+    "link": "https://www.nps.gov/gaar/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Glacier Bay",
+    "link": "https://www.nps.gov/glba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Iñupiat Heritage Center",
+    "link": "https://www.nps.gov/inup/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Katmai",
+    "link": "https://www.nps.gov/katm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Kenai Fjords",
+    "link": "https://www.nps.gov/kefj/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Klondike Gold Rush",
+    "link": "https://www.nps.gov/klgo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Kobuk Valley",
+    "link": "https://www.nps.gov/kova/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Lake Clark",
+    "link": "https://www.nps.gov/lacl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Noatak",
+    "link": "https://www.nps.gov/noat/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Sitka",
+    "link": "https://www.nps.gov/sitk/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Wrangell - St Elias",
+    "link": "https://www.nps.gov/wrst/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 2,
+    "name": "Yukon - Charley Rivers",
+    "link": "https://www.nps.gov/yuch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Birmingham Civil Rights",
+    "link": "https://www.nps.gov/bicr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Freedom Riders",
+    "link": "https://www.nps.gov/frri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Horseshoe Bend",
+    "link": "https://www.nps.gov/hobe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Little River Canyon",
+    "link": "https://www.nps.gov/liri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natt/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Russell Cave",
+    "link": "https://www.nps.gov/ruca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Selma To Montgomery",
+    "link": "https://www.nps.gov/semo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Tuskegee Airmen",
+    "link": "https://www.nps.gov/tuai/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 1,
+    "name": "Tuskegee Institute",
+    "link": "https://www.nps.gov/tuin/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Arkansas Post",
+    "link": "https://www.nps.gov/arpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Buffalo",
+    "link": "https://www.nps.gov/buff/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Fort Smith",
+    "link": "https://www.nps.gov/fosm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Hot Springs",
+    "link": "https://www.nps.gov/hosp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Little Rock Central High School",
+    "link": "https://www.nps.gov/chsc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Pea Ridge",
+    "link": "https://www.nps.gov/peri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "President William Jefferson Clinton Birthplace Home",
+    "link": "https://www.nps.gov/wicl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 4,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 52,
+    "name": "National Park of American Samoa",
+    "link": "https://www.nps.gov/npsa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Canyon de Chelly",
+    "link": "https://www.nps.gov/cach/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Casa Grande Ruins",
+    "link": "https://www.nps.gov/cagr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Chiricahua",
+    "link": "https://www.nps.gov/chir/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Coronado",
+    "link": "https://www.nps.gov/coro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Fort Bowie",
+    "link": "https://www.nps.gov/fobo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Glen Canyon",
+    "link": "https://www.nps.gov/glca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Grand Canyon",
+    "link": "https://www.nps.gov/grca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Grand Canyon-Parashant",
+    "link": "https://www.nps.gov/para/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Hubbell Trading Post",
+    "link": "https://www.nps.gov/hutr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Juan Bautista de Anza",
+    "link": "https://www.nps.gov/juba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Lake Mead",
+    "link": "https://www.nps.gov/lake/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Montezuma Castle",
+    "link": "https://www.nps.gov/moca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Navajo",
+    "link": "https://www.nps.gov/nava/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Organ Pipe Cactus",
+    "link": "https://www.nps.gov/orpi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Petrified Forest",
+    "link": "https://www.nps.gov/pefo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Pipe Spring",
+    "link": "https://www.nps.gov/pisp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Saguaro",
+    "link": "https://www.nps.gov/sagu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Sunset Crater Volcano",
+    "link": "https://www.nps.gov/sucr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Tonto",
+    "link": "https://www.nps.gov/tont/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Tumacácori",
+    "link": "https://www.nps.gov/tuma/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Tuzigoot",
+    "link": "https://www.nps.gov/tuzi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Walnut Canyon",
+    "link": "https://www.nps.gov/waca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 3,
+    "name": "Wupatki",
+    "link": "https://www.nps.gov/wupa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Alcatraz Island",
+    "link": "https://www.nps.gov/alca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Cabrillo",
+    "link": "https://www.nps.gov/cabr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Castle Mountains",
+    "link": "https://www.nps.gov/camo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "César E. Chávez",
+    "link": "https://www.nps.gov/cech/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Channel Islands",
+    "link": "https://www.nps.gov/chis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Death Valley",
+    "link": "https://www.nps.gov/deva/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Devils Postpile",
+    "link": "https://www.nps.gov/depo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Eugene O'Neill",
+    "link": "https://www.nps.gov/euon/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Fort Point",
+    "link": "https://www.nps.gov/fopo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Golden Gate",
+    "link": "https://www.nps.gov/goga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "John Muir",
+    "link": "https://www.nps.gov/jomu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Joshua Tree",
+    "link": "https://www.nps.gov/jotr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Juan Bautista de Anza",
+    "link": "https://www.nps.gov/juba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Lassen Volcanic",
+    "link": "https://www.nps.gov/lavo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Lava Beds",
+    "link": "https://www.nps.gov/labe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Manzanar",
+    "link": "https://www.nps.gov/manz/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Mojave",
+    "link": "https://www.nps.gov/moja/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Muir Woods",
+    "link": "https://www.nps.gov/muwo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Pinnacles",
+    "link": "https://www.nps.gov/pinn/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Point Reyes",
+    "link": "https://www.nps.gov/pore/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Port Chicago Naval Magazine",
+    "link": "https://www.nps.gov/poch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Presidio of San Francisco",
+    "link": "https://www.nps.gov/prsf/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Redwood",
+    "link": "https://www.nps.gov/redw/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Rosie the Riveter WWII Home Front",
+    "link": "https://www.nps.gov/rori/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "San Francisco Maritime",
+    "link": "https://www.nps.gov/safr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Santa Monica Mountains",
+    "link": "https://www.nps.gov/samo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Sequoia & Kings Canyon",
+    "link": "https://www.nps.gov/seki/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Tule Lake",
+    "link": "https://www.nps.gov/tule/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Whiskeytown",
+    "link": "https://www.nps.gov/whis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 5,
+    "name": "Yosemite",
+    "link": "https://www.nps.gov/yose/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Amache",
+    "link": "https://www.nps.gov/amch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Bent's Old Fort",
+    "link": "https://www.nps.gov/beol/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Black Canyon Of The Gunnison",
+    "link": "https://www.nps.gov/blca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Colorado",
+    "link": "https://www.nps.gov/colm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Curecanti",
+    "link": "https://www.nps.gov/cure/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Dinosaur",
+    "link": "https://www.nps.gov/dino/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Florissant Fossil Beds",
+    "link": "https://www.nps.gov/flfo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Great Sand Dunes",
+    "link": "https://www.nps.gov/grsa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Hovenweep",
+    "link": "https://www.nps.gov/hove/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Mesa Verde",
+    "link": "https://www.nps.gov/meve/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Rocky Mountain",
+    "link": "https://www.nps.gov/romo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Sand Creek Massacre",
+    "link": "https://www.nps.gov/sand/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Santa Fe",
+    "link": "https://www.nps.gov/safe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 6,
+    "name": "Yucca House",
+    "link": "https://www.nps.gov/yuho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 7,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 7,
+    "name": "Coltsville",
+    "link": "https://www.nps.gov/colt/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 7,
+    "name": "New England",
+    "link": "https://www.nps.gov/neen/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 7,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 7,
+    "name": "Weir Farm",
+    "link": "https://www.nps.gov/wefa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "African American Civil War Memorial",
+    "link": "https://www.nps.gov/afam/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Anacostia",
+    "link": "https://www.nps.gov/anac/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Belmont-Paul Women's Equality",
+    "link": "https://www.nps.gov/bepa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Capitol Hill Parks",
+    "link": "https://www.nps.gov/cahi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Carter G. Woodson Home",
+    "link": "https://www.nps.gov/cawo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Chesapeake & Ohio Canal",
+    "link": "https://www.nps.gov/choh/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Civil War Defenses of Washington",
+    "link": "https://www.nps.gov/cwdw/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Constitution Gardens",
+    "link": "https://www.nps.gov/coga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Dwight D. Eisenhower",
+    "link": "https://www.nps.gov/ddem/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Ford's Theatre",
+    "link": "https://www.nps.gov/foth/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Fort Dupont Park",
+    "link": "https://www.nps.gov/fodu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Franklin Delano Roosevelt Memorial",
+    "link": "https://www.nps.gov/frde/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Frederick Douglass",
+    "link": "https://www.nps.gov/frdo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "George Washington",
+    "link": "https://www.nps.gov/gwmp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Kenilworth Park & Aquatic Gardens",
+    "link": "https://www.nps.gov/keaq/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Korean War Veterans Memorial",
+    "link": "https://www.nps.gov/kowa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "LBJ Memorial Grove on the Potomac",
+    "link": "https://www.nps.gov/lyba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Lincoln Memorial",
+    "link": "https://www.nps.gov/linc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Martin Luther King, Jr. Memorial",
+    "link": "https://www.nps.gov/mlkm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Mary McLeod Bethune Council House",
+    "link": "https://www.nps.gov/mamc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "National Capital Parks-East",
+    "link": "https://www.nps.gov/nace/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "National Mall and Memorial Parks",
+    "link": "https://www.nps.gov/nama/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Pennsylvania Avenue",
+    "link": "https://www.nps.gov/paav/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Potomac Heritage",
+    "link": "https://www.nps.gov/pohe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Rock Creek",
+    "link": "https://www.nps.gov/rocr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Star-Spangled Banner",
+    "link": "https://www.nps.gov/stsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "The White House and President's Park",
+    "link": "https://www.nps.gov/whho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Theodore Roosevelt Island",
+    "link": "https://www.nps.gov/this/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Thomas Jefferson Memorial",
+    "link": "https://www.nps.gov/thje/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Vietnam Veterans Memorial",
+    "link": "https://www.nps.gov/vive/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Washington Monument",
+    "link": "https://www.nps.gov/wamo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "World War I Memorial",
+    "link": "https://www.nps.gov/wwim/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 9,
+    "name": "World War II Memorial",
+    "link": "https://www.nps.gov/wwii/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 8,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 8,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 8,
+    "name": "First State",
+    "link": "https://www.nps.gov/frst/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 8,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Big Cypress",
+    "link": "https://www.nps.gov/bicy/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Biscayne",
+    "link": "https://www.nps.gov/bisc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Canaveral",
+    "link": "https://www.nps.gov/cana/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Castillo de San Marcos",
+    "link": "https://www.nps.gov/casa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "De Soto",
+    "link": "https://www.nps.gov/deso/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Dry Tortugas",
+    "link": "https://www.nps.gov/drto/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Everglades",
+    "link": "https://www.nps.gov/ever/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Fort Caroline",
+    "link": "https://www.nps.gov/foca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Fort Matanzas",
+    "link": "https://www.nps.gov/foma/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Gulf Islands",
+    "link": "https://www.nps.gov/guis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 10,
+    "name": "Timucuan",
+    "link": "https://www.nps.gov/timu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Andersonville",
+    "link": "https://www.nps.gov/ande/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Chattahoochee River",
+    "link": "https://www.nps.gov/chat/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Chickamauga & Chattanooga",
+    "link": "https://www.nps.gov/chch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Cumberland Island",
+    "link": "https://www.nps.gov/cuis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Frederica",
+    "link": "https://www.nps.gov/fofr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Pulaski",
+    "link": "https://www.nps.gov/fopu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Jimmy Carter",
+    "link": "https://www.nps.gov/jica/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Kennesaw Mountain",
+    "link": "https://www.nps.gov/kemo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Martin Luther King, Jr.",
+    "link": "https://www.nps.gov/malu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Ocmulgee Mounds",
+    "link": "https://www.nps.gov/ocmu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 11,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 53,
+    "name": "War In The Pacific",
+    "link": "https://www.nps.gov/wapa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Ala Kahakai",
+    "link": "https://www.nps.gov/alka/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Haleakalā",
+    "link": "https://www.nps.gov/hale/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Hawaiʻi Volcanoes",
+    "link": "https://www.nps.gov/havo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Honouliuli",
+    "link": "https://www.nps.gov/hono/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Kalaupapa",
+    "link": "https://www.nps.gov/kala/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Kaloko-Honokōhau",
+    "link": "https://www.nps.gov/kaho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Pearl Harbor",
+    "link": "https://www.nps.gov/valr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Puʻuhonua o Hōnaunau",
+    "link": "https://www.nps.gov/puho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 12,
+    "name": "Puʻukoholā Heiau",
+    "link": "https://www.nps.gov/puhe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 16,
+    "name": "Effigy Mounds",
+    "link": "https://www.nps.gov/efmo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 16,
+    "name": "Herbert Hoover",
+    "link": "https://www.nps.gov/heho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 16,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 16,
+    "name": "Mormon Pioneer",
+    "link": "https://www.nps.gov/mopi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "City Of Rocks",
+    "link": "https://www.nps.gov/ciro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Craters Of The Moon",
+    "link": "https://www.nps.gov/crmo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Hagerman Fossil Beds",
+    "link": "https://www.nps.gov/hafo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Ice Age Floods",
+    "link": "https://www.nps.gov/iafl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Minidoka",
+    "link": "https://www.nps.gov/miin/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Nez Perce",
+    "link": "https://www.nps.gov/nepe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 13,
+    "name": "Yellowstone",
+    "link": "https://www.nps.gov/yell/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Emmett Till and Mamie Till-Mobley",
+    "link": "https://www.nps.gov/till/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Lincoln Home",
+    "link": "https://www.nps.gov/liho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Mormon Pioneer",
+    "link": "https://www.nps.gov/mopi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "New Philadelphia",
+    "link": "https://www.nps.gov/neph/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Pullman",
+    "link": "https://www.nps.gov/pull/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Springfield 1908 Race Riot",
+    "link": "https://www.nps.gov/spra/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 14,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 15,
+    "name": "George Rogers Clark",
+    "link": "https://www.nps.gov/gero/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 15,
+    "name": "Indiana Dunes",
+    "link": "https://www.nps.gov/indu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 15,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 15,
+    "name": "Lincoln Boyhood",
+    "link": "https://www.nps.gov/libo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Brown v. Board of Education",
+    "link": "https://www.nps.gov/brvb/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Fort Larned",
+    "link": "https://www.nps.gov/fols/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Fort Scott",
+    "link": "https://www.nps.gov/fosc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Nicodemus",
+    "link": "https://www.nps.gov/nico/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Santa Fe",
+    "link": "https://www.nps.gov/safe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 17,
+    "name": "Tallgrass Prairie",
+    "link": "https://www.nps.gov/tapr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Abraham Lincoln Birthplace",
+    "link": "https://www.nps.gov/abli/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Big South Fork",
+    "link": "https://www.nps.gov/biso/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Camp Nelson",
+    "link": "https://www.nps.gov/cane/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Cumberland Gap",
+    "link": "https://www.nps.gov/cuga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Fort Donelson",
+    "link": "https://www.nps.gov/fodo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Mammoth Cave",
+    "link": "https://www.nps.gov/maca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Mill Springs Battlefield",
+    "link": "https://www.nps.gov/misp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 18,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "Cane River Creole",
+    "link": "https://www.nps.gov/cari/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "El Camino Real de los Tejas",
+    "link": "https://www.nps.gov/elte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "Jean Lafitte",
+    "link": "https://www.nps.gov/jela/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "New Orleans Jazz",
+    "link": "https://www.nps.gov/jazz/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "Poverty Point",
+    "link": "https://www.nps.gov/popo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 19,
+    "name": "Vicksburg",
+    "link": "https://www.nps.gov/vick/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Adams",
+    "link": "https://www.nps.gov/adam/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Blackstone River Valley",
+    "link": "https://www.nps.gov/blrv/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Boston",
+    "link": "https://www.nps.gov/bost/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Boston African American",
+    "link": "https://www.nps.gov/boaf/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Boston Harbor Islands",
+    "link": "https://www.nps.gov/boha/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Cape Cod",
+    "link": "https://www.nps.gov/caco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Frederick Law Olmsted",
+    "link": "https://www.nps.gov/frla/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "John Fitzgerald Kennedy",
+    "link": "https://www.nps.gov/jofi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Longfellow House Washington's Headquarters",
+    "link": "https://www.nps.gov/long/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Lowell",
+    "link": "https://www.nps.gov/lowe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Minute Man",
+    "link": "https://www.nps.gov/mima/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "New Bedford Whaling",
+    "link": "https://www.nps.gov/nebe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "New England",
+    "link": "https://www.nps.gov/neen/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Salem Maritime",
+    "link": "https://www.nps.gov/sama/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Saugus Iron Works",
+    "link": "https://www.nps.gov/sair/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Springfield Armory",
+    "link": "https://www.nps.gov/spar/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 22,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Antietam",
+    "link": "https://www.nps.gov/anti/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Assateague Island",
+    "link": "https://www.nps.gov/asis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Baltimore-Washington",
+    "link": "https://www.nps.gov/bawa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Catoctin Mountain",
+    "link": "https://www.nps.gov/cato/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Chesapeake & Ohio Canal",
+    "link": "https://www.nps.gov/choh/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Civil War Defenses of Washington",
+    "link": "https://www.nps.gov/cwdw/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Clara Barton",
+    "link": "https://www.nps.gov/clba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Fort Foote",
+    "link": "https://www.nps.gov/fofo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Fort McHenry",
+    "link": "https://www.nps.gov/fomc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Fort Washington",
+    "link": "https://www.nps.gov/fowa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "George Washington",
+    "link": "https://www.nps.gov/gwmp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Glen Echo",
+    "link": "https://www.nps.gov/glec/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Greenbelt",
+    "link": "https://www.nps.gov/gree/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Hampton",
+    "link": "https://www.nps.gov/hamp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Harmony Hall",
+    "link": "https://www.nps.gov/haha/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Harpers Ferry",
+    "link": "https://www.nps.gov/hafe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Harriet Tubman Underground Railroad",
+    "link": "https://www.nps.gov/hatu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Monocacy",
+    "link": "https://www.nps.gov/mono/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Oxon Cove  Park & Oxon Hill Farm",
+    "link": "https://www.nps.gov/oxhi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Piscataway",
+    "link": "https://www.nps.gov/pisc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Potomac Heritage",
+    "link": "https://www.nps.gov/pohe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Star-Spangled Banner",
+    "link": "https://www.nps.gov/stsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Thomas Stone",
+    "link": "https://www.nps.gov/thst/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 21,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Acadia",
+    "link": "https://www.nps.gov/acad/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Frances Perkins",
+    "link": "https://www.nps.gov/frpe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Katahdin Woods and Waters",
+    "link": "https://www.nps.gov/kaww/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Maine Acadian Culture",
+    "link": "https://www.nps.gov/maac/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Roosevelt Campobello",
+    "link": "https://www.nps.gov/roca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 20,
+    "name": "Saint Croix Island",
+    "link": "https://www.nps.gov/sacr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "Isle Royale",
+    "link": "https://www.nps.gov/isro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "Keweenaw",
+    "link": "https://www.nps.gov/kewe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "Pictured Rocks",
+    "link": "https://www.nps.gov/piro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "River Raisin",
+    "link": "https://www.nps.gov/rira/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 23,
+    "name": "Sleeping Bear Dunes",
+    "link": "https://www.nps.gov/slbe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "Grand Portage",
+    "link": "https://www.nps.gov/grpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "Mississippi",
+    "link": "https://www.nps.gov/miss/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "Pipestone",
+    "link": "https://www.nps.gov/pipe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "Saint Croix",
+    "link": "https://www.nps.gov/sacn/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 24,
+    "name": "Voyageurs",
+    "link": "https://www.nps.gov/voya/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Gateway Arch",
+    "link": "https://www.nps.gov/jeff/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "George Washington Carver",
+    "link": "https://www.nps.gov/gwca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Harry S Truman",
+    "link": "https://www.nps.gov/hstr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Ozark",
+    "link": "https://www.nps.gov/ozar/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Santa Fe",
+    "link": "https://www.nps.gov/safe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Ste. Geneviève",
+    "link": "https://www.nps.gov/stge/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Ulysses S Grant",
+    "link": "https://www.nps.gov/ulsg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 26,
+    "name": "Wilson's Creek",
+    "link": "https://www.nps.gov/wicr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 54,
+    "name": "American Memorial",
+    "link": "https://www.nps.gov/amme/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Brices Cross Roads",
+    "link": "https://www.nps.gov/brcr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Emmett Till and Mamie Till-Mobley",
+    "link": "https://www.nps.gov/till/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Gulf Islands",
+    "link": "https://www.nps.gov/guis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Medgar and Myrlie Evers Home",
+    "link": "https://www.nps.gov/memy/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Natchez",
+    "link": "https://www.nps.gov/natc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natt/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Shiloh",
+    "link": "https://www.nps.gov/shil/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Tupelo",
+    "link": "https://www.nps.gov/tupe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 25,
+    "name": "Vicksburg",
+    "link": "https://www.nps.gov/vick/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Big Hole",
+    "link": "https://www.nps.gov/biho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Bighorn Canyon",
+    "link": "https://www.nps.gov/bica/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Fort Union Trading Post",
+    "link": "https://www.nps.gov/fous/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Glacier",
+    "link": "https://www.nps.gov/glac/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Grant-Kohrs Ranch",
+    "link": "https://www.nps.gov/grko/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Ice Age Floods",
+    "link": "https://www.nps.gov/iafl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Little Bighorn Battlefield",
+    "link": "https://www.nps.gov/libi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Nez Perce",
+    "link": "https://www.nps.gov/nepe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 27,
+    "name": "Yellowstone",
+    "link": "https://www.nps.gov/yell/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Blue Ridge",
+    "link": "https://www.nps.gov/blri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Cape Hatteras",
+    "link": "https://www.nps.gov/caha/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Cape Lookout",
+    "link": "https://www.nps.gov/calo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Carl Sandburg Home",
+    "link": "https://www.nps.gov/carl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Fort Raleigh",
+    "link": "https://www.nps.gov/fora/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Great Smoky Mountains",
+    "link": "https://www.nps.gov/grsm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Guilford Courthouse",
+    "link": "https://www.nps.gov/guco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Moores Creek",
+    "link": "https://www.nps.gov/mocr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Overmountain Victory",
+    "link": "https://www.nps.gov/ovvi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 34,
+    "name": "Wright Brothers",
+    "link": "https://www.nps.gov/wrbr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 35,
+    "name": "Fort Union Trading Post",
+    "link": "https://www.nps.gov/fous/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 35,
+    "name": "Knife River Indian Villages",
+    "link": "https://www.nps.gov/knri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 35,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 35,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 35,
+    "name": "Theodore Roosevelt",
+    "link": "https://www.nps.gov/thro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Agate Fossil Beds",
+    "link": "https://www.nps.gov/agfo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Homestead",
+    "link": "https://www.nps.gov/home/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Missouri",
+    "link": "https://www.nps.gov/mnrr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Mormon Pioneer",
+    "link": "https://www.nps.gov/mopi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Niobrara",
+    "link": "https://www.nps.gov/niob/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 28,
+    "name": "Scotts Bluff",
+    "link": "https://www.nps.gov/scbl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 30,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 30,
+    "name": "Saint-Gaudens",
+    "link": "https://www.nps.gov/saga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Delaware Water Gap",
+    "link": "https://www.nps.gov/dewa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Ellis Island",
+    "link": "https://www.nps.gov/elis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Gateway",
+    "link": "https://www.nps.gov/gate/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Great Egg Harbor River",
+    "link": "https://www.nps.gov/greg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Lower Delaware",
+    "link": "https://www.nps.gov/lode/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Morristown",
+    "link": "https://www.nps.gov/morr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "New Jersey Pinelands",
+    "link": "https://www.nps.gov/pine/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Paterson Great Falls",
+    "link": "https://www.nps.gov/pagr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Thomas Edison",
+    "link": "https://www.nps.gov/edis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 31,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Aztec Ruins",
+    "link": "https://www.nps.gov/azru/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Bandelier",
+    "link": "https://www.nps.gov/band/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Capulin Volcano",
+    "link": "https://www.nps.gov/cavo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Carlsbad Caverns",
+    "link": "https://www.nps.gov/cave/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Chaco Culture",
+    "link": "https://www.nps.gov/chcu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "El Camino Real de Tierra Adentro",
+    "link": "https://www.nps.gov/elca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "El Malpais",
+    "link": "https://www.nps.gov/elma/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "El Morro",
+    "link": "https://www.nps.gov/elmo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Fort Union",
+    "link": "https://www.nps.gov/foun/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Gila Cliff Dwellings",
+    "link": "https://www.nps.gov/gicl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Manhattan Project",
+    "link": "https://www.nps.gov/mapr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Pecos",
+    "link": "https://www.nps.gov/peco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Petroglyph",
+    "link": "https://www.nps.gov/petr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Salinas Pueblo Missions",
+    "link": "https://www.nps.gov/sapu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Santa Fe",
+    "link": "https://www.nps.gov/safe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "Valles Caldera",
+    "link": "https://www.nps.gov/vall/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 32,
+    "name": "White Sands",
+    "link": "https://www.nps.gov/whsa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Death Valley",
+    "link": "https://www.nps.gov/deva/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Great Basin",
+    "link": "https://www.nps.gov/grba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Lake Mead",
+    "link": "https://www.nps.gov/lake/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 29,
+    "name": "Tule Springs Fossil Beds",
+    "link": "https://www.nps.gov/tusk/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "African Burial Ground",
+    "link": "https://www.nps.gov/afbg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Castle Clinton",
+    "link": "https://www.nps.gov/cacl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Eleanor Roosevelt",
+    "link": "https://www.nps.gov/elro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Ellis Island",
+    "link": "https://www.nps.gov/elis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Federal Hall",
+    "link": "https://www.nps.gov/feha/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Fire Island",
+    "link": "https://www.nps.gov/fiis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Fort Stanwix",
+    "link": "https://www.nps.gov/fost/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Gateway",
+    "link": "https://www.nps.gov/gate/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "General Grant",
+    "link": "https://www.nps.gov/gegr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Governors Island",
+    "link": "https://www.nps.gov/gois/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Hamilton Grange",
+    "link": "https://www.nps.gov/hagr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Harriet Tubman",
+    "link": "https://www.nps.gov/hart/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Home Of Franklin D Roosevelt",
+    "link": "https://www.nps.gov/hofr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Lower East Side Tenement Museum",
+    "link": "https://www.nps.gov/loea/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Martin Van Buren",
+    "link": "https://www.nps.gov/mava/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "National Parks of New York Harbor",
+    "link": "https://www.nps.gov/npnh/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Sagamore Hill",
+    "link": "https://www.nps.gov/sahi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Saint Paul's Church",
+    "link": "https://www.nps.gov/sapa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Saratoga",
+    "link": "https://www.nps.gov/sara/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Statue Of Liberty",
+    "link": "https://www.nps.gov/stli/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Stonewall",
+    "link": "https://www.nps.gov/ston/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Theodore Roosevelt Birthplace",
+    "link": "https://www.nps.gov/thrb/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Theodore Roosevelt Inaugural",
+    "link": "https://www.nps.gov/thri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Thomas Cole",
+    "link": "https://www.nps.gov/thco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Upper Delaware",
+    "link": "https://www.nps.gov/upde/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Vanderbilt Mansion",
+    "link": "https://www.nps.gov/vama/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 33,
+    "name": "Women's Rights",
+    "link": "https://www.nps.gov/wori/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Charles Young Buffalo Soldiers",
+    "link": "https://www.nps.gov/chyo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Cuyahoga Valley",
+    "link": "https://www.nps.gov/cuva/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Dayton Aviation Heritage",
+    "link": "https://www.nps.gov/daav/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "First Ladies",
+    "link": "https://www.nps.gov/fila/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Hopewell Culture",
+    "link": "https://www.nps.gov/hocu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "James A Garfield",
+    "link": "https://www.nps.gov/jaga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "Perry's Victory & International Peace",
+    "link": "https://www.nps.gov/pevi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 36,
+    "name": "William Howard Taft",
+    "link": "https://www.nps.gov/wiho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Chickasaw",
+    "link": "https://www.nps.gov/chic/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Fort Smith",
+    "link": "https://www.nps.gov/fosm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Oklahoma City",
+    "link": "https://www.nps.gov/okci/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Santa Fe",
+    "link": "https://www.nps.gov/safe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 37,
+    "name": "Washita Battlefield",
+    "link": "https://www.nps.gov/waba/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Crater Lake",
+    "link": "https://www.nps.gov/crla/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Fort Vancouver",
+    "link": "https://www.nps.gov/fova/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Ice Age Floods",
+    "link": "https://www.nps.gov/iafl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "John Day Fossil Beds",
+    "link": "https://www.nps.gov/joda/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Lewis and Clark",
+    "link": "https://www.nps.gov/lewi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Nez Perce",
+    "link": "https://www.nps.gov/nepe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 38,
+    "name": "Oregon Caves",
+    "link": "https://www.nps.gov/orca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Allegheny Portage Railroad",
+    "link": "https://www.nps.gov/alpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Carlisle Federal Indian Boarding School",
+    "link": "https://www.nps.gov/cibs/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Delaware Water Gap",
+    "link": "https://www.nps.gov/dewa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Edgar Allan Poe",
+    "link": "https://www.nps.gov/edal/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Eisenhower",
+    "link": "https://www.nps.gov/eise/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "First State",
+    "link": "https://www.nps.gov/frst/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Flight 93",
+    "link": "https://www.nps.gov/flni/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Fort Necessity",
+    "link": "https://www.nps.gov/fone/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Friendship Hill",
+    "link": "https://www.nps.gov/frhi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Gettysburg",
+    "link": "https://www.nps.gov/gett/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Gloria Dei Church",
+    "link": "https://www.nps.gov/glde/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Hopewell Furnace",
+    "link": "https://www.nps.gov/hofu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Independence",
+    "link": "https://www.nps.gov/inde/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Johnstown Flood",
+    "link": "https://www.nps.gov/jofl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Lower Delaware",
+    "link": "https://www.nps.gov/lode/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Potomac Heritage",
+    "link": "https://www.nps.gov/pohe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Steamtown",
+    "link": "https://www.nps.gov/stea/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Thaddeus Kosciuszko",
+    "link": "https://www.nps.gov/thko/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Upper Delaware",
+    "link": "https://www.nps.gov/upde/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Valley Forge",
+    "link": "https://www.nps.gov/vafo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 39,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 55,
+    "name": "San Juan",
+    "link": "https://www.nps.gov/saju/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 40,
+    "name": "Blackstone River Valley",
+    "link": "https://www.nps.gov/blrv/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 40,
+    "name": "Roger Williams",
+    "link": "https://www.nps.gov/rowi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 40,
+    "name": "Touro Synagogue",
+    "link": "https://www.nps.gov/tosy/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 40,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Charles Pinckney",
+    "link": "https://www.nps.gov/chpi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Congaree",
+    "link": "https://www.nps.gov/cong/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Cowpens",
+    "link": "https://www.nps.gov/cowp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Fort Sumter and Fort Moultrie",
+    "link": "https://www.nps.gov/fosu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Kings Mountain",
+    "link": "https://www.nps.gov/kimo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Ninety Six",
+    "link": "https://www.nps.gov/nisi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Overmountain Victory",
+    "link": "https://www.nps.gov/ovvi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 41,
+    "name": "Reconstruction Era",
+    "link": "https://www.nps.gov/reer/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Badlands",
+    "link": "https://www.nps.gov/badl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Jewel Cave",
+    "link": "https://www.nps.gov/jeca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Minuteman Missile",
+    "link": "https://www.nps.gov/mimi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Missouri",
+    "link": "https://www.nps.gov/mnrr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Mount Rushmore",
+    "link": "https://www.nps.gov/moru/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 42,
+    "name": "Wind Cave",
+    "link": "https://www.nps.gov/wica/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Andrew Johnson",
+    "link": "https://www.nps.gov/anjo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Big South Fork",
+    "link": "https://www.nps.gov/biso/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Chickamauga & Chattanooga",
+    "link": "https://www.nps.gov/chch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Cumberland Gap",
+    "link": "https://www.nps.gov/cuga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Fort Donelson",
+    "link": "https://www.nps.gov/fodo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Great Smoky Mountains",
+    "link": "https://www.nps.gov/grsm/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Manhattan Project",
+    "link": "https://www.nps.gov/mapr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Natchez Trace",
+    "link": "https://www.nps.gov/natt/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Obed",
+    "link": "https://www.nps.gov/obed/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Overmountain Victory",
+    "link": "https://www.nps.gov/ovvi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Shiloh",
+    "link": "https://www.nps.gov/shil/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Stones River",
+    "link": "https://www.nps.gov/stri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 43,
+    "name": "Trail Of Tears",
+    "link": "https://www.nps.gov/trte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Alibates Flint Quarries",
+    "link": "https://www.nps.gov/alfl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Amistad",
+    "link": "https://www.nps.gov/amis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Big Bend",
+    "link": "https://www.nps.gov/bibe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Big Thicket",
+    "link": "https://www.nps.gov/bith/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Blackwell School",
+    "link": "https://www.nps.gov/blsc/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Butterfield Overland",
+    "link": "https://www.nps.gov/buov/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Chamizal",
+    "link": "https://www.nps.gov/cham/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "El Camino Real de los Tejas",
+    "link": "https://www.nps.gov/elte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "El Camino Real de Tierra Adentro",
+    "link": "https://www.nps.gov/elca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Davis",
+    "link": "https://www.nps.gov/foda/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Guadalupe Mountains",
+    "link": "https://www.nps.gov/gumo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Meredith",
+    "link": "https://www.nps.gov/lamr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Lyndon B Johnson",
+    "link": "https://www.nps.gov/lyjo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Padre Island",
+    "link": "https://www.nps.gov/pais/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Palo Alto Battlefield",
+    "link": "https://www.nps.gov/paal/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Rio Grande",
+    "link": "https://www.nps.gov/rigr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "San Antonio Missions",
+    "link": "https://www.nps.gov/saan/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 44,
+    "name": "Waco Mammoth",
+    "link": "https://www.nps.gov/waco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Arches",
+    "link": "https://www.nps.gov/arch/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Bryce Canyon",
+    "link": "https://www.nps.gov/brca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Canyonlands",
+    "link": "https://www.nps.gov/cany/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Capitol Reef",
+    "link": "https://www.nps.gov/care/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Cedar Breaks",
+    "link": "https://www.nps.gov/cebr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Dinosaur",
+    "link": "https://www.nps.gov/dino/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Glen Canyon",
+    "link": "https://www.nps.gov/glca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Golden Spike",
+    "link": "https://www.nps.gov/gosp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Hovenweep",
+    "link": "https://www.nps.gov/hove/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Mormon Pioneer",
+    "link": "https://www.nps.gov/mopi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Natural Bridges",
+    "link": "https://www.nps.gov/nabr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Old Spanish",
+    "link": "https://www.nps.gov/olsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Rainbow Bridge",
+    "link": "https://www.nps.gov/rabr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Timpanogos Cave",
+    "link": "https://www.nps.gov/tica/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 45,
+    "name": "Zion",
+    "link": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Appomattox Court House",
+    "link": "https://www.nps.gov/apco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Arlington House, The Robert  E. Lee Memorial",
+    "link": "https://www.nps.gov/arho/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Assateague Island",
+    "link": "https://www.nps.gov/asis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Blue Ridge",
+    "link": "https://www.nps.gov/blri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Booker T Washington",
+    "link": "https://www.nps.gov/bowa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Cape Henry Memorial",
+    "link": "https://www.nps.gov/came/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Captain John Smith Chesapeake",
+    "link": "https://www.nps.gov/cajo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Cedar Creek & Belle Grove",
+    "link": "https://www.nps.gov/cebe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Civil War Defenses of Washington",
+    "link": "https://www.nps.gov/cwdw/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Colonial",
+    "link": "https://www.nps.gov/colo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Cumberland Gap",
+    "link": "https://www.nps.gov/cuga/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Fort Monroe",
+    "link": "https://www.nps.gov/fomr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Fredericksburg & Spotsylvania",
+    "link": "https://www.nps.gov/frsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "George Washington",
+    "link": "https://www.nps.gov/gwmp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "George Washington Birthplace",
+    "link": "https://www.nps.gov/gewa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Great Falls",
+    "link": "https://www.nps.gov/grfa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Green Springs",
+    "link": "https://www.nps.gov/grsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Harpers Ferry",
+    "link": "https://www.nps.gov/hafe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Historic Jamestowne",
+    "link": "https://www.nps.gov/jame/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Maggie L Walker",
+    "link": "https://www.nps.gov/mawa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Manassas",
+    "link": "https://www.nps.gov/mana/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Overmountain Victory",
+    "link": "https://www.nps.gov/ovvi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Petersburg",
+    "link": "https://www.nps.gov/pete/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Potomac Heritage",
+    "link": "https://www.nps.gov/pohe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Prince William Forest",
+    "link": "https://www.nps.gov/prwi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Richmond",
+    "link": "https://www.nps.gov/rich/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Shenandoah",
+    "link": "https://www.nps.gov/shen/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Star-Spangled Banner",
+    "link": "https://www.nps.gov/stsp/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Washington-Rochambeau Revolutionary Route",
+    "link": "https://www.nps.gov/waro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Wolf Trap National Park for the Performing Arts",
+    "link": "https://www.nps.gov/wotr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 47,
+    "name": "Yorktown Battlefield",
+    "link": "https://www.nps.gov/york/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 56,
+    "name": "Buck Island Reef",
+    "link": "https://www.nps.gov/buis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 56,
+    "name": "Christiansted",
+    "link": "https://www.nps.gov/chri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 56,
+    "name": "Salt River Bay",
+    "link": "https://www.nps.gov/sari/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 56,
+    "name": "Virgin Islands",
+    "link": "https://www.nps.gov/viis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 56,
+    "name": "Virgin Islands Coral Reef",
+    "link": "https://www.nps.gov/vicr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 46,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 46,
+    "name": "Marsh - Billings - Rockefeller",
+    "link": "https://www.nps.gov/mabi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 46,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Ebey's Landing",
+    "link": "https://www.nps.gov/ebla/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Fort Vancouver",
+    "link": "https://www.nps.gov/fova/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Ice Age Floods",
+    "link": "https://www.nps.gov/iafl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Klondike Gold Rush - Seattle Unit",
+    "link": "https://www.nps.gov/klse/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Lake Roosevelt",
+    "link": "https://www.nps.gov/laro/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Lewis and Clark",
+    "link": "https://www.nps.gov/lewi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Manhattan Project",
+    "link": "https://www.nps.gov/mapr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Minidoka",
+    "link": "https://www.nps.gov/miin/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Mount Rainier",
+    "link": "https://www.nps.gov/mora/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Nez Perce",
+    "link": "https://www.nps.gov/nepe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "North Cascades",
+    "link": "https://www.nps.gov/noca/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Olympic",
+    "link": "https://www.nps.gov/olym/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "San Juan Island",
+    "link": "https://www.nps.gov/sajh/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Whitman Mission",
+    "link": "https://www.nps.gov/whmi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 48,
+    "name": "Wing Luke Museum",
+    "link": "https://www.nps.gov/wing/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 50,
+    "name": "Apostle Islands",
+    "link": "https://www.nps.gov/apis/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 50,
+    "name": "Ice Age",
+    "link": "https://www.nps.gov/iatr/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 50,
+    "name": "North Country",
+    "link": "https://www.nps.gov/noco/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 50,
+    "name": "Saint Croix",
+    "link": "https://www.nps.gov/sacn/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Appalachian",
+    "link": "https://www.nps.gov/appa/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Bluestone",
+    "link": "https://www.nps.gov/blue/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Chesapeake & Ohio Canal",
+    "link": "https://www.nps.gov/choh/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Chesapeake Bay",
+    "link": "https://www.nps.gov/cbpo/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Gauley River",
+    "link": "https://www.nps.gov/gari/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Harpers Ferry",
+    "link": "https://www.nps.gov/hafe/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "Lewis & Clark",
+    "link": "https://www.nps.gov/lecl/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 49,
+    "name": "New River Gorge",
+    "link": "https://www.nps.gov/neri/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Bighorn Canyon",
+    "link": "https://www.nps.gov/bica/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "California",
+    "link": "https://www.nps.gov/cali/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Devils Tower",
+    "link": "https://www.nps.gov/deto/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Fort Laramie",
+    "link": "https://www.nps.gov/fola/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Fossil Butte",
+    "link": "https://www.nps.gov/fobu/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Grand Teton",
+    "link": "https://www.nps.gov/grte/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Mormon Pioneer",
+    "link": "https://www.nps.gov/mopi/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Oregon",
+    "link": "https://www.nps.gov/oreg/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Pony Express",
+    "link": "https://www.nps.gov/poex/planyourvisit/conditions.htm"
+  },
+  {
+    "stateId": 51,
+    "name": "Yellowstone",
+    "link": "https://www.nps.gov/yell/planyourvisit/conditions.htm"
+  }
+]
