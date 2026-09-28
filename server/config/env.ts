@@ -1,7 +1,11 @@
 import { z } from "zod";
 
 const envSchema = z.object({
+  NODE_ENV: z
+    .enum(["local", "development", "staging", "production", "test"])
+    .default("development"),
   PORT: z.coerce.number().int().positive().default(3001),
+  CLIENT_URL: z.string().default("http://localhost:5173"),
   OPENROUTER_API_KEY: z.string().min(1).optional(),
   OPENROUTER_MODEL: z.string().default("poolside/laguna-s-2.1:free"),
   OPENROUTER_CONTEXT_SUMMARY_MODEL: z
