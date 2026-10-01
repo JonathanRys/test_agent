@@ -12,7 +12,10 @@ type AdminUser = {
   createdAt: string;
 };
 
-type EditableUser = Pick<AdminUser, "name" | "email" | "isPaid" | "accessDenied">;
+type EditableUser = Pick<
+  AdminUser,
+  "name" | "email" | "isPaid" | "accessDenied"
+>;
 
 type State = { id: number; name: string; abbreviation: string };
 
@@ -28,7 +31,9 @@ function editableUser(user: AdminUser): EditableUser {
 export default function Admin() {
   const { user, apiFetch } = useAuth();
   const [users, setUsers] = useState<AdminUser[]>([]);
-  const [savedUsers, setSavedUsers] = useState<Record<number, EditableUser>>({});
+  const [savedUsers, setSavedUsers] = useState<Record<number, EditableUser>>(
+    {},
+  );
   const [savedUserIds, setSavedUserIds] = useState<number[]>([]);
   const [states, setStates] = useState<State[]>([]);
   const [name, setName] = useState("");
@@ -37,8 +42,12 @@ export default function Admin() {
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(true);
   const [savingUserId, setSavingUserId] = useState<number | null>(null);
-  const [sendingVerificationUserId, setSendingVerificationUserId] = useState<number | null>(null);
-  const [verificationMessages, setVerificationMessages] = useState<Record<number, string>>({});
+  const [sendingVerificationUserId, setSendingVerificationUserId] = useState<
+    number | null
+  >(null);
+  const [verificationMessages, setVerificationMessages] = useState<
+    Record<number, { text: string; success: boolean }>
+  >({});
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -54,16 +63,27 @@ export default function Admin() {
       const usersData = await usersResponse.json();
       const statesData = await statesResponse.json();
       if (!usersResponse.ok || !statesResponse.ok) {
-        throw new Error(usersData.error ?? statesData.error ?? "Unable to load admin data");
+        throw new Error(
+          usersData.error ?? statesData.error ?? "Unable to load admin data",
+        );
       }
       setUsers(usersData.users);
-      setSavedUsers(Object.fromEntries(
-        usersData.users.map((entry: AdminUser) => [entry.id, editableUser(entry)]),
-      ));
+      setSavedUsers(
+        Object.fromEntries(
+          usersData.users.map((entry: AdminUser) => [
+            entry.id,
+            editableUser(entry),
+          ]),
+        ),
+      );
       setSavedUserIds([]);
       setStates(statesData.states);
     } catch (loadError) {
-      setError(loadError instanceof Error ? loadError.message : "Unable to load admin data");
+      setError(
+        loadError instanceof Error
+          ? loadError.message
+          : "Unable to load admin data",
+      );
     } finally {
       setLoading(false);
     }
@@ -74,14 +94,21 @@ export default function Admin() {
   }, [user?.isAdmin]);
 
   function updateUser(id: number, patch: Partial<AdminUser>) {
-    setUsers((current) => current.map((entry) => entry.id === id ? { ...entry, ...patch } : entry));
+    setUsers((current) =>
+      current.map((entry) =>
+        entry.id === id ? { ...entry, ...patch } : entry,
+      ),
+    );
     setSavedUserIds((current) => current.filter((savedId) => savedId !== id));
   }
 
   function hasUnsavedChanges(entry: AdminUser): boolean {
     const saved = savedUsers[entry.id];
-    return !saved || Object.entries(saved).some(
-      ([key, value]) => entry[key as keyof EditableUser] !== value,
+    return (
+      !saved ||
+      Object.entries(saved).some(
+        ([key, value]) => entry[key as keyof EditableUser] !== value,
+      )
     );
   }
 
@@ -102,12 +129,23 @@ export default function Admin() {
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error ?? "Unable to update user");
-      setUsers((current) => current.map((item) => item.id === entry.id ? data.user : item));
-      setSavedUsers((current) => ({ ...current, [entry.id]: editableUser(data.user) }));
-      setSavedUserIds((current) => current.includes(entry.id) ? current : [...current, entry.id]);
+      setUsers((current) =>
+        current.map((item) => (item.id === entry.id ? data.user : item)),
+      );
+      setSavedUsers((current) => ({
+        ...current,
+        [entry.id]: editableUser(data.user),
+      }));
+      setSavedUserIds((current) =>
+        current.includes(entry.id) ? current : [...current, entry.id],
+      );
       setMessage(`Updated ${data.user.email}`);
     } catch (saveError) {
-      setError(saveError instanceof Error ? saveError.message : "Unable to update user");
+      setError(
+        saveError instanceof Error
+          ? saveError.message
+          : "Unable to update user",
+      );
     } finally {
       setSavingUserId(null);
     }
@@ -115,21 +153,41 @@ export default function Admin() {
 
   async function resendVerification(entry: AdminUser) {
     setSendingVerificationUserId(entry.id);
-    setVerificationMessages((current) => ({ ...current, [entry.id]: "" }));
+    setVerificationMessages((current) => {
+      const next = { ...current };
+      delete next[entry.id];
+      return next;
+    });
     try {
-      const response = await apiFetch(`/api/admin/users/${entry.id}/resend-verification`, {
-        method: "POST",
-      });
+      const response = await apiFetch(
+        `/api/admin/users/${entry.id}/resend-verification`,
+        {
+          method: "POST",
+        },
+      );
       const data = await response.json();
-      if (!response.ok) throw new Error(data.error ?? "Unable to send verification email");
+      if (!response.ok)
+        throw new Error(data.error ?? "Unable to send verification email");
       setVerificationMessages((current) => ({
         ...current,
-        [entry.id]: `Sent to ${entry.email}`,
+        [entry.id]: {
+          text:
+            data.delivery === "console"
+              ? "Verification link logged to server console"
+              : `Sent to ${entry.email}`,
+          success: true,
+        },
       }));
     } catch (sendError) {
       setVerificationMessages((current) => ({
         ...current,
-        [entry.id]: sendError instanceof Error ? sendError.message : "Unable to send verification email",
+        [entry.id]: {
+          text:
+            sendError instanceof Error
+              ? sendError.message
+              : "Unable to send verification email",
+          success: false,
+        },
       }));
     } finally {
       setSendingVerificationUserId(null);
@@ -156,10 +214,16 @@ export default function Admin() {
       setName("");
       setDescription("");
       setFile(null);
-      const input = document.getElementById("gpx-file") as HTMLInputElement | null;
+      const input = document.getElementById(
+        "gpx-file",
+      ) as HTMLInputElement | null;
       if (input) input.value = "";
     } catch (uploadError) {
-      setError(uploadError instanceof Error ? uploadError.message : "Unable to create trail");
+      setError(
+        uploadError instanceof Error
+          ? uploadError.message
+          : "Unable to create trail",
+      );
     } finally {
       setUploading(false);
     }
@@ -179,15 +243,25 @@ export default function Admin() {
     <section className="panel admin-panel">
       <p className="eyebrow">Administration</p>
       <h1>Admin</h1>
-      {error && <p className="preference-notification error" role="alert">{error}</p>}
-      {message && <p className="preference-notification" role="status">{message}</p>}
+      {error && (
+        <p className="preference-notification error" role="alert">
+          {error}
+        </p>
+      )}
+      {message && (
+        <p className="preference-notification" role="status">
+          {message}
+        </p>
+      )}
 
       <section className="admin-section">
         <div className="admin-section-heading">
           <h2>Users</h2>
           <span>{users.length}</span>
         </div>
-        {loading ? <p>Loading users...</p> : (
+        {loading ? (
+          <p>Loading users...</p>
+        ) : (
           <div className="admin-table-wrap">
             <table className="admin-user-table">
               <thead>
@@ -203,31 +277,106 @@ export default function Admin() {
               <tbody>
                 {users.map((entry) => (
                   <tr key={entry.id}>
-                    <td data-label="Name"><input aria-label={`Name for ${entry.email}`} value={entry.name} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { name: event.target.value })} /></td>
-                    <td data-label="Email"><input aria-label={`Email for ${entry.email}`} type="email" value={entry.email} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { email: event.target.value })} /></td>
-                    <td data-label="Paid"><input aria-label={`Paid status for ${entry.email}`} type="checkbox" checked={entry.isPaid} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { isPaid: event.target.checked })} /></td>
-                    <td data-label="Access denied"><input aria-label={`Access denied status for ${entry.email}`} type="checkbox" checked={entry.accessDenied} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { accessDenied: event.target.checked })} /></td>
-                    <td data-label="Email verification" className="admin-verification-cell">
-                      {entry.emailVerifiedAt ? <span>Verified</span> : (
+                    <td data-label="Name">
+                      <input
+                        aria-label={`Name for ${entry.email}`}
+                        value={entry.name}
+                        disabled={savingUserId === entry.id}
+                        onChange={(event) =>
+                          updateUser(entry.id, { name: event.target.value })
+                        }
+                      />
+                    </td>
+                    <td data-label="Email">
+                      <input
+                        aria-label={`Email for ${entry.email}`}
+                        type="email"
+                        value={entry.email}
+                        disabled={savingUserId === entry.id}
+                        onChange={(event) =>
+                          updateUser(entry.id, { email: event.target.value })
+                        }
+                      />
+                    </td>
+                    <td data-label="Paid">
+                      <input
+                        aria-label={`Paid status for ${entry.email}`}
+                        type="checkbox"
+                        checked={entry.isPaid}
+                        disabled={savingUserId === entry.id}
+                        onChange={(event) =>
+                          updateUser(entry.id, { isPaid: event.target.checked })
+                        }
+                      />
+                    </td>
+                    <td data-label="Access denied">
+                      <input
+                        aria-label={`Access denied status for ${entry.email}`}
+                        type="checkbox"
+                        checked={entry.accessDenied}
+                        disabled={savingUserId === entry.id}
+                        onChange={(event) =>
+                          updateUser(entry.id, {
+                            accessDenied: event.target.checked,
+                          })
+                        }
+                      />
+                    </td>
+                    <td
+                      data-label="Email verification"
+                      className="admin-verification-cell"
+                    >
+                      {entry.emailVerifiedAt ? (
+                        <span>Verified</span>
+                      ) : (
                         <>
-                          <button type="button" onClick={() => void resendVerification(entry)} disabled={sendingVerificationUserId === entry.id}>
-                            {sendingVerificationUserId === entry.id ? "Sending..." : "Resend email"}
+                          <button
+                            type="button"
+                            onClick={() => void resendVerification(entry)}
+                            disabled={sendingVerificationUserId === entry.id}
+                          >
+                            {sendingVerificationUserId === entry.id
+                              ? "Sending..."
+                              : "Resend email"}
                           </button>
                           {verificationMessages[entry.id] && (
-                            <span className={verificationMessages[entry.id].startsWith("Sent to ") ? "admin-user-saved" : "admin-user-error"} role="status">
-                              {verificationMessages[entry.id]}
+                            <span
+                              className={
+                                verificationMessages[entry.id].success
+                                  ? "admin-user-saved"
+                                  : "admin-user-error"
+                              }
+                              role="status"
+                            >
+                              {verificationMessages[entry.id].text}
                             </span>
                           )}
                         </>
                       )}
                     </td>
                     <td data-label="Actions" className="admin-user-actions">
-                      <button type="button" onClick={() => void saveUser(entry)} disabled={savingUserId === entry.id || !hasUnsavedChanges(entry)}>{savingUserId === entry.id ? "Saving..." : "Save"}</button>
-                      {savedUserIds.includes(entry.id) && <span className="admin-user-saved" role="status">Saved</span>}
+                      <button
+                        type="button"
+                        onClick={() => void saveUser(entry)}
+                        disabled={
+                          savingUserId === entry.id || !hasUnsavedChanges(entry)
+                        }
+                      >
+                        {savingUserId === entry.id ? "Saving..." : "Save"}
+                      </button>
+                      {savedUserIds.includes(entry.id) && (
+                        <span className="admin-user-saved" role="status">
+                          Saved
+                        </span>
+                      )}
                     </td>
                   </tr>
                 ))}
-                {!users.length && <tr><td colSpan={6}>No users found.</td></tr>}
+                {!users.length && (
+                  <tr>
+                    <td colSpan={6}>No users found.</td>
+                  </tr>
+                )}
               </tbody>
             </table>
           </div>
@@ -235,28 +384,60 @@ export default function Admin() {
       </section>
 
       <section className="admin-section">
-        <div className="admin-section-heading"><h2>Create trail from GPX</h2></div>
+        <div className="admin-section-heading">
+          <h2>Create trail from GPX</h2>
+        </div>
         <form className="composer admin-gpx-form" onSubmit={uploadTrack}>
           <label className="floating-field">
-            <input placeholder=" " value={name} required pattern=".*\S.*" title="Enter a name with at least one non-space character" onChange={(event) => setName(event.target.value)} />
+            <input
+              placeholder=" "
+              value={name}
+              required
+              pattern=".*\S.*"
+              title="Enter a name with at least one non-space character"
+              onChange={(event) => setName(event.target.value)}
+            />
             <span>Trail name</span>
           </label>
           <label className="floating-field">
-            <input placeholder=" " value={description} onChange={(event) => setDescription(event.target.value)} />
+            <input
+              placeholder=" "
+              value={description}
+              onChange={(event) => setDescription(event.target.value)}
+            />
             <span>Description (optional)</span>
           </label>
           <label className="floating-field">
-            <select required value={stateId} onChange={(event) => setStateId(event.target.value)}>
+            <select
+              required
+              value={stateId}
+              onChange={(event) => setStateId(event.target.value)}
+            >
               <option value="">Choose state</option>
-              {states.map((entry) => <option key={entry.id} value={entry.id}>{entry.name}</option>)}
+              {states.map((entry) => (
+                <option key={entry.id} value={entry.id}>
+                  {entry.name}
+                </option>
+              ))}
             </select>
             <span>State</span>
           </label>
           <label className="admin-file-field" htmlFor="gpx-file">
             <span>GPX track</span>
-            <input id="gpx-file" type="file" accept=".gpx,application/gpx+xml,application/xml,text/xml" required onChange={(event) => setFile(event.target.files?.[0] ?? null)} />
+            <input
+              id="gpx-file"
+              type="file"
+              accept=".gpx,application/gpx+xml,application/xml,text/xml"
+              required
+              onChange={(event) => setFile(event.target.files?.[0] ?? null)}
+            />
           </label>
-          <button type="submit" disabled={!file || !stateId || !name.trim() || uploading}>{uploading ? "Creating trail..." : "Upload GPX and create trail"}</button>
+          <button
+            type="submit"
+            disabled={!file || !stateId || !name.trim() || uploading}
+          >
+            {uploading ? "Creating trail..." : "Upload GPX and create trail"}
+          </button>
         </form>
       </section>
     </section>

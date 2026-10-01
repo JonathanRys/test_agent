@@ -22,10 +22,15 @@ function createTransport() {
   });
 }
 
-export async function sendVerificationEmail(user: User): Promise<void> {
+export async function sendVerificationEmail(
+  user: User,
+): Promise<"console" | "email"> {
   await ensureInitialized();
   if (user.emailVerifiedAt) throw new Error("EMAIL_ALREADY_VERIFIED");
-  const transport = createTransport();
+  const hasSmtpConnection = Boolean(env.SMTP_HOST || env.SMTP_USER || env.SMTP_PASS);
+  const consoleDelivery =
+    !hasSmtpConnection && ["local", "development"].includes(env.NODE_ENV);
+  const transport = consoleDelivery ? null : createTransport();
   const token = randomBytes(32).toString("base64url");
   const now = new Date();
   await EmailVerificationToken.update(
@@ -40,13 +45,19 @@ export async function sendVerificationEmail(user: User): Promise<void> {
   const verificationUrl = new URL("/verify-email", env.CLIENT_URL);
   verificationUrl.searchParams.set("token", token);
 
+  if (consoleDelivery) {
+    console.info(`Email verification link for ${user.email}: ${verificationUrl.toString()}`);
+    return "console";
+  }
+
   try {
-    await transport.sendMail({
+    await transport!.sendMail({
       from: env.EMAIL_FROM,
       to: user.email,
       subject: "Verify your email address",
       text: `Hello ${user.name},\n\nConfirm your email address by visiting this link within 24 hours:\n${verificationUrl.toString()}\n\nIf you did not expect this message, you can ignore it.`,
     });
+    return "email";
   } catch (error) {
     verificationToken.consumedAt = new Date();
     await verificationToken.save();

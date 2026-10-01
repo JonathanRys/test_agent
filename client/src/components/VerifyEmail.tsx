@@ -22,7 +22,11 @@ export default function VerifyEmail() {
       if (!response.ok) throw new Error(data.error ?? "Unable to verify email");
       setVerified(true);
     } catch (verificationError) {
-      setError(verificationError instanceof Error ? verificationError.message : "Unable to verify email");
+      setError(
+        verificationError instanceof Error
+          ? verificationError.message
+          : "Unable to verify email",
+      );
     } finally {
       setSubmitting(false);
     }
@@ -37,13 +41,24 @@ export default function VerifyEmail() {
       ) : (
         <>
           <p>Confirm the email address associated with this account.</p>
-          {error && <p className="preference-notification error" role="alert">{error}</p>}
-          <button type="button" onClick={() => void confirmEmail()} disabled={!token || submitting}>
+          {error && (
+            <p className="preference-notification error" role="alert">
+              {error}
+            </p>
+          )}
+          <button
+            type="button"
+            className="verify-email-button"
+            onClick={() => void confirmEmail()}
+            disabled={!token || submitting}
+          >
             {submitting ? "Verifying..." : "Verify email"}
           </button>
         </>
       )}
-      <Link className="action-link" to="/login">Return to login</Link>
+      <Link className="action-link" to="/login">
+        Return to login
+      </Link>
     </section>
   );
 }

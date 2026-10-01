@@ -165,8 +165,8 @@ adminRouter.post(
         res.status(404).json({ ok: false, error: "User not found" });
         return;
       }
-      await sendVerificationEmail(user);
-      res.json({ ok: true });
+      const delivery = await sendVerificationEmail(user);
+      res.json({ ok: true, delivery });
     } catch (error) {
       if (error instanceof Error && error.message === "EMAIL_ALREADY_VERIFIED") {
         res.status(409).json({ ok: false, error: "This email is already verified" });

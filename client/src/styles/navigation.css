@@ -112,7 +112,6 @@ a.account-icon:visited {
   border-bottom-right-radius: 999px;
 }
 
-a.admin-nav-link:visited,
 a.admin-nav-link {
   padding: 7px 10px;
   background: rgba(30, 41, 59, 0.9);
@@ -123,15 +122,12 @@ a.admin-nav-link {
   text-decoration: none;
 }
 
-a.admin-nav-link.active:visited,
-a.admin-nav-link.active:visited:hover,
 a.admin-nav-link.active,
 a.admin-nav-link.active:hover {
   background-color: #2563eb;
   color: #f0f9ff;
 }
 
-a.admin-nav-link:visited:hover,
 a.admin-nav-link:hover {
   background-color: rgba(59, 130, 246, 0.25);
   color: rgb(56, 182, 255);

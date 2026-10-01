@@ -2,3 +2,7 @@
 .account-actions button {
   height: 36px;
 }
+
+.verify-email-button {
+  margin-right: 10px;
+}
