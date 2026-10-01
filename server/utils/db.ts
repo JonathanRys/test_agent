@@ -62,6 +62,20 @@ export async function ensureInitialized(): Promise<void> {
         allowNull: true,
       });
     }
+    if (!userColumns.isPaid) {
+      await sequelize.getQueryInterface().addColumn("users", "isPaid", {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
+      });
+    }
+    if (!userColumns.accessDenied) {
+      await sequelize.getQueryInterface().addColumn("users", "accessDenied", {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
+      });
+    }
     const legacyPreferenceColumns = [
       "birthdate",
       "fitnessLevel",

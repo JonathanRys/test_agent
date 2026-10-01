@@ -2,6 +2,7 @@ import type { NextFunction, Request, Response } from "express";
 import { AuthSession, User } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
 import { hashToken } from "../services/auth.js";
+import { isAdminEmail } from "../config/admin.js";
 
 declare global {
   namespace Express {
@@ -26,9 +27,13 @@ async function authenticate(req: Request): Promise<void> {
   });
   if (!session || session.accessExpiresAt.getTime() <= Date.now()) return;
 
+  const user = session.get("User") as User;
+  if (user.accessDenied) return;
   req.authSession = session;
-  req.user = session.get("User") as User;
+  req.user = user;
 }
+
+export { isAdminEmail };
 
 export async function optionalUser(
   req: Request,
@@ -56,6 +61,27 @@ export async function requireUser(
     await authenticate(req);
     if (!req.user) {
       res.status(401).json({ ok: false, error: "Authentication required" });
+      return;
+    }
+    next();
+  } catch (error) {
+    next(error);
+  }
+}
+
+export async function requireAdmin(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+): Promise<void> {
+  try {
+    await authenticate(req);
+    if (!req.user) {
+      res.status(401).json({ ok: false, error: "Authentication required" });
+      return;
+    }
+    if (!isAdminEmail(req.user.email)) {
+      res.status(403).json({ ok: false, error: "Administrator access required" });
       return;
     }
     next();

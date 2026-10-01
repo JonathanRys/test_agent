@@ -7,6 +7,8 @@ type User = {
   name: string;
   email: string;
   emailVerifiedAt: string | null;
+  isPaid: boolean;
+  isAdmin: boolean;
 };
 
 type AuthContextValue = {

@@ -64,6 +64,31 @@ describe("email authentication", () => {
     );
   });
 
+  it("blocks denied users from login and refresh", async () => {
+    const deniedEmail = `denied-${Date.now()}-${Math.random().toString(36).slice(2)}@example.test`;
+    const registration = await registerUser(
+      "Denied Hiker",
+      deniedEmail,
+      "correct horse battery",
+    );
+    registration.user.accessDenied = true;
+    await registration.user.save();
+
+    await expect(loginUser(deniedEmail, "correct horse battery")).rejects.toThrow(
+      "INVALID_CREDENTIALS",
+    );
+    await expect(refreshSession(registration.tokens.refreshToken)).rejects.toThrow(
+      "INVALID_REFRESH_TOKEN",
+    );
+    const session = await AuthSession.findOne({
+      where: { userId: registration.user.id },
+    });
+    expect(session?.revokedAt).toBeTruthy();
+
+    await AuthSession.destroy({ where: { userId: registration.user.id } });
+    await registration.user.destroy();
+  });
+
   it("does not expose password fields in public user data", async () => {
     const user = await User.findOne({ where: { email } });
     const serialized = publicUser(user!);

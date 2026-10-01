@@ -208,6 +208,13 @@ describe("weather parsing and formatting", () => {
       name: "Located Peak",
       weather: "38°F, clear, wind 5 mph",
     });
+    expect(hikes[1]).not.toHaveProperty("weather");
+    expect(hikes[2]).not.toHaveProperty("weather");
+    expect(
+      context.unfinishedLists[0]!.remainingHikes[0],
+    ).not.toHaveProperty("weather");
+  });
+});
 
 describe("weather fetch, cache, and backoff", () => {
   beforeEach(() => {
@@ -313,15 +320,6 @@ describe("weather fetch, cache, and backoff", () => {
     });
   });
 });
-
-    expect(hikes[1]).not.toHaveProperty("weather");
-    expect(hikes[2]).not.toHaveProperty("weather");
-    expect(
-      context.unfinishedLists[0]!.remainingHikes[0],
-    ).not.toHaveProperty("weather");
-  });
-});
-
 
 function jsonResponse(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {

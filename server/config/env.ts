@@ -22,6 +22,7 @@ const envSchema = z.object({
     .string()
     .default("https://api.open-meteo.com/v1/forecast"),
   REDIS_URL: z.string().min(1).optional(),
+  ADMIN_USERS: z.string().default(""),
 });
 
 export const env = envSchema.parse(process.env);

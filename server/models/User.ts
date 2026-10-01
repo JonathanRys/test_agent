@@ -17,6 +17,8 @@ export class User extends Model {
   declare email: string;
   declare passwordHash: string | null;
   declare emailVerifiedAt: Date | null;
+  declare isPaid: boolean;
+  declare accessDenied: boolean;
   declare createdAt: Date;
   declare updatedAt: Date;
   declare deletedAt: Date;
@@ -52,6 +54,16 @@ export function initUser(sequelize: Sequelize): void {
       emailVerifiedAt: {
         type: DataTypes.DATE,
         allowNull: true,
+      },
+      isPaid: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
+      },
+      accessDenied: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+        defaultValue: false,
       },
     },
     {

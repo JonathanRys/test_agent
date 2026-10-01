@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs";
 import { createHash, randomBytes } from "node:crypto";
 import { AuthSession, PasswordResetToken, User } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
+import { isAdminEmail } from "../config/admin.js";
 import {
   ACCESS_LIFETIME_MS,
   PASSWORD_RESET_LIFETIME_MS,
@@ -30,6 +31,8 @@ export function publicUser(user: User) {
     name: user.name,
     email: user.email,
     emailVerifiedAt: user.emailVerifiedAt,
+    isPaid: user.isPaid,
+    isAdmin: isAdminEmail(user.email),
   };
 }
 
@@ -122,7 +125,9 @@ export async function loginUser(email: string, password: string) {
   const valid = user?.passwordHash
     ? await bcrypt.compare(password, user.passwordHash)
     : false;
-  if (!user || !valid) throw new Error("INVALID_CREDENTIALS");
+  if (!user || !valid || user.accessDenied) {
+    throw new Error("INVALID_CREDENTIALS");
+  }
   return { user, tokens: await issueSession(user) };
 }
 
@@ -137,6 +142,11 @@ export async function refreshSession(refreshToken: string) {
   }
 
   const user = session.get("User") as User;
+  if (user.accessDenied) {
+    session.revokedAt = new Date();
+    await session.save();
+    throw new Error("INVALID_REFRESH_TOKEN");
+  }
   const tokens = await issueAccessToken(session, user);
   return {
     user,

@@ -1,0 +1,139 @@
+.admin-panel {
+  width: min(1100px, 100%);
+  align-self: stretch;
+  color: #e8edf1;
+}
+
+.admin-panel h1 {
+  margin: 0 0 20px;
+}
+
+.admin-section {
+  padding: 20px 0 24px;
+  border-top: 1px solid rgba(203, 213, 225, 0.2);
+}
+
+.admin-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.admin-section-heading h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.admin-section-heading span {
+  color: #aab8c3;
+  font-size: 0.85rem;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+}
+
+.admin-user-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-user-table th,
+.admin-user-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid rgba(203, 213, 225, 0.13);
+  white-space: nowrap;
+}
+
+.admin-user-table th {
+  color: #aab8c3;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.admin-user-table input:not([type="checkbox"]) {
+  width: 100%;
+  min-width: 135px;
+  padding: 8px;
+  border: 1px solid rgba(203, 213, 225, 0.24);
+  border-radius: 5px;
+  background: #17232b;
+  color: #f4f7f9;
+}
+
+.admin-user-table input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #e2b84b;
+}
+
+.admin-user-table button,
+.admin-gpx-form > button {
+  min-height: 38px;
+  padding: 8px 13px;
+  border: 1px solid #b18a25;
+  border-radius: 5px;
+  background: #e2b84b;
+  color: #192127;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.admin-user-table button:disabled,
+.admin-gpx-form > button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.admin-user-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-user-saved {
+  color: #9ed9ae;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.admin-gpx-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 720px;
+}
+
+.admin-gpx-form .admin-file-field,
+.admin-gpx-form > button {
+  grid-column: 1 / -1;
+}
+
+.admin-file-field {
+  display: grid;
+  gap: 8px;
+  color: #c4d0d8;
+  font-size: 0.82rem;
+}
+
+.admin-file-field input {
+  width: 100%;
+  color: #e8edf1;
+}
+
+@media (max-width: 680px) {
+  .admin-panel {
+    padding: 16px 10px;
+  }
+
+  .admin-gpx-form {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-user-table th,
+  .admin-user-table td {
+    padding: 8px 6px;
+  }
+}

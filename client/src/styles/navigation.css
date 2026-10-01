@@ -111,3 +111,18 @@ a.account-icon:visited {
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
 }
+
+.admin-nav-link {
+  padding: 7px 10px;
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-radius: 6px;
+  color: #f4c95d;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.admin-nav-link.active,
+.admin-nav-link:hover {
+  border-color: #f4c95d;
+  background: rgba(244, 201, 93, 0.12);
+}

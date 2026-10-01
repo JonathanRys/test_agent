@@ -1,36 +1,47 @@
 [
   {
+    "id": 1,
     "name": "Hiking"
   },
   {
+    "id": 2,
     "name": "Biking"
   },
   {
+    "id": 3,
     "name": "Offroading"
   },
   {
+    "id": 4,
     "name": "Snow sports"
   },
   {
+    "id": 5,
     "name": "Boating"
   },
   {
+    "id": 6,
+    "name": "Summer sports"
+  },
+  {
+    "id": 7,
+    "name": "Water sports"
+  },
+  {
+    "id": 8,
+    "name": "Naturalism"
+  },
+  {
+    "id": 9,
+    "name": "Hunting"
+  },
+  {
+    "id": 10,
+    "name": "Empty"
+  },
+  {
+    "id": 11,
     "name": "Other"
-  },
-  {
-    "name": "Empty"
-  },
-  {
-    "name": "Empty"
-  },
-  {
-    "name": "Empty"
-  },
-  {
-    "name": "Empty"
-  },
-  {
-    "name": "Empty"
   },
   {
     "name": "Hiking",
@@ -54,6 +65,10 @@
   },
   {
     "name": "Walking",
+    "parentActivity": 1
+  },
+  {
+    "name": "Camping",
     "parentActivity": 1
   },
   {
@@ -133,7 +148,78 @@
     "parentActivity": 5
   },
   {
-    "name": "Horseback Riding",
+    "name": "Paddleboarding",
+    "parentActivity": 5
+  },
+  {
+    "name": "Sailing",
+    "parentActivity": 5
+  },
+  {
+    "name": "Pickleball",
     "parentActivity": 6
+  },
+
+  {
+    "name": "Archery",
+    "parentActivity": 6
+  },
+
+  {
+    "name": "Disc Golf",
+    "parentActivity": 6
+  },
+  {
+    "name": "Golf",
+    "parentActivity": 6
+  },
+
+  {
+    "name": "Mini Golf",
+    "parentActivity": 6
+  },
+  {
+    "name": "Tennis",
+    "parentActivity": 6
+  },
+  {
+    "name": "Tubing",
+    "parentActivity": 7
+  },
+  {
+    "name": "Waterskiing",
+    "parentActivity": 7
+  },
+  {
+    "name": "Swimming",
+    "parentActivity": 7
+  },
+  {
+    "name": "Birding",
+    "parentActivity": 8
+  },
+  {
+    "name": "Fishing",
+    "parentActivity": 9
+  },
+  {
+    "name": "Hunting",
+    "parentActivity": 9
+  },
+  {
+    "name": "Ropes Course",
+    "parentActivity": 11
+  },
+  {
+    "name": "Geocaching",
+    "parentActivity": 11
+  },
+  {
+    "name": "Zip Lining",
+    "parentActivity": 11
+  },
+  {
+    "name": "Horseback Riding",
+    "parentActivity": 11
   }
 ]

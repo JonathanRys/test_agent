@@ -32,6 +32,11 @@ const Nav = () => {
             </NavLink>
           </div>
         </div>
+        {user?.isAdmin && (
+          <NavLink className="admin-nav-link" to="/admin">
+            Admin
+          </NavLink>
+        )}
       </div>
     </div>
   );
