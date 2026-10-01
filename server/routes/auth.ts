@@ -16,6 +16,7 @@ import {
   refreshUserAgentContextSafe,
   touchUserAgentContext,
 } from "../services/userContext.js";
+import { verifyEmailToken } from "../services/emailVerification.js";
 
 const credentials = z.object({
   email: z.string().email(),
@@ -23,6 +24,20 @@ const credentials = z.object({
 });
 
 export const authRouter = Router();
+
+authRouter.post("/auth/verify-email", async (req, res, next) => {
+  try {
+    const token = z.string().min(1).parse(req.body?.token);
+    const user = await verifyEmailToken(token);
+    res.json({ ok: true, user: publicUser(user) });
+  } catch (error) {
+    if (error instanceof Error && error.message === "INVALID_EMAIL_VERIFICATION_TOKEN") {
+      res.status(400).json({ ok: false, error: "This verification link is invalid or expired" });
+      return;
+    }
+    next(error);
+  }
+});
 
 authRouter.post("/auth/register", async (req, res, next) => {
   try {

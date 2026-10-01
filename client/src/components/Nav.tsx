@@ -18,6 +18,11 @@ const Nav = () => {
           <FaUserCircle aria-hidden="true" />
           {user && <span className="account-name">{user.name}</span>}
         </Link>
+        {user?.isAdmin && (
+          <NavLink className="admin-nav-link" to="/admin">
+            Admin
+          </NavLink>
+        )}
         <div className="mode-controls">
           <span className="mode-label">Mode</span>
           <div className="mode-options">
@@ -32,11 +37,6 @@ const Nav = () => {
             </NavLink>
           </div>
         </div>
-        {user?.isAdmin && (
-          <NavLink className="admin-nav-link" to="/admin">
-            Admin
-          </NavLink>
-        )}
       </div>
     </div>
   );

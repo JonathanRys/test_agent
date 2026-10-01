@@ -17,6 +17,7 @@ import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import ListPage from "./components/ListPage";
 import Admin from "./components/Admin";
+import VerifyEmail from "./components/VerifyEmail";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
@@ -39,6 +40,7 @@ function AppLayout() {
     "/register",
     "/forgot-password",
     "/reset-password",
+    "/verify-email",
   ].includes(location.pathname);
   const isAccountRoute =
     location.pathname === "/account" || location.pathname === "/settings";
@@ -53,6 +55,7 @@ function AppLayout() {
         <Route path="/register" element={<AuthForm mode="register" />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
         <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Lists />} />
           <Route path="/list/:id" element={<ListPage />} />

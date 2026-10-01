@@ -13,6 +13,10 @@ import {
   PasswordResetToken,
   initPasswordResetToken,
 } from "./PasswordResetToken.js";
+import {
+  EmailVerificationToken,
+  initEmailVerificationToken,
+} from "./EmailVerificationToken.js";
 
 // Data models
 import { State, initState } from "./State.js";
@@ -47,6 +51,7 @@ const models = {
   AuthSession,
   UserPreference,
   PasswordResetToken,
+  EmailVerificationToken,
   Mountain,
   Trail,
   List,
@@ -71,6 +76,7 @@ export {
   AuthSession,
   UserPreference,
   PasswordResetToken,
+  EmailVerificationToken,
   Mountain,
   Trail,
   List,
@@ -94,6 +100,7 @@ export function initializeModels(sequelize: Sequelize): void {
   initAuthSession(sequelize);
   initUserPreference(sequelize);
   initPasswordResetToken(sequelize);
+  initEmailVerificationToken(sequelize);
 
   initState(sequelize);
   initUsdaRegion(sequelize);

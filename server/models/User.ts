@@ -8,6 +8,7 @@ interface DBModels {
   Adventure: ModelStatic<Model>;
   Summit: ModelStatic<Model>;
   TrailCompletion: ModelStatic<Model>;
+  EmailVerificationToken: ModelStatic<Model>;
   [key: string]: ModelStatic<Model>; // Fallback index signature
 }
 
@@ -28,6 +29,7 @@ export class User extends Model {
     this.hasMany(models.Summit, { foreignKey: "userId" });
     this.hasMany(models.TrailCompletion, { foreignKey: "userId" });
     this.hasOne(models.UserPreference, { foreignKey: "userId" });
+    this.hasMany(models.EmailVerificationToken, { foreignKey: "userId" });
   }
 }
 

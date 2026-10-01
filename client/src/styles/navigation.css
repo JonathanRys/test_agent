@@ -112,17 +112,27 @@ a.account-icon:visited {
   border-bottom-right-radius: 999px;
 }
 
-.admin-nav-link {
+a.admin-nav-link:visited,
+a.admin-nav-link {
   padding: 7px 10px;
+  background: rgba(30, 41, 59, 0.9);
   border: 1px solid rgba(148, 163, 184, 0.24);
   border-radius: 6px;
-  color: #f4c95d;
+  color: #cbd5df;
   font-size: 0.8rem;
   text-decoration: none;
 }
 
-.admin-nav-link.active,
-.admin-nav-link:hover {
-  border-color: #f4c95d;
-  background: rgba(244, 201, 93, 0.12);
+a.admin-nav-link.active:visited,
+a.admin-nav-link.active:visited:hover,
+a.admin-nav-link.active,
+a.admin-nav-link.active:hover {
+  background-color: #2563eb;
+  color: #f0f9ff;
+}
+
+a.admin-nav-link:visited:hover,
+a.admin-nav-link:hover {
+  background-color: rgba(59, 130, 246, 0.25);
+  color: rgb(56, 182, 255);
 }

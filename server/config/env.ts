@@ -6,6 +6,15 @@ const envSchema = z.object({
     .default("development"),
   PORT: z.coerce.number().int().positive().default(3001),
   CLIENT_URL: z.string().default("http://localhost:5173"),
+  SMTP_HOST: z.string().optional(),
+  SMTP_PORT: z.coerce.number().int().positive().default(587),
+  SMTP_SECURE: z
+    .enum(["true", "false"])
+    .default("false")
+    .transform((value) => value === "true"),
+  SMTP_USER: z.string().optional(),
+  SMTP_PASS: z.string().optional(),
+  EMAIL_FROM: z.string().min(1).optional(),
   OPENROUTER_API_KEY: z.string().min(1).optional(),
   OPENROUTER_MODEL: z.string().default("poolside/laguna-s-2.1:free"),
   OPENROUTER_CONTEXT_SUMMARY_MODEL: z

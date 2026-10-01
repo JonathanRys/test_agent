@@ -6,6 +6,7 @@ type AdminUser = {
   id: number;
   name: string;
   email: string;
+  emailVerifiedAt: string | null;
   isPaid: boolean;
   accessDenied: boolean;
   createdAt: string;
@@ -36,6 +37,8 @@ export default function Admin() {
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(true);
   const [savingUserId, setSavingUserId] = useState<number | null>(null);
+  const [sendingVerificationUserId, setSendingVerificationUserId] = useState<number | null>(null);
+  const [verificationMessages, setVerificationMessages] = useState<Record<number, string>>({});
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -110,6 +113,29 @@ export default function Admin() {
     }
   }
 
+  async function resendVerification(entry: AdminUser) {
+    setSendingVerificationUserId(entry.id);
+    setVerificationMessages((current) => ({ ...current, [entry.id]: "" }));
+    try {
+      const response = await apiFetch(`/api/admin/users/${entry.id}/resend-verification`, {
+        method: "POST",
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error ?? "Unable to send verification email");
+      setVerificationMessages((current) => ({
+        ...current,
+        [entry.id]: `Sent to ${entry.email}`,
+      }));
+    } catch (sendError) {
+      setVerificationMessages((current) => ({
+        ...current,
+        [entry.id]: sendError instanceof Error ? sendError.message : "Unable to send verification email",
+      }));
+    } finally {
+      setSendingVerificationUserId(null);
+    }
+  }
+
   async function uploadTrack(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!file || !stateId || !name.trim()) return;
@@ -170,23 +196,38 @@ export default function Admin() {
                   <th>Email</th>
                   <th>Paid</th>
                   <th>Access denied</th>
+                  <th>Email verification</th>
                   <th aria-label="Actions" />
                 </tr>
               </thead>
               <tbody>
                 {users.map((entry) => (
                   <tr key={entry.id}>
-                    <td><input aria-label={`Name for ${entry.email}`} value={entry.name} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { name: event.target.value })} /></td>
-                    <td><input aria-label={`Email for ${entry.email}`} type="email" value={entry.email} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { email: event.target.value })} /></td>
-                    <td><input aria-label={`Paid status for ${entry.email}`} type="checkbox" checked={entry.isPaid} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { isPaid: event.target.checked })} /></td>
-                    <td><input aria-label={`Access denied status for ${entry.email}`} type="checkbox" checked={entry.accessDenied} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { accessDenied: event.target.checked })} /></td>
-                    <td className="admin-user-actions">
+                    <td data-label="Name"><input aria-label={`Name for ${entry.email}`} value={entry.name} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { name: event.target.value })} /></td>
+                    <td data-label="Email"><input aria-label={`Email for ${entry.email}`} type="email" value={entry.email} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { email: event.target.value })} /></td>
+                    <td data-label="Paid"><input aria-label={`Paid status for ${entry.email}`} type="checkbox" checked={entry.isPaid} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { isPaid: event.target.checked })} /></td>
+                    <td data-label="Access denied"><input aria-label={`Access denied status for ${entry.email}`} type="checkbox" checked={entry.accessDenied} disabled={savingUserId === entry.id} onChange={(event) => updateUser(entry.id, { accessDenied: event.target.checked })} /></td>
+                    <td data-label="Email verification" className="admin-verification-cell">
+                      {entry.emailVerifiedAt ? <span>Verified</span> : (
+                        <>
+                          <button type="button" onClick={() => void resendVerification(entry)} disabled={sendingVerificationUserId === entry.id}>
+                            {sendingVerificationUserId === entry.id ? "Sending..." : "Resend email"}
+                          </button>
+                          {verificationMessages[entry.id] && (
+                            <span className={verificationMessages[entry.id].startsWith("Sent to ") ? "admin-user-saved" : "admin-user-error"} role="status">
+                              {verificationMessages[entry.id]}
+                            </span>
+                          )}
+                        </>
+                      )}
+                    </td>
+                    <td data-label="Actions" className="admin-user-actions">
                       <button type="button" onClick={() => void saveUser(entry)} disabled={savingUserId === entry.id || !hasUnsavedChanges(entry)}>{savingUserId === entry.id ? "Saving..." : "Save"}</button>
                       {savedUserIds.includes(entry.id) && <span className="admin-user-saved" role="status">Saved</span>}
                     </td>
                   </tr>
                 ))}
-                {!users.length && <tr><td colSpan={5}>No users found.</td></tr>}
+                {!users.length && <tr><td colSpan={6}>No users found.</td></tr>}
               </tbody>
             </table>
           </div>

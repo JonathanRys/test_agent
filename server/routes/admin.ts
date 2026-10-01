@@ -2,8 +2,9 @@ import { XMLParser } from "fast-xml-parser";
 import { Router } from "express";
 import { z } from "zod";
 import { requireAdmin } from "../middleware/auth.js";
-import { AuthSession, State, Trail, User } from "../models/index.js";
+import { AuthSession, EmailVerificationToken, State, Trail, User } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
+import { sendVerificationEmail } from "../services/emailVerification.js";
 
 export const adminRouter = Router();
 export const gpxUploadQuerySchema = z.object({
@@ -117,6 +118,7 @@ adminRouter.patch("/admin/users/:id", requireAdmin, async (req, res, next) => {
       res.status(404).json({ ok: false, error: "User not found" });
       return;
     }
+    const emailChanged = patch.email !== undefined && patch.email.toLowerCase() !== user.email;
     if (patch.email) {
       patch.email = patch.email.toLowerCase();
       const duplicate = await User.findOne({ where: { email: patch.email } });
@@ -131,6 +133,14 @@ adminRouter.patch("/admin/users/:id", requireAdmin, async (req, res, next) => {
     }
     const wasDenied = user.accessDenied;
     await user.update(patch);
+    if (emailChanged) {
+      user.emailVerifiedAt = null;
+      await user.save();
+      await EmailVerificationToken.update(
+        { consumedAt: new Date() },
+        { where: { userId: user.id, consumedAt: null } },
+      );
+    }
     if (!wasDenied && user.accessDenied) {
       await AuthSession.update(
         { revokedAt: new Date() },
@@ -142,6 +152,39 @@ adminRouter.patch("/admin/users/:id", requireAdmin, async (req, res, next) => {
     next(error);
   }
 });
+
+adminRouter.post(
+  "/admin/users/:id/resend-verification",
+  requireAdmin,
+  async (req, res, next) => {
+    try {
+      const id = z.coerce.number().int().positive().parse(req.params.id);
+      await ensureInitialized();
+      const user = await User.findByPk(id);
+      if (!user) {
+        res.status(404).json({ ok: false, error: "User not found" });
+        return;
+      }
+      await sendVerificationEmail(user);
+      res.json({ ok: true });
+    } catch (error) {
+      if (error instanceof Error && error.message === "EMAIL_ALREADY_VERIFIED") {
+        res.status(409).json({ ok: false, error: "This email is already verified" });
+        return;
+      }
+      if (error instanceof Error && error.message === "EMAIL_DELIVERY_NOT_CONFIGURED") {
+        res.status(503).json({ ok: false, error: "Configure SMTP settings to send email" });
+        return;
+      }
+      if (error instanceof Error) {
+        console.error("Verification email delivery failed:", error);
+        res.status(502).json({ ok: false, error: "Unable to send verification email" });
+        return;
+      }
+      next(error);
+    }
+  },
+);
 
 adminRouter.get("/admin/states", requireAdmin, async (_req, res, next) => {
   try {
