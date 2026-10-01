@@ -1,0 +1,64 @@
+[
+  {
+    "stateId": 1,
+    "name": "DeSoto State Park Dsp Primitive Campsites",
+    "link": "https://www.alapark.com/parks/DSP-primitive-campsites",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "DeSoto State Park Backpacking Campsites",
+    "link": "https://www.alapark.com/desoto-state-park/backpacking-campsites",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "DeSoto State Park Wall Tent Campsites",
+    "link": "https://www.alapark.com/desoto-state-park/wall-tent-campsite",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "RV and Primitive Campground",
+    "link": "https://www.alapark.com/parks/gulf-state-park/rv-and-primitive-campground",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle; $5 per person; $6 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      40,
+      45,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  }
+]

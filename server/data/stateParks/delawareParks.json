@@ -1,0 +1,451 @@
+[
+  {
+    "stateId": 8,
+    "name": "Alapocas Run",
+    "link": "https://www.destateparks.com/park/alapocas-run",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      15,
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Auburn Valley",
+    "link": "https://www.destateparks.com/park/auburn-valley",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Bellevue",
+    "link": "https://www.destateparks.com/park/bellevue-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      42,
+      45,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Brandywine Creek",
+    "link": "https://www.destateparks.com/park/brandywine-creek",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      30,
+      35,
+      36,
+      42,
+      46,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Brandywine Zoo",
+    "link": "https://www.destateparks.com/park/brandywine-zoo",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "3-17",
+        "fee": "$7"
+      },
+      {
+        "ageRange": "18-61",
+        "fee": "$9"
+      },
+      {
+        "ageRange": "62+",
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Cape Henlopen",
+    "link": "https://www.destateparks.com/park/cape-henlopen",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      30,
+      40,
+      42,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Delaware Seashore",
+    "link": "https://www.destateparks.com/park/delaware-seashore",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      43,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Fenwick Island",
+    "link": "https://www.destateparks.com/park/fenwick-island",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      35,
+      38,
+      39,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "First State Heritage Park",
+    "link": "https://www.destateparks.com/park/first-state-heritage",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Fort Delaware",
+    "link": "https://www.destateparks.com/park/fort-delaware",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "13+",
+        "fee": "$15"
+      },
+      {
+        "ageRange": "2-12",
+        "fee": "$8"
+      },
+      {
+        "ageRange": "62+",
+        "fee": "$14"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Fort DuPont",
+    "link": "https://www.destateparks.com/park/fort-dupont",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Fox Point",
+    "link": "https://www.destateparks.com/park/fox-point",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Holts Landing",
+    "link": "https://www.destateparks.com/park/holts-landing",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      36,
+      38,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Killens Pond",
+    "link": "https://www.destateparks.com/park/killens-pond",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      42,
+      43,
+      48,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Lums Pond",
+    "link": "https://www.destateparks.com/park/lums-pond",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      42,
+      43,
+      45,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Trap Pond",
+    "link": "https://www.destateparks.com/park/trap-pond",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      43,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "White Clay Creek",
+    "link": "https://www.destateparks.com/park/white-clay-creek",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      42,
+      43,
+      45,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Wilmington State Parks",
+    "link": "https://www.destateparks.com/park/wilmington-state-parks",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      40,
+      45,
+      50
+    ],
+    "boundary": null
+  }
+]

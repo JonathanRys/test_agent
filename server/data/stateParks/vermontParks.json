@@ -1,0 +1,1051 @@
+[
+  {
+    "stateId": 46,
+    "name": "Alburgh Dunes",
+    "link": "https://www.vtstateparks.com/parks/alburgh-dunes",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Allis",
+    "link": "https://www.vtstateparks.com/parks/allis",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Big Deer",
+    "link": "https://www.vtstateparks.com/parks/big-deer",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Bomoseen",
+    "link": "https://www.vtstateparks.com/parks/bomoseen",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Boulder Beach",
+    "link": "https://www.vtstateparks.com/parks/boulder-beach",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Branbury",
+    "link": "https://www.vtstateparks.com/parks/branbury",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Brighton",
+    "link": "https://www.vtstateparks.com/parks/brighton",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      35,
+      36,
+      38,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Burton Island",
+    "link": "https://www.vtstateparks.com/parks/burton-island",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      35,
+      36,
+      38,
+      42,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Button Bay",
+    "link": "https://www.vtstateparks.com/parks/button-bay",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Camel's Hump",
+    "link": "https://www.vtstateparks.com/parks/camels-hump",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      16,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Camp Plymouth",
+    "link": "https://www.vtstateparks.com/parks/camp-plymouth",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      38,
+      41,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Coolidge",
+    "link": "https://www.vtstateparks.com/parks/coolidge",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Crystal Lake",
+    "link": "https://www.vtstateparks.com/parks/crystal-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "D.A.R.",
+    "link": "https://www.vtstateparks.com/parks/dar",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Elmore",
+    "link": "https://www.vtstateparks.com/parks/elmore",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Emerald Lake",
+    "link": "https://www.vtstateparks.com/parks/emerald-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Fort Dummer",
+    "link": "https://www.vtstateparks.com/parks/fort-dummer",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Gifford Woods",
+    "link": "https://www.vtstateparks.com/parks/gifford-woods",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Grand Isle",
+    "link": "https://www.vtstateparks.com/parks/grand-isle",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Green River Reservoir",
+    "link": "https://www.vtstateparks.com/parks/green-river-reservoir",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Groton Nature Center",
+    "link": "https://www.vtstateparks.com/parks/groton-nature-center",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Half Moon Pond",
+    "link": "https://www.vtstateparks.com/parks/half-moon-pond",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Jamaica",
+    "link": "https://www.vtstateparks.com/parks/jamaica",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      35,
+      37,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Kettle Pond",
+    "link": "https://www.vtstateparks.com/parks/kettle-pond",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Kill Kare",
+    "link": "https://www.vtstateparks.com/parks/kill-kare",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Kingsland Bay",
+    "link": "https://www.vtstateparks.com/parks/kingsland-bay",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$500"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Knight Island",
+    "link": "https://www.vtstateparks.com/parks/knight-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Knight Point",
+    "link": "https://www.vtstateparks.com/parks/knight-point",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      38,
+      39,
+      40,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Lake Carmi",
+    "link": "https://www.vtstateparks.com/parks/lake-carmi",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Lake Shaftsbury",
+    "link": "https://www.vtstateparks.com/parks/lake-shaftsbury",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Lake St. Catherine",
+    "link": "https://www.vtstateparks.com/parks/lake-st-catherine",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      42,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Little River",
+    "link": "https://www.vtstateparks.com/parks/little-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      21,
+      35,
+      36,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Lowell Lake",
+    "link": "https://www.vtstateparks.com/parks/lowell-lake",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Maidstone",
+    "link": "https://www.vtstateparks.com/parks/maidstone",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Molly's Falls Pond",
+    "link": "https://www.vtstateparks.com/parks/mollys-falls-pond",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Molly Stark",
+    "link": "https://www.vtstateparks.com/parks/molly-stark",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Mount Ascutney",
+    "link": "https://www.vtstateparks.com/parks/mount-ascutney",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Mount Philo",
+    "link": "https://www.vtstateparks.com/parks/mount-philo",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Muckross",
+    "link": "https://www.vtstateparks.com/parks/muckross",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "New Discovery",
+    "link": "https://www.vtstateparks.com/parks/new-discovery",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Niquette Bay",
+    "link": "https://www.vtstateparks.com/parks/niquette-bay",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "North Hero",
+    "link": "https://www.vtstateparks.com/parks/north-hero",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Quechee",
+    "link": "https://www.vtstateparks.com/parks/quechee",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Ricker Pond",
+    "link": "https://www.vtstateparks.com/parks/ricker-pond",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Sand Bar",
+    "link": "https://www.vtstateparks.com/parks/sand-bar",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      38,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Seyon Lodge",
+    "link": "https://www.vtstateparks.com/parks/seyon-lodge",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      30,
+      33,
+      34,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Silver Lake",
+    "link": "https://www.vtstateparks.com/parks/silver-lake",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Smugglers' Notch",
+    "link": "https://www.vtstateparks.com/parks/smugglers-notch",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Stillwater",
+    "link": "https://www.vtstateparks.com/parks/stillwater",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Stone Hut",
+    "link": "https://www.vtstateparks.com/parks/stone-hut",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Taconic Mountains Ramble",
+    "link": "https://www.vtstateparks.com/parks/taconic-mountains-ramble",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Thetford Hill",
+    "link": "https://www.vtstateparks.com/parks/thetford-hill",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      30,
+      33
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Townshend",
+    "link": "https://www.vtstateparks.com/parks/townshend",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Underhill",
+    "link": "https://www.vtstateparks.com/parks/underhill",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Waterbury Center",
+    "link": "https://www.vtstateparks.com/parks/waterbury-center",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Waterbury Reservoir Remote Sites",
+    "link": "https://www.vtstateparks.com/parks/waterbury-reservoir-remote-sites",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Wilgus",
+    "link": "https://www.vtstateparks.com/parks/wilgus",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Woodford",
+    "link": "https://www.vtstateparks.com/parks/woodford",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 46,
+    "name": "Woods Island",
+    "link": "https://www.vtstateparks.com/parks/woods-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  }
+]

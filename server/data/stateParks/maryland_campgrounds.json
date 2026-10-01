@@ -1,0 +1,182 @@
+[
+  {
+    "stateId": 21,
+    "name": "Bigrun",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/BigRun/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Cedarville",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/Cedarville/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Dansmountain",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/DansMountain/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Fortfrederick",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/FortFrederick/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Hartmiller",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/HartMiller/Camping.aspx",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Martinak",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/Martinak/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "New Germany State Park Campground",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/NewGermany/Cabins-and-Campsites.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Sassafras",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/Sassafras/Camping.aspx",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Smallwood",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/Smallwood/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Susquehanna",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/Susquehanna/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$2/vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Swallowfalls",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/SwallowFalls/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Washington",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/Washington/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wolfdenrun",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/WolfDenRun/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      24,
+      25,
+      34,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wyeisland",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/WyeIsland/Camping.aspx",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36
+    ],
+    "boundary": null
+  }
+]

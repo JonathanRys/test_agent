@@ -1,0 +1,212 @@
+[
+  {
+    "stateId": 50,
+    "name": "400",
+    "link": "https://dnr.wisconsin.gov/topic/parks/400",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Ahnapee",
+    "link": "https://dnr.wisconsin.gov/topic/parks/ahnapee",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Amnicon",
+    "link": "https://dnr.wisconsin.gov/topic/parks/amnicon",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Aztalan",
+    "link": "https://dnr.wisconsin.gov/topic/parks/aztalan",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Badger",
+    "link": "https://dnr.wisconsin.gov/topic/parks/badger",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Bearskin",
+    "link": "https://dnr.wisconsin.gov/topic/parks/bearskin",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Belmont",
+    "link": "https://dnr.wisconsin.gov/topic/parks/belmont",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Bigbay",
+    "link": "https://dnr.wisconsin.gov/topic/parks/bigbay",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Bigfoot",
+    "link": "https://dnr.wisconsin.gov/topic/parks/bigfoot",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Bluemound",
+    "link": "https://dnr.wisconsin.gov/topic/parks/bluemound",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Brunetisland",
+    "link": "https://dnr.wisconsin.gov/topic/parks/brunetisland",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Buckhorn",
+    "link": "https://dnr.wisconsin.gov/topic/parks/buckhorn",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Buffalo",
+    "link": "https://dnr.wisconsin.gov/topic/parks/buffalo",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Cadizsprings",
+    "link": "https://dnr.wisconsin.gov/topic/parks/cadizsprings",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Capcity",
+    "link": "https://dnr.wisconsin.gov/topic/parks/capcity",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Capsprings",
+    "link": "https://dnr.wisconsin.gov/topic/parks/capsprings",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Cattail",
+    "link": "https://dnr.wisconsin.gov/topic/parks/cattail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Chipmoraine",
+    "link": "https://dnr.wisconsin.gov/topic/parks/chipmoraine",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Chipriver",
+    "link": "https://dnr.wisconsin.gov/topic/parks/chipriver",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Copperculture",
+    "link": "https://dnr.wisconsin.gov/topic/parks/copperculture",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 50,
+    "name": "Copperfalls",
+    "link": "https://dnr.wisconsin.gov/topic/parks/copperfalls",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

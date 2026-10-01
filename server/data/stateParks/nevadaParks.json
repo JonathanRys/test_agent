@@ -1,0 +1,641 @@
+[
+  {
+    "stateId": 29,
+    "name": "Beaver Dam",
+    "link": "https://parks.nv.gov/parks/beaver-dam",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Berlin Ichthyosaur",
+    "link": "https://parks.nv.gov/parks/berlin-ichthyosaur",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Big Bend of the Colorado",
+    "link": "https://parks.nv.gov/parks/big-bend-of-the-colorado",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Cathedral Gorge",
+    "link": "https://parks.nv.gov/parks/cathedral-gorge",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Cave Lake",
+    "link": "https://parks.nv.gov/parks/cave-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      30,
+      33,
+      34,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Cave Rock",
+    "link": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-2",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Dayton",
+    "link": "https://parks.nv.gov/parks/dayton",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Echo Canyon",
+    "link": "https://parks.nv.gov/parks/echo-canyon",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      48,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Elgin Schoolhouse",
+    "link": "https://parks.nv.gov/parks/elgin-schoolhouse",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Fort Churchill",
+    "link": "https://parks.nv.gov/parks/fort-churchill",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      47,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Ice Age Fossils",
+    "link": "https://parks.nv.gov/parks/ice-age-fossils",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Kershaw-Ryan",
+    "link": "https://parks.nv.gov/parks/kershaw-ryan",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Lahontan",
+    "link": "https://parks.nv.gov/parks/lahontan",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      24,
+      25,
+      27,
+      36,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Mormon Station",
+    "link": "https://parks.nv.gov/parks/mormon-station",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Old Las Vegas Mormon Fort",
+    "link": "https://parks.nv.gov/parks/old-las-vegas-mormon-fort",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Rye Patch",
+    "link": "https://parks.nv.gov/parks/rye-patch",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      25,
+      27,
+      36,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Sand Harbor",
+    "link": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      38,
+      39,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "South Fork",
+    "link": "https://parks.nv.gov/parks/south-fork",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      30,
+      34,
+      41,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Spooner Lake",
+    "link": "https://parks.nv.gov/parks/spooner-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      33,
+      36,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Spring Mountain Ranch",
+    "link": "https://parks.nv.gov/parks/spring-mountain-ranch",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Spring Valley",
+    "link": "https://parks.nv.gov/parks/spring-valley",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      25,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Valley of Fire",
+    "link": "https://parks.nv.gov/parks/valley-of-fire",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Van Sickle",
+    "link": "https://parks.nv.gov/parks/lake-tahoe-nevada-state-park-3",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      21,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Walker River",
+    "link": "https://parks.nv.gov/parks/walker-river",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Ward Charcoal Ovens",
+    "link": "https://parks.nv.gov/parks/ward-charcoal-ovens",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      30,
+      33,
+      34,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Washoe Lake",
+    "link": "https://parks.nv.gov/parks/washoe-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      42,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Wild Horse",
+    "link": "https://parks.nv.gov/parks/wild-horse",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      30,
+      34,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 29,
+    "name": "Map View",
+    "link": "https://parks.nv.gov/parks/map",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      23,
+      30,
+      34,
+      36,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  }
+]

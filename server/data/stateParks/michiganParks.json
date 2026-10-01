@@ -1,0 +1,169 @@
+[
+  {
+    "stateId": 23,
+    "name": "State parks card game",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/state-parks-card-game",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Rules",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/rules",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per person"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      15,
+      17,
+      18,
+      19,
+      26,
+      27,
+      43,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Dark sky preserves",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/dark-sky-events",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Harvests and Haunts",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/harvest-and-haunts-events",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Bob Ross-inspired Happy Little 5K",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/happy-little-trees",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$36 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "View all programs & activities »",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/park-programs",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      49,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Make a donation",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/giving",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Photo ambassadors",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/ambassador",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "State park and harbor gift cards",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/gift-cards",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      34,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "EV charging stations in parks",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/ev-charging-stations",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 23,
+    "name": "Rentals, gear and guides",
+    "link": "https://www.michigan.gov/dnr/places/state-parks/rentals",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      23,
+      35,
+      36,
+      38
+    ],
+    "boundary": null
+  }
+]

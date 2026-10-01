@@ -1,0 +1,866 @@
+[
+  {
+    "stateId": 45,
+    "name": "Dead Horse Point",
+    "link": "https://stateparks.utah.gov/parks/dead-horse-point",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Bear Lake",
+    "link": "https://stateparks.utah.gov/parks/bear-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      35,
+      39,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "East Canyon",
+    "link": "https://stateparks.utah.gov/parks/east-canyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      34,
+      35,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Sand Hollow",
+    "link": "https://stateparks.utah.gov/parks/sand-hollow",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      35,
+      38,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Anasazi",
+    "link": "https://stateparks.utah.gov/parks/anasazi",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Camp Floyd",
+    "link": "https://stateparks.utah.gov/parks/camp-floyd",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Lost Creek",
+    "link": "https://stateparks.utah.gov/parks/lost-creek",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      34,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Millsite",
+    "link": "https://stateparks.utah.gov/parks/millsite",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      25,
+      33,
+      35,
+      43,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Coral Pink",
+    "link": "https://stateparks.utah.gov/parks/coral-pink",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Otter Creek",
+    "link": "https://stateparks.utah.gov/parks/otter-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      25,
+      48,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Edge of the Cedars",
+    "link": "https://stateparks.utah.gov/parks/edge-of-the-cedars",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Piute",
+    "link": "https://stateparks.utah.gov/parks/piute",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      25,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Utah Lake",
+    "link": "https://stateparks.utah.gov/parks/utah-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 per vehicle"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      38,
+      43,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Utahraptor",
+    "link": "https://stateparks.utah.gov/parks/utahraptor",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      23,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Palisade",
+    "link": "https://stateparks.utah.gov/parks/palisade",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      35,
+      38,
+      43,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Wasatch Mountain",
+    "link": "https://stateparks.utah.gov/parks/wasatch-mountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      25,
+      30,
+      33,
+      34,
+      41,
+      43,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Willard Bay",
+    "link": "https://stateparks.utah.gov/parks/willard-bay",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      35,
+      41,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Yuba",
+    "link": "https://stateparks.utah.gov/parks/yuba",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      35,
+      38,
+      41,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Antelope Island",
+    "link": "https://stateparks.utah.gov/parks/antelope-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      41,
+      48,
+      49,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Deer Creek",
+    "link": "https://stateparks.utah.gov/parks/deer-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      47,
+      48,
+      50,
+      54
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Echo",
+    "link": "https://stateparks.utah.gov/parks/echo",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      37,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Escalante Petrified Forest",
+    "link": "https://stateparks.utah.gov/parks/escalante-petrified-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Flight Park",
+    "link": "https://stateparks.utah.gov/parks/flight-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Starvation",
+    "link": "https://stateparks.utah.gov/parks/starvation",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      25,
+      35,
+      41,
+      42,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Fremont Indian",
+    "link": "https://stateparks.utah.gov/parks/fremont-indian",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Frontier Homestead",
+    "link": "https://stateparks.utah.gov/parks/frontier-homestead",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Goblin Valley",
+    "link": "https://stateparks.utah.gov/parks/goblin-valley",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      42,
+      43,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Goosenecks",
+    "link": "https://stateparks.utah.gov/parks/goosenecks",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Great Salt Lake",
+    "link": "https://stateparks.utah.gov/parks/great-salt-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$1.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      38,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Green River",
+    "link": "https://stateparks.utah.gov/parks/green-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      42,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Gunlock",
+    "link": "https://stateparks.utah.gov/parks/gunlock",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Historic Union Pacific Rail Trail",
+    "link": "https://stateparks.utah.gov/parks/historic-union-pacific-rail-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      30,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Huntington",
+    "link": "https://stateparks.utah.gov/parks/huntington",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$25.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Hyrum",
+    "link": "https://stateparks.utah.gov/parks/hyrum",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      25,
+      35,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Jordan River",
+    "link": "https://stateparks.utah.gov/parks/jordan-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      25,
+      26
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Jordanelle",
+    "link": "https://stateparks.utah.gov/parks/jordanelle",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      25,
+      33,
+      34,
+      35,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Kodachrome Basin",
+    "link": "https://stateparks.utah.gov/parks/kodachrome-basin",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Quail Creek",
+    "link": "https://stateparks.utah.gov/parks/quail-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Red Fleet",
+    "link": "https://stateparks.utah.gov/parks/red-fleet",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$40.00; $70.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Rockport",
+    "link": "https://stateparks.utah.gov/parks/rockport",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      34,
+      35,
+      36,
+      38,
+      41,
+      46,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Scofield",
+    "link": "https://stateparks.utah.gov/parks/scofield",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      34,
+      35,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Snow Canyon",
+    "link": "https://stateparks.utah.gov/parks/snow-canyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      19,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Steinaker",
+    "link": "https://stateparks.utah.gov/parks/steinaker",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      41,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Territorial Statehouse",
+    "link": "https://stateparks.utah.gov/parks/territorial-statehouse",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Heritage Park",
+    "link": "https://stateparks.utah.gov/parks/heritage-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Utah Field House",
+    "link": "https://stateparks.utah.gov/parks/utah-field-house",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Current Conditions",
+    "link": "https://stateparks.utah.gov/parks/current-conditions",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Tee Time",
+    "link": "https://stateparks.utah.gov/parks/tee-time",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Park Fees",
+    "link": "https://stateparks.utah.gov/parks/park-fees",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Bridal Veil Falls",
+    "link": "https://stateparks.utah.gov/parks/bridal-veil-falls",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Butch Cassidy",
+    "link": "https://stateparks.utah.gov/parks/butch-cassidy",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Danger Cave",
+    "link": "https://stateparks.utah.gov/parks/danger-cave",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 45,
+    "name": "Old Iron Town",
+    "link": "https://stateparks.utah.gov/parks/old-iron-town",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  }
+]

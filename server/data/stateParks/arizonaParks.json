@@ -1,0 +1,732 @@
+[
+  {
+    "stateId": 3,
+    "name": "Alamo Lake State Park",
+    "link": "https://azstateparks.com/alamo-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      19,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Buckskin Mtn State Park",
+    "link": "https://azstateparks.com/buckskin",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Catalina State Park",
+    "link": "https://azstateparks.com/catalina",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      16,
+      17,
+      18,
+      19,
+      25,
+      49,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Cattail Cove State Park",
+    "link": "https://azstateparks.com/cattail-cove",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      39,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Colorado River State Historic Park",
+    "link": "https://azstateparks.com/colorado-river",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$7.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Dankworth Pond State Park",
+    "link": "https://azstateparks.com/dankworth-pond",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      25,
+      35,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Dead Horse Ranch State Park",
+    "link": "https://azstateparks.com/dead-horse",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Fool Hollow Lake Recreation Area",
+    "link": "https://azstateparks.com/fool-hollow",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Fort Verde State Historic Park",
+    "link": "https://azstateparks.com/fort-verde",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Granite Mtn Hotshots Memorial State Park",
+    "link": "https://azstateparks.com/hotshots",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Homolovi State Park",
+    "link": "https://azstateparks.com/homolovi",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Jerome State Historic Park",
+    "link": "https://azstateparks.com/jerome",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Kartchner Caverns State Park",
+    "link": "https://azstateparks.com/kartchner",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Lake Havasu State Park",
+    "link": "https://azstateparks.com/lake-havasu",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      25,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Lost Dutchman State Park",
+    "link": "https://azstateparks.com/lost-dutchman",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      25,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Lyman Lake State Park",
+    "link": "https://azstateparks.com/lyman-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "McFarland State Historic Park",
+    "link": "https://azstateparks.com/mcfarland",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "18 and under",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Oracle State Park",
+    "link": "https://azstateparks.com/oracle",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      21,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Patagonia Lake State Park",
+    "link": "https://azstateparks.com/patagonia-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      25,
+      35,
+      36,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Picacho Peak State Park",
+    "link": "https://azstateparks.com/picacho",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      25,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Red Rock State Park",
+    "link": "https://azstateparks.com/red-rock",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      },
+      {
+        "ageRange": "Individual/walk-in",
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      25,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Riordan Mansion State Historic Park",
+    "link": "https://azstateparks.com/riordan-mansion",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$3.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "River Island State Park",
+    "link": "https://azstateparks.com/river-island",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Rockin' River Ranch State Park",
+    "link": "https://azstateparks.com/rockin-river",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      19,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Roper Lake State Park",
+    "link": "https://azstateparks.com/roper-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00 Per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "San Rafael State Natural Area",
+    "link": "https://azstateparks.com/san-rafael",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Slide Rock State Park",
+    "link": "https://azstateparks.com/slide-rock",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$30.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      25,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Sonoita Creek State Natural Area",
+    "link": "https://azstateparks.com/sonoita-creek",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per vehicle; $25"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Tombstone Courthouse State Historic Park",
+    "link": "https://azstateparks.com/tombstone",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Tonto Natural Bridge State Park",
+    "link": "https://azstateparks.com/tonto",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Tubac Presidio State Historic Park",
+    "link": "https://azstateparks.com/tubac",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$3.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Verde River Greenway State Natural Area",
+    "link": "https://azstateparks.com/verde-river",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 3,
+    "name": "Yuma Territorial Prison State Historic Park",
+    "link": "https://azstateparks.com/yuma-territorial",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "14+",
+        "fee": "$10.00"
+      },
+      {
+        "ageRange": "7-13",
+        "fee": "$7.00"
+      },
+      {
+        "ageRange": "0-6",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      25
+    ],
+    "boundary": null
+  }
+]

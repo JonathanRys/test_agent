@@ -1,0 +1,444 @@
+[
+  {
+    "stateId": 1,
+    "name": "Bladon Springs State Park",
+    "link": "https://www.alapark.com/parks/bladon-springs-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Blue Springs State Park",
+    "link": "https://www.alapark.com/parks/blue-springs-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "4-11",
+        "fee": "$3.00"
+      },
+      {
+        "ageRange": "12-61",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "62+",
+        "fee": "$3.00"
+      },
+      {
+        "ageRange": "3 and under",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Buck's Pocket State Park",
+    "link": "https://www.alapark.com/parks/bucks-pocket-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Cathedral Caverns State Park",
+    "link": "https://www.alapark.com/parks/cathedral-caverns-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Cheaha State Park",
+    "link": "https://www.alapark.com/parks/cheaha-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Chewacla State Park",
+    "link": "https://www.alapark.com/parks/chewacla-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Chickasaw State Park",
+    "link": "https://www.alapark.com/parks/chickasaw-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      49,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "DeSoto State Park",
+    "link": "https://www.alapark.com/parks/desoto-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      21,
+      35,
+      48,
+      50,
+      53,
+      54,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Lake Jackson RV Park at Florala",
+    "link": "https://www.alapark.com/parks/lake-jackson-rv-park-at-florala",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Frank Jackson State Park",
+    "link": "https://www.alapark.com/parks/frank-jackson-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Gulf State Park",
+    "link": "https://www.alapark.com/parks/gulf-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Joe Wheeler State Park",
+    "link": "https://www.alapark.com/parks/joe-wheeler-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      39,
+      42,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Lake Guntersville State Park",
+    "link": "https://www.alapark.com/parks/lake-guntersville-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      49,
+      50,
+      54
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Lake Lurleen State Park",
+    "link": "https://www.alapark.com/parks/lake-lurleen-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Lakepoint State Park",
+    "link": "https://www.alapark.com/parks/lakepoint-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      45,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Meaher State Park",
+    "link": "https://www.alapark.com/parks/meaher-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Monte Sano State Park",
+    "link": "https://www.alapark.com/parks/monte-sano-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "4-11",
+        "fee": "$2.00"
+      },
+      {
+        "ageRange": "12-61",
+        "fee": "$5.00"
+      },
+      {
+        "ageRange": "62+",
+        "fee": "$2.00"
+      },
+      {
+        "ageRange": "3 and under",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Oak Mountain State Park",
+    "link": "https://www.alapark.com/parks/oak-mountain-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      40,
+      41,
+      43,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Paul Grist State Park",
+    "link": "https://www.alapark.com/parks/paul-grist-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "6-12",
+        "fee": "$2"
+      },
+      {
+        "ageRange": "13-61",
+        "fee": "$3"
+      },
+      {
+        "ageRange": "62+",
+        "fee": "$2"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Rickwood Caverns State Park",
+    "link": "https://www.alapark.com/parks/rickwood-caverns-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "5-11",
+        "fee": "$2.00"
+      },
+      {
+        "ageRange": "12+",
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Roland Cooper State Park",
+    "link": "https://www.alapark.com/parks/roland-cooper-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 1,
+    "name": "Wind Creek State Park",
+    "link": "https://www.alapark.com/parks/wind-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      48,
+      49,
+      50,
+      54,
+      55
+    ],
+    "boundary": null
+  }
+]

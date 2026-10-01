@@ -1,0 +1,542 @@
+[
+  {
+    "stateId": 4,
+    "name": "Arkansas Museum of Natural Resources",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/arkansas-museum-of-natural-resources",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Arkansas Post Museum",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/arkansas-post-museum",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Blanchard Springs Caverns",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/blanchard-springs-caverns",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Bull Shoals-White River State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/bull-shoals-white-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Cane Creek State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/cane-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Conway Cemetery State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/conway-cemetery-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Cossatot River State Park-Natural Area",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/cossatot-river-state-park-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Crater of Diamonds State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/crater-of-diamonds-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Crowley's Ridge State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/crowleys-ridge-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Daisy State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/daisy-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Davidsonville Historic State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/davidsonville-historic-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "DeGray Lake Resort State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/degray-lake-resort-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Delta Heritage Trail State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/delta-heritage-trail-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Devil's Den State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/devils-den-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Hampson Archeological Museum State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/hampson-archeological-museum-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Herman Davis State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/herman-davis-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Historic Washington State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/historic-washington-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Hobbs State Park-Conservation Area",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/hobbs-state-park-conservation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Jacksonport State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/jacksonport-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Jenkins Ferry Battleground State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/jenkins-ferry-battleground-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Catherine State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-catherine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Charles State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-charles-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Chicot State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-chicot-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Dardanelle State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-dardanelle-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Fort Smith State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-fort-smith-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Frierson State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-frierson-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Ouachita State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-ouachita-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Poinsett State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-poinsett-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Sylvia Recreation Area",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lake-sylvia-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Logoly State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/logoly-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Louisiana Purchase State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/louisiana-purchase-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lower White River Museum State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/lower-white-river-museum-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mammoth Spring State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/mammoth-spring-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Marks' Mills Battleground State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/marks-mills-battleground-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Millwood State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/millwood-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mississippi River State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/mississippi-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Moro Bay State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/moro-bay-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mount Magazine State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/mount-magazine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mount Nebo State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/mount-nebo-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Ozark Folk Center State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/ozark-folk-center-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Parkin Archeological State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/parkin-archeological-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Petit Jean State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/petit-jean-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Pinnacle Mountain State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/pinnacle-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Plantation Agriculture Museum",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/plantation-agriculture-museum",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Plum Bayou Mounds Archeological State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/plum-bayou-mounds-archeological-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Poison Springs Battleground State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/poison-springs-battleground-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Powhatan Historic State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/powhatan-historic-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Prairie Grove Battlefield State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/prairie-grove-battlefield-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Queen Wilhelmina State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/queen-wilhelmina-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "South Arkansas Arboretum",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/south-arkansas-arboretum",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Village Creek State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/village-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "White Oak Lake State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/white-oak-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Withrow Springs State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/withrow-springs-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Woolly Hollow State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/woolly-hollow-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

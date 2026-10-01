@@ -1,0 +1,645 @@
+[
+  {
+    "stateId": 6,
+    "name": "Chatfield State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/chatfield-state-park/chatfield-state-park-camping-and-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Arkansas Headwaters Recreation Area Campground",
+    "link": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area/arkansas-headwaters-recreation-area-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Boyd Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/boyd-lake-state-park/boyd-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      38,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Cherry Creek State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/cherry-creek-state-park/cherry-creek-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Cheyenne Mountain State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/cheyenne-mountain-state-park/cheyenne-mountain-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      42,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Crawford State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/crawford-state-park/crawford-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Eleven Mile State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/eleven-mile-state-park/eleven-mile-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Elkhead Reservoir State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/elkhead-reservoir-state-park/elkhead-reservoir-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Golden Gate Canyon State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/golden-gate-canyon-state-park/golden-gate-canyon-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Highline Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/highline-lake-state-park/highline-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Jackson Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/jackson-lake-state-park/jackson-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "James M Robb Colorado River State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/james-m-robb-colorado-river-state-park/james-m-robb-colorado-river-state-park-camping",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "John Martin Reservoir State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/john-martin-reservoir-state-park/john-martin-reservoir-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lake Pueblo State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/lake-pueblo-state-park/lake-pueblo-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lathrop State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/lathrop-state-park/lathrop-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Mancos State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/mancos-state-park/mancos-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Mueller State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/mueller-state-park/mueller-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      30,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Navajo State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/navajo-state-park/navajo-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "North Sterling State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/north-sterling-state-park/north-sterling-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Paonia State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/paonia-state-park/paonia-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Pearl Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/pearl-lake-state-park/pearl-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Ridgway State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/ridgway-state-park/ridgway-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Rifle Falls State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/rifle-falls-state-park/rifle-falls-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Rifle Gap State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/rifle-gap-state-park/rifle-gap-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      38
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "St Vrain State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/st-vrain-state-park/st-vrain-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Stagecoach State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/stagecoach-state-park/stagecoach-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "State Forest State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/state-forest-state-park/state-forest-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      30,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Staunton State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/staunton-state-park/staunton-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      41
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Steamboat Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/steamboat-lake-state-park/steamboat-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      38,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Sylvan Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/sylvan-lake-state-park/sylvan-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Trinidad Lake State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/trinidad-lake-state-park/trinidad-lake-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Vega State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/vega-state-park/vega-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      34,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Yampa River State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/yampa-river-state-park/yampa-river-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lory State Park Campground",
+    "link": "https://cpw.state.co.us/state-parks/lory-state-park/lory-state-park-camping-lodging",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      55
+    ],
+    "boundary": null
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "stateId": 7,
+    "name": "American Legion State Forest",
+    "link": "https://ctparks.com/parks/american-legion-state-forest",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Black Rock State Park",
+    "link": "https://ctparks.com/parks/black-rock-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Cockaponset State Forest",
+    "link": "https://ctparks.com/parks/cockaponset-state-forest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      35,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Devil's Hopyard State Park",
+    "link": "https://ctparks.com/parks/devils-hopyard-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Gay City State Park",
+    "link": "https://ctparks.com/parks/gay-city-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      30,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Gillette Castle State Park",
+    "link": "https://ctparks.com/parks/gillette-castle-state-park",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": "6-12",
+        "fee": "$2"
+      },
+      {
+        "ageRange": "13+",
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Green Falls State Campground",
+    "link": "https://ctparks.com/parks/green-falls-state-campground",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      27,
+      34,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hammonasset Beach State Park",
+    "link": "https://ctparks.com/parks/hammonasset-beach-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hopeville Pond State Park",
+    "link": "https://ctparks.com/parks/hopeville-pond-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Housatonic Meadows State Park",
+    "link": "https://ctparks.com/parks/housatonic-meadows-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Housatonic State Forest",
+    "link": "https://ctparks.com/parks/housatonic-state-forest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hurd State Park",
+    "link": "https://ctparks.com/parks/hurd-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "James L. Goodwin State Forest",
+    "link": "https://ctparks.com/parks/james-l-goodwin-state-forest",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Kettletown State Park",
+    "link": "https://ctparks.com/parks/kettletown-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Lake Waramaug State Park",
+    "link": "https://ctparks.com/parks/lake-waramaug-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Macedonia Brook State Park",
+    "link": "https://ctparks.com/parks/macedonia-brook-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mashamoquet Brook State Park",
+    "link": "https://ctparks.com/parks/mashamoquet-brook-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mohawk State Park/Forest",
+    "link": "https://ctparks.com/parks/mohawk-state-parkforest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      29,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Naugatuck State Forest",
+    "link": "https://ctparks.com/parks/naugatuck-state-forest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      16,
+      21,
+      30,
+      34,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Nipmuck State Forest",
+    "link": "https://ctparks.com/parks/nipmuck-state-forest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Nye-Holman State Forest",
+    "link": "https://ctparks.com/parks/nye-holman-state-forest",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Pachaug State Forest",
+    "link": "https://ctparks.com/parks/pachaug-state-forest",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      27,
+      34,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Peoples State Forest",
+    "link": "https://ctparks.com/parks/peoples-state-forest",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      46,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Putnam Memorial State Park",
+    "link": "https://ctparks.com/parks/putnam-memorial-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Quaddick State Park",
+    "link": "https://ctparks.com/parks/quaddick-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "River Highlands State Park",
+    "link": "https://ctparks.com/parks/river-highlands-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Rocky Neck State Park",
+    "link": "https://ctparks.com/parks/rocky-neck-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Salt Rock State Forest",
+    "link": "https://ctparks.com/parks/salt-rock-state-forest",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Selden Neck State Park",
+    "link": "https://ctparks.com/parks/selden-neck-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Sleeping Giant State Park",
+    "link": "https://ctparks.com/parks/sleeping-giant-state-park",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  }
+]

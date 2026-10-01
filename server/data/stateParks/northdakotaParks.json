@@ -1,0 +1,207 @@
+[
+  {
+    "stateId": 35,
+    "name": "Fort Abraham Lincoln State Park",
+    "link": "https://www.parkrec.nd.gov/fort-abraham-lincoln-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Fort Ransom State Park",
+    "link": "https://www.parkrec.nd.gov/fort-ransom-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      30,
+      36,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Icelandic State Park",
+    "link": "https://www.parkrec.nd.gov/icelandic-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      30,
+      33,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Lake Sakakawea State Park",
+    "link": "https://www.parkrec.nd.gov/lake-sakakawea-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Lewis Clark State Park",
+    "link": "https://www.parkrec.nd.gov/lewis-clark-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      33,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Beaver Lake State Park",
+    "link": "https://www.parkrec.nd.gov/beaver-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Lake Metigoshe State Park",
+    "link": "https://www.parkrec.nd.gov/lake-metigoshe-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      30,
+      33,
+      34,
+      35,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Grahams Island State Park",
+    "link": "https://www.parkrec.nd.gov/grahams-island-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Fort Stevenson State Park",
+    "link": "https://www.parkrec.nd.gov/fort-stevenson-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Pembina Gorge State Park",
+    "link": "https://www.parkrec.nd.gov/pembina-gorge-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      34,
+      35,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Turtle River State Park",
+    "link": "https://www.parkrec.nd.gov/turtle-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Rough Rider State Park",
+    "link": "https://www.parkrec.nd.gov/rough-rider-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 35,
+    "name": "Cross Ranch State Park",
+    "link": "https://www.parkrec.nd.gov/cross-ranch-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  }
+]

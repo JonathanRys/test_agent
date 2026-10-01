@@ -1,0 +1,707 @@
+[
+  {
+    "stateId": 15,
+    "name": "Brookville Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/brookville-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      37,
+      38,
+      41,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Brown County State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/brown-county-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      45,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Cagles Mill Lake (Lieber and Cataract Falls SRA)",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/cagles-mill-lake-lieber-and-cataract-falls-sra",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Cecil M Harden Lake (Racoon SRA)",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/cecil-m-harden-lake-raccoon-sra",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      41,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Chain O' Lakes State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/chain-o-lakes-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      18,
+      30,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Charlestown State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/charlestown-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Clifty Falls State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/clifty-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      45,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Deam Lake State Recreation Area",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/deam-lake-sra",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      35,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Falls of Ohio State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/falls-of-the-ohio-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$9"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Fort Harrison State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/fort-harrison-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      19,
+      21,
+      30,
+      36,
+      43,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Hardy Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/hardy-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      41,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Harmonie State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/harmonie-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Indiana Dunes State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/indiana-dunes-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Interlake Off-Road State Recreation Area",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/interlake-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15 Per ORV"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      19,
+      21,
+      23,
+      25,
+      26,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Lincoln State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/lincoln-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "McCormick's Creek State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/mccormicks-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Mississinewa Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/mississinewa-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      43,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Monroe Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/monroe-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      39,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Mounds State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/mounds-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Ouabache State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/ouabache-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "O'Bannon Woods State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/obannon-woods-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Patoka Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/patoka-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      30,
+      35,
+      41,
+      42,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Pokagon State Park / Trine State Recreation Area",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/pokagon-state-parktrine-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      30,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Potato Creek State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/potato-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      30,
+      35,
+      36,
+      46,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Prophetstown State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/prophetstown-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Redbird Off-Road State Recreation Area",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/redbird-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15 Per ORV"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      19,
+      21,
+      23,
+      25,
+      26,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Salamonie Lake",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/salamonie-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      30,
+      34,
+      35,
+      36,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Shades State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/shades-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Shakamak State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/shakamak-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Spring Mill State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/spring-mill-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per person"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Starve Hollow State Recreation Area",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/starve-hollow-sra",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      35,
+      36,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Summit Lake State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/summit-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Turkey Run State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/turkey-run-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Tippecanoe River State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/tippecanoe-river-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Versailles State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/versailles-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Whitewater Memorial State Park",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/whitewater-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      36,
+      37,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 15,
+    "name": "Alerts",
+    "link": "https://www.in.gov/dnr/state-parks/parks-lakes/advisories-and-closings",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      37,
+      48,
+      55
+    ],
+    "boundary": null
+  }
+]

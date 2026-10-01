@@ -1,0 +1,478 @@
+[
+  {
+    "stateId": 25,
+    "name": "Roosevelt State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/roosevelt-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      21,
+      35,
+      42,
+      45,
+      46,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Jp Coleman State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/jp-coleman-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      39,
+      43,
+      44,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Wall Doxey State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/wall-doxey-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      42,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Tishomingo State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/tishomingo-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      17,
+      18,
+      35,
+      36,
+      42,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Tombigbee State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/tombigbee-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      21,
+      35,
+      42,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "John W Kyle State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/john-w-kyle-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Trace State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/trace-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      23,
+      25,
+      35,
+      42,
+      43,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "George P Cossar State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/george-p-cossar-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      42,
+      43,
+      44,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Hugh White State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/hugh-white-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      42,
+      43,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Lake Lowndes State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/lake-lowndes-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      21,
+      35,
+      42,
+      45,
+      46,
+      47,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Legion State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/legion-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      42,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Golden Memorial State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/golden-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Lefleurs Bluff State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/lefleurs-bluff-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      38,
+      42,
+      43,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Clarkco State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/clarkco-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19,
+      21,
+      35,
+      40,
+      42,
+      45,
+      46,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Leroy Percy State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/leroy-percy-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      42,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Bob M Dearing Natchez State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/bob-m-dearing-natchez-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      42,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Percy Quin State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/percy-quin-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      45,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Paul B Johnson State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/paul-b-johnson-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      42,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Lake Lincoln State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/lake-lincoln-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Clark Creek State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/clark-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 25,
+    "name": "Buccaneer State Park",
+    "link": "https://www.mdwfp.com/parks-destinations/park/buccaneer-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      46,
+      48,
+      50
+    ],
+    "boundary": null
+  }
+]

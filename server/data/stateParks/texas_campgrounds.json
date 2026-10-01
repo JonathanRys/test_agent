@@ -1,0 +1,1326 @@
+[
+  {
+    "stateId": 44,
+    "name": "Abilene Campground",
+    "link": "https://tpwd.texas.gov/state-parks/abilene/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Atlanta Campground",
+    "link": "https://tpwd.texas.gov/state-parks/atlanta/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Balmorhea Campground",
+    "link": "https://tpwd.texas.gov/state-parks/balmorhea/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Barton Campground",
+    "link": "https://tpwd.texas.gov/state-parks/big-bend-ranch/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bastrop Campground",
+    "link": "https://tpwd.texas.gov/state-parks/bastrop/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bentsen-Rio Campground",
+    "link": "https://tpwd.texas.gov/state-parks/bentsen-rio-grande-valley/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Blanco Campground",
+    "link": "https://tpwd.texas.gov/state-parks/blanco/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bonham Campground",
+    "link": "https://tpwd.texas.gov/state-parks/bonham/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$85"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Brazos Campground",
+    "link": "https://tpwd.texas.gov/state-parks/brazos-bend/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Buescher Campground",
+    "link": "https://tpwd.texas.gov/state-parks/buescher/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Caddo Campground",
+    "link": "https://tpwd.texas.gov/state-parks/caddo-lake/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Caprock Canyons State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/caprock-canyons/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cedar Campground",
+    "link": "https://tpwd.texas.gov/state-parks/cedar-hill/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Choke Campground",
+    "link": "https://tpwd.texas.gov/state-parks/choke-canyon/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cleburne Campground",
+    "link": "https://tpwd.texas.gov/state-parks/cleburne/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$20"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cooper Campground",
+    "link": "https://tpwd.texas.gov/state-parks/cooper-lake/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Copper Campground",
+    "link": "https://tpwd.texas.gov/state-parks/copper-breaks/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Daingerfield Campground",
+    "link": "https://tpwd.texas.gov/state-parks/daingerfield/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Davis Campground",
+    "link": "https://tpwd.texas.gov/state-parks/davis-mountains/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "paddler camps",
+    "link": "https://tpwd.texas.gov/state-parks/devils-river/fees-facilities/paddle-in-campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 Per Person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Devils Campground",
+    "link": "https://tpwd.texas.gov/state-parks/devils-river/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Dinosaur Campground",
+    "link": "https://tpwd.texas.gov/state-parks/dinosaur-valley/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "camp­sites",
+    "link": "https://tpwd.texas.gov/state-parks/eisenhower/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Enchanted Campground",
+    "link": "https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Falcon Campground",
+    "link": "https://tpwd.texas.gov/state-parks/falcon/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Campground",
+    "link": "https://tpwd.texas.gov/state-parks/fort-boggy/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Campground",
+    "link": "https://tpwd.texas.gov/state-parks/fort-parker/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Richardson State Park, Historic Site &... Campground",
+    "link": "https://tpwd.texas.gov/state-parks/fort-richardson/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Franklin Campground",
+    "link": "https://tpwd.texas.gov/state-parks/franklin-mountains/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Galveston Campground",
+    "link": "https://tpwd.texas.gov/state-parks/galveston-island/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Garner Campground",
+    "link": "https://tpwd.texas.gov/state-parks/garner/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Goliad State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/goliad/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Goose Campground",
+    "link": "https://tpwd.texas.gov/state-parks/goose-island/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "walk-in tent camp­sites",
+    "link": "https://tpwd.texas.gov/state-parks/government-canyon/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Guadalupe Campground",
+    "link": "https://tpwd.texas.gov/state-parks/guadalupe-river/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Hill Campground",
+    "link": "https://tpwd.texas.gov/state-parks/hill-country/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Hueco Tanks State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/hueco-tanks/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Huntsville Campground",
+    "link": "https://tpwd.texas.gov/state-parks/huntsville/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Inks Campground",
+    "link": "https://tpwd.texas.gov/state-parks/inks-lake/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "camp­sites",
+    "link": "https://tpwd.texas.gov/state-parks/kickapoo-cavern/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-arrowhead/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-bob-sandlin/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-brownwood/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-casa-blanca/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-colorado-city/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-corpus-christi/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-livingston/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Mineral Wells State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-mineral-wells/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Somerville State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-somerville/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-tawakoni/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lake-whitney/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lockhart Campground",
+    "link": "https://tpwd.texas.gov/state-parks/lockhart/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Martin Campground",
+    "link": "https://tpwd.texas.gov/state-parks/martin-creek-lake/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Martin Dies, Campground",
+    "link": "https://tpwd.texas.gov/state-parks/martin-dies-jr/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "McKinney Campground",
+    "link": "https://tpwd.texas.gov/state-parks/mckinney-falls/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Meridian Campground",
+    "link": "https://tpwd.texas.gov/state-parks/meridian/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mission Campground",
+    "link": "https://tpwd.texas.gov/state-parks/mission-tejas/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Monahans Campground",
+    "link": "https://tpwd.texas.gov/state-parks/monahans-sandhills/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mother Campground",
+    "link": "https://tpwd.texas.gov/state-parks/mother-neff/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mustang Campground",
+    "link": "https://tpwd.texas.gov/state-parks/mustang-island/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "19 tent sites or 17 RV sites",
+    "link": "https://tpwd.texas.gov/state-parks/palmetto/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Palo Campground",
+    "link": "https://tpwd.texas.gov/state-parks/palo-duro-canyon/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Palo Campground",
+    "link": "https://tpwd.texas.gov/state-parks/palo-pinto-mountains/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Pedernales Campground",
+    "link": "https://tpwd.texas.gov/state-parks/pedernales-falls/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "primitive site",
+    "link": "https://tpwd.texas.gov/state-parks/pedernales-falls/fees-facilities/campsites/primitive-area-campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Possum Campground",
+    "link": "https://tpwd.texas.gov/state-parks/possum-kingdom/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Purtis Campground",
+    "link": "https://tpwd.texas.gov/state-parks/purtis-creek/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Ray Campground",
+    "link": "https://tpwd.texas.gov/state-parks/ray-roberts-lake/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "San Campground",
+    "link": "https://tpwd.texas.gov/state-parks/san-angelo/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Sea Campground",
+    "link": "https://tpwd.texas.gov/state-parks/sea-rim/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Seminole Canyon State Park & Campground",
+    "link": "https://tpwd.texas.gov/state-parks/seminole-canyon/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "South Campground",
+    "link": "https://tpwd.texas.gov/state-parks/south-llano-river/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Stephen Campground",
+    "link": "https://tpwd.texas.gov/state-parks/stephen-f-austin/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Tyler Campground",
+    "link": "https://tpwd.texas.gov/state-parks/tyler/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Village Campground",
+    "link": "https://tpwd.texas.gov/state-parks/village-creek/fees-facilities/campsites",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  }
+]

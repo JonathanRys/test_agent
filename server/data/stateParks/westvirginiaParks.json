@@ -1,0 +1,630 @@
+[
+  {
+    "stateId": 49,
+    "name": "Fairfax Stone State Park",
+    "link": "https://wvstateparks.com/parks/fairfax-stone-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Carnifex Ferry Battlefield State Park",
+    "link": "https://wvstateparks.com/parks/carnifex-ferry-battlefield-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Elk River Trail",
+    "link": "https://wvstateparks.com/parks/elk-river-trail",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Cathedral State Park",
+    "link": "https://wvstateparks.com/parks/cathedral-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "North Bend Rail Trail",
+    "link": "https://wvstateparks.com/parks/north-bend-rail-trail",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Cedar Creek State Park",
+    "link": "https://wvstateparks.com/parks/cedar-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Pinnacle Rock State Park",
+    "link": "https://wvstateparks.com/parks/pinnacle-rock-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Little Beaver State Park",
+    "link": "https://wvstateparks.com/parks/little-beaver-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Tu Endie Wei State Park",
+    "link": "https://wvstateparks.com/parks/tu-endie-wei-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Droop Mountain Battlefield State Park",
+    "link": "https://wvstateparks.com/parks/droop-mountain-battlefield-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Tomlinson Run State Park",
+    "link": "https://wvstateparks.com/parks/tomlinson-run-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Valley Falls State Park",
+    "link": "https://wvstateparks.com/parks/valley-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Watters Smith Memorial State Park",
+    "link": "https://wvstateparks.com/parks/watters-smith-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Moncove Lake State Park",
+    "link": "https://wvstateparks.com/parks/moncove-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Berkeley Springs State Park",
+    "link": "https://wvstateparks.com/parks/berkeley-springs-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Cass Scenic Railroad State Park",
+    "link": "https://wvstateparks.com/parks/cass-scenic-railroad-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Cacapon Resort State Park",
+    "link": "https://wvstateparks.com/parks/cacapon-resort-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Blackwater Falls State Park",
+    "link": "https://wvstateparks.com/parks/blackwater-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Greenbrier State Forest",
+    "link": "https://wvstateparks.com/parks/greenbrier-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Watoga State Park",
+    "link": "https://wvstateparks.com/parks/watoga-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Camp Creek State Park and Forest",
+    "link": "https://wvstateparks.com/parks/camp-creek-state-park-and-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Bluestone State Park",
+    "link": "https://wvstateparks.com/parks/bluestone-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Stonewall Resort State Park",
+    "link": "https://wvstateparks.com/parks/stonewall-resort-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Lost River State Park",
+    "link": "https://wvstateparks.com/parks/lost-river-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Hawks Nest State Park",
+    "link": "https://wvstateparks.com/parks/hawks-nest-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Summersville Lake State Park",
+    "link": "https://wvstateparks.com/parks/summersville-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Seneca State Forest",
+    "link": "https://wvstateparks.com/parks/seneca-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Audra State Park",
+    "link": "https://wvstateparks.com/parks/audra-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Greenbrier River Trail",
+    "link": "https://wvstateparks.com/parks/greenbrier-river-trail",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "North Bend State Park",
+    "link": "https://wvstateparks.com/parks/north-bend-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Twin Falls Resort State Park",
+    "link": "https://wvstateparks.com/parks/twin-falls-resort-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Kanawha State Forest",
+    "link": "https://wvstateparks.com/parks/kanawha-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Chief Logan State Park",
+    "link": "https://wvstateparks.com/parks/chief-logan-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Beech Fork State Park",
+    "link": "https://wvstateparks.com/parks/beech-fork-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Canaan Valley Resort State Park",
+    "link": "https://wvstateparks.com/parks/canaan-valley-resort-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Tygart Lake State Park",
+    "link": "https://wvstateparks.com/parks/tygart-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Cabwaylingo State Forest",
+    "link": "https://wvstateparks.com/parks/cabwaylingo-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Calvin Price State Forest",
+    "link": "https://wvstateparks.com/parks/calvin-price-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Kumbrabow State Forest",
+    "link": "https://wvstateparks.com/parks/kumbrabow-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Panther State Forest",
+    "link": "https://wvstateparks.com/parks/panther-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Holly River State Park",
+    "link": "https://wvstateparks.com/parks/holly-river-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Beartown State Park",
+    "link": "https://wvstateparks.com/parks/beartown-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Blennerhassett Island Historical State Park",
+    "link": "https://wvstateparks.com/parks/blennerhassett-island-historical-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Pricketts Fort State Park",
+    "link": "https://wvstateparks.com/parks/pricketts-fort-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Pipestem State Park",
+    "link": "https://wvstateparks.com/parks/pipestem-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37,
+      43,
+      54
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Babcock State Park",
+    "link": "https://wvstateparks.com/parks/babcock-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 49,
+    "name": "Coopers Rock State Forest",
+    "link": "https://wvstateparks.com/parks/coopers-rock-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37
+    ],
+    "boundary": null
+  }
+]

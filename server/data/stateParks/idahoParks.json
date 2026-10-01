@@ -1,0 +1,282 @@
+[
+  {
+    "stateId": 13,
+    "name": "Henrys Lake State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/henrys-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Winchester Lake State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/winchester-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Coeur Dalenes Old Mission State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/coeur-dalenes-old-mission-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Mccroskey State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/mccroskey-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Lake Walcott State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/lake-walcott-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Farragut State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/farragut-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Massacre Rocks State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/massacre-rocks-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Coeur Dalene Parkway",
+    "link": "https://parksandrecreation.idaho.gov/state-park/coeur-dalene-parkway",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Harriman State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/harriman-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Ponderosa State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/ponderosa-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Dworshak State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/dworshak-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Bruneau Dunes State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/bruneau-dunes-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Heyburn State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/heyburn-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Lake Cascade State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/lake-cascade-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Three Island Crossing State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/three-island-crossing-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Thousand Springs State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/thousand-springs-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Trail of the Coeur Dalenes",
+    "link": "https://parksandrecreation.idaho.gov/state-park/trail-of-the-coeur-dalenes",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Hells Gate State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/hells-gate-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Bear Lake State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/bear-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Land of the Yankee Fork State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/land-of-the-yankee-fork-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Round Lake State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/round-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Priest Lake State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/priest-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Castle Rocks State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/castle-rocks-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "City of Rocks National Reserve",
+    "link": "https://parksandrecreation.idaho.gov/state-park/city-of-rocks-national-reserve",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Twin Peaks Ranch State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/twin-peaks-ranch-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Ashton to Tetonia Trail",
+    "link": "https://parksandrecreation.idaho.gov/state-park/ashton-to-tetonia-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Eagle Island State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/eagle-island-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 13,
+    "name": "Lucky Peak State Park",
+    "link": "https://parksandrecreation.idaho.gov/state-park/lucky-peak-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

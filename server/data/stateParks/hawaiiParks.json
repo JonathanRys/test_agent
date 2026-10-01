@@ -1,0 +1,860 @@
+[
+  {
+    "stateId": 12,
+    "name": "ʻAkaka Falls State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/akaka-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Hāpuna Beach State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hapuna-beach-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Huliheʻe Palace",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/hulihee-palace",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kalōpā State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kalopa-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per Night"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kealakekua Bay State Historical Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kealakekua-bay-state-historical-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kekaha Kai (Kona Coast) State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kekaha-kai-kona-coast-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kīholo State Park Reserve",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kiholo-state-park-reserve",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per Night; $30 Per Night"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kohala Historical Sites State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/kohala-historical-sites-state-monument",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Lapakahi State Historical Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lapakahi-state-historical-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Lava Tree State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/lava-tree-state-monument",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "MacKenzie State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/mackenzie-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Manukā State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/manuka-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Wailoa River State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailoa-river-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$30/day"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Wailuku River State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/hawaii/wailuku-river-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Ahukini State Recreational Pier",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/ahukini-state-recreational-pier",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Hāʻena State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kōkeʻe State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/kokee-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Nāpali Coast State Wilderness Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/napali-coast-state-wilderness-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Pāʻulaʻula State Historic Site",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/paʻulaʻula-state-historic-site",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Polihale State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/polihale-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      24,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Wailua River State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/wailua-river-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Waimea Canyon State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Waimea State Recreational Pier",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-state-recreational-pier",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Halekiʻi-Pihana Heiau State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/halekii-pihana-heiau-state-monument",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "ʻĪao Valley State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/iao-valley-state-monument",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kaumahina State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/kaumahina-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Mākena State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/makena-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Polipoli Spring State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/polipoli-spring-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Puaʻa Kaʻa State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/puaa-kaa-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Waiʻānapanapa State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Wailua Valley State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/maui/wailua-valley-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Ahupuaʻa ʻO Kahana State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/ahupuaa-o-kahana-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      17,
+      18,
+      23,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "ʻAiea Bay State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/aiea-bay-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Diamond Head State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/diamond-head-state-monument",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Heʻeia State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/heeia-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "ʻIolani Palace State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/iolani-palace-state-monument",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Ka‘ena Point State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaena-point-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      24,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Kaiwi State Scenic Shoreline",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/kaiwi-state-scenic-shoreline",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Keaīwa Heiau State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/keaiwa-heiau-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Ke’ehi Lagoon Memorial State Park",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/keehi-lagoon-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Lāʻie Point State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/laie-point-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Mālaekahana State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/malaekahana-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per Night"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Nuʻuanu Pali State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/nuuanu-pali-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7.00 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Puʻu O Mahuka Heiau State Historic Site",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-o-mahuka-heiau-state-historic-site",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Puʻu ʻUalakaʻa State Wayside",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/puu-ualakaa-state-wayside",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7.00 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Queen Emma Summer Palace",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/queen-emma-summer-palace",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Royal Mausoleum State Monument",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/royal-mausoleum-state-monument",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Sand Island State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/sand-island-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$20 Per Night; $30 Per Night"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      25,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Ulupō Heiau State Historic Site",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/ulupo-heiau-state-historic-site",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Waʻahila Ridge State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/waahila-ridge-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 12,
+    "name": "Wahiawā Freshwater State Recreation Area",
+    "link": "https://dlnr.hawaii.gov/dsp/parks/oahu/wahiawa-freshwater-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      42,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  }
+]

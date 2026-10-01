@@ -1,0 +1,1176 @@
+[
+  {
+    "stateId": 11,
+    "name": "A.H. Stephens",
+    "link": "https://gastateparks.org/AHStephens",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Black Rock Mountain",
+    "link": "https://gastateparks.org/BlackRockMountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Chattahoochee Bend",
+    "link": "https://gastateparks.org/ChattahoocheeBend",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      46,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Cloudland Canyon",
+    "link": "https://gastateparks.org/CloudlandCanyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      42,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Crooked River",
+    "link": "https://gastateparks.org/CrookedRiver",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      43,
+      44,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Dames Ferry Campground",
+    "link": "https://gastateparks.org/DamesFerry",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Don Carter",
+    "link": "https://gastateparks.org/DonCarter",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      43,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Elijah Clark",
+    "link": "https://gastateparks.org/ElijahClark",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "F.D. Roosevelt",
+    "link": "https://gastateparks.org/FDRoosevelt",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Florence Marina",
+    "link": "https://gastateparks.org/FlorenceMarina",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      44,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort McAllister",
+    "link": "https://gastateparks.org/FortMcAllister",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Mountain",
+    "link": "https://gastateparks.org/FortMountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      35,
+      36,
+      38,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Yargo",
+    "link": "https://gastateparks.org/FortYargo",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      40,
+      42,
+      43,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "General Coffee",
+    "link": "https://gastateparks.org/GeneralCoffee",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      43,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "George L. Smith",
+    "link": "https://gastateparks.org/GeorgeLSmith",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      43,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "George T. Bagby",
+    "link": "https://gastateparks.org/GeorgeTBagby",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      40,
+      43,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hamburg",
+    "link": "https://gastateparks.org/Hamburg",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hard Labor Creek",
+    "link": "https://gastateparks.org/HardLaborCreek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      22,
+      23,
+      43,
+      44,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "High Falls",
+    "link": "https://gastateparks.org/HighFalls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Indian Springs",
+    "link": "https://gastateparks.org/IndianSprings",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      44,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Jack Hill",
+    "link": "https://gastateparks.org/JackHill",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      43,
+      44,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "James H. Floyd",
+    "link": "https://gastateparks.org/JamesHFloyd",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Kolomoki Mounds",
+    "link": "https://gastateparks.org/KolomokiMounds",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Laura S. Walker",
+    "link": "https://gastateparks.org/LauraSWalker",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      38,
+      43,
+      47,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Magnolia Springs",
+    "link": "https://gastateparks.org/MagnoliaSprings",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      41,
+      43,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Mistletoe",
+    "link": "https://gastateparks.org/Mistletoe",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      36,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Moccasin Creek",
+    "link": "https://gastateparks.org/MoccasinCreek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      35,
+      36,
+      38,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Okefenokee",
+    "link": "https://gastateparks.org/Okefenokee",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Panola Mountain",
+    "link": "https://gastateparks.org/PanolaMountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      41,
+      43,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Providence Canyon",
+    "link": "https://gastateparks.org/ProvidenceCanyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Red Top Mountain",
+    "link": "https://gastateparks.org/RedTopMountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      40,
+      41,
+      45,
+      47,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Reed Bingham",
+    "link": "https://gastateparks.org/ReedBingham",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      44,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Reynold's Mansion on Sapelo Island",
+    "link": "https://gastateparks.org/ReynoldsMansion",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$285 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      42,
+      45,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Richard B. Russell",
+    "link": "https://gastateparks.org/RichardBRussell",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      42,
+      43,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Seminole",
+    "link": "https://gastateparks.org/Seminole",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      44,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Skidaway Island",
+    "link": "https://gastateparks.org/SkidawayIsland",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      49,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Smithgall Woods",
+    "link": "https://gastateparks.org/SmithgallWoods",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      41,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Suwannee River Eco-Lodge",
+    "link": "https://gastateparks.org/SuwanneeRiverEcoLodge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35,
+      36,
+      43,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Sweetwater Creek",
+    "link": "https://gastateparks.org/SweetwaterCreek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Tallulah Gorge",
+    "link": "https://gastateparks.org/TallulahGorge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      14,
+      17,
+      18,
+      19,
+      21,
+      35,
+      37,
+      45,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Tugaloo",
+    "link": "https://gastateparks.org/Tugaloo",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      43,
+      44,
+      45,
+      47,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Victoria Bryant",
+    "link": "https://gastateparks.org/VictoriaBryant",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Vogel",
+    "link": "https://gastateparks.org/Vogel",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Watson Mill Bridge",
+    "link": "https://gastateparks.org/WatsonMillBridge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      43,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Chief Vann House",
+    "link": "https://gastateparks.org/ChiefVannHouse",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Dahlonega Gold Museum",
+    "link": "https://gastateparks.org/DahlonegaGoldMuseum",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Etowah Indian Mounds",
+    "link": "https://gastateparks.org/EtowahIndianMounds",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort King George",
+    "link": "https://gastateparks.org/FortKingGeorge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Morris",
+    "link": "https://gastateparks.org/FortMorris",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hardman Farm",
+    "link": "https://gastateparks.org/HardmanFarm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hofwyl-Broadfield Plantation",
+    "link": "https://gastateparks.org/HofwylBroadfieldPlantation",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Jarrell Plantation",
+    "link": "https://gastateparks.org/JarrellPlantation",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "New Echota",
+    "link": "https://gastateparks.org/NewEchota",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Pickett's Mill Battlefield",
+    "link": "https://gastateparks.org/PickettsMillBattlefield",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Roosevelt's Little White House",
+    "link": "https://gastateparks.org/LittleWhiteHouse",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Traveler's Rest",
+    "link": "https://gastateparks.org/TravelersRest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Wormsloe",
+    "link": "https://gastateparks.org/Wormsloe",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Allatoona Pass Battlefield",
+    "link": "https://gastateparks.org/AllatoonaPassBattlefield",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Griswoldville Battlefield",
+    "link": "https://gastateparks.org/GriswoldvilleBattlefield",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hart (Now Hartwell Lakeside Park)",
+    "link": "https://gastateparks.org/Hart",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Jefferson Davis Memorial",
+    "link": "https://gastateparks.org/JeffersonDavisMemorial",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Lapham Patterson House",
+    "link": "https://gastateparks.org/LaphamPattersonHouse",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Robert Toombs House",
+    "link": "https://gastateparks.org/RobertToombsHouse",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Standing Boy Creek",
+    "link": "https://gastateparks.org/StandingBoyCreek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      21,
+      41,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Sylvania Historic Welcome Center",
+    "link": "https://gastateparks.org/Sylvania",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Plains Visitors Center",
+    "link": "https://gastateparks.org/Plains",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Hike Inn",
+    "link": "https://gastateparks.org/HikeInn",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "SAM Shortline Excursion Train",
+    "link": "https://gastateparks.org/SAMShortline",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Unicoi State Park & Lodge",
+    "link": "https://gastateparks.org/Unicoi",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Georgia Veterans State Park & Resort",
+    "link": "https://gastateparks.org/GeorgiaVeterans",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Amicalola Falls State Park & Lodge",
+    "link": "https://gastateparks.org/AmicalolaFalls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Little Ocmulgee State Park & Lodge",
+    "link": "https://gastateparks.org/LittleOcmulgee",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

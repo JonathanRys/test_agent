@@ -1,0 +1,1057 @@
+[
+  {
+    "stateId": 7,
+    "name": "Air Line State Park Trail",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/air-line-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Auerfarm State Park, Bloomfield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/auerfarm-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Beckley Furnace State Park, North Canaan",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/beckley-furnace-industrial-monument",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Bennett's Ponds State Park, Ridgefield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/bennetts-pond-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Bigelow Hollow State Park, Union",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/bigelow-hollow-state-park-nipmuck-state-forest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      30,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Black Rock State Park, Watertown",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/black-rock-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Bluff Point State Park, Groton",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/bluff-point-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Burr Pond State Park, Torrington",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/burr-pond-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "C.P. Huntington State Park, Redding/Bethel/Newtown",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/collis-p-huntington-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Camp Columbia State Park, Morris",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/camp-columbia-state-park-forest",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Chatfield Hollow State Park, Killingworth",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/chatfield-hollow-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Connecticut Valley Railroad State Park, Essex",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/connecticut-valley-railroad-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Day Pond State Park, Colchester",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/day-pond-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Dennis Hill State Park, Norfolk",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/dennis-hill-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Devil's Hopyard State Park, East Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/devils-hopyard-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Dinosaur State Park, Rocky Hill",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/dinosaur-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "6-12",
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Eagle Landing State Park, Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/eagle-landing-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Farm River State Park, East Haven",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/farm-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Farmington Canal Greenway State Park, Cheshire/Hamden",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/farmington-canal-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Fort Griswold State Park, Groton",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/fort-griswold-battlefield-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Fort Trumbull State Park, New London",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/fort-trumbull-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": "6-12",
+        "fee": "$2"
+      },
+      {
+        "ageRange": "13+",
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Gardner Lake State Park, Salem",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/gardner-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Gay City State Park, Hebron",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/gay-city-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      30,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "George Dudley Seymour State Park, Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/george-dudley-seymour-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Gillette Castle State Park, East Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/gillette-castle-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "6-12",
+        "fee": "$2"
+      },
+      {
+        "ageRange": "13+",
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Haddam Meadows State Park, Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/haddam-meadows-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Haley Farm State Park, Groton",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/haley-farm-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hammonasset Beach State Park, Madison",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/hammonasset-beach-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Harkness Memorial State Park, Waterford",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/harkness-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Haystack Mountain State Park, Norfolk",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/haystack-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hop River State Park, Multi-Town",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/hop-river-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hopeville Pond State Park, Griswold",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/hopeville-pond-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Housatonic Meadows State Park, Sharon",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/housatonic-meadows-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Hurd State Park, East Hampton",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/hurd-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Indian Well State Park, Shelton",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/indian-well-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "J.A. Minetto State Park, Torrington",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/john-a-minetto-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Kent Falls State Park, Kent",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/kent-falls-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Kettletown State Park, Southbury",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/kettletown-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Lake Waramaug State Park, Kent",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/lake-waramaug-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Larkin State Park Trail, Southbury/Naugatuck/Oxford/Middlebury",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/larkin-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      30
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Lovers Leap State Park, New Milford",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/lovers-leap-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Macedonia Brook State Park, Kent",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/macedonia-brook-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Machimoodus State Park, East Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/machimoodus-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mansfield Hollow State Park, Mansfield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/mansfield-hollow-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mashamoquet State Park, Pomfret",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/mashamoquet-brook-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Millers Pond State Park, Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/millers-pond-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mooween State Park, Lebanon",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/mooween-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Mount Tom State Park, Litchfield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/mount-tom-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Old Furnace State Park, Killingly",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/old-furnace-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Osbornedale State Park, Derby",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/osbornedale-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Penwood State Park, Bloomfield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/penwood-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Putnam Memorial State Park, Redding",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/putnam-memorial-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Quaddick State Park, Thompson",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/quaddick-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Quinnipiac River State Park, North Haven",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/quinnipiac-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "River Highlands State Park, Cromwell",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/river-highlands-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Rocky Neck State Park, East Lyme",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/rocky-neck-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Selden Neck State Park, Lyme",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/selden-neck-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Sherwood Island State Park, Westport",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/sherwood-island-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      42,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Silver Sands State Park, Milford",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/silver-sands-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Sleeping Giant State Park, Hamden",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/sleeping-giant-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Southford Falls State Park, Southbury",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/southford-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Squantz Pond State Park, New Fairfield",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/squantz-pond-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Stratton Brook State Park, Simsbury",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/stratton-brook-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Sunrise State Park, East Haddam",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/sunrise-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      30,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Talcott Mountain State Park, Simsbury",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/talcott-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Wadsworth Falls State Park, Middlefield/Middletown",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/wadsworth-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "West Rock Ridge State Park, Hamden/New Haven",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/west-rock-ridge-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Wharton Brook State Park, Wallingford",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/wharton-brook-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Windsor Locks Canal State Park, Windsor Locks",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/windsor-locks-canal-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 7,
+    "name": "Windsor Meadows State Park, Windsor",
+    "link": "https://portal.ct.gov/deep/state-parks/parks/windsor-meadows-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

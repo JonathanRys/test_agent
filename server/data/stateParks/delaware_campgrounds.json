@@ -1,0 +1,145 @@
+[
+  {
+    "stateId": 8,
+    "name": "Cape Henlopen Park",
+    "link": "https://www.destateparks.com/park/cape-henlopen",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      30,
+      40,
+      42,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Delaware Seashore",
+    "link": "https://www.destateparks.com/park/delaware-seashore",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$10"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      43,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Killens Pond",
+    "link": "https://www.destateparks.com/park/killens-pond",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      42,
+      43,
+      48,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Lums Pond",
+    "link": "https://www.destateparks.com/park/lums-pond",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      42,
+      43,
+      45,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 8,
+    "name": "Trap Pond",
+    "link": "https://www.destateparks.com/park/trap-pond",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      43,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  }
+]

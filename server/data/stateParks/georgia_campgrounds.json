@@ -1,0 +1,242 @@
+[
+  {
+    "stateId": 11,
+    "name": "F.D. Roosevelt",
+    "link": "https://gastateparks.org/FDRoosevelt",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Black Rock Mountain",
+    "link": "https://gastateparks.org/BlackRockMountain",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Cloudland Canyon",
+    "link": "https://gastateparks.org/CloudlandCanyon",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      42,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort Mountain",
+    "link": "https://gastateparks.org/FortMountain",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      35,
+      36,
+      38,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Mistletoe",
+    "link": "https://gastateparks.org/Mistletoe",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      36,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Providence Canyon",
+    "link": "https://gastateparks.org/ProvidenceCanyon",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "James H. Floyd",
+    "link": "https://gastateparks.org/JamesHFloyd",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Tallulah Gorge",
+    "link": "https://gastateparks.org/TallulahGorge",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      14,
+      17,
+      18,
+      19,
+      21,
+      35,
+      37,
+      45,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Don Carter",
+    "link": "https://gastateparks.org/DonCarter",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      43,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Fort McAllister",
+    "link": "https://gastateparks.org/FortMcAllister",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Victoria Bryant",
+    "link": "https://gastateparks.org/VictoriaBryant",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "Reed Bingham",
+    "link": "https://gastateparks.org/ReedBingham",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      44,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 11,
+    "name": "High Falls",
+    "link": "https://gastateparks.org/HighFalls",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  }
+]

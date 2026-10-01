@@ -1,0 +1,5354 @@
+[
+  {
+    "stateId": 5,
+    "name": "Admiral William Standley SRA",
+    "link": "https://www.parks.ca.gov/?page_id=424",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Ahjumawi Lava Springs SP",
+    "link": "https://www.parks.ca.gov/?page_id=464",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Albany SMR",
+    "link": "https://www.parks.ca.gov/?page_id=22880",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Anderson Marsh SHP",
+    "link": "https://www.parks.ca.gov/?page_id=483",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$4.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Andrew Molera SP",
+    "link": "https://www.parks.ca.gov/?page_id=582",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Angel Island SP",
+    "link": "https://www.parks.ca.gov/?page_id=468",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Año Nuevo SP",
+    "link": "https://www.parks.ca.gov/?page_id=523",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      17,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Antelope Valley California Poppy Reserve SNR",
+    "link": "https://www.parks.ca.gov/?page_id=627",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Antelope Valley Indian Museum SHP",
+    "link": "https://www.parks.ca.gov/?page_id=632",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Anza-Borrego Desert SP",
+    "link": "https://www.parks.ca.gov/?page_id=638",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      24,
+      25,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Armstrong Redwoods SNR",
+    "link": "https://www.parks.ca.gov/?page_id=450",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Arthur B. Ripley Desert Woodland SP",
+    "link": "https://www.parks.ca.gov/?page_id=634",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Asilomar SB",
+    "link": "https://www.parks.ca.gov/?page_id=566",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Auburn SRA",
+    "link": "https://www.parks.ca.gov/?page_id=502",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      27,
+      35,
+      37,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Austin Creek SRA",
+    "link": "https://www.parks.ca.gov/?page_id=452",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Azalea SNR",
+    "link": "https://www.parks.ca.gov/?page_id=420",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bale Grist Mill SHP",
+    "link": "https://www.parks.ca.gov/?page_id=482",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bean Hollow SB",
+    "link": "https://www.parks.ca.gov/?page_id=527",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Benbow SRA",
+    "link": "https://www.parks.ca.gov/?page_id=426",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Benicia SRA",
+    "link": "https://www.parks.ca.gov/?page_id=476",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Benicia Capitol SHP",
+    "link": "https://www.parks.ca.gov/?page_id=475",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bethany Reservoir SRA",
+    "link": "https://www.parks.ca.gov/?page_id=562",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$11"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bidwell Mansion SHP",
+    "link": "https://www.parks.ca.gov/?page_id=460",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bidwell-Sacramento River SP",
+    "link": "https://www.parks.ca.gov/?page_id=463",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      47,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Big Basin Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=540",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      13,
+      15,
+      18,
+      19,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bodie SHP",
+    "link": "https://www.parks.ca.gov/?page_id=509",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      24,
+      33,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bolsa Chica SB",
+    "link": "https://www.parks.ca.gov/?page_id=642",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$7.50"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      35,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Border Field SP",
+    "link": "https://www.parks.ca.gov/?page_id=664",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Bothe-Napa Valley SP",
+    "link": "https://www.parks.ca.gov/?page_id=477",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Brannan Island SRA",
+    "link": "https://www.parks.ca.gov/?page_id=487",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Burleigh H. Murray Ranch Prop",
+    "link": "https://www.parks.ca.gov/?page_id=535",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Burton Creek SP",
+    "link": "https://www.parks.ca.gov/?page_id=512",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      33
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Butano SP",
+    "link": "https://www.parks.ca.gov/?page_id=536",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      17,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Calaveras Big Trees SP",
+    "link": "https://www.parks.ca.gov/?page_id=551",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "California Citrus SHP",
+    "link": "https://www.parks.ca.gov/?page_id=649",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$50"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "California Indian Heritage Center Prop",
+    "link": "https://www.parks.ca.gov/?page_id=22628",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "California State Capitol Museum",
+    "link": "https://www.parks.ca.gov/?page_id=495",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "California State Mining and Mineral Museum Prop",
+    "link": "https://www.parks.ca.gov/?page_id=588",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$4"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "California State Railroad Museum POI",
+    "link": "https://www.parks.ca.gov/?page_id=668",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Cambria SMP",
+    "link": "https://www.parks.ca.gov/?page_id=27201",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Candlestick Point SRA",
+    "link": "https://www.parks.ca.gov/?page_id=519",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      48,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Cardiff SB",
+    "link": "https://www.parks.ca.gov/?page_id=656",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Carlsbad SB",
+    "link": "https://www.parks.ca.gov/?page_id=653",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Carmel River SB",
+    "link": "https://www.parks.ca.gov/?page_id=567",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Carnegie SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1172",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Carpinteria SB",
+    "link": "https://www.parks.ca.gov/?page_id=599",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Caspar Headlands SNR",
+    "link": "https://www.parks.ca.gov/?page_id=444",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Caspar Headlands SB",
+    "link": "https://www.parks.ca.gov/?page_id=445",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Castaic Lake SRA",
+    "link": "https://www.parks.ca.gov/?page_id=628",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      39,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Castle Crags SP",
+    "link": "https://www.parks.ca.gov/?page_id=454",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Castle Rock SP",
+    "link": "https://www.parks.ca.gov/?page_id=538",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Caswell Memorial SP",
+    "link": "https://www.parks.ca.gov/?page_id=557",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Cayucos SB",
+    "link": "https://www.parks.ca.gov/?page_id=596",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      43,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "China Camp SP",
+    "link": "https://www.parks.ca.gov/?page_id=466",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      21,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Chino Hills SP",
+    "link": "https://www.parks.ca.gov/?page_id=648",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      23,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Chumash Painted Cave SHP",
+    "link": "https://www.parks.ca.gov/?page_id=602",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Clay Pit SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=25572",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Clear Lake SP",
+    "link": "https://www.parks.ca.gov/?page_id=473",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Colonel Allensworth SHP",
+    "link": "https://www.parks.ca.gov/?page_id=583",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      27,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Columbia SHP",
+    "link": "https://www.parks.ca.gov/?page_id=552",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Colusa-Sacramento River SRA",
+    "link": "https://www.parks.ca.gov/?page_id=461",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Corona del Mar SB",
+    "link": "https://www.parks.ca.gov/?page_id=652",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Crystal Cove SP",
+    "link": "https://www.parks.ca.gov/?page_id=644",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Cuyamaca Rancho SP",
+    "link": "https://www.parks.ca.gov/?page_id=667",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      23,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "D. L. Bliss SP",
+    "link": "https://www.parks.ca.gov/?page_id=505",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      38,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Del Norte Coast Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=414",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Delta Meadows Prop",
+    "link": "https://www.parks.ca.gov/?page_id=492",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Dockweiler SB",
+    "link": "https://www.parks.ca.gov/?page_id=617",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Doheny SB",
+    "link": "https://www.parks.ca.gov/?page_id=645",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$7.50"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Donner Memorial SP",
+    "link": "https://www.parks.ca.gov/?page_id=503",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      35,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Dos Rios",
+    "link": "https://www.parks.ca.gov/?page_id=31363",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Eastern Kern County Onyx Ranch SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=28617",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      24,
+      25,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Ed Z'berg Sugar Pine Point SP",
+    "link": "https://www.parks.ca.gov/?page_id=510",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      30,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "El Capitán SB",
+    "link": "https://www.parks.ca.gov/?page_id=601",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "El Presidio de Santa Barbara SHP",
+    "link": "https://www.parks.ca.gov/?page_id=608",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Emerald Bay SP",
+    "link": "https://www.parks.ca.gov/?page_id=506",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      36,
+      38,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Emeryville Crescent SMR",
+    "link": "https://www.parks.ca.gov/?page_id=22881",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Emma Wood SB",
+    "link": "https://www.parks.ca.gov/?page_id=604",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Empire Mine SHP",
+    "link": "https://www.parks.ca.gov/?page_id=499",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Estero Bluffs SP",
+    "link": "https://www.parks.ca.gov/?page_id=22263",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      43,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Folsom Lake SRA",
+    "link": "https://www.parks.ca.gov/?page_id=500",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      37,
+      39,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Folsom Powerhouse SHP",
+    "link": "https://www.parks.ca.gov/?page_id=501",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Fort Humboldt SHP",
+    "link": "https://www.parks.ca.gov/?page_id=665",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Fort Ord Dunes SP",
+    "link": "https://www.parks.ca.gov/?page_id=580",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Fort Ross SHP",
+    "link": "https://www.parks.ca.gov/?page_id=449",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Fort Tejon SHP",
+    "link": "https://www.parks.ca.gov/?page_id=585",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Franks Tract SRA",
+    "link": "https://www.parks.ca.gov/?page_id=490",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Fremont Peak SP",
+    "link": "https://www.parks.ca.gov/?page_id=564",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Garrapata SP",
+    "link": "https://www.parks.ca.gov/?page_id=579",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Gaviota SP",
+    "link": "https://www.parks.ca.gov/?page_id=606",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "George J. Hatfield SRA",
+    "link": "https://www.parks.ca.gov/?page_id=556",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      37,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Governor's Mansion SHP",
+    "link": "https://www.parks.ca.gov/?page_id=498",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Gray Whale Cove SB",
+    "link": "https://www.parks.ca.gov/?page_id=528",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Great Valley Grasslands SP",
+    "link": "https://www.parks.ca.gov/?page_id=559",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Greenwood SB",
+    "link": "https://www.parks.ca.gov/?page_id=447",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Grizzly Creek Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=421",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Grover Hot Springs SP",
+    "link": "https://www.parks.ca.gov/?page_id=508",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Half Moon Bay SB",
+    "link": "https://www.parks.ca.gov/?page_id=531",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Harmony Headlands SP",
+    "link": "https://www.parks.ca.gov/?page_id=25735",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      43,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Harry A. Merlo SRA",
+    "link": "https://www.parks.ca.gov/?page_id=431",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hatton Canyon Prop",
+    "link": "https://www.parks.ca.gov/?page_id=22273",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hearst San Simeon SP",
+    "link": "https://www.parks.ca.gov/?page_id=590",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      27,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hearst San Simeon SHM",
+    "link": "https://www.parks.ca.gov/?page_id=591",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Heber Dunes SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=25642",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      25,
+      26,
+      27,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hendy Woods SP",
+    "link": "https://www.parks.ca.gov/?page_id=438",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Henry Cowell Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=546",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Henry W. Coe SP",
+    "link": "https://www.parks.ca.gov/?page_id=561",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      21,
+      48,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hollister Hills SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1179",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      24,
+      25,
+      26,
+      27,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Humboldt Lagoons SP",
+    "link": "https://www.parks.ca.gov/?page_id=416",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      38,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Humboldt Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=425",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Hungry Valley SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1192",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      24,
+      25,
+      26,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Huntington SB",
+    "link": "https://www.parks.ca.gov/?page_id=643",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$7.50"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Indian Grinding Rock SHP",
+    "link": "https://www.parks.ca.gov/?page_id=553",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Indio Hills Palms Prop",
+    "link": "https://www.parks.ca.gov/?page_id=640",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Ishxenta SP",
+    "link": "https://www.parks.ca.gov/?page_id=569",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$23.18 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      48,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Jack London SHP",
+    "link": "https://www.parks.ca.gov/?page_id=478",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Jedediah Smith Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=413",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "John B. Dewitt Redwoods SNR",
+    "link": "https://www.parks.ca.gov/?page_id=22274",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "John Little SNR",
+    "link": "https://www.parks.ca.gov/?page_id=568",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Jug Handle SNR",
+    "link": "https://www.parks.ca.gov/?page_id=441",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Julia Pfeiffer Burns SP",
+    "link": "https://www.parks.ca.gov/?page_id=578",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Kenneth Hahn SRA",
+    "link": "https://www.parks.ca.gov/?page_id=612",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      45,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Kings Beach SRA",
+    "link": "https://www.parks.ca.gov/?page_id=511",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Kruse Rhododendron SNR",
+    "link": "https://www.parks.ca.gov/?page_id=448",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "La Purísima Mission SHP",
+    "link": "https://www.parks.ca.gov/?page_id=598",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Lake Del Valle SRA",
+    "link": "https://www.parks.ca.gov/?page_id=537",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Lake Oroville SRA",
+    "link": "https://www.parks.ca.gov/?page_id=462",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      36,
+      39,
+      47,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Lake Perris SRA",
+    "link": "https://www.parks.ca.gov/?page_id=651",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$20"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      23,
+      27,
+      35,
+      36,
+      38,
+      39,
+      43,
+      47,
+      48,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Lake Valley SRA",
+    "link": "https://www.parks.ca.gov/?page_id=515",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      30,
+      34,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Leland Stanford Mansion SHP",
+    "link": "https://www.parks.ca.gov/?page_id=489",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Leo Carrillo SP",
+    "link": "https://www.parks.ca.gov/?page_id=616",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Leucadia SB",
+    "link": "https://www.parks.ca.gov/?page_id=661",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Lighthouse Field SB",
+    "link": "https://www.parks.ca.gov/?page_id=550",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Limekiln SP",
+    "link": "https://www.parks.ca.gov/?page_id=577",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Little River SB",
+    "link": "https://www.parks.ca.gov/?page_id=419",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Locke Boarding House Museum POI",
+    "link": "https://www.parks.ca.gov/?page_id=24343",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Los Angeles SHP",
+    "link": "https://www.parks.ca.gov/?page_id=22272",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Los Encinos SHP",
+    "link": "https://www.parks.ca.gov/?page_id=619",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Los Osos Oaks SNR",
+    "link": "https://www.parks.ca.gov/?page_id=597",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      43,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "MacKerricher SP",
+    "link": "https://www.parks.ca.gov/?page_id=436",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mailliard Redwoods SNR",
+    "link": "https://www.parks.ca.gov/?page_id=439",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Malakoff Diggins SHP",
+    "link": "https://www.parks.ca.gov/?page_id=494",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      33,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Malibu Creek SP",
+    "link": "https://www.parks.ca.gov/?page_id=614",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Malibu Lagoon SB",
+    "link": "https://www.parks.ca.gov/?page_id=835",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Manchester SP",
+    "link": "https://www.parks.ca.gov/?page_id=437",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mandalay SB",
+    "link": "https://www.parks.ca.gov/?page_id=609",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Manresa SB",
+    "link": "https://www.parks.ca.gov/?page_id=545",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Marconi Conference Center SHP",
+    "link": "https://www.parks.ca.gov/?page_id=467",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      43,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Marina SB",
+    "link": "https://www.parks.ca.gov/?page_id=581",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Marsh Creek SP",
+    "link": "https://www.parks.ca.gov/?page_id=525",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Marshall Gold Discovery SHP",
+    "link": "https://www.parks.ca.gov/?page_id=484",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Martial Cottle Park SRA",
+    "link": "https://www.parks.ca.gov/?page_id=23450",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "McArthur-Burney Falls Memorial SP",
+    "link": "https://www.parks.ca.gov/?page_id=455",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "McConnell SRA",
+    "link": "https://www.parks.ca.gov/?page_id=554",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      37,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "McGrath SB",
+    "link": "https://www.parks.ca.gov/?page_id=607",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "McLaughlin Eastshore State Park SS",
+    "link": "https://www.parks.ca.gov/?page_id=520",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mendocino Headlands SP",
+    "link": "https://www.parks.ca.gov/?page_id=442",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      36,
+      38,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mendocino Woodlands SP",
+    "link": "https://www.parks.ca.gov/?page_id=443",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Millerton Lake SRA",
+    "link": "https://www.parks.ca.gov/?page_id=587",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mono Lake Tufa SNR",
+    "link": "https://www.parks.ca.gov/?page_id=514",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      17,
+      18,
+      30,
+      35,
+      36,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Montaña de Oro SP",
+    "link": "https://www.parks.ca.gov/?page_id=592",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      27,
+      43,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Montara SB",
+    "link": "https://www.parks.ca.gov/?page_id=532",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Monterey SHP",
+    "link": "https://www.parks.ca.gov/?page_id=575",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Monterey SB",
+    "link": "https://www.parks.ca.gov/?page_id=576",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      35,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Montgomery Woods SNR",
+    "link": "https://www.parks.ca.gov/?page_id=434",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Moonlight SB",
+    "link": "https://www.parks.ca.gov/?page_id=659",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      45,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Morro Bay SP",
+    "link": "https://www.parks.ca.gov/?page_id=594",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      27,
+      35,
+      38,
+      43,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Morro Strand SB",
+    "link": "https://www.parks.ca.gov/?page_id=593",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      27,
+      43,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Moss Landing SB",
+    "link": "https://www.parks.ca.gov/?page_id=574",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mount Diablo SP",
+    "link": "https://www.parks.ca.gov/?page_id=517",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mount San Jacinto SP",
+    "link": "https://www.parks.ca.gov/?page_id=636",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Mount Tamalpais SP",
+    "link": "https://www.parks.ca.gov/?page_id=471",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Natural Bridges SB",
+    "link": "https://www.parks.ca.gov/?page_id=541",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Navarro River Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=435",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "New Brighton SB",
+    "link": "https://www.parks.ca.gov/?page_id=542",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Oceano Dunes SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1207",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      25,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Ocotillo Wells SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1217",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      24,
+      25,
+      26,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Old Sacramento SHP",
+    "link": "https://www.parks.ca.gov/?page_id=497",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Old Town San Diego SHP",
+    "link": "https://www.parks.ca.gov/?page_id=663",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Olompali SHP",
+    "link": "https://www.parks.ca.gov/?page_id=465",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pacheco SP",
+    "link": "https://www.parks.ca.gov/?page_id=560",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pacifica SB",
+    "link": "https://www.parks.ca.gov/?page_id=524",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$9.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Palomar Mountain SP",
+    "link": "https://www.parks.ca.gov/?page_id=637",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      23,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pelican SB",
+    "link": "https://www.parks.ca.gov/?page_id=412",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pescadero SB",
+    "link": "https://www.parks.ca.gov/?page_id=522",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Petaluma Adobe SHP",
+    "link": "https://www.parks.ca.gov/?page_id=474",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pfeiffer Big Sur SP",
+    "link": "https://www.parks.ca.gov/?page_id=570",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Picacho SRA",
+    "link": "https://www.parks.ca.gov/?page_id=641",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      24,
+      48,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pigeon Point Light Station SHP",
+    "link": "https://www.parks.ca.gov/?page_id=533",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pío Pico SHP",
+    "link": "https://www.parks.ca.gov/?page_id=621",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pismo SB",
+    "link": "https://www.parks.ca.gov/?page_id=595",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      23,
+      24,
+      27,
+      43,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Placerita Canyon SP",
+    "link": "https://www.parks.ca.gov/?page_id=622",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Plumas-Eureka SP",
+    "link": "https://www.parks.ca.gov/?page_id=507",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Cabrillo Light Station SHP",
+    "link": "https://www.parks.ca.gov/?page_id=22276",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Dume SB",
+    "link": "https://www.parks.ca.gov/?page_id=623",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Lobos SNR",
+    "link": "https://www.parks.ca.gov/?page_id=571",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Mugu SP",
+    "link": "https://www.parks.ca.gov/?page_id=630",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Sal SB",
+    "link": "https://www.parks.ca.gov/?page_id=605",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Point Sur SHP",
+    "link": "https://www.parks.ca.gov/?page_id=565",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "6-17",
+        "fee": "Free"
+      },
+      {
+        "ageRange": "5 and under",
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Pomponio SB",
+    "link": "https://www.parks.ca.gov/?page_id=521",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Portola Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=539",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      48,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Prairie City SVRA",
+    "link": "https://www.parks.ca.gov/?page_id=1221",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00 per vehicle"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      21,
+      24,
+      25,
+      26,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Prairie Creek Redwoods SP",
+    "link": "https://www.parks.ca.gov/?page_id=415",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Providence Mountains SRA",
+    "link": "https://www.parks.ca.gov/?page_id=615",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Railtown 1897 SHP",
+    "link": "https://www.parks.ca.gov/?page_id=491",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Rancho San Andrés Castro Adobe Prop",
+    "link": "https://www.parks.ca.gov/?page_id=22271",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Red Rock Canyon SP",
+    "link": "https://www.parks.ca.gov/?page_id=631",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Refugio SB",
+    "link": "https://www.parks.ca.gov/?page_id=603",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Reynolds WC",
+    "link": "https://www.parks.ca.gov/?page_id=428",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Richardson Grove SP",
+    "link": "https://www.parks.ca.gov/?page_id=422",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Rio de Los Angeles State Park SRA",
+    "link": "https://www.parks.ca.gov/?page_id=22277",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Robert H. Meyer Memorial SB",
+    "link": "https://www.parks.ca.gov/?page_id=633",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Robert Louis Stevenson SP",
+    "link": "https://www.parks.ca.gov/?page_id=472",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Robert W. Crown Memorial SB",
+    "link": "https://www.parks.ca.gov/?page_id=526",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Russian Gulch SP",
+    "link": "https://www.parks.ca.gov/?page_id=432",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Saddleback Butte SP",
+    "link": "https://www.parks.ca.gov/?page_id=618",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Salinas River SB",
+    "link": "https://www.parks.ca.gov/?page_id=573",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Salt Point SP",
+    "link": "https://www.parks.ca.gov/?page_id=453",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Salton Sea SRA",
+    "link": "https://www.parks.ca.gov/?page_id=639",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$2"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Samuel P. Taylor SP",
+    "link": "https://www.parks.ca.gov/?page_id=469",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$35"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      21,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Bruno Mountain SP",
+    "link": "https://www.parks.ca.gov/?page_id=518",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Buenaventura SB",
+    "link": "https://www.parks.ca.gov/?page_id=600",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Clemente SB",
+    "link": "https://www.parks.ca.gov/?page_id=646",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$7.50"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      38,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Elijo SB",
+    "link": "https://www.parks.ca.gov/?page_id=662",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Gregorio SB",
+    "link": "https://www.parks.ca.gov/?page_id=529",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Juan Bautista SHP",
+    "link": "https://www.parks.ca.gov/?page_id=563",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Luis Reservoir SRA",
+    "link": "https://www.parks.ca.gov/?page_id=558",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      39,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Onofre SB",
+    "link": "https://www.parks.ca.gov/?page_id=647",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Pasqual Battlefield SHP",
+    "link": "https://www.parks.ca.gov/?page_id=655",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "San Timoteo Canyon Prop",
+    "link": "https://www.parks.ca.gov/?page_id=22882",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Santa Cruz Mission SHP",
+    "link": "https://www.parks.ca.gov/?page_id=548",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Santa Monica SB",
+    "link": "https://www.parks.ca.gov/?page_id=624",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Santa Susana Pass SHP",
+    "link": "https://www.parks.ca.gov/?page_id=611",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Schooner Gulch SB",
+    "link": "https://www.parks.ca.gov/?page_id=446",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Seacliff SB",
+    "link": "https://www.parks.ca.gov/?page_id=543",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Shasta SHP",
+    "link": "https://www.parks.ca.gov/?page_id=456",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Silver Strand SB",
+    "link": "https://www.parks.ca.gov/?page_id=654",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      39,
+      47,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Silverwood Lake SRA",
+    "link": "https://www.parks.ca.gov/?page_id=650",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "62+",
+        "fee": "$20"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      35,
+      38,
+      47,
+      48,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sinkyone Wilderness SP",
+    "link": "https://www.parks.ca.gov/?page_id=429",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Smithe Redwoods SNR",
+    "link": "https://www.parks.ca.gov/?page_id=427",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sonoma SHP",
+    "link": "https://www.parks.ca.gov/?page_id=479",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sonoma Coast SP",
+    "link": "https://www.parks.ca.gov/?page_id=451",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      48,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "South Carlsbad SB",
+    "link": "https://www.parks.ca.gov/?page_id=660",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "South Yuba River SP",
+    "link": "https://www.parks.ca.gov/?page_id=496",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Standish-Hickey SRA",
+    "link": "https://www.parks.ca.gov/?page_id=423",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "State Indian Museum SHP",
+    "link": "https://www.parks.ca.gov/?page_id=486",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Stone Lake Prop",
+    "link": "https://www.parks.ca.gov/?page_id=493",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sue-meg SP",
+    "link": "https://www.parks.ca.gov/?page_id=417",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sugarloaf Ridge SP",
+    "link": "https://www.parks.ca.gov/?page_id=481",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sunset SB",
+    "link": "https://www.parks.ca.gov/?page_id=544",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sutter Buttes SP",
+    "link": "https://www.parks.ca.gov/?page_id=23452",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Sutter's Fort SHP",
+    "link": "https://www.parks.ca.gov/?page_id=485",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tahoe SRA",
+    "link": "https://www.parks.ca.gov/?page_id=504",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "The Forest of Nisene Marks SP",
+    "link": "https://www.parks.ca.gov/?page_id=666",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Thornton SB",
+    "link": "https://www.parks.ca.gov/?page_id=530",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tijuana Estuary NP POI",
+    "link": "https://www.parks.ca.gov/?page_id=669",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tolowa Dunes SP",
+    "link": "https://www.parks.ca.gov/?page_id=430",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tomales Bay SP",
+    "link": "https://www.parks.ca.gov/?page_id=470",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      35,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tomo-Kahni SHP",
+    "link": "https://www.parks.ca.gov/?page_id=610",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Topanga SP",
+    "link": "https://www.parks.ca.gov/?page_id=629",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Torrey Pines SNR",
+    "link": "https://www.parks.ca.gov/?page_id=657",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Torrey Pines SB",
+    "link": "https://www.parks.ca.gov/?page_id=658",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Trinidad SB",
+    "link": "https://www.parks.ca.gov/?page_id=418",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Trione-Annadel SP",
+    "link": "https://www.parks.ca.gov/?page_id=480",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Tule Elk SNR",
+    "link": "https://www.parks.ca.gov/?page_id=584",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Turlock Lake SRA",
+    "link": "https://www.parks.ca.gov/?page_id=555",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Twin Lakes SB",
+    "link": "https://www.parks.ca.gov/?page_id=547",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Van Damme SP",
+    "link": "https://www.parks.ca.gov/?page_id=433",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      17,
+      18,
+      19,
+      21,
+      35,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Verdugo Mountains Prop",
+    "link": "https://www.parks.ca.gov/?page_id=635",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Ward Creek Prop",
+    "link": "https://www.parks.ca.gov/?page_id=513",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Washoe Meadows SP",
+    "link": "https://www.parks.ca.gov/?page_id=516",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Wassama Round House SHP",
+    "link": "https://www.parks.ca.gov/?page_id=586",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Watts Towers of Simon Rodia SHP",
+    "link": "https://www.parks.ca.gov/?page_id=613",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Weaverville Joss House SHP",
+    "link": "https://www.parks.ca.gov/?page_id=457",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Westport-Union Landing SB",
+    "link": "https://www.parks.ca.gov/?page_id=440",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Wilder Ranch SP",
+    "link": "https://www.parks.ca.gov/?page_id=549",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$10.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Wildwood Canyon SP",
+    "link": "https://www.parks.ca.gov/?page_id=22883",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      27,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Will Rogers SB",
+    "link": "https://www.parks.ca.gov/?page_id=625",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Will Rogers SHP",
+    "link": "https://www.parks.ca.gov/?page_id=626",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12.00"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      43,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "William B. Ide Adobe SHP",
+    "link": "https://www.parks.ca.gov/?page_id=458",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Woodland Opera House SHP",
+    "link": "https://www.parks.ca.gov/?page_id=488",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Woodson Bridge SRA",
+    "link": "https://www.parks.ca.gov/?page_id=459",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      36,
+      50,
+      51,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 5,
+    "name": "Zmudowski SB",
+    "link": "https://www.parks.ca.gov/?page_id=572",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  }
+]

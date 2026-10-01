@@ -1,0 +1,313 @@
+[
+  {
+    "stateId": 48,
+    "name": "Alta Lake State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/alta-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/alta-lake-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Anderson Lake State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/anderson-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50,
+      55
+    ],
+    "boundary": "geo/wa/anderson-lake-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Battle Ground Lake State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/battle-ground-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/battle-ground-lake-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Bay View State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/bay-view-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/bay-view-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Beacon Rock State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/beacon-rock-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      14
+    ],
+    "boundary": "geo/wa/beacon-rock-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Beebe Bridge State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/beebe-bridge-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/beebe-bridge-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Belfair State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/belfair-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/belfair-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Birch Bay State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/birch-bay-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/birch-bay-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Blake Island Marine State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/blake-island-marine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/blake-island-marine-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Blind Island Marine State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/blind-island-marine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/blind-island-marine-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Bogachiel State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/bogachiel-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/bogachiel-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Bottle Beach State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/bottle-beach-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/bottle-beach-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Bridgeport State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/bridgeport-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/bridgeport-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Bridle Trails State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/bridle-trails-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/bridle-trails-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Brooks Memorial State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/brooks-memorial-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/brooks-memorial-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Cama Beach Historical State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/cama-beach-historical-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/cama-beach-historical-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Camano Island State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/camano-island-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/camano-island-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Cape Disappointment State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/cape-disappointment-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": "geo/wa/cape-disappointment-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Clark Island Marine State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/clark-island-marine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/clark-island-marine-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Columbia Hills Historical State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/columbia-hills-historical-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/columbia-hills-historical-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Columbia Plateau State Park Trail",
+    "link": "https://parks.wa.gov/find-parks/state-parks/columbia-plateau-state-park-trail",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/columbia-plateau-state-park-trail.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Conconully State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/conconully-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/conconully-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Crawford State Park Heritage Site",
+    "link": "https://parks.wa.gov/find-parks/state-parks/crawford-state-park-heritage-site",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/crawford-state-park-heritage-site.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Curlew Lake State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/curlew-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/curlew-lake-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Cutts Island Marine State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/cutts-island-marine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/cutts-island-marine-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Daroga State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/daroga-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": "geo/wa/daroga-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Dash Point State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/dash-point-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/dash-point-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Deception Pass State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/deception-pass-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": "geo/wa/deception-pass-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Doe Island Marine State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/doe-island-marine-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/doe-island-marine-state-park.geojson"
+  },
+  {
+    "stateId": 48,
+    "name": "Dosewallips State Park",
+    "link": "https://parks.wa.gov/find-parks/state-parks/dosewallips-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": "geo/wa/dosewallips-state-park.geojson"
+  }
+]

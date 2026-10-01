@@ -1,0 +1,1403 @@
+[
+  {
+    "stateId": 21,
+    "name": "Park Activities & Amenities",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/outdoors.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      17,
+      18,
+      21,
+      30,
+      34,
+      35,
+      36,
+      46,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Camping, Cabins and Shelters",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/campinginfo.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      46,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Reservation Policies, Park Fees and Hours of Operation",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/oc.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      34,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Youth Group Pass",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/youthgroup.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Weddings and Events",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/wedding-events.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Statewide Park Programs",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/outdooreduc.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Cultural Resources and Curatorship",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/curatorship/Resident-Curatorship-Program.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Food Truck Vending Opportunities",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/Food-Truck-Vending-Opportunities.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Access for All",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/accessforall.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Park Jobs",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/careers.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "How Do You Camp",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/LetsGoCamping.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      19,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Appalachian Trail",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/at.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Assateague State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/assateague.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      19,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Big Run State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/bigrun.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Bill Burton Fishing Pier State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/choptankpier.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      19,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Black Walnut Point NRMA​",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/Black-Walnut-Point.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Bohemia River State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/Bohemia.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3.00 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Calvert Cliffs State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/calvertcliffs.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Casselman River Bridge State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/casselman.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Cedarville State Forest",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/cedarville.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Chapel Point State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/chapelpoint.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Chapman State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/chapman.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Cunningham Falls State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/cunningham.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Cypress Branch State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/cypressbranch.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Dans Mountain State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/dansmountain.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Deep Creek Lake Natural Resource Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/deepcreeknrma.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      23,
+      25,
+      34,
+      43,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Deep Creek Lake State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/deepcreek.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per Maryland"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      23,
+      25,
+      30,
+      33,
+      34,
+      35,
+      36,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Elk Neck State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/elkneck.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Fair Hill Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/fairhill.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$125.00 per day"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      16,
+      18,
+      21,
+      41,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Fort Frederick State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/fortfrederick.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Franklin Point State Park",
+    "link": "https://dnr.maryland.gov/publiclands/pages/southern/franklinpoint.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Freedman's​ State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/Freedmans.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Gambrill State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/gambrill.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Gathland State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/gathland.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Greenbrier State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/greenbrier.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$106.25"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      36,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Greenwell State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/greenwell.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35,
+      36,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Gunpowder Falls State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/gunpowder.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      17,
+      19,
+      21,
+      35,
+      36,
+      41,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Hallowing Point Waterfront Park​",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/Hallowing-Point-Waterfront-Park.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      19,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Harriet Tubman Underground Railroad State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/tubman.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Hart-Miller Island State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/hartmiller.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Helen Avalynne Tawes Garden",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/tawesgarden.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Herrington Manor State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/herrington.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      23,
+      25,
+      30,
+      33,
+      34,
+      35,
+      36,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Janes Island State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/janesisland.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7.00"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Martinak State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/martinak.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Merkle Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/merkle.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Monocacy Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/monocacy.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Morgan Run Natural Environment Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/morganrun.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "New Germany State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/newgermany.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      23,
+      25,
+      34,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Newtowne Neck State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/newtowne.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "North Point State Battlefield",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/NorthPointBattlefield.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "North Point State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/northpoint.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$4 per vehicle"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      19,
+      41,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Palmer State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/palmer.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Patapsco Valley State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/patapsco.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      16,
+      18,
+      19,
+      21,
+      36,
+      41,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Patuxent River State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/patuxentriver.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Pocomoke River State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/pocomokeriver.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      21,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Point Lookout State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/pointlookout.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      36,
+      41,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Rocks State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/rocks.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      46,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Rocky Gap State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/rockygap.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      36,
+      41,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Rosaryville State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/rosaryville.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Sandy Point State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/sandypoint.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      25,
+      35,
+      39,
+      41,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Sang Run State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/sangrun.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Sassafras Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/sassafras.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Savage Highlands State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/savagehighlands.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      16,
+      18,
+      19,
+      21,
+      30,
+      33,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Seneca Creek State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/seneca.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3 per person"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      17,
+      19,
+      21,
+      35,
+      36,
+      41,
+      42,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Sideling Hill Creek State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/Sideling-Hill-Creek.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Smallwood State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/smallwood.aspx",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Soldier's Delight Natural Environment Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/soldiersdelight.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "South Mountain Battlefield",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/southmountainbattlefield.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "South Mountain State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/southmountain.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "St. Clement's Island State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/stclements.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "St. Mary's River State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/southern/stmarysriver.aspx",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Susquehanna State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/susquehanna.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      21,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Swallow Falls State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/swallowfalls.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Torrey C. Brown Rail Trail",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/central/tcb.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Tuckahoe State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/tuckahoe.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      41,
+      42,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Washington Monument State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/washington.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Western Maryland Rail Trail",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/wmrt.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wetipquin Creek State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/wetipquin.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wolf Den Run State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/Wolf-Den-Run.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      25,
+      27,
+      34,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Woodmont Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/woodmont.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      49,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wye Island State Natural Resources Management Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/wyeisland.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Wye Oak State Park",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/eastern/wyeoak.aspx",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 21,
+    "name": "Youghiogheny Wild River Natural Environmental Area",
+    "link": "https://dnr.maryland.gov/publiclands/Pages/western/youghiogheny.aspx",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      50
+    ],
+    "boundary": null
+  }
+]

@@ -1,0 +1,664 @@
+[
+  {
+    "stateId": 24,
+    "name": "Afton State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00100",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Banning State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00103",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Bear Head Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00109",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Beaver Creek Valley State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00112",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Big Stone Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00115",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Blue Mounds State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00121",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Buffalo River State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00124",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Camden State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00127",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Carley State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00130",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Cascade River State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00133",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Charles A. Lindbergh State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00136",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Crow Wing State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00139",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Father Hennepin State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00142",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Flandrau State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00145",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Forestville/Mystery Cave State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00148",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Fort Ridgely State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00151",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Fort Snelling State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00154",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Franz Jevne State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00157",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Frontenac State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00160",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "George H. Crosby Manitou State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00163",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Glacial Lakes State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00166",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Glendalough State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00167",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Gooseberry Falls State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00172",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Grand Portage State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00173",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Hayes Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00174",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Myre",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00175",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Hill Annex Mine State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00176",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "John A. Latsch State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00177",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Interstate State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00178",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Itasca State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00181",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Jay Cooke State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00187",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Judge C.R. Magney State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00193",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Kilen Woods State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00196",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lac qui Parle State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00197",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Bemidji State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00205",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Bronson State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00208",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Carlos State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00211",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Louise State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00214",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Maria State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00217",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Shetek State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00220",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "McCarthy Beach State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00226",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Maplewood State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00229",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Mille Lacs Kathio State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00232",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Minneopa State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00235",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Monson Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00238",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Moose Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00239",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Nerstrand Big Woods State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00241",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Great River Bluffs State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00244",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Old Mill State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00247",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Rice Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00250",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "St. Croix State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00253",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Wild River State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00254",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Sakatah Lake State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00256",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Savanna Portage State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00259",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Scenic State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00262",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Schoolcraft State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00263",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Sibley State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00265",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Split Rock Lighthouse State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00266",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Split Rock Creek State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00267",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Temperance River State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00268",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Tettegouche State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00269",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Upper Sioux Agency State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00277",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Whitewater State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00280",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "William O'Brien State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00283",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Zippel Bay State Park",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00284",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 24,
+    "name": "Lake Vermilion",
+    "link": "https://www.dnr.state.mn.us/state_parks/park.html?id=spk00285",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "stateId": 16,
+    "name": "Ambrose A. Call State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/ambrose-call-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Backbone State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/backbone-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      34,
+      35,
+      36,
+      38,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Banner Lakes at Summerset State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/banner-lakes-summerset-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      41,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Beeds Lake State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/beeds-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Bellevue State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/bellevue-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Big Creek State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/big-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      30,
+      35,
+      36,
+      38,
+      39,
+      42,
+      43,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Black Hawk State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/black-hawk-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      30,
+      34,
+      42,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Blackburn State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/blackburn-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      34,
+      35,
+      36,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Brushy Creek State Recreation Area",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/brushy-creek-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      34,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Cedar Rock State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/cedar-rock-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Clear Lake State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/clear-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Dolliver Memorial State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/dolliver-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Elinor Bedell State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/elinor-bedell-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Elk Rock State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/elk-rock-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      34,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Emerson Bay State Recreation Area",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/emerson-bay-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Fairport State Recreation Area",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/fairport-state-recreation-area",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Fort Atkinson State Preserve",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/fort-atkinson-state-preserve",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Fort Defiance State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/fort-defiance-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "Geode State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/geode-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 16,
+    "name": "George Wyth State Park",
+    "link": "https://www.iowadnr.gov/places-go/state-parks/all-parks/george-wyth-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  }
+]

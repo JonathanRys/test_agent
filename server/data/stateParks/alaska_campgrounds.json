@@ -1,0 +1,1335 @@
+[
+  {
+    "stateId": 2,
+    "name": "★ Bird Creek Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/chugach/birdcreekcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Bird Creek Overflow Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/chugach/birdcreekoverflow.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Eagle River Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/chugach/eaglerivercamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Eklutna Lake Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/chugach/eklutnalkcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      30,
+      34,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Anchor River State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/anchorpt.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Blueberry Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/blueberrylksrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Caines Head State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/cainesheadsra.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Captain Cook State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/captcook.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Clam Gulch State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/clamgulchsra.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      23,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Crooked Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/crookedcreeksrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Deep Creek State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/deepcreeksra.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Johnson Lake State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/johnsonlksra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Kachemak Bay State Wilderness Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/kachemakbayswp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Kenai River Special Management Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/krsma.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Ninilchik State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilsragen.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Starski State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/stariskisrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Coho Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/cohocamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Silver King Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/silverkingcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Slidehole Campground & Day Use Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/slideholecamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Steelhead Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/steelheadcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Halibut Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/halibutcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Discovery Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/discoverycamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Deep Creek Beach and Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/deepcreekcampground.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      25,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Deep Creek North & South Scenic Overlooks",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/deepcreeksso.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Ninilchik River Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilrvcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Ninilchik View Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilvwcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Ninilchik Scenic Overlook Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/ninilnoscov.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Bing's Landing Campground & Day Use Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/bingslandingcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Funny River Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/funnyriversrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Izaak Walton Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/izaakwalsrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Morgan's Landing State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/morgldcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Decision Point State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/decisionptsmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Jack Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/jackbaysmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Sawmill Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/marinepark/sawmillbaysmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Shoup Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/marinepark/shoupbaysmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ South Esther Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/soestherissmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Surprise Cove State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/surprisecvsmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Thumb Cove State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/thumbcvsmp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      13,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Big Lake North State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/biglakenosrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      30,
+      34,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Big Lake South State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/biglakesosrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Rocky Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/rockylksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ King Mountain State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/kingmtnsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Liberty Falls State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/libertyflsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Squirrel Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/squircksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Byers Lake Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/byerslkcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Denali View North",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/denaliviewnocamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Denali View South",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/denaliviewso.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ K'esugi Ken Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/kesugiken.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      30,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Lower Troublesome Creek Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/lrtrbckcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Dry Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/drycreeksrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Lake Louise State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/lklouisesra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Gold Mint Trailhead",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/goldminttrl.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Government Peak Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/govpeakcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Finger Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/fingerlksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Matanuska Glacier State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/matsuglsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      33,
+      37
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Matanuska Lakes State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/keplerbradlksra.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Porcupine Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/porcksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Montana Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/montcksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ South Rolly Lake Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/sorollylkcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Nancy Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/nancylksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Willow Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/willowcksra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Denali State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/denalisp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Hatcher Pass East Management Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/hatcherpassema.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      31,
+      33,
+      34,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Nancy Lake State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/nancylksra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Birch Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/birchlakesrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Harding Lake State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/hardinglksra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Salcha River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/salcharver.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      30,
+      34,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Upper Chatanika State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/upchatrvsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Granite Tors Trail Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/torstlcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Rosehip Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/rosehipcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Red Squirrel Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/rdsqrlcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Twin Bears Camp",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/twinbrcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      30,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Whitefish Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/whitefish.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Olnes Pond Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/olnespond.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Big Delta State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/bigdeltashp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Clearwater State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/clearwatersrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Delta State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/deltasrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Donnelly Creek State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/donnellycksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      33,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Fielding Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/fieldinglksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Lost Lake Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/lostlktlcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Quartz Lake Campground",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/qtzlkcamp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Eagle Trail State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/eagletrailsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Moon Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/moonlksrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      47,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Tok River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/tokrvsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chena River State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/chenariversra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Lower Chatanika State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/lrchatrivsra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      30,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Quartz Lake State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/qtzlksra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chilkat State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/chilkatsp.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chilkoot Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/chilkootlksrs.htm",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Eagle Beach State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/eaglebeachsra.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Settler's Cove State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/settlerscvsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Buskin River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/buskinriversrs.htm",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per vehicle"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Fort Abercrombie State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/fortabercrombieshp.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Pasagshak River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/pasagsrs.htm",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  }
+]

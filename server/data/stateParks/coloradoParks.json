@@ -1,0 +1,891 @@
+[
+  {
+    "stateId": 6,
+    "name": "Chatfield State Park",
+    "link": "https://cpw.state.co.us/state-parks/chatfield-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      47,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Arkansas Headwaters Recreation Area",
+    "link": "https://cpw.state.co.us/state-parks/arkansas-headwaters-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      19,
+      21,
+      35,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Barr Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/barr-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      19,
+      35,
+      38,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Boyd Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/boyd-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19,
+      35,
+      38,
+      39,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Castlewood Canyon State Park",
+    "link": "https://cpw.state.co.us/state-parks/castlewood-canyon-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Cherry Creek State Park",
+    "link": "https://cpw.state.co.us/state-parks/cherry-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      47
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Cheyenne Mountain State Park",
+    "link": "https://cpw.state.co.us/state-parks/cheyenne-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      41,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Crawford State Park",
+    "link": "https://cpw.state.co.us/state-parks/crawford-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Eldorado Canyon State Park",
+    "link": "https://cpw.state.co.us/state-parks/eldorado-canyon-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Eleven Mile State Park",
+    "link": "https://cpw.state.co.us/state-parks/eleven-mile-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      39,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Elkhead Reservoir State Park",
+    "link": "https://cpw.state.co.us/state-parks/elkhead-reservoir-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Fishers Peak State Park",
+    "link": "https://cpw.state.co.us/state-parks/fishers-peak-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Golden Gate Canyon State Park",
+    "link": "https://cpw.state.co.us/state-parks/golden-gate-canyon-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Harvey Gap State Park",
+    "link": "https://cpw.state.co.us/state-parks/harvey-gap-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      30,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Highline Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/highline-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Jackson Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/jackson-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "James M Robb Colorado River State Park",
+    "link": "https://cpw.state.co.us/state-parks/james-m-robb-colorado-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "John Martin Reservoir State Park",
+    "link": "https://cpw.state.co.us/state-parks/john-martin-reservoir-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      35,
+      36,
+      47,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lake Pueblo State Park",
+    "link": "https://cpw.state.co.us/state-parks/lake-pueblo-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      38,
+      39,
+      46,
+      47,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lathrop State Park",
+    "link": "https://cpw.state.co.us/state-parks/lathrop-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lone Mesa State Park",
+    "link": "https://cpw.state.co.us/state-parks/lone-mesa-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      19,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Lory State Park",
+    "link": "https://cpw.state.co.us/state-parks/lory-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Mancos State Park",
+    "link": "https://cpw.state.co.us/state-parks/mancos-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Mueller State Park",
+    "link": "https://cpw.state.co.us/state-parks/mueller-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      30,
+      33,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Navajo State Park",
+    "link": "https://cpw.state.co.us/state-parks/navajo-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "North Sterling State Park",
+    "link": "https://cpw.state.co.us/state-parks/north-sterling-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      19,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Paonia State Park",
+    "link": "https://cpw.state.co.us/state-parks/paonia-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Pearl Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/pearl-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      19,
+      35,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Ridgway State Park",
+    "link": "https://cpw.state.co.us/state-parks/ridgway-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      23,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Rifle Falls State Park",
+    "link": "https://cpw.state.co.us/state-parks/rifle-falls-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Rifle Gap State Park",
+    "link": "https://cpw.state.co.us/state-parks/rifle-gap-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      38,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Roxborough State Park",
+    "link": "https://cpw.state.co.us/state-parks/roxborough-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Spinney Mountain State Park",
+    "link": "https://cpw.state.co.us/state-parks/spinney-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      19,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "St Vrain State Park",
+    "link": "https://cpw.state.co.us/state-parks/st-vrain-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      19,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Stagecoach State Park",
+    "link": "https://cpw.state.co.us/state-parks/stagecoach-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "State Forest State Park",
+    "link": "https://cpw.state.co.us/state-parks/state-forest-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Staunton State Park",
+    "link": "https://cpw.state.co.us/state-parks/staunton-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Steamboat Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/steamboat-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$17"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Sweitzer Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/sweitzer-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Sylvan Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/sylvan-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Trinidad Lake State Park",
+    "link": "https://cpw.state.co.us/state-parks/trinidad-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Vega State Park",
+    "link": "https://cpw.state.co.us/state-parks/vega-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      30,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 6,
+    "name": "Yampa River State Park",
+    "link": "https://cpw.state.co.us/state-parks/yampa-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19
+    ],
+    "boundary": null
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "stateId": 10,
+    "name": "Alafia River State Park",
+    "link": "https://www.floridastateparks.org/Alafia",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Anastasia State Park",
+    "link": "https://www.floridastateparks.org/anastasia",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Bahia Honda State Park",
+    "link": "https://www.floridastateparks.org/BahiaHonda",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Big Lagoon State Park",
+    "link": "https://www.floridastateparks.org/BigLagoon",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Blackwater River State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/blackwater-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Blue Spring State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Collier-Seminole State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/collier-seminole-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Colt Creek State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Curry Hammock State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/curry-hammock-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Dr. Julian G. Bruce St. George Island State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/dr-julian-g-bruce-st-george-island-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Falling Waters State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/falling-waters-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Faver-Dykes State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/faver-dykes-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Florida Caverns State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/florida-caverns-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Fort Clinch State Park",
+    "link": "https://www.floridastateparks.org/fortclinch",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Fred Gannon Rocky Bayou State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/fred-gannon-rocky-bayou-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Gamble Rogers Memorial State Recreation Area at Flagler Beach",
+    "link": "https://www.floridastateparks.org/parks-and-trails/gamble-rogers-memorial-state-recreation-area-flagler-beach",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Grayton Beach State Park",
+    "link": "https://www.floridastateparks.org/graytonbeach",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Henderson Beach State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/henderson-beach-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Highlands Hammock State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/highlands-hammock-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Hillsborough River State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/hillsborough-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "John Pennekamp Coral Reef State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Jonathan Dickinson State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Kissimmee Prairie Preserve State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Koreshan State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/koreshan-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Lake Griffin State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/lake-griffin-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Lake Kissimmee State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/lake-kissimmee-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Lake Louisa State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/lake-louisa-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Lake Manatee State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/lake-manatee-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Little Manatee River State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/little-manatee-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Little Talbot Island State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/little-talbot-island-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Long Key State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/long-key-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Manatee Springs State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/manatee-springs-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Marjorie Harris Carr Cross Florida Greenway",
+    "link": "https://www.floridastateparks.org/Cross-Florida",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Mike Roess Gold Head Branch State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/mike-roess-gold-head-branch-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Myakka River State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "O'Leno State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/oleno-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Ochlockonee River State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/ochlockonee-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Oscar Scherer State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Paynes Prairie Preserve State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/paynes-prairie-preserve-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Rainbow Springs State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/rainbow-springs-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Rodman Campground",
+    "link": "https://www.floridastateparks.org/parks-and-trails/rodman-campground",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Ross Prairie Trailhead & Campground",
+    "link": "https://www.floridastateparks.org/parks-and-trails/ross-prairie-trailhead-campground",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Ruth B. Kirby Gilchrist Blue Springs State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/ruth-b-kirby-gilchrist-blue-springs-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Santos Trailhead & Campground",
+    "link": "https://www.floridastateparks.org/parks-and-trails/santos-trailhead-campground",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Sebastian Inlet State Park",
+    "link": "https://www.floridastateparks.org/Sebastian-Inlet",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Shangri-La Trailhead & Campground",
+    "link": "https://www.floridastateparks.org/parks-and-trails/shangri-la-trailhead-campground",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "Silver Springs State Park",
+    "link": "https://www.floridastateparks.org/silversprings",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 10,
+    "name": "St. Andrews State Park",
+    "link": "https://www.floridastateparks.org/parks-and-trails/st-andrews-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

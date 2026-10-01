@@ -1,0 +1,770 @@
+[
+  {
+    "stateId": 37,
+    "name": "Alabaster Caverns",
+    "link": "https://www.travelok.com/listings/view.profile/id.110",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Arrowhead",
+    "link": "https://www.travelok.com/listings/view.profile/id.293",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      42,
+      43,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Beavers Bend",
+    "link": "https://www.travelok.com/listings/view.profile/id.422",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      43,
+      45,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Black Mesa",
+    "link": "https://www.travelok.com/listings/view.profile/id.631",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Boiling Springs",
+    "link": "https://www.travelok.com/listings/view.profile/id.672",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Cherokee Landing",
+    "link": "https://www.travelok.com/listings/view.profile/id.1290",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      42,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Clayton Lake",
+    "link": "https://www.travelok.com/listings/view.profile/id.1601",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Fort Cobb",
+    "link": "https://www.travelok.com/listings/view.profile/id.2822",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      43,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Foss",
+    "link": "https://www.travelok.com/listings/view.profile/id.2848",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      42,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Gloss Mountain",
+    "link": "https://www.travelok.com/listings/view.profile/id.3030",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Bernice",
+    "link": "https://www.travelok.com/listings/view.profile/id.477",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      35,
+      36,
+      37,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Cherokee",
+    "link": "https://www.travelok.com/listings/view.profile/id.1302",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Disney",
+    "link": "https://www.travelok.com/listings/view.profile/id.25420",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      23,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Honey Creek",
+    "link": "https://www.travelok.com/listings/view.profile/id.3617",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Little Blue",
+    "link": "https://www.travelok.com/listings/view.profile/id.2251",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      23,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Spavinaw",
+    "link": "https://www.travelok.com/listings/view.profile/id.7148",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Grand Lake: Twin Bridges",
+    "link": "https://www.travelok.com/listings/view.profile/id.8250",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Great Plains",
+    "link": "https://www.travelok.com/listings/view.profile/id.3201",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Greenleaf",
+    "link": "https://www.travelok.com/listings/view.profile/id.3236",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      44,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Keystone",
+    "link": "https://www.travelok.com/listings/view.profile/id.4163",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      35,
+      36,
+      37,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Lake Eufaula",
+    "link": "https://www.travelok.com/listings/view.profile/id.4336",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      41,
+      42,
+      43,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Lake Murray",
+    "link": "https://www.travelok.com/listings/view.profile/id.4358",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      26,
+      27,
+      35,
+      36,
+      37,
+      39,
+      43,
+      44,
+      45,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Lake Texoma",
+    "link": "https://www.travelok.com/listings/view.profile/id.4383",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Lake Thunderbird",
+    "link": "https://www.travelok.com/listings/view.profile/id.4386",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      37,
+      41,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Lake Wister",
+    "link": "https://www.travelok.com/listings/view.profile/id.4390",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      44,
+      47,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Little Sahara",
+    "link": "https://www.travelok.com/listings/view.profile/id.4581",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      18,
+      24,
+      25
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "McGee Creek",
+    "link": "https://www.travelok.com/listings/view.profile/id.4972",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      37,
+      47,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Natural Falls",
+    "link": "https://www.travelok.com/listings/view.profile/id.5293",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      42,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Osage Hills",
+    "link": "https://www.travelok.com/listings/view.profile/id.5595",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      37,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Quartz Mountain",
+    "link": "https://www.travelok.com/listings/view.profile/id.29860",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      19,
+      25,
+      35,
+      36,
+      37,
+      42,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Raymond Gary",
+    "link": "https://www.travelok.com/listings/view.profile/id.6230",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      37,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Robbers Cave",
+    "link": "https://www.travelok.com/listings/view.profile/id.6415",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      25,
+      35,
+      36,
+      37,
+      42,
+      44,
+      48,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Roman Nose",
+    "link": "https://www.travelok.com/listings/view.profile/id.6460",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      35,
+      36,
+      37,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Salt Plains",
+    "link": "https://www.travelok.com/listings/view.profile/id.3204",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Sequoyah",
+    "link": "https://www.travelok.com/listings/view.profile/id.13299",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      45,
+      47,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Sequoyah Bay",
+    "link": "https://www.travelok.com/listings/view.profile/id.6729",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Talimena",
+    "link": "https://www.travelok.com/listings/view.profile/id.7645",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      26
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 37,
+    "name": "Tenkiller",
+    "link": "https://www.travelok.com/listings/view.profile/id.7706",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      46,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  }
+]

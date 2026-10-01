@@ -1,0 +1,730 @@
+[
+  {
+    "stateId": 2,
+    "name": "Recreational Opportunities",
+    "link": "https://dnr.alaska.gov/parks/aspunits/chugach/recops.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Eveline State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/evelinesrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      30
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Kachemak Bay State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/kachemakbaysp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Kasilof River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/kasilofrivsrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Lowell Point State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/lowellptsrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Old Kasilof Landing State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/oldkasiloflanding.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Worthington Glacier State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kenai/worthglsrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Alaska Veteran's Memorial",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/akveteransmemorial.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      27
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Archangel Road and Trail",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/arcangeltrl.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      30,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Fishhook Trail",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/fishhooktrl.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Independence Mine State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/indepmineshp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Nancy Lake Canoe Trail System",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/canoetrail.htm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      30,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Summit Lake State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/matsu/summitlksrs.htm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      31,
+      34
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "★ Chena River State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/chenariversrs.htm",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chena Pump Wayside State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/chenapumpsrs.htm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chena River: Stiles Creek Shooting Range",
+    "link": "https://dnr.alaska.gov/parks/aspunits/northern/chenarange.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      41,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Alaska Chilkat Bald Eagle Preserve",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/chilkatbep.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      35,
+      37,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Chilkat Islands State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/chilkatislands.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Portage Cove State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/portcovesrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Sullivan Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/sullivanisland.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Ernest Gruening State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/ernestgrushp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Funter Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/funterbay.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Juneau Channel Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/juneauchannelsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Juneau State Trails System",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/juneautrailsys.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Oliver Inlet State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/oliverinsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Pavlof Harbor State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/pavharborsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Point Bridget State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/ptbridgetsp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      33,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "St. James Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/stjamesbay.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Taku Harbor State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/takuharbrsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Wickersham State Historic Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/wickshp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Betton Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/bettonisld.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Black Sands Beach State Recreation Area",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/blacksand.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Dall Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/dallbay.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Grant Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/grantisland.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Grindall Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/grindallimp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Refuge Cove State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/refugecvsrs.htm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Totem Bight State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/totembigshp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Baranof Castle State Historic Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/baranofcastle.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Big Bear/Baby Bear State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/bigbrbabybrsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Fort Rousseau Causeway State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/ftrousseau.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Halibut Point State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/halibutptsrs.htm",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Magoun Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/magounissmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Old Sitka State Historical Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/oldsitkaahp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Sealion Cove State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/sealioncvsmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Security Bay State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/securitybay.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Beecher Pass State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/beecherpass.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Hole in the Wall State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/holeinthewall.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Joe Mace Island State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/joemace.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Petroglyph Beach State Historic Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/wrangpetroshs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Thom's Place State Marine Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/southeast/thomsplacesmp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Afognak Island State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/afognakissp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Shuyak Island State Park",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/shuyakissp.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Woody Island State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/kodiak/woodyissrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 2,
+    "name": "Lake Aleknagik State Recreation Site",
+    "link": "https://dnr.alaska.gov/parks/aspunits/woodtik/lkaleknsrs.htm",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      35,
+      50
+    ],
+    "boundary": null
+  }
+]

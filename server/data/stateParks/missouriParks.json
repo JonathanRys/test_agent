@@ -1,0 +1,862 @@
+[
+  {
+    "stateId": 26,
+    "name": "Meramec State Park",
+    "link": "https://mostateparks.com/park/meramec-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Route 66 State Park",
+    "link": "https://mostateparks.com/park/route-66-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Grand Gulf State Park",
+    "link": "https://mostateparks.com/park/grand-gulf-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Dr Edmund Babler Memorial State Park",
+    "link": "https://mostateparks.com/park/dr-edmund-babler-memorial-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Pomme De Terre State Park",
+    "link": "https://mostateparks.com/park/pomme-de-terre-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Lake Ozarks State Park",
+    "link": "https://mostateparks.com/park/lake-ozarks-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      19,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Sam Baker State Park",
+    "link": "https://mostateparks.com/park/sam-baker-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Rock Island Trail State Park",
+    "link": "https://mostateparks.com/park/rock-island-trail-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Shepherd Hills State Park",
+    "link": "https://mostateparks.com/park/shepherd-hills-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Castlewood State Park",
+    "link": "https://mostateparks.com/park/castlewood-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Bryant Creek State Park",
+    "link": "https://mostateparks.com/park/bryant-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Ha Ha Tonka State Park",
+    "link": "https://mostateparks.com/park/ha-ha-tonka-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      13,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Current River State Park",
+    "link": "https://mostateparks.com/park/current-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      35,
+      36,
+      43,
+      45,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Rock Bridge Memorial State Park",
+    "link": "https://mostateparks.com/park/rock-bridge-memorial-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Elephant Rocks State Park",
+    "link": "https://mostateparks.com/park/elephant-rocks-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Don Robinson State Park",
+    "link": "https://mostateparks.com/park/don-robinson-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Big Oak Tree State Park",
+    "link": "https://mostateparks.com/park/big-oak-tree-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Edward Ted and Pat Jones Confluence Point State Park",
+    "link": "https://mostateparks.com/park/edward-ted-and-pat-jones-confluence-point-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Big Sugar Creek State Park",
+    "link": "https://mostateparks.com/park/big-sugar-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Long Branch State Park",
+    "link": "https://mostateparks.com/park/long-branch-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Lake Wappapello State Park",
+    "link": "https://mostateparks.com/park/lake-wappapello-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      35,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Lewis and Clark State Park",
+    "link": "https://mostateparks.com/park/lewis-and-clark-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Finger Lakes",
+    "link": "https://mostateparks.com/park/finger-lakes",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      21,
+      23,
+      25,
+      26,
+      27,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Katy Trail State Park",
+    "link": "https://mostateparks.com/park/katy-trail-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      19,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Cuivre River State Park",
+    "link": "https://mostateparks.com/park/cuivre-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Johnsons Shut Ins State Park",
+    "link": "https://mostateparks.com/park/johnsons-shut-ins-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      19,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Echo Bluff State Park",
+    "link": "https://mostateparks.com/park/echo-bluff-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Knob Noster State Park",
+    "link": "https://mostateparks.com/park/knob-noster-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      35,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Graham Cave State Park",
+    "link": "https://mostateparks.com/park/graham-cave-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Big Lake State Park",
+    "link": "https://mostateparks.com/park/big-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Crowder State Park",
+    "link": "https://mostateparks.com/park/crowder-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Annie and Abel Van Meter State Park",
+    "link": "https://mostateparks.com/park/annie-and-abel-van-meter-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Hawn",
+    "link": "https://mostateparks.com/park/hawn",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Mark Twain State Park",
+    "link": "https://mostateparks.com/park/mark-twain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Bennett Spring State Park",
+    "link": "https://mostateparks.com/park/bennett-spring-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Wakonda State Park",
+    "link": "https://mostateparks.com/park/wakonda-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Thousand Hills State Park",
+    "link": "https://mostateparks.com/park/thousand-hills-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Watkins Mill State Park",
+    "link": "https://mostateparks.com/park/watkins-mill-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      35,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Taum Sauk Mountain State Park",
+    "link": "https://mostateparks.com/park/taum-sauk-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Wallace State Park",
+    "link": "https://mostateparks.com/park/wallace-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Weston Bend State Park",
+    "link": "https://mostateparks.com/park/weston-bend-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "St Joe State Park",
+    "link": "https://mostateparks.com/park/st-joe-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      23,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Trail Tears State Park",
+    "link": "https://mostateparks.com/park/trail-tears-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Washington State Park",
+    "link": "https://mostateparks.com/park/washington-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      17,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "St Francois State Park",
+    "link": "https://mostateparks.com/park/st-francois-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Table Rock State Park",
+    "link": "https://mostateparks.com/park/table-rock-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Stockton State Park",
+    "link": "https://mostateparks.com/park/stockton-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      39,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Truman Park",
+    "link": "https://mostateparks.com/park/truman-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Onondaga Cave State Park",
+    "link": "https://mostateparks.com/park/onondaga-cave-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Pershing State Park",
+    "link": "https://mostateparks.com/park/pershing-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Prairie State Park",
+    "link": "https://mostateparks.com/park/prairie-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Montauk State Park",
+    "link": "https://mostateparks.com/park/montauk-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Robertsville State Park",
+    "link": "https://mostateparks.com/park/robertsville-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Roaring River State Park",
+    "link": "https://mostateparks.com/park/roaring-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Morris State Park",
+    "link": "https://mostateparks.com/park/morris-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Jay Nixon Backcountry",
+    "link": "https://mostateparks.com/park/jay-nixon-backcountry",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 26,
+    "name": "Eleven Point State Park",
+    "link": "https://mostateparks.com/park/eleven-point-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

@@ -1,0 +1,464 @@
+[
+  {
+    "stateId": 34,
+    "name": "Bob's Creek State Natural Area",
+    "link": "https://www.ncparks.gov/state-parks/bobs-creek-state-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Carolina Beach State Park",
+    "link": "https://www.ncparks.gov/state-parks/carolina-beach-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Carvers Creek State Park",
+    "link": "https://www.ncparks.gov/state-parks/carvers-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Chimney Rock State Park",
+    "link": "https://www.ncparks.gov/state-parks/chimney-rock-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Cliffs of the Neuse State Park",
+    "link": "https://www.ncparks.gov/state-parks/cliffs-neuse-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Crowders Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/crowders-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Dismal Swamp State Park",
+    "link": "https://www.ncparks.gov/state-parks/dismal-swamp-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Elk Knob State Park",
+    "link": "https://www.ncparks.gov/state-parks/elk-knob-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Eno River State Park",
+    "link": "https://www.ncparks.gov/state-parks/eno-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Falls Lake State Recreation Area",
+    "link": "https://www.ncparks.gov/state-parks/falls-lake-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Fort Fisher State Recreation Area",
+    "link": "https://www.ncparks.gov/state-parks/fort-fisher-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Fort Macon State Park",
+    "link": "https://www.ncparks.gov/state-parks/fort-macon-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Goose Creek State Park",
+    "link": "https://www.ncparks.gov/state-parks/goose-creek-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Gorges State Park",
+    "link": "https://www.ncparks.gov/state-parks/gorges-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Grandfather Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/grandfather-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Hammocks Beach State Park",
+    "link": "https://www.ncparks.gov/state-parks/hammocks-beach-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Hanging Rock State Park",
+    "link": "https://www.ncparks.gov/state-parks/hanging-rock-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Haw River State Park",
+    "link": "https://www.ncparks.gov/state-parks/haw-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Jockey's Ridge State Park",
+    "link": "https://www.ncparks.gov/state-parks/jockeys-ridge-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Jones Lake State Park",
+    "link": "https://www.ncparks.gov/state-parks/jones-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Jordan Lake State Recreation Area",
+    "link": "https://www.ncparks.gov/state-parks/jordan-lake-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Kerr Lake State Recreation Area",
+    "link": "https://www.ncparks.gov/state-parks/kerr-lake-state-recreation-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Lake James State Park",
+    "link": "https://www.ncparks.gov/state-parks/lake-james-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Lake Norman State Park",
+    "link": "https://www.ncparks.gov/state-parks/lake-norman-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Lake Waccamaw State Park",
+    "link": "https://www.ncparks.gov/state-parks/lake-waccamaw-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Lower Haw River State Natural Area",
+    "link": "https://www.ncparks.gov/state-parks/lower-haw-river-state-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Lumber River State Park",
+    "link": "https://www.ncparks.gov/state-parks/lumber-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Mayo River State Park",
+    "link": "https://www.ncparks.gov/state-parks/mayo-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Medoc Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/medoc-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Merchants Millpond State Park",
+    "link": "https://www.ncparks.gov/state-parks/merchants-millpond-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Morrow Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/morrow-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Mount Jefferson State Natural Area",
+    "link": "https://www.ncparks.gov/state-parks/mount-jefferson-state-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Mount Mitchell State Park",
+    "link": "https://www.ncparks.gov/state-parks/mount-mitchell-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "New River State Park",
+    "link": "https://www.ncparks.gov/state-parks/new-river-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Occoneechee Mountain State Natural Area",
+    "link": "https://www.ncparks.gov/state-parks/occoneechee-mountain-state-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Pettigrew State Park",
+    "link": "https://www.ncparks.gov/state-parks/pettigrew-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Pilot Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/pilot-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Pisgah View State Park",
+    "link": "https://www.ncparks.gov/state-parks/pisgah-view-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Raven Rock State Park",
+    "link": "https://www.ncparks.gov/state-parks/raven-rock-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Rendezvous Mountain",
+    "link": "https://www.ncparks.gov/state-parks/rendezvous-mountain",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Salmon Creek State Natural Area",
+    "link": "https://www.ncparks.gov/state-parks/salmon-creek-state-natural-area",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Singletary Lake State Park",
+    "link": "https://www.ncparks.gov/state-parks/singletary-lake-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "South Mountains State Park",
+    "link": "https://www.ncparks.gov/state-parks/south-mountains-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Stone Mountain State Park",
+    "link": "https://www.ncparks.gov/state-parks/stone-mountain-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "Weymouth Woods Sandhills Nature Preserve",
+    "link": "https://www.ncparks.gov/state-parks/weymouth-woods-sandhills-nature-preserve",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 34,
+    "name": "William B Umstead State Park",
+    "link": "https://www.ncparks.gov/state-parks/william-b-umstead-state-park",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

@@ -1,0 +1,653 @@
+[
+  {
+    "stateId": 32,
+    "name": "Bluewater Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/bluewater-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Bottomless Lakes",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/bottomless-lakes-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Brantley Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/brantley-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Caballo Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/caballo-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Cerrillos Hills",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/cerrillos-hills-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      21,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Cimarron Canyon",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/cimarron-canyon-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "City of Rocks",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/city-of-rocks-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Clayton Lake & Dinosaur Trackways",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/clayton-lake-state-park-and-dinosaur-trackways",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Conchas Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/conchas-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Coyote Creek",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/coyote-creek-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Eagle Nest Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/eagle-nest-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      35,
+      36,
+      38,
+      39,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Elephant Butte Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/elephant-butte-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      24,
+      25,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "El Vado Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/el-vado-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      33,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Fenton Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/fenton-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      30,
+      33,
+      35,
+      36,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Heron Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/heron-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      30,
+      33,
+      35,
+      36,
+      38,
+      39,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Hyde Memorial",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/hyde-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      30,
+      33,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Leasburg Dam",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/leasburg-dam-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Living Desert Zoo & Gardens",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/living-desert-zoo-and-gardens-state-park",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "7-12",
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Manzano Mountains",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/manzano-mountains-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Mesilla Valley Bosque",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/mesilla-valley-bosque-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      23,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Morphy Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/morphy-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Navajo Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/navajo-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Oasis",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/oasis-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Oliver Lee Memorial",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/oliver-lee-memorial-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Pancho Villa",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/pancho-villa-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      25,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Pecos Canyon",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/pecos-canyon-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Percha Dam",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/percha-dam-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Rio Grande Nature Center",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/rio-grande-nature-center-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Rockhound",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/rockhound-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Santa Rosa Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/santa-rosa-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Storrie Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/storrie-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Sugarite Canyon",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/sugarite-canyon-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      30,
+      33,
+      35,
+      36,
+      39,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Sumner Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/sumner-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Ute Lake",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/ute-lake-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      39,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 32,
+    "name": "Villanueva",
+    "link": "https://www.emnrd.nm.gov/spd/find-a-park/villanueva-state-park",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      46,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  }
+]

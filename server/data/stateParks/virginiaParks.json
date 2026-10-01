@@ -1,0 +1,623 @@
+[
+  {
+    "stateId": 47,
+    "name": "Let's Go Adventures!",
+    "link": "https://www.dcr.virginia.gov/state-parks/lets-go-adventures",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$15 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      35,
+      36,
+      41,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Become a Junior Ranger",
+    "link": "https://www.dcr.virginia.gov/state-parks/junior-rangers.php",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Geocaching",
+    "link": "https://www.dcr.virginia.gov/state-parks/geocaching",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Self-guided experiences",
+    "link": "https://www.dcr.virginia.gov/state-parks/self-guided-activities",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "History and culture programs",
+    "link": "https://www.dcr.virginia.gov/state-parks/nature-and-history-programs",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Camping",
+    "link": "https://www.dcr.virginia.gov/state-parks/camping",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      36,
+      46,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Trails",
+    "link": "https://www.dcr.virginia.gov/state-parks/trails",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      21,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Biking",
+    "link": "https://www.dcr.virginia.gov/state-parks/biking",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Hiking",
+    "link": "https://www.dcr.virginia.gov/state-parks/hiking",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Equestrian",
+    "link": "https://www.dcr.virginia.gov/state-parks/horse-camping-trails",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Fishing",
+    "link": "https://www.dcr.virginia.gov/state-parks/fishing",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Hunting",
+    "link": "https://www.dcr.virginia.gov/state-parks/hunting",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      41,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Picnicking",
+    "link": "https://www.dcr.virginia.gov/state-parks/picnicking",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Playgrounds",
+    "link": "https://www.dcr.virginia.gov/state-parks/playgrounds",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Photography",
+    "link": "https://www.dcr.virginia.gov/state-parks/photography",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Wildlife",
+    "link": "https://www.dcr.virginia.gov/state-parks/wildlife",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Birding",
+    "link": "https://www.dcr.virginia.gov/state-parks/birding",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Paddling",
+    "link": "https://www.dcr.virginia.gov/state-parks/paddling",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      38,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Swimming",
+    "link": "https://www.dcr.virginia.gov/state-parks/swimming",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Boating",
+    "link": "https://www.dcr.virginia.gov/state-parks/boating",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Boat rentals",
+    "link": "https://www.dcr.virginia.gov/state-parks/boat-rentals",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      36,
+      38,
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Host your event",
+    "link": "https://www.dcr.virginia.gov/state-parks/host-an-event",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Meeting space",
+    "link": "https://www.dcr.virginia.gov/state-parks/meeting-facilities",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      36,
+      45,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Weddings",
+    "link": "https://www.dcr.virginia.gov/state-parks/weddings",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Volunteer",
+    "link": "https://www.dcr.virginia.gov/state-parks/volunteers",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15,
+      18,
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Youth Conservation Corps",
+    "link": "https://www.dcr.virginia.gov/state-parks/youth-conservation-corps",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Buy a Pass",
+    "link": "https://www.dcr.virginia.gov/state-parks/passes",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$85"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      19,
+      39,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Buy online",
+    "link": "https://www.dcr.virginia.gov/state-parks/annual-pass",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Prices",
+    "link": "https://www.dcr.virginia.gov/state-parks/parkfees",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Gift certificates",
+    "link": "https://www.dcr.virginia.gov/state-parks/gift-certificates",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Rules and regulations",
+    "link": "https://www.dcr.virginia.gov/state-parks/rules-and-regulations",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      21,
+      25,
+      27,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Frequently asked questions",
+    "link": "https://www.dcr.virginia.gov/state-parks/faq",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Where to stay",
+    "link": "https://www.dcr.virginia.gov/state-parks/overnight-accom",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Lodging",
+    "link": "https://www.dcr.virginia.gov/state-parks/overnight-accom.php",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Accessibility",
+    "link": "https://www.dcr.virginia.gov/state-parks/accessibility",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Careers",
+    "link": "https://www.dcr.virginia.gov/state-parks/careers",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      15
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Job openings",
+    "link": "https://www.dcr.virginia.gov/state-parks/jobs",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Media Center",
+    "link": "https://www.dcr.virginia.gov/state-parks/media-center.php",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Know Before You Go",
+    "link": "https://www.dcr.virginia.gov/state-parks/knowbeforeyougo.php",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Pet policy",
+    "link": "https://www.dcr.virginia.gov/state-parks/pets",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Dont move firewood",
+    "link": "https://www.dcr.virginia.gov/state-parks/firewood-quarantine",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Feature articles",
+    "link": "https://www.dcr.virginia.gov/state-parks/articles",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Friend groups",
+    "link": "https://www.dcr.virginia.gov/state-parks/friend-groups",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "Volunteer Host",
+    "link": "https://www.dcr.virginia.gov/state-parks/camp-host",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      36,
+      41,
+      47,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 47,
+    "name": "eNewsletter sign up",
+    "link": "https://www.dcr.virginia.gov/state-parks/enewsletter-sign-up",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

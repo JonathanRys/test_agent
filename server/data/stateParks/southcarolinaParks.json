@@ -1,0 +1,1312 @@
+[
+  {
+    "stateId": 41,
+    "name": "Scstateparks",
+    "link": "https://www.pinterest.com/scstateparks",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Scstateparks",
+    "link": "https://www.instagram.com/scstateparks",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Travel Tools",
+    "link": "https://southcarolinaparks.com/travel-tools",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Newsletter",
+    "link": "https://pages.discoversouthcarolina.travel/parks-news",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Deals",
+    "link": "https://southcarolinaparks.com/deals",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Park Passports",
+    "link": "https://southcarolinaparks.com/park-passports",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$99"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Gift Cards",
+    "link": "https://southcarolinaparks.com/gift-cards",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Volunteers",
+    "link": "https://southcarolinaparks.com/volunteer",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "GEAR UP FOR ADVENTURE Do you have what it takes to visit all of South Carolina’s state parks? Discover all of the stunning views and outdoor activities South Carolina’s state parks have to offer on your journey to becoming an Ultimate Outsider.",
+    "link": "https://southcarolinaparks.com/ultimate-outsider",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Webcams",
+    "link": "https://southcarolinaparks.com/webcams",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "AIKEN",
+    "link": "https://southcarolinaparks.com/aiken",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "ANDREW JACKSON",
+    "link": "https://southcarolinaparks.com/andrew-jackson",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "BAKER CREEK",
+    "link": "https://southcarolinaparks.com/baker-creek",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      35,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "BARNWELL",
+    "link": "https://southcarolinaparks.com/barnwell",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "BATTLE OF MUSGROVE MILL",
+    "link": "https://southcarolinaparks.com/musgrove-mill",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "BATTLE OF RIVERS BRIDGE",
+    "link": "https://southcarolinaparks.com/rivers-bridge",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "BLACK RIVER",
+    "link": "https://southcarolinaparks.com/black-river",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      35,
+      36
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CAESARS HEAD",
+    "link": "https://southcarolinaparks.com/caesars-head",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CALHOUN FALLS",
+    "link": "https://southcarolinaparks.com/calhoun-falls",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      43,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CHARLES TOWNE LANDING",
+    "link": "https://southcarolinaparks.com/charles-towne-landing",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$12"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      39
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CHERAW",
+    "link": "https://southcarolinaparks.com/cheraw",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      38,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CHESTER",
+    "link": "https://southcarolinaparks.com/chester",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      42,
+      43,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "COLLETON",
+    "link": "https://southcarolinaparks.com/colleton",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      43,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "COLONIAL DORCHESTER",
+    "link": "https://southcarolinaparks.com/colonial-dorchester",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "CROFT",
+    "link": "https://southcarolinaparks.com/croft",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per adult"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      43,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "DEVILS FORK",
+    "link": "https://southcarolinaparks.com/devils-fork",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "DREHER ISLAND",
+    "link": "https://southcarolinaparks.com/dreher-island",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "EDISTO BEACH",
+    "link": "https://southcarolinaparks.com/edisto-beach",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "GIVHANS FERRY",
+    "link": "https://southcarolinaparks.com/givhans-ferry",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      46,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "GOODALE",
+    "link": "https://southcarolinaparks.com/goodale",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "H. COOPER BLACK",
+    "link": "https://southcarolinaparks.com/h-cooper-black",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      41,
+      43,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "HAMILTON BRANCH",
+    "link": "https://southcarolinaparks.com/hamilton-branch",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "HAMPTON PLANTATION",
+    "link": "https://southcarolinaparks.com/hampton",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "HICKORY KNOB",
+    "link": "https://southcarolinaparks.com/hickory-knob",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      21,
+      35,
+      36,
+      41,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "HUNTING ISLAND",
+    "link": "https://southcarolinaparks.com/hunting-island",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "HUNTINGTON BEACH",
+    "link": "https://southcarolinaparks.com/huntington-beach",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "JONES GAP",
+    "link": "https://southcarolinaparks.com/jones-gap",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "KEOWEE-TOXAWAY",
+    "link": "https://southcarolinaparks.com/keowee-toxaway",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      50,
+      51,
+      54
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "KINGS MOUNTAIN",
+    "link": "https://southcarolinaparks.com/kings-mountain",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LAKE GREENWOOD",
+    "link": "https://southcarolinaparks.com/lake-greenwood",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      43,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LAKE HARTWELL",
+    "link": "https://southcarolinaparks.com/lake-hartwell",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LAKE WARREN",
+    "link": "https://southcarolinaparks.com/lake-warren",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LAKE WATEREE",
+    "link": "https://southcarolinaparks.com/lake-wateree",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LANDSFORD CANAL",
+    "link": "https://southcarolinaparks.com/landsford-canal",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LEE",
+    "link": "https://southcarolinaparks.com/lee",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "LITTLE PEE DEE",
+    "link": "https://southcarolinaparks.com/little-pee-dee",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "MAY FOREST",
+    "link": "https://southcarolinaparks.com/may-forest",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "MYRTLE BEACH",
+    "link": "https://southcarolinaparks.com/myrtle-beach",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "OCONEE",
+    "link": "https://southcarolinaparks.com/oconee",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      38,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "OCONEE STATION",
+    "link": "https://southcarolinaparks.com/oconee-station",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "PARIS MOUNTAIN",
+    "link": "https://southcarolinaparks.com/paris-mountain",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      35,
+      43,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "PINE ISLAND",
+    "link": "https://southcarolinaparks.com/pine-island",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      17,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "POINSETT",
+    "link": "https://southcarolinaparks.com/poinsett",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      18,
+      21,
+      35,
+      36,
+      38,
+      43,
+      48,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "REDCLIFFE PLANTATION",
+    "link": "https://southcarolinaparks.com/redcliffe",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "ROSE HILL PLANTATION",
+    "link": "https://southcarolinaparks.com/rose-hill",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "SADLERS CREEK",
+    "link": "https://southcarolinaparks.com/sadlers-creek",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      15,
+      17,
+      18,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "SANTEE",
+    "link": "https://southcarolinaparks.com/santee",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$3"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "SESQUICENTENNIAL",
+    "link": "https://southcarolinaparks.com/sesqui",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": true,
+    "activities": [
+      12,
+      15,
+      18,
+      19,
+      35,
+      36,
+      43,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "ST. PHILLIPS ISLAND",
+    "link": "https://southcarolinaparks.com/st-phillips-island",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "TABLE ROCK",
+    "link": "https://southcarolinaparks.com/table-rock",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "WOODS BAY",
+    "link": "https://southcarolinaparks.com/woods-bay",
+    "reservationAvailable": false,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Public Uploader",
+    "link": "https://upload.crowdriff.com/south-carolina-division-of-parks-recreation-tourism-b172843b",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Terms & Conditions",
+    "link": "https://www.scprt.com/legal",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Contact Us",
+    "link": "https://pages.discoversouthcarolina.travel/parks-contact",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Journalists & Influencers",
+    "link": "https://scmediaroom.com/contact",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "FAQ's",
+    "link": "https://southcarolinaparks.com/faqs",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      43,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Recycling",
+    "link": "https://southcarolinaparks.com/recycling",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Rules & Regulations",
+    "link": "https://southcarolinaparks.com/rules-regulations",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      43
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Privacy Policy",
+    "link": "https://www.scprt.com/privacy-policy",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Accessibility",
+    "link": "https://www.scprt.com/accessibility",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 41,
+    "name": "Beautiful Places Alliance",
+    "link": "https://southcarolinaparks.com/beautiful-places-alliance",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

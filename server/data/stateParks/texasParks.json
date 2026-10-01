@@ -1,0 +1,1693 @@
+[
+  {
+    "stateId": 44,
+    "name": "Abilene",
+    "link": "https://tpwd.texas.gov/state-parks/abilene",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Albert &",
+    "link": "https://tpwd.texas.gov/state-parks/albert-bessie-kronkosky",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Atlanta",
+    "link": "https://tpwd.texas.gov/state-parks/atlanta",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      47,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Balmorhea",
+    "link": "https://tpwd.texas.gov/state-parks/balmorhea",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Barton",
+    "link": "https://tpwd.texas.gov/state-parks/barton-warnock",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Leaton",
+    "link": "https://tpwd.texas.gov/state-parks/fort-leaton",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      24,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bastrop",
+    "link": "https://tpwd.texas.gov/state-parks/bastrop",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bear",
+    "link": "https://tpwd.texas.gov/state-parks/bear-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bentsen-Rio",
+    "link": "https://tpwd.texas.gov/state-parks/bentsen-rio-grande-valley",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Big",
+    "link": "https://tpwd.texas.gov/state-parks/big-bend-ranch",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      22,
+      24,
+      35,
+      36,
+      37,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Big",
+    "link": "https://tpwd.texas.gov/state-parks/big-spring",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Blanco",
+    "link": "https://tpwd.texas.gov/state-parks/blanco",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Bonham",
+    "link": "https://tpwd.texas.gov/state-parks/bonham",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Brazos",
+    "link": "https://tpwd.texas.gov/state-parks/brazos-bend",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7\n        \n        Per Person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Buescher",
+    "link": "https://tpwd.texas.gov/state-parks/buescher",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Caddo",
+    "link": "https://tpwd.texas.gov/state-parks/caddo-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Caprock Canyons State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/caprock-canyons",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cedar",
+    "link": "https://tpwd.texas.gov/state-parks/cedar-hill",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      22,
+      23,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Chinati",
+    "link": "https://tpwd.texas.gov/state-parks/chinati-mountains",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Choke",
+    "link": "https://tpwd.texas.gov/state-parks/choke-canyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cleburne",
+    "link": "https://tpwd.texas.gov/state-parks/cleburne",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Colorado",
+    "link": "https://tpwd.texas.gov/state-parks/colorado-bend",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Cooper",
+    "link": "https://tpwd.texas.gov/state-parks/cooper-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      47,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Copper",
+    "link": "https://tpwd.texas.gov/state-parks/copper-breaks",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Daingerfield",
+    "link": "https://tpwd.texas.gov/state-parks/daingerfield",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Davis",
+    "link": "https://tpwd.texas.gov/state-parks/davis-mountains",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$6"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      21,
+      48,
+      49,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Devils",
+    "link": "https://tpwd.texas.gov/state-parks/devils-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Devil's",
+    "link": "https://tpwd.texas.gov/state-parks/devils-sinkhole",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": "65+",
+        "fee": "$11"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Dinosaur",
+    "link": "https://tpwd.texas.gov/state-parks/dinosaur-valley",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      41,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Eisenhower",
+    "link": "https://tpwd.texas.gov/state-parks/eisenhower",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      25,
+      26,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Enchanted",
+    "link": "https://tpwd.texas.gov/state-parks/enchanted-rock",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Estero",
+    "link": "https://tpwd.texas.gov/state-parks/estero-llano-grande",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      49,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Falcon",
+    "link": "https://tpwd.texas.gov/state-parks/falcon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort",
+    "link": "https://tpwd.texas.gov/state-parks/fort-boggy",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort",
+    "link": "https://tpwd.texas.gov/state-parks/fort-parker",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Fort Richardson State Park, Historic Site &...",
+    "link": "https://tpwd.texas.gov/state-parks/fort-richardson",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Franklin",
+    "link": "https://tpwd.texas.gov/state-parks/franklin-mountains",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      25,
+      49,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Galveston",
+    "link": "https://tpwd.texas.gov/state-parks/galveston-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Garner",
+    "link": "https://tpwd.texas.gov/state-parks/garner",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      43,
+      44,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Goliad State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/goliad",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      19,
+      35,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Goose",
+    "link": "https://tpwd.texas.gov/state-parks/goose-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Government",
+    "link": "https://tpwd.texas.gov/state-parks/government-canyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      16,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Guadalupe",
+    "link": "https://tpwd.texas.gov/state-parks/guadalupe-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      49,
+      50,
+      53,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Hill",
+    "link": "https://tpwd.texas.gov/state-parks/hill-country",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      35,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Honey",
+    "link": "https://tpwd.texas.gov/state-parks/honey-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Hueco Tanks State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/hueco-tanks",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Huntsville",
+    "link": "https://tpwd.texas.gov/state-parks/huntsville",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Indian",
+    "link": "https://tpwd.texas.gov/state-parks/indian-lodge",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      48,
+      49,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Inks",
+    "link": "https://tpwd.texas.gov/state-parks/inks-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$7"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      17,
+      18,
+      35,
+      36,
+      38,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Kickapoo",
+    "link": "https://tpwd.texas.gov/state-parks/kickapoo-cavern",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      49,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-arrowhead",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      42,
+      43,
+      47,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-bob-sandlin",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      21,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-brownwood",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      47,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-casa-blanca",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      43,
+      45,
+      47,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-colorado-city",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-corpus-christi",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      47,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-livingston",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      43,
+      45,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Mineral Wells State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/lake-mineral-wells",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      17,
+      18,
+      35,
+      36,
+      38,
+      46,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake Somerville State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/lake-somerville",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-tawakoni",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$5"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      49,
+      50,
+      51,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lake",
+    "link": "https://tpwd.texas.gov/state-parks/lake-whitney",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lockhart",
+    "link": "https://tpwd.texas.gov/state-parks/lockhart",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      41,
+      43,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Longhorn",
+    "link": "https://tpwd.texas.gov/state-parks/longhorn-cavern",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lost",
+    "link": "https://tpwd.texas.gov/state-parks/lost-maples",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Lyndon B. Johnson State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/lyndon-b-johnson",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18,
+      45,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Martin",
+    "link": "https://tpwd.texas.gov/state-parks/martin-creek-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      47,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Martin Dies,",
+    "link": "https://tpwd.texas.gov/state-parks/martin-dies-jr",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "McKinney",
+    "link": "https://tpwd.texas.gov/state-parks/mckinney-falls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      22,
+      48,
+      49,
+      50,
+      53
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Meridian",
+    "link": "https://tpwd.texas.gov/state-parks/meridian",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mission",
+    "link": "https://tpwd.texas.gov/state-parks/mission-tejas",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Monahans",
+    "link": "https://tpwd.texas.gov/state-parks/monahans-sandhills",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mother",
+    "link": "https://tpwd.texas.gov/state-parks/mother-neff",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Mustang",
+    "link": "https://tpwd.texas.gov/state-parks/mustang-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Old",
+    "link": "https://tpwd.texas.gov/state-parks/old-tunnel",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Palmetto",
+    "link": "https://tpwd.texas.gov/state-parks/palmetto",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Palo",
+    "link": "https://tpwd.texas.gov/state-parks/palo-duro-canyon",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      19,
+      21,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Palo",
+    "link": "https://tpwd.texas.gov/state-parks/palo-pinto-mountains",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Pedernales",
+    "link": "https://tpwd.texas.gov/state-parks/pedernales-falls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Possum",
+    "link": "https://tpwd.texas.gov/state-parks/possum-kingdom",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Post",
+    "link": "https://tpwd.texas.gov/state-parks/post-oak-ridge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Powderhorn",
+    "link": "https://tpwd.texas.gov/state-parks/powderhorn",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Purtis",
+    "link": "https://tpwd.texas.gov/state-parks/purtis-creek",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$2 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Ray",
+    "link": "https://tpwd.texas.gov/state-parks/ray-roberts-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Resaca de la",
+    "link": "https://tpwd.texas.gov/state-parks/resaca-de-la-palma",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$4"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "San",
+    "link": "https://tpwd.texas.gov/state-parks/san-angelo",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Sea",
+    "link": "https://tpwd.texas.gov/state-parks/sea-rim",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Seminole Canyon State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/seminole-canyon",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "$8 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Sheldon Lake State Park &",
+    "link": "https://tpwd.texas.gov/state-parks/sheldon-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "South",
+    "link": "https://tpwd.texas.gov/state-parks/south-llano-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Stephen",
+    "link": "https://tpwd.texas.gov/state-parks/stephen-f-austin",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Tyler",
+    "link": "https://tpwd.texas.gov/state-parks/tyler",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      38,
+      48,
+      49,
+      50,
+      54
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Village",
+    "link": "https://tpwd.texas.gov/state-parks/village-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      38,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 44,
+    "name": "Wyler",
+    "link": "https://tpwd.texas.gov/state-parks/wyler-aerial-tramway",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      49
+    ],
+    "boundary": null
+  }
+]

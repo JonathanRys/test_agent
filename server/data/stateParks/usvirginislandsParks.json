@@ -1,0 +1,42 @@
+[
+  {
+    "stateId": 56,
+    "name": "Explore Properties Here!",
+    "link": "https://dpnr.vi.gov/parks/properties",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 56,
+    "name": "Find out More About our Logo!",
+    "link": "https://dpnr.vi.gov/parks/explore-logo",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 56,
+    "name": "Crrc",
+    "link": "https://dpnr.vi.gov/parks/crrc",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 56,
+    "name": "See Our Latest Updates!",
+    "link": "https://dpnr.vi.gov/parks/tppa-updates",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  }
+]

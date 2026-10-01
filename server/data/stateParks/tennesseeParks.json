@@ -1,0 +1,1198 @@
+[
+  {
+    "stateId": 43,
+    "name": "Future Tennessee State Parks",
+    "link": "https://tnstateparks.com/parks/future-tennessee-state-parks",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      19
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Park Trail Maps",
+    "link": "https://tnstateparks.com/parks/park-trail-maps",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      49,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Bicentennial Mall",
+    "link": "https://tnstateparks.com/parks/bicentennial-mall",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Big Cypress Tree",
+    "link": "https://tnstateparks.com/parks/big-cypress-tree",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      36,
+      49,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Big Hill Pond",
+    "link": "https://tnstateparks.com/parks/big-hill-pond",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      15,
+      17,
+      18,
+      21,
+      35,
+      36,
+      40,
+      42,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Big Ridge",
+    "link": "https://tnstateparks.com/parks/big-ridge",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Bledsoe Creek",
+    "link": "https://tnstateparks.com/parks/bledsoe-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Booker T Washington",
+    "link": "https://tnstateparks.com/parks/booker-t-washington",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Burgess Falls",
+    "link": "https://tnstateparks.com/parks/burgess-falls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cedars of Lebanon",
+    "link": "https://tnstateparks.com/parks/cedars-of-lebanon",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      42,
+      48,
+      49,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Chickasaw",
+    "link": "https://tnstateparks.com/parks/chickasaw",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cove Lake",
+    "link": "https://tnstateparks.com/parks/cove-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      18,
+      19,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Fall Creek Falls",
+    "link": "https://tnstateparks.com/parks/fall-creek-falls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      36,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Henry Horton",
+    "link": "https://tnstateparks.com/parks/henry-horton",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      35,
+      36,
+      42,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Montgomery Bell",
+    "link": "https://tnstateparks.com/parks/montgomery-bell",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Natchez Trace",
+    "link": "https://tnstateparks.com/parks/natchez-trace",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      41,
+      48,
+      49,
+      50,
+      51,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Paris Landing",
+    "link": "https://tnstateparks.com/parks/paris-landing",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      43,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Pickwick Landing",
+    "link": "https://tnstateparks.com/parks/pickwick-landing",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      42,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cumberland Mountain",
+    "link": "https://tnstateparks.com/parks/cumberland-mountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      43,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "David Crockett Birthplace",
+    "link": "https://tnstateparks.com/parks/david-crockett-birthplace",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "David Crockett",
+    "link": "https://tnstateparks.com/parks/david-crockett",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Dunbar Cave",
+    "link": "https://tnstateparks.com/parks/dunbar-cave",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Edgar Evins",
+    "link": "https://tnstateparks.com/parks/edgar-evins",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Fort Loudoun",
+    "link": "https://tnstateparks.com/parks/fort-loudoun",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Fort Pillow",
+    "link": "https://tnstateparks.com/parks/fort-pillow",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Frozen Head",
+    "link": "https://tnstateparks.com/parks/frozen-head",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Harpeth River",
+    "link": "https://tnstateparks.com/parks/harpeth-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      35,
+      36,
+      46,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Harrison Bay",
+    "link": "https://tnstateparks.com/parks/harrison-bay",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      43,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Indian Mountain",
+    "link": "https://tnstateparks.com/parks/indian-mountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      42,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Johnsonville",
+    "link": "https://tnstateparks.com/parks/johnsonville",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Long Hunter",
+    "link": "https://tnstateparks.com/parks/long-hunter",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      36,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Meeman Shelby",
+    "link": "https://tnstateparks.com/parks/meeman-shelby",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      42,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Mousetail Landing",
+    "link": "https://tnstateparks.com/parks/mousetail-landing",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      36,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Nathan Bedford Forrest",
+    "link": "https://tnstateparks.com/parks/nathan-bedford-forrest",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      42,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Norris Dam",
+    "link": "https://tnstateparks.com/parks/norris-dam",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      45,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Old Stone Fort",
+    "link": "https://tnstateparks.com/parks/old-stone-fort",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Panther Creek",
+    "link": "https://tnstateparks.com/parks/panther-creek",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      18,
+      21,
+      36,
+      42,
+      43,
+      45,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Pickett",
+    "link": "https://tnstateparks.com/parks/pickett",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Pinson Mounds",
+    "link": "https://tnstateparks.com/parks/pinson-mounds",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Port Royal",
+    "link": "https://tnstateparks.com/parks/port-royal",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Radnor Lake",
+    "link": "https://tnstateparks.com/parks/radnor-lake",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Red Clay",
+    "link": "https://tnstateparks.com/parks/red-clay",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Reelfoot Lake",
+    "link": "https://tnstateparks.com/parks/reelfoot-lake",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Roan Mountain",
+    "link": "https://tnstateparks.com/parks/roan-mountain",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      21,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Rock Island",
+    "link": "https://tnstateparks.com/parks/rock-island",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      37,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Sgt Alvin C York",
+    "link": "https://tnstateparks.com/parks/sgt-alvin-c-york",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      35,
+      36,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Fiery Gizzard",
+    "link": "https://tnstateparks.com/parks/fiery-gizzard",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      36,
+      45,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Standing Stone",
+    "link": "https://tnstateparks.com/parks/standing-stone",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      45,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Sycamore Shoals",
+    "link": "https://tnstateparks.com/parks/sycamore-shoals",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "T O Fuller",
+    "link": "https://tnstateparks.com/parks/t-o-fuller",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      45,
+      48,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Tims Ford",
+    "link": "https://tnstateparks.com/parks/tims-ford",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      36,
+      43,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Warriors Path",
+    "link": "https://tnstateparks.com/parks/warriors-path",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      35,
+      36,
+      41,
+      42,
+      43,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cumberland Trail",
+    "link": "https://tnstateparks.com/parks/cumberland-trail",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      15,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cordell Hull Birthplace",
+    "link": "https://tnstateparks.com/parks/cordell-hull-birthplace",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cummins Falls",
+    "link": "https://tnstateparks.com/parks/cummins-falls",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": true,
+    "activities": [
+      12,
+      14,
+      15,
+      17,
+      19,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Rocky Fork",
+    "link": "https://tnstateparks.com/parks/rocky-fork",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Seven Islands",
+    "link": "https://tnstateparks.com/parks/seven-islands",
+    "reservationAvailable": true,
+    "entryFee": [
+      {
+        "ageRange": null,
+        "fee": "Free"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      12,
+      36,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Savage Gulf",
+    "link": "https://tnstateparks.com/parks/savage-gulf",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Middle Fork Bottoms",
+    "link": "https://tnstateparks.com/parks/middle-fork-bottoms",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      15,
+      17,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "North Chickamauga",
+    "link": "https://tnstateparks.com/parks/north-chickamauga",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      21,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Scotts Gulf",
+    "link": "https://tnstateparks.com/parks/scotts-gulf",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      14,
+      18,
+      35,
+      36,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Head of the Crow",
+    "link": "https://tnstateparks.com/parks/head-of-the-crow",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      36,
+      49,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Hiwassee River",
+    "link": "https://tnstateparks.com/parks/hiwassee-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      37,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Ocoee River",
+    "link": "https://tnstateparks.com/parks/ocoee-river",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      17,
+      18,
+      35,
+      36,
+      37,
+      38,
+      48,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Devils Backbone",
+    "link": "https://tnstateparks.com/parks/devils-backbone",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cardwell Mountain",
+    "link": "https://tnstateparks.com/parks/cardwell-mountain",
+    "reservationAvailable": false,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      17
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 43,
+    "name": "Cherokee Trail of Tears",
+    "link": "https://tnstateparks.com/parks/cherokee-trail-of-tears",
+    "reservationAvailable": true,
+    "entryFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      36,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  }
+]

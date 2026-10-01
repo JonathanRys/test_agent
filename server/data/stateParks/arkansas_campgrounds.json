@@ -1,0 +1,484 @@
+[
+  {
+    "stateId": 4,
+    "name": "Bull Shoals-White River State Park",
+    "link": "https://reserve.arkansasstateparks.com/bull-shoals-white-river",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Cane Creek State Park",
+    "link": "https://reserve.arkansasstateparks.com/cane-creek",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      35,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Cossatot River State Park-Natural Area",
+    "link": "https://reserve.arkansasstateparks.com/cossatot-river",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Crater of Diamonds State Park",
+    "link": "https://reserve.arkansasstateparks.com/crater-diamonds",
+    "reservationAvailable": true,
+    "siteFee": [
+      {
+        "ageRange": null,
+        "fee": "$15.00 per person"
+      }
+    ],
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Crowley's Ridge State Park",
+    "link": "https://reserve.arkansasstateparks.com/crowleys-ridge",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Daisy State Park",
+    "link": "https://reserve.arkansasstateparks.com/daisy",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Davidsonville Historic State Park",
+    "link": "https://reserve.arkansasstateparks.com/davidsonville",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "DeGray Lake Resort State Park",
+    "link": "https://reserve.arkansasstateparks.com/degray-lake",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      43,
+      48,
+      49,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Delta Heritage Trail State Park",
+    "link": "https://reserve.arkansasstateparks.com/delta-heritage",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      17,
+      18,
+      19,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Devil's Den State Park",
+    "link": "https://reserve.arkansasstateparks.com/devils-den",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Hobbs State Park-Conservation Area",
+    "link": "https://reserve.arkansasstateparks.com/hobbs",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Jacksonport State Park",
+    "link": "https://reserve.arkansasstateparks.com/jacksonport",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      48
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Catherine State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-catherine",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Charles State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-charles",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Chicot State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-chicot",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Dardanelle State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-dardanelle",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Fort Smith State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-fort-smith",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Frierson State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-frierson",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Ouachita State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-ouachita",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      35,
+      48,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Poinsett State Park",
+    "link": "https://reserve.arkansasstateparks.com/lake-poinsett",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18,
+      49
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Lake Sylvia Recreation Area",
+    "link": "https://reserve.arkansasstateparks.com/lake-sylvia",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      17,
+      18,
+      48,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Logoly State Park",
+    "link": "https://reserve.arkansasstateparks.com/logoly",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Millwood State Park",
+    "link": "https://reserve.arkansasstateparks.com/millwood",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mississippi River State Park",
+    "link": "https://www.arkansas.com/state-parks/explore/parks/mississippi-river-state-park",
+    "reservationAvailable": false,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Moro Bay State Park",
+    "link": "https://reserve.arkansasstateparks.com/moro-bay",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50,
+      51
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mount Magazine State Park",
+    "link": "https://reserve.arkansasstateparks.com/mount-magazine",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      14,
+      18,
+      21,
+      25,
+      55
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Mount Nebo State Park",
+    "link": "https://reserve.arkansasstateparks.com/mount-nebo",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      21
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Petit Jean State Park",
+    "link": "https://reserve.arkansasstateparks.com/petit-jean",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Queen Wilhelmina State Park",
+    "link": "https://reserve.arkansasstateparks.com/queen-wilhelmina",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      13,
+      18
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Village Creek State Park",
+    "link": "https://reserve.arkansasstateparks.com/village-creek",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "White Oak Lake State Park",
+    "link": "https://reserve.arkansasstateparks.com/white-oak-lake",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      19,
+      21,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Withrow Springs State Park",
+    "link": "https://reserve.arkansasstateparks.com/withrow-springs",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      12,
+      18,
+      49,
+      50
+    ],
+    "boundary": null
+  },
+  {
+    "stateId": 4,
+    "name": "Woolly Hollow State Park",
+    "link": "https://reserve.arkansasstateparks.com/wolly-hollow",
+    "reservationAvailable": true,
+    "siteFee": null,
+    "permitRequired": false,
+    "activities": [
+      18
+    ],
+    "boundary": null
+  }
+]
