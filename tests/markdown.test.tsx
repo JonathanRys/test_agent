@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import { MemoryRouter } from "react-router-dom";
-import Markdown from "../client/src/components/Markdown";
+import Markdown from "../client/src/components/agent/Markdown";
 
 describe("Markdown", () => {
   it("renders markdown syntax as real elements instead of raw text", () => {

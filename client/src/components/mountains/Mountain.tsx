@@ -1,20 +1,20 @@
 import { useState } from "react";
-import type { List } from "../types/List";
-import type { Mountain as MountainType } from "../types/Mountain";
+import type { List } from "../../types/List";
+import type { Mountain as MountainType } from "../../types/Mountain";
 import { MdArrowDropDown, MdArrowDropUp, MdForest } from "react-icons/md";
 import { PiSignpost } from "react-icons/pi";
 import { FaMountain } from "react-icons/fa6";
-import StateIcon from "./State";
-import Map from "./Map";
+import StateIcon from "../shared/State";
+import Map from "../shared/Map";
 import MarkComplete, {
   earliestCompleted,
   seasonOrder,
   sortCompletionsByDate,
-} from "./MarkComplete";
-import CompletionDate from "./CompletionDate";
-import GridIcon from "./GridIcon";
-import Season from "./Season";
-import { useAuth } from "../auth/AuthContext";
+} from "../lists/MarkComplete";
+import CompletionDate from "../lists/CompletionDate";
+import GridIcon from "../shared/GridIcon";
+import Season from "../shared/Season";
+import { useAuth } from "../../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export interface MountainProps extends MountainType {

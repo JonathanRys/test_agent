@@ -4,9 +4,9 @@ import MarkComplete, {
   formatCompletedDate,
   completionDateToInputValue,
 } from "./MarkComplete";
-import { useAuth } from "../auth/AuthContext";
-import DatePickerField from "./DatePickerField";
-import SeasonPicker from "./SeasonPicker";
+import { useAuth } from "../../auth/AuthContext";
+import DatePickerField from "../shared/DatePickerField";
+import SeasonPicker from "../shared/SeasonPicker";
 
 export interface CompletionDateProps {
   adventureId: number;

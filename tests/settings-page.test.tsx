@@ -5,7 +5,7 @@ import { describe, expect, it } from "vitest";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { AuthProvider } from "../client/src/auth/AuthContext";
-import Settings from "../client/src/components/Settings";
+import Settings from "../client/src/components/account/Settings";
 import { fetchMock } from "./setup";
 
 describe("Settings", () => {

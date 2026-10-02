@@ -1,8 +1,8 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../auth/AuthContext";
-import DatePickerField from "./DatePickerField";
-import type { Preferences, SaveStatus } from "../types/Settings";
+import { useAuth } from "../../auth/AuthContext";
+import DatePickerField from "../shared/DatePickerField";
+import type { Preferences, SaveStatus } from "../../types/Settings";
 
 const initialPreferences: Preferences = {
   birthdate: null,

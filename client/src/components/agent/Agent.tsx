@@ -4,8 +4,8 @@ import {
   getLastAgentSession,
   setLastAgentSession,
   useAuth,
-} from "../auth/AuthContext";
-import type { AgentSession, MemoryType, Message } from "../types/Agent";
+} from "../../auth/AuthContext";
+import type { AgentSession, MemoryType, Message } from "../../types/Agent";
 import Markdown from "./Markdown";
 
 function generateUUID(): string {

@@ -3,7 +3,7 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, expect, it, vi } from "vitest";
 import { AuthProvider, useAuth } from "../client/src/auth/AuthContext";
-import AuthForm from "../client/src/components/AuthForm";
+import AuthForm from "../client/src/components/auth/AuthForm";
 import { fetchMock } from "./setup";
 
 function ExpiredSessionProbe() {

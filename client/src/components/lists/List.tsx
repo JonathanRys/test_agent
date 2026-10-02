@@ -4,7 +4,7 @@ import { FaMedal } from "react-icons/fa";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import ContactForm from "./ContactForm";
 import { formatCompletedDate } from "./MarkComplete";
-import { useAuth } from "../auth/AuthContext";
+import { useAuth } from "../../auth/AuthContext";
 import { useState } from "react";
 
 export interface ListProps {

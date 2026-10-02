@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { MdArrowBack } from "react-icons/md";
-import Mountain from "./Mountain";
-import Trail from "./Trail";
-import RockClimbing from "./RockClimbing";
-import TrailMaintenance from "./TrailMaintenance";
+import Mountain from "../mountains/Mountain";
+import Trail from "../trails/Trail";
+import RockClimbing from "../trails/RockClimbing";
+import TrailMaintenance from "../trails/TrailMaintenance";
 import MountainFilters, {
   filterMountains,
   initialMountainFilters,
 } from "./MountainFilters";
-import { useAuth } from "../auth/AuthContext";
-import type { ListDefinition, MountainFilterState } from "../types/List";
+import { useAuth } from "../../auth/AuthContext";
+import type { ListDefinition, MountainFilterState } from "../../types/List";
 
 export interface ListItemsProps {
   id: number;

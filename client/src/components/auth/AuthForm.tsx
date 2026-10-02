@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { getLastAgentSession, useAuth } from "../auth/AuthContext";
+import { getLastAgentSession, useAuth } from "../../auth/AuthContext";
 
 type AuthFormProps = { mode: "login" | "register" };
 

@@ -6,19 +6,19 @@ import {
   useLocation,
 } from "react-router-dom";
 import { AuthProvider } from "./auth/AuthContext";
-import Account from "./components/Account";
-import AuthForm from "./components/AuthForm";
-import Nav from "./components/Nav";
-import Agent from "./components/Agent";
-import Lists from "./components/Lists";
-import ProtectedRoute from "./components/ProtectedRoute";
-import Settings from "./components/Settings";
-import ForgotPassword from "./components/ForgotPassword";
-import ResetPassword from "./components/ResetPassword";
-import ListPage from "./components/ListPage";
-import MountainDetail from "./components/MountainDetail";
-import Admin from "./components/Admin";
-import VerifyEmail from "./components/VerifyEmail";
+import Account from "./components/account/Account";
+import AuthForm from "./components/auth/AuthForm";
+import Nav from "./components/shared/Nav";
+import Agent from "./components/agent/Agent";
+import Lists from "./components/lists/Lists";
+import ProtectedRoute from "./components/auth/ProtectedRoute";
+import Settings from "./components/account/Settings";
+import ForgotPassword from "./components/auth/ForgotPassword";
+import ResetPassword from "./components/auth/ResetPassword";
+import ListPage from "./components/lists/ListPage";
+import MountainDetail from "./components/mountains/MountainDetail";
+import Admin from "./components/account/Admin";
+import VerifyEmail from "./components/auth/VerifyEmail";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 

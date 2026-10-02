@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { GiTrail } from "react-icons/gi";
-import type { Trail as TrailType } from "../types/Trail";
-import StateIcon from "./State";
+import type { Trail as TrailType } from "../../types/Trail";
+import StateIcon from "../shared/State";
 import MarkComplete, {
   earliestCompleted,
   seasonOrder,
   sortCompletionsByDate,
-} from "./MarkComplete";
-import CompletionDate from "./CompletionDate";
-import GridIcon from "./GridIcon";
-import Season from "./Season";
+} from "../lists/MarkComplete";
+import CompletionDate from "../lists/CompletionDate";
+import GridIcon from "../shared/GridIcon";
+import Season from "../shared/Season";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
-import { List } from "../types/List";
-import { useAuth } from "../auth/AuthContext";
+import { List } from "../../types/List";
+import { useAuth } from "../../auth/AuthContext";
 
 export interface TrailProps extends TrailType {
   index: number;

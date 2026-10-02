@@ -1,8 +1,8 @@
 import { SubmitEvent, useState } from "react";
-import { Completion } from "../types/Completion";
-import { useAuth } from "../auth/AuthContext";
-import DatePickerField from "./DatePickerField";
-import SeasonPicker from "./SeasonPicker";
+import { Completion } from "../../types/Completion";
+import { useAuth } from "../../auth/AuthContext";
+import DatePickerField from "../shared/DatePickerField";
+import SeasonPicker from "../shared/SeasonPicker";
 
 const HIKING_ACTIVITY_ID = 7;
 

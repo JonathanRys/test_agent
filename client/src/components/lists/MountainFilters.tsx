@@ -1,6 +1,6 @@
 import type { ChangeEvent } from "react";
-import type { List, MountainFilterState } from "../types/List";
-import type { Mountain } from "../types/Mountain";
+import type { List, MountainFilterState } from "../../types/List";
+import type { Mountain } from "../../types/Mountain";
 
 export type MountainFiltersProps = {
   mountains: Mountain[];

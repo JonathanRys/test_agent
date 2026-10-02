@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 import List, { type ListProps } from "./List";
-import { useAuth } from "../auth/AuthContext";
+import { useAuth } from "../../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const listScrollPositionKey = "lists-scroll-position";
