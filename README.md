@@ -103,8 +103,9 @@ The client (Vite, `envDir: "../"`) loads the same files by **mode**: `.env` → 
 | `OPENROUTER_MODEL` | No | `poolside/laguna-s-2.1:free` | Primary chat model |
 | `OPENROUTER_CONTEXT_SUMMARY_MODEL` | No | `nvidia/nemotron-3.5-lightning:free` | Summarization model |
 | `OPENROUTER_BASE_URL` | No | `https://openrouter.ai/api/v1` | OpenAI-compatible endpoint |
-| `OPENROUTER_FALLBACK_MODELS` | No | — | Comma-separated fallback models after 429 budget is exhausted |
+| `OPENROUTER_FALLBACK_MODELS` | No | `nvidia/nemotron-3.5-lightning:free,qwen/qwen3.8-27b:free,nvidia/nemotron-3-ultra-550b-a55b:free` | Ordered fallback models after the primary model's 429 retry budget is exhausted |
 | `WEATHER_API_BASE_URL` | No | `https://api.open-meteo.com/v1/forecast` | Forecast provider (keyless default) |
+| `ROUTING_API_BASE_URL` | No | `https://router.project-osrm.org/table/v1/driving` | OSRM-compatible route-table endpoint; public default is for light development use, configure a provider or self-hosted endpoint for production |
 | `REDIS_URL` | No | — (in-memory fallback) | e.g. `redis://localhost:6379` for shared cache |
 | `VITE_GOOGLE_MAPS_API_KEY` | Yes for maps | — | Exposed to browser for `Map` component |
 

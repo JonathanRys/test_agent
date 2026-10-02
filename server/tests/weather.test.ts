@@ -68,6 +68,9 @@ function makeContext(): CachedUserAgentContext {
             elevationGain: 900,
             elevationLoss: -900,
             routeDetails: null,
+            difficulty: "Easy",
+            startLat: 44.25,
+            startLon: -71.31,
           },
         ],
       },
@@ -94,6 +97,7 @@ function openMeteoPayload(count: number): unknown[] {
       temperature_2m_max: [12.2],
       temperature_2m_min: [4.4],
       precipitation_probability_max: [31],
+      precipitation_sum: [0.03],
     },
   }));
 }
@@ -145,6 +149,8 @@ describe("weather service pure helpers", () => {
     const metric = new URL(buildWeatherRequestUrl(points, "metric"));
     expect(metric.searchParams.get("temperature_unit")).toBe("celsius");
     expect(metric.searchParams.get("wind_speed_unit")).toBe("kmh");
+    expect(imperial.searchParams.get("precipitation_unit")).toBe("inch");
+    expect(metric.searchParams.get("precipitation_unit")).toBe("mm");
   });
 });
 
@@ -163,6 +169,7 @@ describe("weather parsing and formatting", () => {
       hi: 12,
       lo: 4,
       pop: 31,
+      precipitation: 0.03,
     });
 
     const many = parseWeatherResponse(openMeteoPayload(2), points);
@@ -181,26 +188,46 @@ describe("weather parsing and formatting", () => {
   it("formats a compact weather line in the user's units", () => {
     expect(
       formatPeakWeather(
-        { temp: 38, cond: "partly cloudy", wind: 12, hi: 45, lo: 30, pop: 20 },
+        {
+          temp: 38,
+          cond: "partly cloudy",
+          wind: 12,
+          hi: 45,
+          lo: 30,
+          pop: 80,
+          precipitation: 0.02,
+        },
         "imperial",
       ),
-    ).toBe("38°F, partly cloudy, wind 12 mph, today 45/30°F, 20% precip");
+    ).toBe(
+      "38°F, partly cloudy, wind 12 mph, today 45/30°F, 80% precip, 0.02 in total",
+    );
     expect(
       formatPeakWeather({ temp: 3, cond: "snow", wind: 9 }, "metric"),
     ).toBe("3°C, snow, wind 9 km/h");
+    expect(
+      formatPeakWeather(
+        { temp: 3, cond: "rain", wind: 9, pop: 75, precipitation: 0.4 },
+        "metric",
+      ),
+    ).toBe("3°C, rain, wind 9 km/h, 75% precip, 0.4 mm total");
   });
 
   it("collects only unique peaks that have coordinates", () => {
     const points = collectRemainingPeakPoints(makeContext());
-    expect(points).toEqual([{ id: 42, lat: 44.2692, lon: -71.3021 }]);
+    expect(points).toEqual([
+      { id: 42, lat: 44.2692, lon: -71.3021 },
+      { id: 9, lat: 44.25, lon: -71.31, kind: "trail" },
+    ]);
   });
 
-  it("attaches weather to matching peaks only without mutating the input", () => {
+  it("attaches weather to matching hikes without mutating the input", () => {
     const context = makeContext();
     const snapshot: PeakWeatherSnapshot = {
       units: "imperial",
       fetchedAt: new Date().toISOString(),
       byPeak: { "42": { temp: 38, cond: "clear", wind: 5 } },
+      byTrail: { "9": { temp: 40, cond: "rain", wind: 8 } },
     };
     const merged = attachWeather(context, snapshot, "imperial");
     const hikes = merged.unfinishedLists[0]!.remainingHikes;
@@ -209,10 +236,32 @@ describe("weather parsing and formatting", () => {
       weather: "38°F, clear, wind 5 mph",
     });
     expect(hikes[1]).not.toHaveProperty("weather");
-    expect(hikes[2]).not.toHaveProperty("weather");
+    expect(hikes[2]).toMatchObject({
+      name: "Some Trail",
+      weather: "40°F, rain, wind 8 mph",
+    });
     expect(
       context.unfinishedLists[0]!.remainingHikes[0],
     ).not.toHaveProperty("weather");
+  });
+
+  it("attaches trail weather when the snapshot contains no peak weather", () => {
+    const context = makeContext();
+    const merged = attachWeather(
+      context,
+      {
+        units: "imperial",
+        fetchedAt: new Date().toISOString(),
+        byPeak: {},
+        byTrail: { "9": { temp: 40, cond: "rain", wind: 8 } },
+      },
+      "imperial",
+    );
+
+    expect(merged.unfinishedLists[0]!.remainingHikes[2]).toMatchObject({
+      name: "Some Trail",
+      weather: "40°F, rain, wind 8 mph",
+    });
   });
 });
 
@@ -254,7 +303,7 @@ describe("weather fetch, cache, and backoff", () => {
   });
 
   it("serves repeat reads from cache without a second fetch", async () => {
-    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(1)));
+    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(2)));
     const points = collectRemainingPeakPoints(makeContext());
 
     const first = await getPeakWeatherSnapshot(9901, points, "imperial");
@@ -284,7 +333,7 @@ describe("weather fetch, cache, and backoff", () => {
   });
 
   it("re-fetches when the user switches unit preference", async () => {
-    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(1)));
+    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(2)));
     const points = collectRemainingPeakPoints(makeContext());
 
     await getPeakWeatherSnapshot(9903, points, "imperial");
@@ -312,11 +361,16 @@ describe("weather fetch, cache, and backoff", () => {
   });
 
   it("withPeakWeather attaches a formatted weather line", async () => {
-    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(1)));
+    fetchMock.mockImplementation(async () => jsonResponse(openMeteoPayload(2)));
 
     const result = await withPeakWeather(9905, makeContext());
     expect(result.unfinishedLists[0]!.remainingHikes[0]).toMatchObject({
-      weather: "11°F, partly cloudy, wind 5 mph, today 12/4°F, 31% precip",
+      weather:
+        "11°F, partly cloudy, wind 5 mph, today 12/4°F, 31% precip, 0.03 in total",
+    });
+    expect(result.unfinishedLists[0]!.remainingHikes[2]).toMatchObject({
+      weather:
+        "11°F, partly cloudy, wind 5 mph, today 12/4°F, 31% precip, 0.03 in total",
     });
   });
 });

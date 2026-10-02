@@ -3,9 +3,13 @@ import { getMountainsOnList } from "./mountain.js";
 import { getTrailsOnList } from "./trail.js";
 import { Mountain, State, Summit } from "../models/index.js";
 import { ensureInitialized } from "../utils/db.js";
-import { getStubMountainDifficulty } from "../utils/amcRating.js";
+import {
+  getStubMountainDifficulty,
+  getStubTrailDifficulty,
+} from "../utils/amcRating.js";
 
 export const PRIORITY_UNFINISHED_LIST_LIMIT = 10;
+export const MAX_CACHED_REMAINING_HIKES = 40;
 
 export type ListCompletionStatus = {
   id: number;
@@ -100,6 +104,9 @@ export type RemainingTrail = {
   elevationGain: number | null;
   elevationLoss: number | null;
   routeDetails: string | null;
+  difficulty: string | null;
+  startLat: number | null;
+  startLon: number | null;
 };
 
 export type RemainingHike = RemainingPeak | RemainingTrail;
@@ -114,11 +121,63 @@ export function rankUnfinishedListsByCompletions(
   return lists
     .filter((list) => !list.complete)
     .sort((left, right) => {
+      const leftProgress =
+        left.totalCount > 0 ? left.completedCount / left.totalCount : 0;
+      const rightProgress =
+        right.totalCount > 0 ? right.completedCount / right.totalCount : 0;
+      if (rightProgress !== leftProgress) {
+        return rightProgress - leftProgress;
+      }
       if (right.completedCount !== left.completedCount) {
         return right.completedCount - left.completedCount;
       }
       return left.remainingCount - right.remainingCount;
     });
+}
+
+const DIFFICULTY_ORDER = [
+  "accessible",
+  "relaxed",
+  "easy",
+  "moderate",
+  "vigorous",
+  "strenuous",
+];
+
+function difficultyScore(hike: RemainingHike): number {
+  const difficulty = hike.difficulty;
+  if (typeof difficulty === "string") {
+    return DIFFICULTY_ORDER.indexOf(difficulty.toLowerCase());
+  }
+  if (difficulty && typeof difficulty === "object") {
+    const high = (difficulty as { high?: unknown }).high;
+    if (typeof high === "string") {
+      return DIFFICULTY_ORDER.indexOf(high.toLowerCase());
+    }
+  }
+  return -1;
+}
+
+function skillTarget(fitnessLevel?: string | null): number {
+  if (fitnessLevel === "beginner") return 2;
+  if (fitnessLevel === "expert") return 4;
+  return 3;
+}
+
+export function prioritizeHikesForFitness(
+  hikes: RemainingHike[],
+  fitnessLevel?: string | null,
+): RemainingHike[] {
+  const target = skillTarget(fitnessLevel);
+  return [...hikes].sort((left, right) => {
+    const leftScore = difficultyScore(left);
+    const rightScore = difficultyScore(right);
+    const leftDistance =
+      leftScore < 0 ? Number.POSITIVE_INFINITY : Math.abs(leftScore - target);
+    const rightDistance =
+      rightScore < 0 ? Number.POSITIVE_INFINITY : Math.abs(rightScore - target);
+    return leftDistance - rightDistance || leftScore - rightScore;
+  });
 }
 
 export async function getListCompletionStatus(
@@ -176,6 +235,9 @@ async function remainingHikesForList(
           elevationLoss: (plain.elevationLoss as number | null | undefined) ?? null,
           routeDetails:
             (plain.description as string | null | undefined) ?? null,
+          difficulty: getStubTrailDifficulty(trail.id)?.rating ?? null,
+          startLat: typeof plain.startLat === "number" ? plain.startLat : null,
+          startLon: typeof plain.startLon === "number" ? plain.startLon : null,
         };
       });
   }
@@ -207,15 +269,38 @@ async function remainingHikesForList(
 
 export async function getPriorityUnfinishedLists(
   userId: number,
+  fitnessLevel?: string | null,
 ): Promise<PriorityUnfinishedList[]> {
   const lists = rankUnfinishedListsByCompletions(
     await getListCompletionStatus(userId),
   ).slice(0, PRIORITY_UNFINISHED_LIST_LIMIT);
 
-  return Promise.all(
+  const prioritized = await Promise.all(
     lists.map(async (list) => ({
       ...list,
       remainingHikes: await remainingHikesForList(list, userId),
     })),
   );
+
+  const hasStartedList = prioritized.some((list) => list.completedCount > 0);
+  if (hasStartedList) {
+    let remainingSlots = MAX_CACHED_REMAINING_HIKES;
+    return prioritized.map((list) => {
+      const remainingHikes = list.remainingHikes.slice(0, remainingSlots);
+      remainingSlots -= remainingHikes.length;
+      return { ...list, remainingHikes };
+    });
+  }
+
+  const rankedHikes = prioritizeHikesForFitness(
+    prioritized.flatMap((list) => list.remainingHikes),
+    fitnessLevel,
+  ).slice(0, MAX_CACHED_REMAINING_HIKES);
+  const included = new Set(rankedHikes.map((hike) => `${hike.kind}:${hike.id}`));
+  return prioritized.map((list) => ({
+    ...list,
+    remainingHikes: list.remainingHikes.filter((hike) =>
+      included.has(`${hike.kind}:${hike.id}`),
+    ),
+  }));
 }

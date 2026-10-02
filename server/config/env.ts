@@ -21,15 +21,23 @@ const envSchema = z.object({
     .string()
     .default("nvidia/nemotron-3.5-lightning:free"),
   OPENROUTER_BASE_URL: z.string().default("https://openrouter.ai/api/v1"),
-  // Optional comma-separated fallback models tried in order after the primary
-  // model exhausts its 429 retry budget (e.g. another free model on a
-  // different shared pool). Empty by default = retry primary only.
-  OPENROUTER_FALLBACK_MODELS: z.string().optional(),
+  // Comma-separated fallback models tried in order after the primary model
+  // exhausts its 429 retry budget. Deployments can override this list.
+  OPENROUTER_FALLBACK_MODELS: z
+    .string()
+    .default(
+      "nvidia/nemotron-3.5-lightning:free,qwen/qwen3.8-27b:free,nvidia/nemotron-3-ultra-550b-a55b:free",
+    ),
   // Keyless forecast provider (Open-Meteo by default). Overridable so the
   // weather injection can be pointed at a self-hosted or cached instance.
   WEATHER_API_BASE_URL: z
     .string()
     .default("https://api.open-meteo.com/v1/forecast"),
+  // OSRM-compatible table endpoint. Use a self-hosted/provider endpoint for
+  // production; the public OSRM demo is intended for light development use.
+  ROUTING_API_BASE_URL: z
+    .string()
+    .default("https://router.project-osrm.org/table/v1/driving"),
   REDIS_URL: z.string().min(1).optional(),
   ADMIN_USERS: z.string().default(""),
 });

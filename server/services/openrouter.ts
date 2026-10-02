@@ -4,11 +4,21 @@ import {
   buildAgentSummaryPrompt,
   createAgentContext,
 } from "../agent/agent.js";
+import {
+  collectMountainCardReferences,
+  linkMountainCards,
+  type MountainCardReference,
+} from "../agent/mountainLinks.js";
 import { env } from "../config/env.js";
 import {
   applicationTools,
   executeApplicationTool,
+  mountainSearchTool,
+  nearbyMountainSearchTool,
   shouldOfferDetailTools,
+  shouldOfferMountainSearch,
+  shouldOfferNearbyMountainSearch,
+  shouldUseWebSearch,
   stripPseudoToolMarkup,
 } from "../agent/tools.js";
 import { getUserAgentContext } from "./userContext.js";
@@ -135,39 +145,6 @@ function throwRateLimitResponse(): never {
   throw error;
 }
 
-const webSearchTool = {
-  type: "function",
-  function: {
-    name: "web_search",
-    description:
-      "Search the web for CURRENT conditions only (weather, road closures, trail conditions). Call ONLY when the user explicitly asks about current conditions (weather, closures, trail status) AND only after you have already given a hike recommendation from the injected remainingHikes. Max 1 call per turn. NEVER call in parallel, NEVER call multiple times per turn, NEVER call for general hike advice.",
-    parameters: {
-      type: "object",
-      properties: {
-        query: {
-          type: "string",
-          description: "The search query, e.g. 'White Mountains NH weather forecast'.",
-        },
-      },
-      required: ["query"],
-      additionalProperties: false,
-    },
-  },
-} as unknown as OpenAI.Chat.Completions.ChatCompletionTool;
-
-// Web search is offered ONLY when the user explicitly asks about *current,
-// checkable* conditions that are NOT covered by the injected peak weather
-// snapshot (road closures, trail reports, mud/ice season). Weather questions
-// are deliberately excluded: current conditions for remaining peaks are
-// injected into the prompt from the weather cache, so arming a tool there
-// buys a pointless second model round-trip + 429 exposure.
-// NOTE: callers must pass the RAW user turn, never history-prefixed text.
-export function shouldUseWebSearch(prompt: string): boolean {
-  return /road closure|road condition|is .* open today|trail report|current trail (conditions|status)|mud season|ice (conditions|report)/i.test(
-    prompt.trim(),
-  );
-}
-
 export async function generateAgentReply(
   prompt: string,
   userId?: number,
@@ -192,9 +169,22 @@ export async function generateAgentReply(
     },
     { role: "user", content: prompt },
   ];
+  const mountainCards = new Map<number, string>();
+  for (const list of requestContext?.unfinishedLists ?? []) {
+    for (const hike of list.remainingHikes) {
+      if (hike.kind === "peak") {
+        mountainCards.set(hike.id, hike.name);
+      }
+    }
+  }
 
   const tools = [
-    ...(shouldUseWebSearch(rawPrompt) ? [webSearchTool] : []),
+    ...(userId && shouldOfferNearbyMountainSearch(rawPrompt)
+      ? [nearbyMountainSearchTool as OpenAI.Chat.Completions.ChatCompletionTool]
+      : []),
+    ...(userId && shouldOfferMountainSearch(rawPrompt)
+      ? [mountainSearchTool as OpenAI.Chat.Completions.ChatCompletionTool]
+      : []),
     // Default: NO function tools — answer from injected remainingHikes.
     // Only expose detail/history tools when explicitly requested, and the
     // runtime enforces max 1 tool call below to stop fan-out 429s.
@@ -203,14 +193,16 @@ export async function generateAgentReply(
 
   for (let attempt = 0; attempt < 3; attempt += 1) {
     const startedAt = Date.now();
+    const toolsForAttempt = attempt === 0 ? tools : [];
     let response: OpenAI.Chat.Completions.ChatCompletion;
     try {
       response = await createChatCompletion({
         messages,
-        tools,
+        tools: toolsForAttempt,
+        ...webSearchPluginOptions(rawPrompt),
         temperature: 0.7,
         // Single-call tool budget: one model->tool->model round-trip max.
-        tool_choice: tools.length > 0 ? "auto" : "none",
+        tool_choice: toolsForAttempt.length > 0 ? "auto" : "none",
       });
     } catch (error) {
       if (isRetryableRateLimit(error)) throwRateLimitResponse();
@@ -226,7 +218,11 @@ export async function generateAgentReply(
     if (!message?.tool_calls?.length) {
       return {
         role: "assistant",
-        content: stripPseudoToolMarkup(message?.content ?? "") || "No response returned.",
+        content:
+          linkMountainCards(
+            stripPseudoToolMarkup(message?.content ?? ""),
+            mountainCardReferences(mountainCards),
+          ) || "No response returned.",
       };
     }
 
@@ -257,6 +253,7 @@ export async function generateAgentReply(
     const firstResult = userId
       ? await executeApplicationTool(firstCall.function.name, firstArgs, userId)
       : JSON.stringify({ ok: false, error: "Authentication required" });
+    rememberMountainCards(mountainCards, firstResult);
     console.info("agent.tool.request", {
       name: firstCall.function.name,
       durationMs: Date.now() - toolStartedAt,
@@ -295,8 +292,21 @@ export async function generateAgentReplyStream(
     { role: "system", content: buildAgentSystemPrompt(requestContext) },
     { role: "user", content: prompt },
   ];
+  const mountainCards = new Map<number, string>();
+  for (const list of requestContext?.unfinishedLists ?? []) {
+    for (const hike of list.remainingHikes) {
+      if (hike.kind === "peak") {
+        mountainCards.set(hike.id, hike.name);
+      }
+    }
+  }
   const tools = [
-    ...(shouldUseWebSearch(rawPrompt) ? [webSearchTool] : []),
+    ...(userId && shouldOfferNearbyMountainSearch(rawPrompt)
+      ? [nearbyMountainSearchTool as OpenAI.Chat.Completions.ChatCompletionTool]
+      : []),
+    ...(userId && shouldOfferMountainSearch(rawPrompt)
+      ? [mountainSearchTool as OpenAI.Chat.Completions.ChatCompletionTool]
+      : []),
     // Default: NO function tools — answer from injected remainingHikes.
     // Only expose detail/history tools when explicitly requested, and the
     // runtime enforces max 1 tool call below to stop fan-out 429s.
@@ -310,12 +320,13 @@ export async function generateAgentReplyStream(
     // code made one streaming call for tool detection PLUS a second call for
     // the answer) and makes 429 retry/backoff actually work — the stream API
     // fails lazily mid-iteration, after headers are already sent.
-    const toolsForAttempt = attempt >= 2 ? [] : tools;
+    const toolsForAttempt = attempt === 0 ? tools : [];
     let response: OpenAI.Chat.Completions.ChatCompletion;
     try {
       response = await createChatCompletion({
         messages,
         tools: toolsForAttempt,
+        ...webSearchPluginOptions(rawPrompt),
         temperature: 0.7,
         tool_choice: toolsForAttempt.length > 0 ? "auto" : "none",
       });
@@ -325,7 +336,10 @@ export async function generateAgentReplyStream(
     }
 
     const message = response.choices[0]?.message;
-    const content = stripPseudoToolMarkup(message?.content ?? "");
+    const content = linkMountainCards(
+      stripPseudoToolMarkup(message?.content ?? ""),
+      mountainCardReferences(mountainCards),
+    );
     if (!message?.tool_calls?.length) {
       console.info("agent.model.request", {
         durationMs: Date.now() - startedAt,
@@ -349,7 +363,10 @@ export async function generateAgentReplyStream(
     messages.push(message);
     if (!firstCall || firstCall.type !== "function") {
       const content =
-        stripPseudoToolMarkup(message?.content ?? "") || "No response returned.";
+        linkMountainCards(
+          stripPseudoToolMarkup(message?.content ?? ""),
+          mountainCardReferences(mountainCards),
+        ) || "No response returned.";
       onToken(content);
       return content;
     }
@@ -366,6 +383,7 @@ export async function generateAgentReplyStream(
     const firstResult = userId
       ? await executeApplicationTool(firstCall.function.name, firstArgs, userId)
       : JSON.stringify({ ok: false, error: "Authentication required" });
+    rememberMountainCards(mountainCards, firstResult);
     console.info("agent.tool.request", {
       name: firstCall.function.name,
       durationMs: Date.now() - toolStartedAt,
@@ -382,6 +400,25 @@ export async function generateAgentReplyStream(
     "I could not finish retrieving that information. Please try again.";
   onToken(content);
   return content;
+}
+
+function webSearchPluginOptions(prompt: string): Record<string, unknown> {
+  return shouldUseWebSearch(prompt) ? { plugins: [{ id: "web" }] } : {};
+}
+
+function rememberMountainCards(
+  mountainCards: Map<number, string>,
+  serializedToolResult: string,
+): void {
+  for (const mountain of collectMountainCardReferences(serializedToolResult)) {
+    mountainCards.set(mountain.id, mountain.name);
+  }
+}
+
+function mountainCardReferences(
+  mountainCards: Map<number, string>,
+): MountainCardReference[] {
+  return [...mountainCards].map(([id, name]) => ({ id, name }));
 }
 
 export async function generateMessageSummary(

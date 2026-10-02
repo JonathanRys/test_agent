@@ -13,6 +13,7 @@ export type PeakWeatherPoint = {
   id: number;
   lat: number;
   lon: number;
+  kind?: "peak" | "trail";
 };
 
 export type PeakWeatherInfo = {
@@ -22,12 +23,14 @@ export type PeakWeatherInfo = {
   hi?: number;
   lo?: number;
   pop?: number | null;
+  precipitation?: number | null;
 };
 
 export type PeakWeatherSnapshot = {
   units: WeatherUnits;
   fetchedAt: string;
   byPeak: Record<string, PeakWeatherInfo>;
+  byTrail?: Record<string, PeakWeatherInfo>;
   // Set when the last fetch attempt failed or came back incomplete; readers
   // honor it as a short backoff window instead of re-fetching every turn.
   failedAt?: string;
@@ -90,10 +93,11 @@ export function buildWeatherRequestUrl(
     longitude: points.map((point) => point.lon.toFixed(4)).join(","),
     current: "temperature_2m,weather_code,wind_speed_10m",
     daily:
-      "temperature_2m_max,temperature_2m_min,precipitation_probability_max",
+      "temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum",
     forecast_days: "1",
     temperature_unit: units === "imperial" ? "fahrenheit" : "celsius",
     wind_speed_unit: units === "imperial" ? "mph" : "kmh",
+    precipitation_unit: units === "imperial" ? "inch" : "mm",
     timezone: "auto",
   });
   return `${env.WEATHER_API_BASE_URL}?${params.toString()}`;
@@ -123,6 +127,7 @@ export function parseWeatherResponse(
             temperature_2m_max?: (number | null)[];
             temperature_2m_min?: (number | null)[];
             precipitation_probability_max?: (number | null)[];
+            precipitation_sum?: (number | null)[];
           };
         }
       | undefined;
@@ -138,14 +143,19 @@ export function parseWeatherResponse(
     const hi = entry.daily?.temperature_2m_max?.[0];
     const lo = entry.daily?.temperature_2m_min?.[0];
     const pop = entry.daily?.precipitation_probability_max?.[0];
+    const precipitation = entry.daily?.precipitation_sum?.[0];
 
-    byPeak[String(point.id)] = {
+    const resultKey = point.kind === "trail" ? `trail:${point.id}` : String(point.id);
+    byPeak[resultKey] = {
       temp: Math.round(current.temperature_2m),
       cond: describeWeatherCode(current.weather_code),
       wind: Math.round(current.wind_speed_10m ?? 0),
       ...(typeof hi === "number" ? { hi: Math.round(hi) } : {}),
       ...(typeof lo === "number" ? { lo: Math.round(lo) } : {}),
       ...(typeof pop === "number" ? { pop: Math.round(pop) } : { pop: null }),
+      ...(typeof precipitation === "number"
+        ? { precipitation: Math.max(0, precipitation) }
+        : { precipitation: null }),
     };
   });
 
@@ -246,19 +256,25 @@ export async function getPeakWeatherSnapshot(
   const key = weatherContextKey(userId);
   const cached = await cacheGet<PeakWeatherSnapshot>(key);
   const usable = cached && cached.units === units ? cached : null;
-  const missing = needed.filter((point) => !usable?.byPeak[String(point.id)]);
+  const infoForPoint = (point: PeakWeatherPoint) =>
+    point.kind === "trail"
+      ? usable?.byTrail?.[String(point.id)]
+      : usable?.byPeak[String(point.id)];
+  const missing = needed.filter((point) => !infoForPoint(point));
   // Serve from cache when it covers every peak, OR when the last attempt
   // failed — the short failure TTL is the backoff window; when it lapses the
   // snapshot disappears and the next read retries for real.
   if (usable && (missing.length === 0 || usable.failedAt)) return usable;
 
-  const byPeak: Record<string, PeakWeatherInfo> = {
-    ...(usable?.byPeak ?? {}),
-  };
+  const byPeak: Record<string, PeakWeatherInfo> = { ...(usable?.byPeak ?? {}) };
+  const byTrail: Record<string, PeakWeatherInfo> = { ...(usable?.byTrail ?? {}) };
   let complete = false;
   try {
     const fetched = await fetchPeakWeather(missing, units);
-    Object.assign(byPeak, fetched);
+    for (const [key, info] of Object.entries(fetched)) {
+      if (key.startsWith("trail:")) byTrail[key.slice(6)] = info;
+      else byPeak[key] = info;
+    }
     complete = Object.keys(fetched).length === missing.length;
   } catch (error) {
     console.warn("weather.fetch.failed", { userId, error: String(error) });
@@ -268,6 +284,7 @@ export async function getPeakWeatherSnapshot(
     units,
     fetchedAt: new Date().toISOString(),
     byPeak,
+    byTrail,
     ...(complete ? {} : { failedAt: new Date().toISOString() }),
   };
   await cacheSet(
@@ -284,19 +301,27 @@ export async function getPeakWeatherSnapshot(
 export function collectRemainingPeakPoints(
   context: CachedUserAgentContext,
 ): PeakWeatherPoint[] {
-  const byId = new Map<number, PeakWeatherPoint>();
+  const byId = new Map<string, PeakWeatherPoint>();
   for (const list of context.unfinishedLists) {
     for (const hike of list.remainingHikes) {
-      if (hike.kind !== "peak" || byId.has(hike.id)) continue;
+      const key = `${hike.kind}:${hike.id}`;
+      if (byId.has(key)) continue;
+      const lat = hike.kind === "peak" ? hike.lat : hike.startLat;
+      const lon = hike.kind === "peak" ? hike.lon : hike.startLon;
       if (
-        typeof hike.lat !== "number" ||
-        typeof hike.lon !== "number" ||
-        !Number.isFinite(hike.lat) ||
-        !Number.isFinite(hike.lon)
+        typeof lat !== "number" ||
+        typeof lon !== "number" ||
+        !Number.isFinite(lat) ||
+        !Number.isFinite(lon)
       ) {
         continue;
       }
-      byId.set(hike.id, { id: hike.id, lat: hike.lat, lon: hike.lon });
+      byId.set(key, {
+        id: hike.id,
+        lat,
+        lon,
+        ...(hike.kind === "trail" ? { kind: "trail" as const } : {}),
+      });
     }
   }
   return [...byId.values()];
@@ -320,6 +345,13 @@ export function formatPeakWeather(
   if (typeof info.pop === "number") {
     parts.push(`${Math.round(info.pop)}% precip`);
   }
+  if (typeof info.precipitation === "number") {
+    const amount =
+      units === "imperial"
+        ? `${info.precipitation.toFixed(2)} in total`
+        : `${info.precipitation.toFixed(1)} mm total`;
+    parts.push(amount);
+  }
   return parts.join(", ");
 }
 
@@ -329,15 +361,22 @@ export function attachWeather(
   snapshot: PeakWeatherSnapshot,
   units: WeatherUnits,
 ): CachedUserAgentContext {
-  if (Object.keys(snapshot.byPeak).length === 0) return context;
+  if (
+    Object.keys(snapshot.byPeak).length === 0 &&
+    Object.keys(snapshot.byTrail ?? {}).length === 0
+  ) {
+    return context;
+  }
 
   return {
     ...context,
     unfinishedLists: context.unfinishedLists.map((list) => ({
       ...list,
       remainingHikes: list.remainingHikes.map((hike) => {
-        if (hike.kind !== "peak") return hike;
-        const info = snapshot.byPeak[String(hike.id)];
+        const info =
+          hike.kind === "peak"
+            ? snapshot.byPeak[String(hike.id)]
+            : snapshot.byTrail?.[String(hike.id)];
         if (!info) return hike;
         return { ...hike, weather: formatPeakWeather(info, units) };
       }),

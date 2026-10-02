@@ -251,7 +251,7 @@ export default function Agent() {
   async function handleSubmit(event: SubmitEvent<HTMLFormElement>) {
     event.preventDefault();
     const trimmedPrompt = prompt.trim();
-    if (!trimmedPrompt || loading) return;
+    if (trimmedPrompt.length < 3 || loading) return;
 
     const nextMessages: Message[] = [
       ...messages,
@@ -392,6 +392,16 @@ export default function Agent() {
         <textarea
           value={prompt}
           onChange={(event) => setPrompt(event.target.value)}
+          onKeyDown={(event) => {
+            if (
+              event.key === "Enter" &&
+              !event.shiftKey &&
+              !event.nativeEvent.isComposing
+            ) {
+              event.preventDefault();
+              event.currentTarget.form?.requestSubmit();
+            }
+          }}
           rows={4}
           placeholder="Type a message for the agent..."
           aria-label="Prompt"
@@ -412,7 +422,7 @@ export default function Agent() {
             className={
               loading || isLoadingSession ? "loading-cursor" : undefined
             }
-            disabled={loading || !prompt.trim()}
+            disabled={loading || prompt.trim().length < 3}
           >
             {loading ? "Thinking..." : "Send"}
           </button>

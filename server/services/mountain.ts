@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize";
+import { Op, Sequelize } from "sequelize";
 
 import { ensureInitialized } from "../utils/db.js";
 import {
@@ -26,6 +26,11 @@ export async function getMountain(id: number): Promise<Mountain | null> {
           as: "state",
           attributes: ["id", "name", "abbreviation"],
         },
+        {
+          model: List,
+          attributes: ["id", "name", "abbreviation"],
+          through: { attributes: [] },
+        },
       ],
     });
 
@@ -38,6 +43,123 @@ export async function getMountain(id: number): Promise<Mountain | null> {
     console.error(`Error fetching mountain ${id} from database:`, error);
     return null;
   }
+}
+
+export async function searchMountainsByName(
+  query: string,
+): Promise<Mountain[]> {
+  await ensureInitialized();
+  const term = query.trim().replace(/[%_]/g, "");
+  if (term.length < 2) return [];
+
+  return Mountain.findAll({
+    where: { name: { [Op.like]: `%${term}%` } },
+    order: [["name", "ASC"]],
+    limit: 12,
+    include: [
+      {
+        model: State,
+        as: "state",
+        attributes: ["id", "name", "abbreviation"],
+      },
+      {
+        model: List,
+        attributes: ["id", "name", "abbreviation"],
+        through: { attributes: [] },
+      },
+    ],
+  });
+}
+
+export type NearbyMountain = {
+  id: number;
+  name: string;
+  lat: number;
+  lon: number;
+  distanceMiles: number;
+  [key: string]: unknown;
+};
+
+export function rankNearbyMountains<
+  T extends NearbyMountain & { drivingMiles?: number | null },
+>(
+  mountains: T[],
+  useDrivingDistance: boolean,
+  limit = 8,
+): T[] {
+  return [...mountains]
+    .sort((left, right) => {
+      const leftDistance = useDrivingDistance
+        ? left.drivingMiles!
+        : left.distanceMiles;
+      const rightDistance = useDrivingDistance
+        ? right.drivingMiles!
+        : right.distanceMiles;
+      return leftDistance - rightDistance;
+    })
+    .slice(0, limit);
+}
+
+export function distanceBetweenMiles(
+  start: { lat: number; lon: number },
+  end: { lat: number; lon: number },
+): number {
+  const radians = Math.PI / 180;
+  const latitudeDelta = (end.lat - start.lat) * radians;
+  const longitudeDelta = (end.lon - start.lon) * radians;
+  const haversine =
+    Math.sin(latitudeDelta / 2) ** 2 +
+    Math.cos(start.lat * radians) *
+      Math.cos(end.lat * radians) *
+      Math.sin(longitudeDelta / 2) ** 2;
+  return 3958.8 * 2 * Math.atan2(Math.sqrt(haversine), Math.sqrt(1 - haversine));
+}
+
+export async function getNearbyMountains(
+  lat: number,
+  lon: number,
+  radiusMiles = 100,
+  limit = 40,
+): Promise<NearbyMountain[]> {
+  await ensureInitialized();
+  const latitudeSpan = radiusMiles / 69;
+  const longitudeSpan =
+    radiusMiles / (69 * Math.max(Math.cos((lat * Math.PI) / 180), 0.01));
+  const mountains = await Mountain.findAll({
+    where: {
+      lat: { [Op.between]: [lat - latitudeSpan, lat + latitudeSpan] },
+      lon: { [Op.between]: [lon - longitudeSpan, lon + longitudeSpan] },
+    },
+    include: [
+      {
+        model: State,
+        as: "state",
+        attributes: ["id", "name", "abbreviation"],
+      },
+      {
+        model: List,
+        attributes: ["id", "name", "abbreviation"],
+        through: { attributes: [] },
+      },
+    ],
+  });
+
+  return mountains
+    .map((mountain) => {
+      const plain = mountain.toJSON() as Record<string, unknown>;
+      const mountainLat = Number(plain.lat);
+      const mountainLon = Number(plain.lon);
+      return {
+        ...plain,
+        distanceMiles: distanceBetweenMiles(
+          { lat, lon },
+          { lat: mountainLat, lon: mountainLon },
+        ),
+      } as NearbyMountain;
+    })
+    .filter((mountain) => mountain.distanceMiles <= radiusMiles)
+    .sort((left, right) => left.distanceMiles - right.distanceMiles)
+    .slice(0, limit);
 }
 
 type MountainFilters = {

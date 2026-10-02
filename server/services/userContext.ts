@@ -24,10 +24,11 @@ function userContextKey(userId: number): string {
 export async function buildUserAgentContext(
   userId: number,
 ): Promise<CachedUserAgentContext> {
-  const [profile, unfinishedLists] = await Promise.all([
-    getUserProfile(userId),
-    getPriorityUnfinishedLists(userId),
-  ]);
+  const profile = await getUserProfile(userId);
+  const unfinishedLists = await getPriorityUnfinishedLists(
+    userId,
+    profile?.preferences.fitnessLevel,
+  );
 
   return {
     profile: profile ?? undefined,

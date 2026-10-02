@@ -16,6 +16,7 @@ import Settings from "./components/Settings";
 import ForgotPassword from "./components/ForgotPassword";
 import ResetPassword from "./components/ResetPassword";
 import ListPage from "./components/ListPage";
+import MountainDetail from "./components/MountainDetail";
 import Admin from "./components/Admin";
 import VerifyEmail from "./components/VerifyEmail";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -59,6 +60,7 @@ function AppLayout() {
         <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Lists />} />
           <Route path="/list/:id" element={<ListPage />} />
+          <Route path="/mountain/:id" element={<MountainDetail />} />
           <Route path="/agent" element={<Agent />} />
           <Route path="/account" element={<Account />} />
           <Route path="/settings" element={<Settings />} />

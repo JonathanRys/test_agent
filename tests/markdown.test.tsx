@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { MemoryRouter } from "react-router-dom";
 import Markdown from "../client/src/components/Markdown";
 
 describe("Markdown", () => {
@@ -33,6 +34,18 @@ describe("Markdown", () => {
     );
     expect(link).toHaveAttribute("target", "_blank");
     expect(link).toHaveAttribute("rel", "noopener noreferrer");
+  });
+
+  it("renders mountain-card links as in-app navigation", () => {
+    render(
+      <MemoryRouter>
+        <Markdown>{"[Mount Monadnock](/mountain/42)"}</Markdown>
+      </MemoryRouter>,
+    );
+
+    const link = screen.getByRole("link", { name: "Mount Monadnock" });
+    expect(link).toHaveAttribute("href", "/mountain/42");
+    expect(link).not.toHaveAttribute("target", "_blank");
   });
 
   it("escapes raw HTML from model output instead of rendering it", () => {

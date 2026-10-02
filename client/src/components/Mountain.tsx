@@ -18,7 +18,7 @@ import { useAuth } from "../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 export interface MountainProps extends MountainType {
-  index: number;
+  index?: number;
   expanded: boolean;
   onComplete?: () => void;
 }
@@ -106,7 +106,7 @@ const Mountain = (props: MountainProps) => {
       }}
     >
       <div className={`${mountainExpanded ? "item-header" : "inline"}`}>
-        <span>#{index}</span>
+        {typeof index === "number" && index > 0 && <span>#{index}</span>}
         {mountainExpanded && (
           <span>
             {Lists?.map((list) => (
@@ -148,21 +148,25 @@ const Mountain = (props: MountainProps) => {
               <div className="completion-summary">
                 <div className="completion-section-label">Hiked:</div>
                 <div className="completion-section-dates">
-                  {completionItems.map((summit) => (
-                    <CompletionDate
-                      key={summit.id}
-                      adventureId={summit.adventureId}
-                      mountainId={id}
-                      name={name}
-                      completedAt={summit.completedAt}
-                      editing={editingCompletionId === summit.id}
-                      setEditing={(editing) =>
-                        setEditingCompletionId(editing ? summit.id : null)
-                      }
-                      onComplete={onComplete}
-                      season={summit.season}
-                    />
-                  ))}
+                  {completionItems.length === 0 ? (
+                    <span>Not hiked</span>
+                  ) : (
+                    completionItems.map((summit) => (
+                      <CompletionDate
+                        key={summit.id}
+                        adventureId={summit.adventureId}
+                        mountainId={id}
+                        name={name}
+                        completedAt={summit.completedAt}
+                        editing={editingCompletionId === summit.id}
+                        setEditing={(editing) =>
+                          setEditingCompletionId(editing ? summit.id : null)
+                        }
+                        onComplete={onComplete}
+                        season={summit.season}
+                      />
+                    ))
+                  )}
                 </div>
                 {completedSeasons.length > 0 && (
                   <div

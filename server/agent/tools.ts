@@ -1,12 +1,20 @@
 import { getAdventures } from "../services/adventure.js";
-import { getMountain } from "../services/mountain.js";
+import {
+  getMountain,
+  getNearbyMountains,
+  rankNearbyMountains,
+  searchMountainsByName,
+} from "../services/mountain.js";
+import { geocodeLocation } from "../services/geocoding.js";
 import { getTrail } from "../services/trail.js";
 import {
   fetchPeakWeather,
   formatPeakWeather,
+  getPeakWeatherSnapshot,
   pickWeatherUnits,
 } from "../services/weather.js";
 import { getUserProfile } from "../services/profile.js";
+import { getDrivingDistances } from "../services/routing.js";
 import { getStubMountainDifficulty } from "../utils/amcRating.js";
 
 export type ToolResult = {
@@ -47,12 +55,70 @@ export const applicationTools = [
   },
 ] as const;
 
+export const mountainSearchTool = {
+  type: "function",
+  function: {
+    name: "search_mountains",
+    description:
+      "Verify candidate peak names against the mountain database for a location-based recommendation. Returns canonical IDs, facts, and actual list memberships. Use once before recommending peaks outside the injected unfinished lists; never infer list membership from geography.",
+    parameters: {
+      type: "object",
+      properties: {
+        query: {
+          type: "string",
+          minLength: 2,
+          maxLength: 80,
+          description: "Peak name or distinctive name fragment, e.g. Monadnock.",
+        },
+      },
+      required: ["query"],
+      additionalProperties: false,
+    },
+  },
+} as const;
+
+export const nearbyMountainSearchTool = {
+  type: "function",
+  function: {
+    name: "find_nearby_mountains",
+    description:
+      "Find nearby database-backed mountain peaks relative to the authenticated user's saved home location. Returns peaks ranked by routed road distance to stored peak coordinates when available (not verified trailheads), otherwise straight-line distance; includes current cached weather, canonical IDs, and actual list memberships.",
+    parameters: {
+      type: "object",
+      properties: {},
+      additionalProperties: false,
+    },
+  },
+} as const;
+
 export function shouldUseWebSearch(prompt: string): boolean {
-  // Legacy heuristic: the runtime no longer offers a web_search function
-  // tool (condition sources are plain reference links in the system prompt),
-  // so this always returns false. Kept for backwards-compat with tests.
-  void prompt;
-  return false;
+  return /weather|forecast|road closure|road condition|trail condition|trail report|trail status|park alert|mud season|ice condition|snow report/i.test(
+    prompt.trim(),
+  );
+}
+
+export function shouldOfferMountainSearch(prompt: string): boolean {
+  const asksForRecommendations =
+    /recommend|suggest|options|where should i hike|find me a hike|keep it in|stay in|shorter drive|manageable terrain/i.test(
+      prompt,
+    );
+  const namesArea =
+    /\b(?:southern|northern|central|western|eastern|northeastern|northwestern|southeastern|southwestern)\b/i.test(
+      prompt,
+    ) ||
+    /\b(?:New Hampshire|Vermont|Maine|Massachusetts|New York|Connecticut|Rhode Island|New Jersey|Pennsylvania|New England|NH|VT|ME|MA|NY|CT|RI|NJ|PA)\b/i.test(
+      prompt,
+    ) ||
+    /outside (?:my|the) (?:list|lists)|off[- ]list/i.test(prompt);
+  return asksForRecommendations && namesArea;
+}
+
+export function shouldOfferNearbyMountainSearch(prompt: string): boolean {
+  return (
+    /\b(?:nearby|near by|near me|close by|close to|closest|around here|local hikes?)\b/i.test(
+      prompt,
+    ) && /hik(?:e|ing)|mountain|peak|where to go/i.test(prompt)
+  );
 }
 
 /**
@@ -64,9 +130,8 @@ export function shouldUseWebSearch(prompt: string): boolean {
  * NOTE: callers must pass the RAW user turn, never history-prefixed text.
  */
 export function shouldOfferDetailTools(prompt: string): boolean {
-  // Negative lookahead: weather / trail-condition / road-status RECOMMENDATION
-  // prompts must be answered from injected context + curated reference links,
-  // so condition words must never arm the detail/history tools.
+  // Condition and recommendation prompts use cached context or hosted search,
+  // not detail/history lookups.
   if (
     /weather|forecast|condition|trail condition|road closure|road condition|open today|current|recent|latest|snow|mud|ice|recommend|suggest|what(?:'s| is) next|weekend|accessible|near me|home/i.test(
       prompt,
@@ -148,17 +213,83 @@ export async function executeApplicationTool(
       }
       break;
     }
-    case "web_search": {
-      const query = String(args.query ?? "").slice(0, 300);
-      if (!query) {
-        return JSON.stringify({ ok: false, error: "Provide a search query" });
+    case "search_mountains": {
+      const query = String(args.query ?? "").trim().slice(0, 80);
+      if (query.length < 2) {
+        return JSON.stringify({
+          ok: false,
+          error: "Provide at least two characters of a peak name",
+        });
       }
-      // No server-side web fetch is configured; return the curated source list
-      // so the model can cite where to check instead of hallucinating calls.
+      result = (await searchMountainsByName(query)).map((mountain) =>
+        mountain.toJSON(),
+      );
+      break;
+    }
+    case "find_nearby_mountains": {
+      const profile = await getUserProfile(userId);
+      const homeLocation = profile?.preferences.homeLocation;
+      if (!homeLocation) {
+        result = {
+          message:
+            "The user has no saved home location. Ask which town or area they want to hike near.",
+          mountains: [],
+        };
+        break;
+      }
+
+      const location = await geocodeLocation(homeLocation);
+      if (!location) {
+        result = {
+          homeLocation,
+          message:
+            "The saved home location could not be geocoded. Ask the user for a nearby town or area.",
+          mountains: [],
+        };
+        break;
+      }
+
+      const candidates = await getNearbyMountains(
+        location.lat,
+        location.lon,
+        100,
+        40,
+      );
+      const routes = await getDrivingDistances(location, candidates);
+      const hasCompleteRoutes = candidates.every(
+        (mountain) => routes[String(mountain.id)],
+      );
+      const rankedCandidates = candidates.map((mountain) => {
+          const route = routes[String(mountain.id)];
+          return {
+            ...mountain,
+            drivingMiles: hasCompleteRoutes ? route?.miles ?? null : null,
+            distanceMethod: hasCompleteRoutes
+              ? "routed road distance to stored peak coordinate; trailhead unknown"
+              : "straight-line fallback",
+          };
+        });
+      const mountains = rankNearbyMountains(
+        rankedCandidates,
+        hasCompleteRoutes,
+      );
+      const units = pickWeatherUnits(profile);
+      const weather = await getPeakWeatherSnapshot(
+        userId,
+        mountains.map(({ id, lat, lon }) => ({ id, lat, lon })),
+        units,
+      );
       result = {
-        note:
-          "Live web lookup is not configured server-side. Use the curated condition sources in the system prompt and tell the user where to check.",
-        query,
+        homeLocation: location.label,
+        distanceMetric: hasCompleteRoutes
+          ? "routed road distance in miles to stored peak coordinates; trailheads are not modeled"
+          : "approximate straight-line miles; routing service unavailable",
+        mountains: mountains.map((mountain) => ({
+          ...mountain,
+          weather: weather.byPeak[String(mountain.id)]
+            ? formatPeakWeather(weather.byPeak[String(mountain.id)]!, units)
+            : null,
+        })),
       };
       break;
     }
